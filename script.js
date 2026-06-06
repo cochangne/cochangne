@@ -294,8 +294,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const savedLesson = localStorage.getItem('currentLesson');
     if (savedLesson) currentLesson = parseInt(savedLesson);
 
-    // Initial SPA routing based on URL hash
-    const initialHash = window.location.hash || '#home';
+    // Restore section state
+    const savedSection = localStorage.getItem('currentSection') || 'home';
+
+    // Initial SPA routing based on URL hash or saved section
+    const initialHash = window.location.hash || `#${savedSection}`;
     const sectionId = initialHash.replace('#', '');
     
     if (sectionId === 'lessons-dashboard') {
@@ -352,6 +355,9 @@ function initSPARouter() {
                 link.classList.add('active');
             }
         });
+
+        // Save active section to localStorage
+        localStorage.setItem('currentSection', sectionId);
 
         // Push state to sync browser URL hash
         if (window.location.hash !== `#${sectionId}`) {
@@ -650,7 +656,9 @@ window.enterLesson = function(lessonNum) {
     loadFlashcard(fcIndex);
     loadDialogue();
     loadCharacterBreakdowns();
-    switchLearningTab('flashcard');
+    // Restore saved tab or default to 'flashcard'
+    const savedTab = localStorage.getItem('currentTab') || 'flashcard';
+    switchLearningTab(savedTab);
     
     // Reset quiz startup screen
     document.getElementById('quiz-start-screen').classList.add('active');
@@ -674,6 +682,9 @@ window.switchLearningTab = function(tabName) {
     if ('speechSynthesis' in window) {
         window.speechSynthesis.cancel();
     }
+    // Save active tab to localStorage
+    localStorage.setItem('currentTab', tabName);
+
     const tabButtons = document.querySelectorAll('.tab-btn');
     const tabPanels = document.querySelectorAll('.tab-panel');
 
