@@ -287,6 +287,30 @@ document.addEventListener('DOMContentLoaded', () => {
     // Default load flashcard and character tab items
     loadFlashcard(fcIndex);
     loadCharacterBreakdowns();
+
+    // Restore course and lesson states
+    const savedCourse = localStorage.getItem('currentCourse');
+    if (savedCourse) currentCourse = savedCourse;
+    const savedLesson = localStorage.getItem('currentLesson');
+    if (savedLesson) currentLesson = parseInt(savedLesson);
+
+    // Initial SPA routing based on URL hash
+    const initialHash = window.location.hash || '#home';
+    const sectionId = initialHash.replace('#', '');
+    
+    if (sectionId === 'lessons-dashboard') {
+        enterCourse(currentCourse);
+    } else if (sectionId === 'lesson-workspace') {
+        enterCourse(currentCourse);
+        enterLesson(currentLesson);
+    } else {
+        const targetSection = document.getElementById(`${sectionId}-section`);
+        if (targetSection) {
+            navigateToSection(sectionId);
+        } else {
+            navigateToSection('home');
+        }
+    }
 });
 
 /**
@@ -328,7 +352,33 @@ function initSPARouter() {
                 link.classList.add('active');
             }
         });
+
+        // Push state to sync browser URL hash
+        if (window.location.hash !== `#${sectionId}`) {
+            history.pushState(null, null, `#${sectionId}`);
+        }
     };
+
+    // Add popstate listener to support browser back/forward buttons
+    window.addEventListener('popstate', () => {
+        const hash = window.location.hash || '#home';
+        const sectionId = hash.replace('#', '');
+        
+        if (sectionId === 'lessons-dashboard') {
+            const savedCourse = localStorage.getItem('currentCourse') || 'Giao tiếp 1';
+            enterCourse(savedCourse);
+        } else if (sectionId === 'lesson-workspace') {
+            const savedCourse = localStorage.getItem('currentCourse') || 'Giao tiếp 1';
+            const savedLesson = parseInt(localStorage.getItem('currentLesson')) || 1;
+            currentCourse = savedCourse;
+            enterLesson(savedLesson);
+        } else {
+            const targetSection = document.getElementById(`${sectionId}-section`);
+            if (targetSection) {
+                navigateToSection(sectionId);
+            }
+        }
+    });
 
     navLinks.forEach(link => {
         link.addEventListener('click', (e) => {
@@ -440,6 +490,7 @@ window.enterCourse = function(courseName) {
     }
 
     currentCourse = courseName;
+    localStorage.setItem('currentCourse', courseName);
     
     // Update dashboard labels
     document.getElementById('course-badge-title').innerText = `${courseName}`;
@@ -573,6 +624,7 @@ window.enterLesson = function(lessonNum) {
     }
 
     currentLesson = lessonNum;
+    localStorage.setItem('currentLesson', lessonNum);
 
     // Load vocab data dynamically based on the course
     if (currentCourse === "Giao tiếp 1") {
