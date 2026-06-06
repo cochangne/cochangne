@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lớp học tiếng Trung</title>
+    <meta name="description" content="Chào mừng bạn đến với góc học ngoại ngữ siêu ngọt ngào của Cô Chang! Nơi tiếng Anh và tiếng Trung trở nên thật dễ dàng, tự nhiên và trôi chảy.">
+    
+    <!-- Google Fonts (Fully supporting Vietnamese diacritics) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Nunito:wght@400;600;700;800&family=Caveat:wght@400;700&family=Satisfy&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style_v3.css">
+</head>
+<body>
+
+    <!-- Floating Background Elements for Cute Aesthetic -->
+    <div class="bubble-container">
+        <div class="bubble bubble-1"></div>
+        <div class="bubble bubble-2"></div>
+        <div class="bubble bubble-3"></div>
+        <div class="bubble bubble-4"></div>
+        <div class="bubble bubble-5"></div>
+        <div class="bubble bubble-6"></div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="main-header">
+        <div class="container header-container">
+            <nav class="nav-menu">
+                <a href="#home" class="nav-link active" id="nav-home">Cô Chang nè</a>
+                <a href="#classes" class="nav-link" id="nav-classes">Lớp học</a>
+                <a href="#materials" class="nav-link" id="nav-materials">Tài liệu học tập</a>
+            </nav>
+            
+            <div class="header-actions">
+                <!-- Mobile Navigation Toggle (Clean CSS Hamburger) -->
+                <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Mở menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-drawer" id="mobile-drawer">
+        <button class="mobile-drawer-close" id="mobile-close" aria-label="Đóng menu">
+            <span class="close-line close-line-1"></span>
+            <span class="close-line close-line-2"></span>
+        </button>
+        <div class="mobile-drawer-links">
+            <a href="#home" class="mobile-link active" id="mob-home">Cô Chang nè</a>
+            <a href="#classes" class="mobile-link" id="mob-classes">Lớp học</a>
+            <a href="#materials" class="mobile-link" id="mob-materials">Tài liệu học tập</a>
+        </div>
+    </div>
+    <div class="mobile-overlay" id="mobile-overlay"></div>
+
+    <!-- Main Content App Area -->
+    <main class="main-app">
+        
+        <!-- SECTION 1: HOME PAGE -->
+        <section id="home-section" class="app-section active">
+            <div class="container hero-container">
+                <!-- Left text content -->
+                <div class="hero-content">
+                    <h1 class="hero-title animate-title">
+                        Cô Chang nè
+                    </h1>
+                </div>
+                
+                <!-- Right visual content -->
+                <div class="hero-visual">
+                    <div class="polaroid-wrapper">
+                        <!-- Main Polaroid Card -->
+                        <div class="polaroid-card">
+                            <div class="polaroid-img-container">
+                                <img src="co_chang_real.jpg" alt="Cô Chang nè" class="polaroid-image">
+                            </div>
+                            <div class="polaroid-caption">
+                                <h3 class="chinese-char" style="font-size: 1.6rem; margin-top: 10px; display: block;">活到老，学到老</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Wave Divider at the bottom of Home Section -->
+            <div class="wave-divider-container">
+                <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                    <defs>
+                        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                    </defs>
+                    <g class="parallax">
+                        <use href="#gentle-wave" x="48" y="0" fill="rgba(224, 242, 254, 0.7)" />
+                        <use href="#gentle-wave" x="48" y="3" fill="rgba(186, 230, 253, 0.5)" />
+                        <use href="#gentle-wave" x="48" y="5" fill="rgba(14, 165, 233, 0.15)" />
+                        <use href="#gentle-wave" x="48" y="7" fill="var(--color-bg)" />
+                    </g>
+                </svg>
+            </div>
+        </section>
+
+        <!-- SECTION 2: CLASSES DASHBOARD -->
+        <section id="classes-section" class="app-section">
+            <div class="container text-center">
+
+                <!-- Course Category Filters -->
+                <div class="class-filters">
+                    <button class="filter-btn active" data-filter="giao-tiep">Tiếng Trung Giao Tiếp</button>
+                    <button class="filter-btn" data-filter="hsk">HSK</button>
+                </div>
+
+                <!-- Classes Grid -->
+                <div class="classes-grid">
+                    
+                    <!-- Giao tiếp 1 -->
+                    <div class="class-card filter-item giao-tiep border-blue cursor-pointer" onclick="enterCourse('Giao tiếp 1')">
+                        <div class="class-badge bg-blue-pastel text-blue">Học tương tác</div>
+                        <h3 class="class-title">Giao tiếp 1</h3>
+                        <p class="class-subtitle">Khởi nguồn phản xạ tiếng Trung cơ bản</p>
+                        <p class="class-description">
+                            Dành cho các bạn mới bắt đầu học tiếng Trung. Học phát âm chuẩn và giao tiếp các tình huống hàng ngày: Chào hỏi, tên tuổi, giới thiệu bản thân...
+                        </p>
+                        <div class="class-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Bài học:</span>
+                                <span>6 bài học lớn</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Cấp độ:</span>
+                                <span>Mới bắt đầu</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Giao tiếp 2 -->
+                    <div class="class-card filter-item giao-tiep border-pink cursor-pointer" onclick="enterCourse('Giao tiếp 2')">
+                        <div class="class-badge bg-pink-pastel text-pink">Phản xạ nhanh</div>
+                        <h3 class="class-title">Giao tiếp 2</h3>
+                        <p class="class-subtitle">Mở rộng từ vựng & Giao tiếp tự nhiên</p>
+                        <p class="class-description">
+                            Mở rộng vốn từ vựng và cấu trúc hội thoại đa dạng hơn. Phản xạ hỏi đáp trôi chảy về gia đình, mua sắm, ăn uống, thời tiết...
+                        </p>
+                        <div class="class-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Bài học:</span>
+                                <span>12 bài học</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Cấp độ:</span>
+                                <span>Sơ cấp</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Giao tiếp 3 -->
+                    <div class="class-card filter-item giao-tiep border-yellow cursor-pointer" onclick="enterCourse('Giao tiếp 3')">
+                        <div class="class-badge bg-yellow-pastel text-yellow">Trôi chảy</div>
+                        <h3 class="class-title">Giao tiếp 3</h3>
+                        <p class="class-subtitle">Tranh luận tự tin & Thuyết trình chủ đề</p>
+                        <p class="class-description">
+                            Nâng tầm kỹ năng thảo luận, bày tỏ quan điểm cá nhân, thuyết trình ngắn về công việc, sở thích, đời sống xã hội...
+                        </p>
+                        <div class="class-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Bài học:</span>
+                                <span>12 bài học</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Cấp độ:</span>
+                                <span>Trung cấp</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Giao tiếp 4 -->
+                    <div class="class-card filter-item giao-tiep border-blue cursor-pointer" onclick="enterCourse('Giao tiếp 4')">
+                        <div class="class-badge bg-blue-pastel text-blue">Làm chủ</div>
+                        <h3 class="class-title">Giao tiếp 4</h3>
+                        <p class="class-subtitle">Giao tiếp tự nhiên như người bản xứ</p>
+                        <p class="class-description">
+                            Rèn luyện khả năng nói tiếng Trung chuyên sâu, sử dụng ngôn từ linh hoạt, thảo luận chuyên môn và văn hóa Trung Hoa trôi chảy.
+                        </p>
+                        <div class="class-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Bài học:</span>
+                                <span>12 bài học</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Cấp độ:</span>
+                                <span>Cao cấp</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Từ vựng theo chủ đề -->
+                    <div class="class-card filter-item giao-tiep border-yellow cursor-pointer" onclick="enterCourse('Từ vựng theo chủ đề')">
+                        <div class="class-badge bg-yellow-pastel text-yellow">Tích luỹ nhanh</div>
+                        <h3 class="class-title">Từ vựng theo chủ đề</h3>
+                        <p class="class-subtitle">Làm chủ từ vựng qua sơ đồ & hình ảnh</p>
+                        <p class="class-description">
+                            Phương pháp ghi nhớ từ vựng tiếng Trung qua các chủ đề thông dụng trong đời sống hàng ngày: Đồ ăn, mua sắm, du lịch, giao thông, văn phòng... giúp bạn tăng vốn từ thần tốc.
+                        </p>
+                        <div class="class-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Chủ đề:</span>
+                                <span>30+ chủ đề</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Từ vựng:</span>
+                                <span>1000+ từ vựng</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- HSK 1 -->
+                    <div class="class-card filter-item hsk border-pink cursor-pointer" onclick="enterCourse('HSK1')">
+                        <div class="class-badge bg-pink-pastel text-pink">Luyện thi</div>
+                        <h3 class="class-title">HSK1</h3>
+                        <p class="class-subtitle">Làm quen cấu trúc đề HSK cơ bản</p>
+                        <p class="class-description">
+                            Trang bị 150 từ vựng cốt lõi và ngữ pháp HSK cấp độ 1, luyện đề chuẩn, cam kết thi đạt kết quả tốt nhất.
+                        </p>
+                        <div class="class-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Từ vựng:</span>
+                                <span>150 từ vựng</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Mục tiêu:</span>
+                                <span>Đỗ HSK 1</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- HSK 2 -->
+                    <div class="class-card filter-item hsk border-yellow cursor-pointer" onclick="enterCourse('HSK2')">
+                        <div class="class-badge bg-yellow-pastel text-yellow">Luyện thi</div>
+                        <h3 class="class-title">HSK2</h3>
+                        <p class="class-subtitle">Nâng cao từ vựng & Kỹ năng nghe đọc</p>
+                        <p class="class-description">
+                            Tích lũy 300 từ vựng và ngữ pháp HSK cấp độ 2, làm chủ các dạng bài thi nghe hiểu và đọc hiểu sơ cấp.
+                        </p>
+                        <div class="class-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Từ vựng:</span>
+                                <span>300 từ vựng</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Mục tiêu:</span>
+                                <span>Đỗ HSK 2</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- HSK 3 -->
+                    <div class="class-card filter-item hsk border-blue cursor-pointer" onclick="enterCourse('HSK3')">
+                        <div class="class-badge bg-blue-pastel text-blue">Luyện thi</div>
+                        <h3 class="class-title">HSK3</h3>
+                        <p class="class-subtitle">Làm chủ chữ Hán & Đọc viết cơ bản</p>
+                        <p class="class-description">
+                            Nâng vốn từ lên 600 từ, tự tin làm chủ toàn bộ bài thi nghe - đọc - viết HSK3 không cần phiên âm pinyin hỗ trợ.
+                        </p>
+                        <div class="class-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Từ vựng:</span>
+                                <span>600 từ vựng</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Mục tiêu:</span>
+                                <span>Đỗ HSK 3</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- HSK 4 -->
+                    <div class="class-card filter-item hsk border-pink cursor-pointer" onclick="enterCourse('HSK4')">
+                        <div class="class-badge bg-pink-pastel text-pink">Luyện thi</div>
+                        <h3 class="class-title">HSK4</h3>
+                        <p class="class-subtitle">Viết đoạn văn & Thảo luận đa dạng đề tài</p>
+                        <p class="class-description">
+                            Tích lũy 1200 từ vựng HSK4, rèn luyện tư duy ngữ pháp viết câu, viết đoạn văn miêu tả tranh ảnh và thi đỗ chứng chỉ HSK4.
+                        </p>
+                        <div class="class-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Từ vựng:</span>
+                                <span>1200 từ vựng</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Mục tiêu:</span>
+                                <span>Đỗ HSK 4</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- HSK 5 -->
+                    <div class="class-card filter-item hsk border-yellow cursor-pointer" onclick="enterCourse('HSK5')">
+                        <div class="class-badge bg-yellow-pastel text-yellow">Luyện thi</div>
+                        <h3 class="class-title">HSK5</h3>
+                        <p class="class-subtitle">Đọc báo chí & Viết bài luận sâu sắc</p>
+                        <p class="class-description">
+                            Sở hữu 2500 từ vựng HSK5. Đọc hiểu nhanh văn bản báo chí Trung Quốc, viết các bài luận xã hội, giao tiếp chuyên sâu.
+                        </p>
+                        <div class="class-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Từ vựng:</span>
+                                <span>2500 từ vựng</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Mục tiêu:</span>
+                                <span>Đỗ HSK 5</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- HSK 6 -->
+                    <div class="class-card filter-item hsk border-blue cursor-pointer" onclick="enterCourse('HSK6')">
+                        <div class="class-badge bg-blue-pastel text-blue">Luyện thi</div>
+                        <h3 class="class-title">HSK6</h3>
+                        <p class="class-subtitle">Đỉnh cao ngôn ngữ & Học giả Trung văn</p>
+                        <p class="class-description">
+                            Làm chủ hơn 5000 từ vựng, tự tin đọc dịch các tác phẩm văn học Trung Quốc cổ điển, viết bài tóm tắt và thi HSK6 điểm số tối đa.
+                        </p>
+                        <div class="class-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Từ vựng:</span>
+                                <span>5000+ từ vựng</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Mục tiêu:</span>
+                                <span>Đỗ HSK 6</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: LESSONS DASHBOARD (GRID OF 6 LESSONS) -->
+        <section id="lessons-dashboard-section" class="app-section">
+            <div class="container">
+                <button class="btn btn-back-custom" onclick="navigateToSection('classes')">
+                    &larr; Trở lại danh sách khóa học
+                </button>
+                <div class="dashboard-header text-center">
+                    <span class="section-badge" id="course-badge-title">Lớp Giao Tiếp 1</span>
+                    <h2 class="section-title" id="course-dashboard-title">Hành trình bài học</h2>
+                    <p class="section-desc" id="course-dashboard-desc">
+                        Chọn một bài học dưới đây để bắt đầu thế giới học tập tương tác! Mỗi bài học chứa Flashcard, bóc tách Chữ Hán và bài Luyện tập tổng hợp.
+                    </p>
+                </div>
+
+                <div class="lessons-grid" id="lessons-grid-container">
+                    <!-- Lesson 1 (Unlocked) -->
+                    <div class="lesson-card unlocked border-blue cursor-pointer" onclick="enterLesson(1)">
+                        <div class="lesson-num">Bài 1</div>
+                        <h3><span class="chinese-char">你好</span></h3>
+                        <p class="lesson-desc-text">Học cách chào hỏi cơ bản, tự giới thiệu tên, tuổi và làm quen bạn bè.</p>
+                        <span class="lesson-status-badge">Sẵn sàng học &rarr;</span>
+                    </div>
+
+                    <!-- Lesson 2 (Unlocked) -->
+                    <div class="lesson-card unlocked border-blue cursor-pointer" onclick="enterLesson(2)">
+                        <div class="lesson-num">Bài 2</div>
+                        <h3><span class="chinese-char">现在几点？</span></h3>
+                        <p class="lesson-desc-text">Từ vựng về giờ giấc, ngày tháng, thời gian biểu và các hoạt động thường nhật.</p>
+                        <span class="lesson-status-badge">Sẵn sàng học &rarr;</span>
+                    </div>
+
+                    <!-- Lesson 3 (Locked) -->
+                    <div class="lesson-card locked border-gray">
+                        <div class="lesson-num">Bài 3</div>
+                        <h3>Gia đình ấm áp</h3>
+                        <p class="lesson-desc-text">Học cách giới thiệu các thành viên trong gia đình và nghề nghiệp của họ.</p>
+                        <span class="lesson-status-badge badge-locked">Đang thiết lập</span>
+                    </div>
+
+                    <!-- Lesson 4 (Locked) -->
+                    <div class="lesson-card locked border-gray">
+                        <div class="lesson-num">Bài 4</div>
+                        <h3>Món ăn & Ẩm thực</h3>
+                        <p class="lesson-desc-text">Gọi món ăn, diễn đạt sở thích ăn uống và thanh toán hóa đơn bằng tiếng Trung.</p>
+                        <span class="lesson-status-badge badge-locked">Đang thiết lập</span>
+                    </div>
+
+                    <!-- Lesson 5 (Locked) -->
+                    <div class="lesson-card locked border-gray">
+                        <div class="lesson-num">Bài 5</div>
+                        <h3>Mua sắm & Giá cả</h3>
+                        <p class="lesson-desc-text">Hỏi giá tiền các vật dụng, mặc cả cơ bản và chọn lựa các loại hàng hóa.</p>
+                        <span class="lesson-status-badge badge-locked">Đang thiết lập</span>
+                    </div>
+
+                    <!-- Lesson 6 (Locked) -->
+                    <div class="lesson-card locked border-gray">
+                        <div class="lesson-num">Bài 6</div>
+                        <h3>Thời tiết & Đi lại</h3>
+                        <p class="lesson-desc-text">Mô tả thời tiết bốn mùa, hỏi đường và chọn các phương tiện giao thông thông dụng.</p>
+                        <span class="lesson-status-badge badge-locked">Đang thiết lập</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: INTERACTIVE LESSON WORKSPACE -->
+        <section id="lesson-workspace-section" class="app-section">
+            <div class="container">
+                <button class="btn btn-back-custom" onclick="exitLessonWorkspace()">
+                    &larr; Trở lại danh sách bài học
+                </button>
+                
+                <div class="workspace-header text-center">
+                    <span class="section-badge" id="workspace-badge">Giao tiếp 1 &bull; Bài 1</span>
+                    <h2 class="workspace-lesson-title" id="workspace-lesson-title"><span class="chinese-char">你好</span></h2>
+                </div>
+
+                <!-- Learning Tool Tabs Selector -->
+                <div class="learning-tabs">
+                    <button class="tab-btn active" id="btn-tab-flashcard" onclick="switchLearningTab('flashcard')">Flashcard</button>
+                    <button class="tab-btn" id="btn-tab-characters" onclick="switchLearningTab('characters')">Chữ Hán</button>
+                    <button class="tab-btn" id="btn-tab-practice" onclick="switchLearningTab('practice')">Luyện tập</button>
+                </div>
+
+                <!-- WORKSPACE CONTENT PANELS -->
+                <div class="workspace-panels">
+                    
+                    <!-- TAB 1: FLASHCARDS -->
+                    <div id="panel-flashcard" class="tab-panel active">
+                        <p class="tab-guideline">Bấm vào thẻ để lật xem phiên âm, nghĩa tiếng Việt và bấm nút Loa để nghe cách phát âm chuẩn nhé!</p>
+                        
+                        <div class="flashcard-container">
+                            <div class="flashcard-inner" id="interactive-flashcard" onclick="flipCard()">
+                                <!-- Front Face (Clean Chinese Character only) -->
+                                <div class="flashcard-front">
+                                    <span id="fc-front-char">你</span>
+                                </div>
+                                <!-- Back Face -->
+                                <div class="flashcard-back">
+                                    <div class="fc-back-header">
+                                        <div class="fc-back-header-left">
+                                            <div class="fc-back-char-row">
+                                                <span id="fc-back-char" class="chinese-char">你</span>
+                                                <span class="fc-back-pinyin" id="fc-back-pinyin">nǐ</span>
+                                            </div>
+                                            <div class="fc-back-pos-badge" id="fc-back-pos">Đại từ</div>
+                                        </div>
+                                        <!-- Sound Speak Button -->
+                                        <button class="speaker-btn" id="fc-speak-btn" onclick="speakWord(event)" title="Nghe phát âm">
+                                            🔊
+                                        </button>
+                                    </div>
+                                    <div class="fc-back-content">
+                                        <div class="fc-back-meaning" id="fc-back-meaning">Bạn, anh, chị</div>
+                                    </div>
+                                    <p class="fc-flip-hint">Click để lật lại mặt trước</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card Navigation Controls -->
+                        <div class="flashcard-controls">
+                            <button class="btn btn-secondary" onclick="prevCard()">Trước</button>
+                            <span class="card-progress" id="fc-progress">1 / 13</span>
+                            <button class="btn btn-secondary" onclick="nextCard()">Tiếp theo</button>
+                        </div>
+                    </div>
+
+                    <!-- TAB 2: CHỮ HÁN BREAKDOWN -->
+                    <div id="panel-characters" class="tab-panel">
+                        <p class="tab-guideline">Hệ thống tự động phân tích từng chữ đơn Hán tự cấu thành từ vựng, giúp bạn nắm chắc bộ thủ và nét viết bút thuận.</p>
+                        
+                        <div class="characters-grid-analysis" id="characters-grid-container">
+                            <!-- Dynamically generated character cards -->
+                        </div>
+                    </div>
+
+                    <!-- TAB 3: PRACTICE / LUYỆN TẬP -->
+                    <div id="panel-practice" class="tab-panel">
+                        
+                        <!-- Quiz Start Panel -->
+                        <div class="quiz-panel active" id="quiz-start-screen">
+                            <div class="quiz-intro-card text-center">
+                                <h3>Sẵn Sàng Thử Thách Bản Thân? 🌟</h3>
+                                <p>Hệ thống tự động thiết kế bộ đề **20 câu hỏi** trắc nghiệm & tự luận đa dạng từ 13 từ vựng của Bài 1 để kiểm tra năng lực của bạn.</p>
+                                <div class="quiz-features-list">
+                                    <div class="q-feat"><span class="bullet-small"></span> Trắc nghiệm chọn Nghĩa & Phiên âm</div>
+                                    <div class="q-feat"><span class="bullet-small"></span> Tự luận dịch từ Việt sang Trung & Điền từ vào câu</div>
+                                    <div class="q-feat"><span class="bullet-small"></span> Đàm thoại thực tế & Nghe phát âm chọn chữ Hán</div>
+                                </div>
+                                <button class="btn btn-secondary btn-lg" onclick="startQuiz()">Bắt đầu Luyện tập &rarr;</button>
+                            </div>
+                        </div>
+
+                        <!-- Quiz Play Screen -->
+                        <div class="quiz-panel" id="quiz-play-screen">
+                            <div class="quiz-header">
+                                <span class="quiz-progress" id="quiz-progress-text">Câu 1 / 20</span>
+                                <div class="quiz-progress-bar-container">
+                                    <div class="quiz-progress-bar-fill" id="quiz-progress-fill" style="width: 5%"></div>
+                                </div>
+                            </div>
+
+                            <div class="quiz-question-card">
+                                <!-- Audio listen trigger button (only shown for listening quizzes) -->
+                                <div class="listen-quiz-trigger-container" id="listen-quiz-box" style="display: none;">
+                                    <button class="speaker-btn listen-quiz-btn" id="listen-speak-trigger" title="Bấm để nghe lại">
+                                        🔊
+                                    </button>
+                                </div>
+                                
+                                <h3 class="question-text" id="quiz-question-text">Câu hỏi đang được tạo...</h3>
+                                
+                                <!-- Multiple Choice Answer Grid -->
+                                <div class="options-grid" id="quiz-options-container">
+                                    <!-- Options will be generated here -->
+                                </div>
+
+                                <!-- Text Input Answer Area (for written/fill-in quizzes) -->
+                                <div class="text-answer-container" id="quiz-text-answer-box" style="display: none;">
+                                    <input type="text" class="cute-input text-answer-input" id="quiz-text-input" placeholder="Gõ chữ Hán chuẩn xác vào đây...">
+                                </div>
+                            </div>
+
+                            <!-- Feedback Alert -->
+                            <div class="quiz-feedback-alert" id="quiz-feedback-box" style="display: none;">
+                                <span id="quiz-feedback-message">Chính xác! 🎉</span>
+                            </div>
+
+                            <!-- Controls -->
+                            <div class="quiz-controls">
+                                <button class="btn btn-secondary" id="quiz-check-btn" onclick="checkQuizAnswer()">Kiểm tra câu trả lời</button>
+                                <button class="btn btn-primary" id="quiz-next-btn" onclick="nextQuizQuestion()" style="display: none;">Câu tiếp theo &rarr;</button>
+                            </div>
+                        </div>
+
+                        <!-- Quiz Results Screen -->
+                        <div class="quiz-panel" id="quiz-result-screen">
+                            <div class="quiz-result-card text-center">
+                                <div class="result-badge" id="result-badge-score">18 / 20</div>
+                                <h3 class="result-title" id="result-score-title">Xuất Sắc! 🎉</h3>
+                                <p class="result-desc" id="result-score-desc">Bạn có khả năng tiếp thu ngôn ngữ cực kỳ tuyệt vời! Hãy tiếp tục duy trì nhé.</p>
+                                
+                                <div class="accuracy-progress-box">
+                                    <span>Tỉ lệ chính xác:</span>
+                                    <strong id="result-accuracy-pct">90%</strong>
+                                </div>
+
+                                <div class="result-buttons">
+                                    <button class="btn btn-primary btn-lg" id="btn-retry-failed" onclick="retryIncorrectQuestions()" style="display: none; background-color: var(--color-pink-dark); color: white; border-color: var(--color-pink-dark);"></button>
+                                    <button class="btn btn-secondary btn-lg" onclick="startQuiz()">Làm lại toàn bộ đề</button>
+                                    <button class="btn btn-secondary btn-lg" onclick="switchLearningTab('flashcard')">Ôn tập từ vựng</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 5: STUDY MATERIALS -->
+        <section id="materials-section" class="app-section">
+            <div class="container">
+                <div class="dashboard-header text-center">
+                    <span class="section-badge">Tài Liệu Học Tập</span>
+                    <h2 class="section-title">Bảng Phiên Âm</h2>
+                    <p class="section-desc">
+                        Tra cứu phiên âm tiếng Trung chuẩn xác. Nhấp chọn bất kỳ âm tiết nào trên bảng để mở bong bóng chọn thanh điệu (ā, á, ǎ, à) và nghe phát âm chuẩn từ cô Chang! 🔊
+                    </p>
+                </div>
+
+                <!-- Scrollable table container -->
+                <div class="pinyin-table-wrapper" style="position: relative; margin-top: 20px;">
+                    <table class="pinyin-table" id="pinyin-chart-table">
+                        <!-- Dynamically generated through JS -->
+                    </table>
+                </div>
+            </div>
+        </section>
+
+    <!-- Floating Tone Menu (Nga HSK Style) -->
+    <div id="toneMenu" style="display: none; position: fixed; background: rgba(255,255,255,0.98); border: 3px solid var(--color-sky-light); border-radius: 16px; padding: 12px; box-shadow: 0 10px 30px rgba(2, 132, 199, 0.15); z-index: 10000; min-width: 250px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; border-bottom: 1px dashed rgba(0, 0, 0, 0.05); padding-bottom: 8px;">
+            <strong id="toneLabel" style="color: var(--color-sky-deep); font-size: 1.4rem; font-family: var(--font-title);">ba</strong>
+            <button id="playAllBtn" class="btn btn-sm btn-primary" onclick="playSequentially()" style="padding: 6px 12px; font-size: 0.85rem; border-radius: 15px; box-shadow: none;">Phát cả 4 thanh 🔊</button>
+        </div>
+        <div class="tone-grid" style="display: flex; gap: 8px; justify-content: space-between;">
+            <button id="btn-t1" class="btn btn-secondary" onclick="playSyllable(1)" style="flex: 1; padding: 10px 4px; font-size: 1.25rem; border-radius: 8px; box-shadow: none; font-weight: 800;">bā</button>
+            <button id="btn-t2" class="btn btn-secondary" onclick="playSyllable(2)" style="flex: 1; padding: 10px 4px; font-size: 1.25rem; border-radius: 8px; box-shadow: none; font-weight: 800;">bá</button>
+            <button id="btn-t3" class="btn btn-secondary" onclick="playSyllable(3)" style="flex: 1; padding: 10px 4px; font-size: 1.25rem; border-radius: 8px; box-shadow: none; font-weight: 800;">bǎ</button>
+            <button id="btn-t4" class="btn btn-secondary" onclick="playSyllable(4)" style="flex: 1; padding: 10px 4px; font-size: 1.25rem; border-radius: 8px; box-shadow: none; font-weight: 800;">bà</button>
+        </div>
+    </div>
+
+    <!-- HTML5 Audio Player for Pinyin Syllables -->
+    <audio id="pinyinAudioPlayer" style="display: none;"></audio>
+
+    <!-- Hanzi Writer for Stroke Order Animations -->
+    <script src="https://cdn.jsdelivr.net/npm/hanzi-writer@3.5/dist/hanzi-writer.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script_v9.js"></script>
+</body>
+</html>
