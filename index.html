@@ -424,12 +424,26 @@
                 <!-- Learning Tool Tabs Selector -->
                 <div class="learning-tabs">
                     <button class="tab-btn active" id="btn-tab-flashcard" onclick="switchLearningTab('flashcard')">Flashcard</button>
+                    <button class="tab-btn" id="btn-tab-dialogue" onclick="switchLearningTab('dialogue')">Bài khóa</button>
                     <button class="tab-btn" id="btn-tab-characters" onclick="switchLearningTab('characters')">Chữ Hán</button>
                     <button class="tab-btn" id="btn-tab-practice" onclick="switchLearningTab('practice')">Luyện tập</button>
                 </div>
 
                 <!-- WORKSPACE CONTENT PANELS -->
                 <div class="workspace-panels">
+                    
+                    <!-- TAB 4: BÀI KHÓA (DIALOGUE) -->
+                    <div id="panel-dialogue" class="tab-panel">
+                        <p class="tab-guideline">Đọc đoạn hội thoại bài khóa dưới đây. Nhấp vào nút Loa để nghe phát âm từng câu, hoặc nhấp nút phát toàn bộ nhé! 🔊</p>
+                        <div class="dialogue-header-controls" style="display: flex; justify-content: center; margin-bottom: 25px;">
+                            <button class="btn btn-secondary" id="btn-play-all-dialogue" onclick="playAllDialogue()" style="font-weight: 700; border-radius: 20px; padding: 10px 24px; box-shadow: 0 4px 10px rgba(186, 230, 253, 0.4);">
+                                Phát toàn bộ bài khóa 🔊
+                            </button>
+                        </div>
+                        <div class="dialogue-container" id="dialogue-content-container">
+                            <!-- Dynamically generated dialogue lines -->
+                        </div>
+                    </div>
                     
                     <!-- TAB 1: FLASHCARDS -->
                     <div id="panel-flashcard" class="tab-panel active">

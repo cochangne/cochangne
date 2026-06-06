@@ -2483,6 +2483,101 @@ img {
     font-weight: 600;
 }
 
+/* ==========================================================================
+   TAB 4: BÀI KHÓA (DIALOGUE) STYLING
+   ========================================================================== */
+.dialogue-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.dialogue-line {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+    background-color: var(--color-white);
+    padding: 18px 24px;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-soft);
+    border: 2px solid var(--color-sky-light);
+    transition: var(--transition-medium);
+}
+
+.dialogue-line:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-hover);
+    border-color: var(--color-sky-primary);
+}
+
+.dialogue-line.active-speaking {
+    border-color: var(--color-pink-primary);
+    background-color: #fff1f2;
+    box-shadow: var(--shadow-pink-hover);
+    transform: scale(1.01);
+}
+
+.dialogue-speaker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    min-width: 100px;
+    flex-shrink: 0;
+}
+
+.dialogue-speaker-badge {
+    padding: 6px 12px;
+    border-radius: 12px;
+    font-weight: 800;
+    font-size: 0.85rem;
+    font-family: var(--font-title);
+    text-align: center;
+    width: 100%;
+}
+
+.speaker-a { background-color: var(--color-sky-light); color: var(--color-sky-deep); }
+.speaker-b { background-color: var(--color-pink-light); color: var(--color-pink-deep); }
+.speaker-teacher { background-color: var(--color-yellow-light); color: var(--color-yellow-deep); }
+
+.dialogue-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.dialogue-text-zh {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--color-text-dark);
+    font-family: var(--font-chinese) !important;
+}
+
+.dialogue-text-pinyin {
+    font-size: 0.95rem;
+    color: var(--color-sky-dark);
+    font-weight: 600;
+}
+
+.dialogue-text-vi {
+    font-size: 0.92rem;
+    color: var(--color-text-light);
+    font-style: italic;
+    border-top: 1px dotted #f1f5f9;
+    padding-top: 4px;
+    margin-top: 4px;
+}
+
+.dialogue-play-btn {
+    align-self: center;
+    flex-shrink: 0;
+}
+
+
 
 
 

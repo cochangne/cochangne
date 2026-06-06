@@ -110,6 +110,42 @@ const VOCAB_GUOJIA = [
     { char: "人", pinyin: "rén", hanViet: "Nhân", meaning: "Người", pos: "Danh từ" }
 ];
 
+const LESSON_DIALOGUES = {
+    "Giao tiếp 1": {
+        1: [
+            { speaker: "Học sinh A", role: "a", zh: "你好！", pinyin: "Nǐ hǎo!", vi: "Chào bạn!" },
+            { speaker: "Học sinh B", role: "b", zh: "你好！", pinyin: "Nǐ hǎo!", vi: "Chào bạn!" },
+            { speaker: "Học sinh A", role: "a", zh: "请问，您贵姓？", pinyin: "Qǐngwèn, nín guìxìng?", vi: "Xin hỏi, ngài họ gì ạ?" },
+            { speaker: "Học sinh B", role: "b", zh: "我姓张。你叫什么名字？", pinyin: "Wǒ xìng Zhāng. Nǐ jiào shénme míngzi?", vi: "Tôi họ Trương. Bạn tên là gì?" },
+            { speaker: "Học sinh A", role: "a", zh: "我叫李明。她是谁？", pinyin: "Wǒ jiào Lǐ Míng. Tā  shì shéi?", vi: "Tôi tên là Lý Minh. Cô ấy là ai?" },
+            { speaker: "Học sinh B", role: "b", zh: "她是我们的老师。老师好！", pinyin: "Tā  shì wǒmen de lǎoshī. Lǎoshī hǎo!", vi: "Cô ấy là cô giáo của chúng ta. Em chào cô ạ!" },
+            { speaker: "Cô giáo", role: "teacher", zh: "你们好！同学们好！", pinyin: "Nǐmen hǎo! Tóngxuémen hǎo!", vi: "Chào các em! Chào các bạn học sinh!" },
+            { speaker: "Học sinh", role: "a", zh: "老师再见！", pinyin: "Lǎoshī zàijiàn!", vi: "Chào tạm biệt cô ạ!" },
+            { speaker: "Cô giáo", role: "teacher", zh: "再见！", pinyin: "Zàijiàn!", vi: "Tạm biệt!" }
+        ],
+        2: [
+            { speaker: "Học sinh A", role: "a", zh: "现在几点？", pinyin: "Xiànzài jǐ diǎn?", vi: "Bây giờ là mấy giờ?" },
+            { speaker: "Học sinh B", role: "b", zh: "现在早上七点半。你几点起床？", pinyin: "Xiànzài zǎoshang qī diǎn bàn. Nǐ jǐ diǎn qǐchuáng?", vi: "Bây giờ là 7 giờ rưỡi sáng. Bạn dậy lúc mấy giờ?" },
+            { speaker: "Học sinh A", role: "a", zh: "我每天七点起床，洗脸、刷牙，然后吃早饭。你呢？", pinyin: "Wǒ měitiān qī diǎn qǐchuáng, xǐliǎn, shuāyá, ránhòu chī zǎofàn. Nǐ ne?", vi: "Mỗi ngày mình dậy lúc 7 giờ, rửa mặt, đánh răng, rồi ăn sáng. Còn bạn?" },
+            { speaker: "Học sinh B", role: "b", zh: "我八点上班，所以我每天六点半起床。", pinyin: "Wǒ bā diǎn shàngbān, suǒyǐ wǒ měitiān liù diǎn bàn qǐchuáng.", vi: "Mình đi làm lúc 8 giờ, nên mỗi ngày mình thức dậy từ 6 giờ rưỡi." },
+            { speaker: "Học sinh A", role: "a", zh: "今天星期几？", pinyin: "Jīntiān xīngqī jǐ?", vi: "Hôm nay là thứ mấy?" },
+            { speaker: "Học sinh B", role: "b", zh: "今天是星期六，周末。下午你做什么？", pinyin: "Jīntiān  shì xīngqīliù, zhōumò. Xiàwǔ nǐ zuò shénme?", vi: "Hôm nay là thứ bảy, cuối tuần. Chiều nay bạn làm gì?" },
+            { speaker: "Học sinh A", role: "a", zh: "下午我去运动，晚上跟朋友见面。明天是我的生日！", pinyin: "Xiàwǔ wǒ qù yùndòng, wǎnshang gēn péngyou jiànmiàn. Míngtiān  shì wǒ de shēngrì!", vi: "Chiều nay mình đi tập thể thao, tối gặp gỡ bạn bè. Ngày mai là sinh nhật của mình!" },
+            { speaker: "Học sinh B", role: "b", zh: "真的吗？祝你生日快乐！", pinyin: "Zhēnde ma? Zhù nǐ shēngrì kuàilè!", vi: "Thật sao? Chúc bạn sinh nhật vui vẻ nhé!" }
+        ]
+    },
+    "Từ vựng theo chủ đề": {
+        1: [
+            { speaker: "Học sinh A", role: "a", zh: "你好！请问你是哪国人？", pinyin: "Nǐ hǎo! Qǐngwèn nǐ shì nǎ guó rén?", vi: "Xin chào! Xin hỏi bạn là người nước nào?" },
+            { speaker: "Học sinh B", role: "b", zh: "你好！我是越南人。定呢？你是美国人吗？", pinyin: "Nǐ hǎo! Wǒ  shì Yuènán rén. Nǐ ne? Nǐ  shì Měiguó rén ma?", vi: "Xin chào! Mình là người Việt Nam. Còn bạn? Bạn là người Mỹ phải không?" },
+            { speaker: "Học sinh A", role: "a", zh: "不，我不是美国人，我是中国人。你去过中国吗？", pinyin: "Bù, wǒ bú  shì Měiguó rén, wǒ  shì Zhōngguó rén. Nǐ qù guo Zhōngguó ma?", vi: "Không, mình không phải người Mỹ, mình là người Trung Quốc. Bạn đã từng đi Trung Quốc chưa?" },
+            { speaker: "Học sinh B", role: "b", zh: "我没去过中国。我想去中国和日本旅游。你呢？", pinyin: "Wǒ méi qù guo Zhōngguó. Wǒ xiǎng qù Zhōngguó hé Rìběn lǚyóu. Nǐ ne?", vi: "Mình chưa từng đi Trung Quốc. Mình muốn đi du lịch Trung Quốc và Nhật Bản. Còn bạn?" },
+            { speaker: "Học sinh A", role: "a", zh: "我去过英国和法国。明年我想去越南！", pinyin: "Wǒ qù guo Yīngguó hé Fǎguó. Míngnián wǒ xiǎng qù Yuènán!", vi: "Mình từng đi Anh và Pháp. Sang năm mình muốn đi Việt Nam!" },
+            { speaker: "Học sinh B", role: "b", zh: "欢迎你来越南！", pinyin: "Huānyíng nǐ lái Yuènán!", vi: "Chào mừng bạn đến với Việt Nam!" }
+        ]
+    }
+};
+
 // Active Vocabulary Database Reference (defaults to Giao tiếp 1)
 let VOCAB_DATA = [...GIAO_TIEP_1_VOCAB];
 
@@ -560,6 +596,7 @@ window.enterLesson = function(lessonNum) {
     // Reset workspace states
     fcIndex = 0;
     loadFlashcard(fcIndex);
+    loadDialogue();
     loadCharacterBreakdowns();
     switchLearningTab('flashcard');
     
@@ -582,6 +619,9 @@ window.exitLessonWorkspace = function() {
  * --------------------------------------------------------------------------
  */
 window.switchLearningTab = function(tabName) {
+    if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+    }
     const tabButtons = document.querySelectorAll('.tab-btn');
     const tabPanels = document.querySelectorAll('.tab-panel');
 
@@ -601,6 +641,130 @@ window.switchLearningTab = function(tabName) {
 
     if (tabName === 'stroke') {
         loadCharacterBreakdowns();
+    }
+};
+
+function loadDialogue() {
+    const container = document.getElementById('dialogue-content-container');
+    if (!container) return;
+
+    container.innerHTML = '';
+    
+    const courseDialogues = LESSON_DIALOGUES[currentCourse];
+    if (!courseDialogues || !courseDialogues[currentLesson]) {
+        container.innerHTML = '<p class="text-center" style="grid-column: 1/-1; padding: 40px; color: var(--color-text-light); font-style: italic;">Bài khóa của bài học này đang được chuẩn bị. Bạn hãy xem các bài khác nhé! 💕</p>';
+        const playAllBtn = document.getElementById('btn-play-all-dialogue');
+        if (playAllBtn) playAllBtn.style.display = 'none';
+        return;
+    }
+
+    const playAllBtn = document.getElementById('btn-play-all-dialogue');
+    if (playAllBtn) playAllBtn.style.display = 'inline-block';
+
+    const lines = courseDialogues[currentLesson];
+    lines.forEach((line, idx) => {
+        const lineDiv = document.createElement('div');
+        lineDiv.className = 'dialogue-line';
+        lineDiv.id = `dialogue-line-${idx}`;
+
+        let roleClass = 'speaker-a';
+        if (line.role === 'b') {
+            roleClass = 'speaker-b';
+        } else if (line.role === 'teacher') {
+            roleClass = 'speaker-teacher';
+        }
+
+        lineDiv.innerHTML = `
+            <div class="dialogue-speaker">
+                <span class="dialogue-speaker-badge ${roleClass}">${line.speaker}</span>
+            </div>
+            <div class="dialogue-content">
+                <span class="dialogue-text-zh">${line.zh}</span>
+                <span class="dialogue-text-pinyin">${line.pinyin}</span>
+                <span class="dialogue-text-vi">${line.vi}</span>
+            </div>
+            <button class="speaker-btn dialogue-play-btn" onclick="speakDialogueLine(${idx})" title="Nghe câu này">
+                🔊
+            </button>
+        `;
+        container.appendChild(lineDiv);
+    });
+}
+
+window.speakDialogueLine = function(index) {
+    if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+
+        // Remove active speaking class from all lines
+        const lines = document.querySelectorAll('.dialogue-line');
+        lines.forEach(line => line.classList.remove('active-speaking'));
+
+        const currentLineEl = document.getElementById(`dialogue-line-${index}`);
+        if (currentLineEl) currentLineEl.classList.add('active-speaking');
+
+        const courseDialogues = LESSON_DIALOGUES[currentCourse];
+        const lineData = courseDialogues[currentLesson][index];
+
+        const utterance = new SpeechSynthesisUtterance(lineData.zh);
+        utterance.lang = 'zh-CN';
+        utterance.rate = 0.85;
+
+        utterance.onend = () => {
+            if (currentLineEl) currentLineEl.classList.remove('active-speaking');
+        };
+
+        window.speechSynthesis.speak(utterance);
+    }
+};
+
+window.playAllDialogue = async function() {
+    if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+
+        const courseDialogues = LESSON_DIALOGUES[currentCourse];
+        if (!courseDialogues || !courseDialogues[currentLesson]) return;
+
+        const lines = courseDialogues[currentLesson];
+        const playBtn = document.getElementById('btn-play-all-dialogue');
+        if (playBtn) {
+            playBtn.disabled = true;
+            playBtn.style.opacity = '0.5';
+        }
+
+        for (let i = 0; i < lines.length; i++) {
+            // Remove active class from all
+            const allLines = document.querySelectorAll('.dialogue-line');
+            allLines.forEach(l => l.classList.remove('active-speaking'));
+
+            const lineEl = document.getElementById(`dialogue-line-${i}`);
+            if (lineEl) {
+                lineEl.classList.add('active-speaking');
+                lineEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+
+            await new Promise((resolve) => {
+                const utterance = new SpeechSynthesisUtterance(lines[i].zh);
+                utterance.lang = 'zh-CN';
+                utterance.rate = 0.85;
+                utterance.onend = () => {
+                    if (lineEl) lineEl.classList.remove('active-speaking');
+                    resolve();
+                };
+                utterance.onerror = () => {
+                    if (lineEl) lineEl.classList.remove('active-speaking');
+                    resolve();
+                };
+                window.speechSynthesis.speak(utterance);
+            });
+
+            // Pause for 1 second between dialogue turns
+            await new Promise(r => setTimeout(r, 1000));
+        }
+
+        if (playBtn) {
+            playBtn.disabled = false;
+            playBtn.style.opacity = '1';
+        }
     }
 };
 
