@@ -1617,8 +1617,55 @@ window.playSyllable = function(tone) {
             return;
         }
 
-        // Tải âm thanh chất lượng chuẩn trực tiếp từ Nga HSK GitHub Pages
-        audioPlayer.src = `https://nga-hoc-hsk.github.io/game-hoc-tieng-trung/audio/${fileName}.mp3`;
+        // Xác định thư mục chứa âm thanh trên chinese.com.vn dựa trên chữ cái đầu
+        let folder = 'row1';
+        if (fileName.startsWith('zh') || fileName.startsWith('ch') || fileName.startsWith('sh') || fileName.startsWith('r')) {
+            folder = 'ZHCHSH';
+        } else if (fileName.startsWith('z') || fileName.startsWith('c') || fileName.startsWith('s')) {
+            folder = 'ZCS';
+        } else if (fileName.startsWith('b') || fileName.startsWith('p') || fileName.startsWith('m') || fileName.startsWith('f')) {
+            folder = 'BPMF';
+        } else if (fileName.startsWith('d') || fileName.startsWith('t') || fileName.startsWith('n') || fileName.startsWith('l')) {
+            folder = 'DTNL';
+        } else if (fileName.startsWith('g') || fileName.startsWith('k') || fileName.startsWith('h')) {
+            folder = 'GKH';
+        } else if (fileName.startsWith('j') || fileName.startsWith('q') || fileName.startsWith('x')) {
+            folder = 'JQX';
+        }
+
+        const pinyinText = applyToneToSyllable(currentSyllable, tone);
+        const btn = document.getElementById(`btn-t${tone}`);
+
+        // Trình phát âm thanh dự phòng bằng AI (TTS) khi không tải được mp3
+        const playTTSFallback = () => {
+            if ('speechSynthesis' in window) {
+                window.speechSynthesis.cancel();
+                
+                const utterance = new SpeechSynthesisUtterance(pinyinText);
+                utterance.lang = 'zh-CN';
+                utterance.rate = 0.7;
+                
+                if (btn) btn.classList.add('playing');
+                
+                utterance.onend = () => {
+                    if (btn) btn.classList.remove('playing');
+                    resolve();
+                };
+                
+                utterance.onerror = () => {
+                    if (btn) btn.classList.remove('playing');
+                    resolve();
+                };
+                
+                window.speechSynthesis.speak(utterance);
+            } else {
+                if (btn) btn.classList.remove('playing');
+                resolve();
+            }
+        };
+
+        // Tải âm thanh chất lượng chuẩn từ website chinese.com.vn
+        audioPlayer.src = `https://chinese.com.vn/wp-content/themes/chinese/audio/pinyinchart/${folder}/${fileName}.mp3`;
         
         // Xóa trạng thái playing ở tất cả các nút thanh điệu trước khi phát âm mới
         for (let t = 1; t <= 4; t++) {
@@ -1627,7 +1674,6 @@ window.playSyllable = function(tone) {
         }
         
         // Hiệu ứng đèn báo playing trên nút thanh điệu tương ứng
-        const btn = document.getElementById(`btn-t${tone}`);
         if (btn) btn.classList.add('playing');
         
         audioPlayer.onended = () => {
@@ -1637,13 +1683,14 @@ window.playSyllable = function(tone) {
         
         audioPlayer.onerror = () => {
             if (btn) btn.classList.remove('playing');
-            console.log("Thiếu file hoặc lỗi âm thanh: " + fileName);
-            resolve(); // Vẫn resolve để không kẹt khi chạy Sequentially
+            console.log("Thiếu file hoặc lỗi âm thanh: " + fileName + ", chuyển sang phát âm AI (TTS)");
+            playTTSFallback();
         };
         
         audioPlayer.play().catch(() => {
             if (btn) btn.classList.remove('playing');
-            resolve();
+            console.log("Không thể tự động phát: " + fileName + ", chuyển sang phát âm AI (TTS)");
+            playTTSFallback();
         });
     });
 };
