@@ -24,7 +24,40 @@ const GIAO_TIEP_1_VOCAB = [
     { char: "姓", pinyin: "xìng", hanViet: "Tính", meaning: "Họ, mang họ", pos: "Động từ" },
     { char: "贵", pinyin: "guì", hanViet: "Quý", meaning: "Quý (họ, quý tính hoặc đắt)", pos: "Tính từ" },
     { char: "怎么", pinyin: "zěnme", hanViet: "Chẩm ma", meaning: "Thế nào", pos: "Đại từ" },
-    { char: "称呼", pinyin: "chēnghu", hanViet: "Xưng hô", meaning: "Xưng hô, gọi là", pos: "Động từ" }
+    { char: "称呼", pinyin: "chēnghu", hanViet: "Xưng hô", meaning: "Xưng hô, gọi là", pos: "Động từ" },
+    { char: "法国", pinyin: "fǎguó", hanViet: "Pháp Quốc", meaning: "Pháp, nước Pháp", pos: "Danh từ" },
+    { char: "日本", pinyin: "rìběn", hanViet: "Nhật Bản", meaning: "Nhật Bản", pos: "Danh từ" },
+    { char: "德国", pinyin: "déguó", hanViet: "Đức Quốc", meaning: "Đức, nước Đức", pos: "Danh từ" },
+    { char: "西班牙", pinyin: "xībānyá", hanViet: "Tây Ban Nha", meaning: "Tây Ban Nha", pos: "Danh từ" },
+    { char: "谢谢", pinyin: "xièxie", hanViet: "Tạ tạ", meaning: "Cảm ơn", pos: "Động từ" },
+    { char: "不客气", pinyin: "bú kèqi", hanViet: "Bất khách khí", meaning: "Đừng khách sáo, không có gì", pos: "Động từ" },
+    { char: "对不起", pinyin: "duìbuqǐ", hanViet: "Đối bất khởi", meaning: "Xin lỗi", pos: "Động từ" },
+    { char: "没关系", pinyin: "méi guānxi", hanViet: "Một quan hệ", meaning: "Không sao đâu, không có gì", pos: "Động từ" },
+    { char: "越南", pinyin: "yuènán", hanViet: "Việt Nam", meaning: "Việt Nam", pos: "Danh từ" },
+    { char: "中国", pinyin: "zhōngguó", hanViet: "Trung Quốc", meaning: "Trung Quốc", pos: "Danh từ" },
+    { char: "美国", pinyin: "měiguó", hanViet: "Mỹ Quốc", meaning: "Mỹ, nước Mỹ", pos: "Danh từ" },
+    { char: "英国", pinyin: "yīngguó", hanViet: "Anh Quốc", meaning: "Anh, nước Anh", pos: "Danh từ" },
+    { char: "意大利", pinyin: "yìdàlì", hanViet: "Ý Đại Lợi", meaning: "Ý, nước Ý", pos: "Danh từ" },
+    { char: "韩国", pinyin: "hánguó", hanViet: "Hàn Quốc", meaning: "Hàn Quốc", pos: "Danh từ" },
+    { char: "泰国", pinyin: "tàiguó", hanViet: "Thái Quốc", meaning: "Thái Lan", pos: "Danh từ" },
+    { char: "国家", pinyin: "guójiā", hanViet: "Quốc gia", meaning: "Quốc gia, đất nước", pos: "Danh từ" },
+    { char: "哪", pinyin: "nǎ", hanViet: "Nả", meaning: "Nào", pos: "Đại từ" },
+    { char: "人", pinyin: "rén", hanViet: "Nhân", meaning: "Người", pos: "Danh từ" },
+    { char: "是", pinyin: "shì", hanViet: "Thị", meaning: "Là, vâng, đúng", pos: "Động từ" },
+    { char: "手机", pinyin: "shǒujī", hanViet: "Thủ cơ", meaning: "Điện thoại di động", pos: "Danh từ" },
+    { char: "号码", pinyin: "hàomǎ", hanViet: "Hiệu mã", meaning: "Số, số điện thoại", pos: "Danh từ" },
+    { char: "多少", pinyin: "duōshǎo", hanViet: "Đa thiểu", meaning: "Bao nhiêu", pos: "Đại từ" },
+    { char: "的", pinyin: "de", hanViet: "Đích", meaning: "Của / trợ từ sở hữu", pos: "Trợ từ" },
+    { char: "一", pinyin: "yī", hanViet: "Nhất", meaning: "Một", pos: "Số từ" },
+    { char: "二", pinyin: "èr", hanViet: "Nhị", meaning: "Hai", pos: "Số từ" },
+    { char: "三", pinyin: "sān", hanViet: "Tam", meaning: "Ba", pos: "Số từ" },
+    { char: "四", pinyin: "sì", hanViet: "Tứ", meaning: "Bốn", pos: "Số từ" },
+    { char: "五", pinyin: "wǔ", hanViet: "Ngũ", meaning: "Năm", pos: "Số từ" },
+    { char: "六", pinyin: "liù", hanViet: "Lục", meaning: "Sáu", pos: "Số từ" },
+    { char: "七", pinyin: "qī", hanViet: "Thất", meaning: "Bảy", pos: "Số từ" },
+    { char: "八", pinyin: "bā", hanViet: "Bát", meaning: "Tám", pos: "Số từ" },
+    { char: "九", pinyin: "jiǔ", hanViet: "Cửu", meaning: "Chín", pos: "Số từ" },
+    { char: "十", pinyin: "shí", hanViet: "Thập", meaning: "Mười", pos: "Số từ" }
 ];
 
 const GIAO_TIEP_1_B2_VOCAB = [
@@ -265,7 +298,32 @@ const CHAR_DATABASE = {
     "明": { hanViet: "Minh", radical: "Nhật (日) - mặt trời, ánh sáng", strokes: 8 },
     "后": { hanViet: "Hậu", radical: "Khẩu (口) - miệng", strokes: 6 },
     "这": { hanViet: "Giá", radical: "Sước (辶) - bước đi", strokes: 7 },
-    "个": { hanViet: "Cá", radical: "Nhân (人) - người", strokes: 3 }
+    "个": { hanViet: "Cá", radical: "Nhân (人) - người", strokes: 3 },
+    "谢": { hanViet: "Tạ", radical: "Ngôn (讠) - liên quan đến ngôn ngữ, lời nói", strokes: 12 },
+    "不": { hanViet: "Bất", radical: "Nhất (一) - một", strokes: 4 },
+    "客": { hanViet: "Khách", radical: "Miên (宀) - mái nhà", strokes: 9 },
+    "气": { hanViet: "Khí", radical: "Khí (气) - hơi nước, khí", strokes: 4 },
+    "对": { hanViet: "Đối", radical: "Thốn (寸) - tấc, đo lường", strokes: 5 },
+    "没": { hanViet: "Một / Một", radical: "Thủy (氵) - nước", strokes: 7 },
+    "关": { hanViet: "Quan", radical: "Bát (八) - tám", strokes: 6 },
+    "系": { hanViet: "Hệ", radical: "Tịch (糸) - sợi tơ", strokes: 7 },
+    "是": { hanViet: "Thị", radical: "Nhật (日) - mặt trời, ngày", strokes: 9 },
+    "手": { hanViet: "Thủ", radical: "Thủ (手) - tay", strokes: 4 },
+    "机": { hanViet: "Cơ", radical: "Mộc (木) - cây cối", strokes: 6 },
+    "码": { hanViet: "Mã", radical: "Thạch (石) - đá", strokes: 8 },
+    "多": { hanViet: "Đa", radical: "Tịch (夕) - đêm tối", strokes: 6 },
+    "少": { hanViet: "Thiểu / Thiếu", radical: "Tiểu (小) - nhỏ", strokes: 4 },
+    "的": { hanViet: "Đích", radical: "Bạch (白) - màu trắng", strokes: 8 },
+    "一": { hanViet: "Nhất", radical: "Nhất (一) - số một", strokes: 1 },
+    "二": { hanViet: "Nhị", radical: "Nhị (二) - số hai", strokes: 2 },
+    "三": { hanViet: "Tam", radical: "Nhất (一) - số một", strokes: 3 },
+    "四": { hanViet: "Tứ", radical: "Vi (囗) - vây quanh", strokes: 5 },
+    "五": { hanViet: "Ngũ", radical: "Nhị (二) - số hai", strokes: 4 },
+    "六": { hanViet: "Lục", radical: "Bát (八) - số tám", strokes: 4 },
+    "七": { hanViet: "Thất", radical: "Nhất (一) - số một", strokes: 2 },
+    "八": { hanViet: "Bát", radical: "Bát (八) - số tám", strokes: 2 },
+    "九": { hanViet: "Cửu", radical: "Ất (乙) - vị trí thứ hai trong thiên can", strokes: 2 },
+    "十": { hanViet: "Thập", radical: "Thập (十) - số mười", strokes: 2 }
 };
 
 // Application State Variables
@@ -287,6 +345,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // Default load flashcard and character tab items
     loadFlashcard(fcIndex);
     loadCharacterBreakdowns();
+
+    // Chinese character search filter input event listener
+    const searchInput = document.getElementById('char-search-input');
+    if (searchInput) {
+        searchInput.addEventListener('input', () => {
+            loadCharacterBreakdowns();
+        });
+    }
 
     // Restore course and lesson states
     const savedCourse = localStorage.getItem('currentCourse');
@@ -400,11 +466,16 @@ function initSPARouter() {
             e.preventDefault();
             const targetHash = link.getAttribute('href');
             
-            // Close mobile menu drawer
-            const drawer = document.getElementById('mobile-drawer');
-            const overlay = document.getElementById('mobile-overlay');
-            drawer.classList.remove('open');
-            overlay.classList.remove('active');
+            // Close mobile menu drawer and unlock body scroll
+            if (typeof window.closeMobileDrawer === 'function') {
+                window.closeMobileDrawer();
+            } else {
+                const drawer = document.getElementById('mobile-drawer');
+                const overlay = document.getElementById('mobile-overlay');
+                if (drawer) drawer.classList.remove('open');
+                if (overlay) overlay.classList.remove('active');
+                document.body.style.overflow = '';
+            }
             
             setTimeout(() => {
                 navigateToSection(targetHash.replace('#', ''));
@@ -413,11 +484,13 @@ function initSPARouter() {
         });
     });
 
-    logoLink.addEventListener('click', (e) => {
-        e.preventDefault();
-        navigateToSection('home');
-        history.pushState(null, null, '#home');
-    });
+    if (logoLink) {
+        logoLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            navigateToSection('home');
+            history.pushState(null, null, '#home');
+        });
+    }
 }
 
 /**
@@ -431,6 +504,8 @@ function initMobileNav() {
     const drawer = document.getElementById('mobile-drawer');
     const overlay = document.getElementById('mobile-overlay');
     
+    if (!toggleBtn || !closeBtn || !drawer || !overlay) return;
+    
     toggleBtn.addEventListener('click', () => {
         drawer.classList.add('open');
         overlay.classList.add('active');
@@ -442,6 +517,8 @@ function initMobileNav() {
         overlay.classList.remove('active');
         document.body.style.overflow = '';
     };
+
+    window.closeMobileDrawer = closeDrawer;
 
     closeBtn.addEventListener('click', closeDrawer);
     overlay.addEventListener('click', closeDrawer);
@@ -655,10 +732,19 @@ window.enterLesson = function(lessonNum) {
     fcIndex = 0;
     loadFlashcard(fcIndex);
     loadDialogue();
+    const searchInput = document.getElementById('char-search-input');
+    if (searchInput) searchInput.value = '';
     loadCharacterBreakdowns();
     // Restore saved tab or default to 'flashcard'
     const savedTab = localStorage.getItem('currentTab') || 'flashcard';
     switchLearningTab(savedTab);
+
+    // Update quiz start screen text dynamically
+    const quizDescEl = document.getElementById('quiz-intro-desc');
+    if (quizDescEl) {
+        let lessonName = currentCourse === "Giao tiếp 1" ? `Bài ${lessonNum}` : `Chủ đề ${lessonNum}`;
+        quizDescEl.innerHTML = `Hệ thống tự động thiết kế bộ đề **30 câu hỏi** trắc nghiệm & tự luận đa dạng từ ${VOCAB_DATA.length} từ vựng của ${lessonName} để kiểm tra năng lực của bạn.`;
+    }
     
     // Reset quiz startup screen
     document.getElementById('quiz-start-screen').classList.add('active');
@@ -910,12 +996,25 @@ function loadCharacterBreakdowns() {
 
     gridContainer.innerHTML = ''; // Reset grid container
     
+    const searchInput = document.getElementById('char-search-input');
+    const query = searchInput ? searchInput.value.trim().toLowerCase() : '';
+
     // Parse single characters from vocabularies database
     const uniqueChars = [];
     VOCAB_DATA.forEach(word => {
         for (let i = 0; i < word.char.length; i++) {
             const char = word.char[i];
             if (!uniqueChars.includes(char) && CHAR_DATABASE[char]) {
+                if (query) {
+                    const data = CHAR_DATABASE[char];
+                    const matchesChar = char.toLowerCase().includes(query);
+                    const matchesHanViet = data.hanViet && data.hanViet.toLowerCase().includes(query);
+                    const matchesRadical = data.radical && data.radical.toLowerCase().includes(query);
+                    
+                    if (!matchesChar && !matchesHanViet && !matchesRadical) {
+                        continue;
+                    }
+                }
                 uniqueChars.push(char);
             }
         }
@@ -1083,7 +1182,22 @@ function generateQuizQuestions() {
             dialogues = [
                 { q: 'Điền từ vào ô trống:<br>A: <span class="chinese-char">你好！</span><br>B: <span class="chinese-char">_______！</span>', ans: "你好", opts: ["你好", "谢谢", "老师", "再见"] },
                 { q: 'Điền từ vào ô trống:<br>A: <span class="chinese-char">您好！老师。</span><br>B: <span class="chinese-char">_______！</span>', ans: "你好", opts: ["你好", "您好", "再见", "叫什么"] },
-                { q: 'Điền từ vào ô trống:<br>A: <span class="chinese-char">你叫什么名字？</span><br>B: <span class="chinese-char">我_______张丽。</span>', ans: "叫", opts: ["叫", "老师", "您", "同学"] }
+                { q: 'Điền từ vào ô trống:<br>A: <span class="chinese-char">您贵姓？</span><br>B: <span class="chinese-char">我_______张。</span>', ans: "姓", opts: ["姓", "叫", "是", "的"] },
+                { q: 'Điền từ vào ô trống:<br>A: <span class="chinese-char">谢谢你！</span><br>B: <span class="chinese-char">_______！</span>', ans: "不客气", opts: ["不客气", "没关系", "对不起", "你好"] },
+                { q: 'Điền từ vào ô trống:<br>A: <span class="chinese-char">对不起！</span><br>B: <span class="chinese-char">_______。</span>', ans: "没关系", opts: ["没关系", "不客气", "谢谢", "再见"] },
+                { q: 'Điền từ vào ô trống:<br>A: <span class="chinese-char">你是哪国人？</span><br>B: <span class="chinese-char">我是_______人。</span> (Gợi ý: Việt Nam)', ans: "越南", opts: ["越南", "美国", "日本", "英国"] },
+                { q: 'Điền từ vào ô trống:<br>A: <span class="chinese-char">请问，你是美国人吗？</span><br>B: <span class="chinese-char">不，我_______美国人，我是英国人。</span>', ans: "不是", opts: ["不是", "是", "叫", "姓"] },
+                { q: 'Điền từ vào ô trống:<br>A: <span class="chinese-char">你的手机号码是_______？</span><br>B: <span class="chinese-char">我的手机号码是 0912345678。</span>', ans: "多少", opts: ["多少", "什么", "怎么", "哪"] },
+                { q: 'Điền từ vào ô trống:<br>A: <span class="chinese-char">他是哪国人？</span><br>B: <span class="chinese-char">他是_______人。</span> (Gợi ý: Nhật Bản)', ans: "日本", opts: ["日本", "韩国", "泰国", "德国"] },
+                { q: 'Điền từ vào ô trống:<br>A: <span class="chinese-char">老师是哪国人？</span><br>B: <span class="chinese-char">老师是_______人。</span> (Gợi ý: Nước Pháp)', ans: "法国", opts: ["法国", "中国", "意大利", "西班牙"] },
+                { q: 'Điền từ vào ô trống:<br>A: <span class="chinese-char">越南和中国是_______吗？</span><br>B: <span class="chinese-char">是的，它们是国家。</span>', ans: "国家", opts: ["国家", "名字", "同学", "号码"] },
+                { q: 'Điền từ vào ô trống:<br>A: <span class="chinese-char">她的手机_______是多少？</span><br>B: <span class="chinese-char">是 0988888888。</span>', ans: "号码", opts: ["号码", "手机", "名字", "老师"] },
+                { q: 'Điền từ vào ô trống:<br>A: <span class="chinese-char">你是_______国人？</span><br>B: <span class="chinese-char">我是德国人。</span>', ans: "哪", opts: ["哪", "什么", "giữ", "谁"] },
+                { q: 'Điền từ vào ô trống:<br>A: <span class="chinese-char">他是韩国人吗？</span><br>B: <span class="chinese-char">不，他是_______人。</span> (Gợi ý: Thái Lan)', ans: "泰国", opts: ["泰国", "韩国", "日本", "越南"] },
+                { q: 'Điền từ vào ô trống:<br>A: <span class="chinese-char">_______，你是李老师吗？</span><br>B: <span class="chinese-char">是的，我姓李。</span>', ans: "请问", opts: ["请问", "谢谢", "对不起", "没关系"] },
+                { q: 'Điền từ vào ô trống:<br>A: <span class="chinese-char">你_______什么名字？</span><br>B: <span class="chinese-char">我叫玛丽。</span>', ans: "叫", opts: ["叫", "是", "姓", "的"] },
+                { q: 'Điền từ vào ô trống:<br>A: <span class="chinese-char">你的手机号码是多少？</span><br>B: <span class="chinese-char">我的号码是：一二三_______五六七八九十。</span>', ans: "sì", opts: ["sì", "sí", "shí", "shì"] },
+                { q: 'Điền từ vào ô trống:<br>A: <span class="chinese-char">他是西班牙人吗？</span><br>B: <span class="chinese-char">是的，他是_______人。</span>', ans: "西班牙", opts: ["西班牙", "意大利", "英国", "德国"] }
             ];
         } else if (currentLesson === 2) {
             dialogues = [
@@ -1114,13 +1228,88 @@ function generateQuizQuestions() {
         if (currentLesson === 1) {
             quizQuestions.push({
                 type: "written-fill-blank",
-                question: `Điền chữ Hán thích hợp vào chỗ trống: <span class="chinese-char">我 ____ 丽丽。</span> (jiào）`,
+                question: `Điền chữ Hán thích hợp vào chỗ trống: <span class="chinese-char">我 ____ 丽丽。</span>`,
                 correctAnswer: "叫"
             });
             quizQuestions.push({
                 type: "written-fill-blank",
-                question: `Điền chữ Hán thích hợp vào chỗ trống: <span class="chinese-char">____ 老师！</span> (nín hǎo - Chào giáo viên kính trọng)`,
+                question: `Điền chữ Hán thích hợp vào chỗ trống để chào kính trọng thầy cô: <span class="chinese-char">____ 老师！</span>`,
                 correctAnswer: "您好"
+            });
+            quizQuestions.push({
+                type: "written-fill-blank",
+                question: `Điền chữ Hán thích hợp để dịch câu "Tôi là người Việt Nam": <span class="chinese-char">我是____人。</span>`,
+                correctAnswer: "越南"
+            });
+            quizQuestions.push({
+                type: "written-fill-blank",
+                question: `Điền chữ Hán thích hợp để dịch câu "Cảm ơn bạn!": <span class="chinese-char">____你！</span>`,
+                correctAnswer: "谢谢"
+            });
+            quizQuestions.push({
+                type: "written-fill-blank",
+                question: `Điền chữ Hán thích hợp để dịch câu "Không sao đâu": <span class="chinese-char">没____。</span>`,
+                correctAnswer: "关系"
+            });
+            quizQuestions.push({
+                type: "written-fill-blank",
+                question: `Điền chữ Hán thích hợp để dịch câu "Xin lỗi": <span class="chinese-char">对____起。</span>`,
+                correctAnswer: "不"
+            });
+            quizQuestions.push({
+                type: "written-fill-blank",
+                question: `Điền chữ Hán thích hợp để dịch câu "Điện thoại di động của tôi": <span class="chinese-char">我的手____。</span>`,
+                correctAnswer: "机"
+            });
+            quizQuestions.push({
+                type: "written-fill-blank",
+                question: `Điền chữ Hán thích hợp để dịch câu "Bao nhiêu người": <span class="chinese-char">多少____？</span>`,
+                correctAnswer: "人"
+            });
+            quizQuestions.push({
+                type: "written-fill-blank",
+                question: `Điền chữ Hán thích hợp để dịch "Việt Nam và Trung Quốc là quốc gia": <span class="chinese-char">越南和中国是____家。</span>`,
+                correctAnswer: "国"
+            });
+            quizQuestions.push({
+                type: "written-fill-blank",
+                question: `Điền chữ Hán thích hợp để dịch câu "Anh ấy là người Mỹ": <span class="chinese-char">他____美国人。</span>`,
+                correctAnswer: "是"
+            });
+            quizQuestions.push({
+                type: "written-fill-blank",
+                question: `Điền chữ Hán thích hợp: <span class="chinese-char">你的手机____码是多少？</span>`,
+                correctAnswer: "号"
+            });
+            quizQuestions.push({
+                type: "written-fill-blank",
+                question: `Điền chữ Hán thích hợp: <span class="chinese-char">一、二、三、____、五。</span>`,
+                correctAnswer: "四"
+            });
+            quizQuestions.push({
+                type: "written-fill-blank",
+                question: `Điền chữ Hán thích hợp để dịch "Tây Ban Nha": <span class="chinese-char">西____牙。</span>`,
+                correctAnswer: "班"
+            });
+            quizQuestions.push({
+                type: "written-fill-blank",
+                question: `Điền chữ Hán thích hợp: <span class="chinese-char">他是哪____人？</span>`,
+                correctAnswer: "国"
+            });
+            quizQuestions.push({
+                type: "written-fill-blank",
+                question: `Điền chữ Hán thích hợp để dịch "Tôi không phải người Anh": <span class="chinese-char">我不是英____人。</span>`,
+                correctAnswer: "国"
+            });
+            quizQuestions.push({
+                type: "written-fill-blank",
+                question: `Điền chữ Hán thích hợp để dịch "Đừng khách sáo": <span class="chinese-char">不____气。</span>`,
+                correctAnswer: "客"
+            });
+            quizQuestions.push({
+                type: "written-fill-blank",
+                question: `Điền chữ Hán thích hợp để dịch "Anh ấy là người Ý": <span class="chinese-char">他是意____利人。</span>`,
+                correctAnswer: "大"
             });
         } else if (currentLesson === 2) {
             quizQuestions.push({
@@ -1172,7 +1361,7 @@ function generateQuizQuestions() {
     }
 
     // Shuffle the absolute questions so it generates a completely random dynamic test!
-    quizQuestions = shuffleArray(quizQuestions);
+    quizQuestions = shuffleArray(quizQuestions).slice(0, 30);
 }
 
 function loadQuizQuestion(index) {

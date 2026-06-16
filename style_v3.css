@@ -388,11 +388,17 @@ img {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    transition: transform var(--transition-slow);
+    transition: var(--transition-slow);
     border-left: 3px dashed var(--color-pink-primary);
+    visibility: hidden;
+    pointer-events: none;
 }
 
-.mobile-drawer.open { transform: translateX(-300px); }
+.mobile-drawer.open {
+    transform: translateX(-300px);
+    visibility: visible;
+    pointer-events: auto;
+}
 
 .mobile-drawer-close {
     align-self: flex-end;

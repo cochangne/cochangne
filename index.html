@@ -477,6 +477,14 @@
                     <div id="panel-characters" class="tab-panel">
                         <p class="tab-guideline">Hệ thống tự động phân tích từng chữ đơn Hán tự cấu thành từ vựng, giúp bạn nắm chắc bộ thủ và nét viết bút thuận.</p>
                         
+                        <!-- Search Box for Chinese Characters -->
+                        <div class="char-search-wrapper" style="margin-bottom: 25px; display: flex; justify-content: center; width: 100%;">
+                            <div class="search-box-container" style="max-width: 500px; width: 100%;">
+                                <span class="search-icon">🔍</span>
+                                <input type="text" id="char-search-input" placeholder="Tìm chữ Hán hoặc phiên âm Hán-Việt... 🌸" class="cute-search-input">
+                            </div>
+                        </div>
+
                         <div class="characters-grid-analysis" id="characters-grid-container">
                             <!-- Dynamically generated character cards -->
                         </div>
@@ -489,7 +497,7 @@
                         <div class="quiz-panel active" id="quiz-start-screen">
                             <div class="quiz-intro-card text-center">
                                 <h3>Sẵn Sàng Thử Thách Bản Thân? 🌟</h3>
-                                <p>Hệ thống tự động thiết kế bộ đề **20 câu hỏi** trắc nghiệm & tự luận đa dạng từ 13 từ vựng của Bài 1 để kiểm tra năng lực của bạn.</p>
+                                <p id="quiz-intro-desc">Hệ thống tự động thiết kế bộ đề **30 câu hỏi** trắc nghiệm & tự luận đa dạng từ 52 từ vựng của Bài 1 để kiểm tra năng lực của bạn.</p>
                                 <div class="quiz-features-list">
                                     <div class="q-feat"><span class="bullet-small"></span> Trắc nghiệm chọn Nghĩa & Phiên âm</div>
                                     <div class="q-feat"><span class="bullet-small"></span> Tự luận dịch từ Việt sang Trung & Điền từ vào câu</div>
@@ -502,7 +510,7 @@
                         <!-- Quiz Play Screen -->
                         <div class="quiz-panel" id="quiz-play-screen">
                             <div class="quiz-header">
-                                <span class="quiz-progress" id="quiz-progress-text">Câu 1 / 20</span>
+                                <span class="quiz-progress" id="quiz-progress-text">Câu 1 / 30</span>
                                 <div class="quiz-progress-bar-container">
                                     <div class="quiz-progress-bar-fill" id="quiz-progress-fill" style="width: 5%"></div>
                                 </div>
@@ -544,7 +552,7 @@
                         <!-- Quiz Results Screen -->
                         <div class="quiz-panel" id="quiz-result-screen">
                             <div class="quiz-result-card text-center">
-                                <div class="result-badge" id="result-badge-score">18 / 20</div>
+                                <div class="result-badge" id="result-badge-score">30 / 30</div>
                                 <h3 class="result-title" id="result-score-title">Xuất Sắc! 🎉</h3>
                                 <p class="result-desc" id="result-score-desc">Bạn có khả năng tiếp thu ngôn ngữ cực kỳ tuyệt vời! Hãy tiếp tục duy trì nhé.</p>
                                 
