@@ -124,6 +124,27 @@ const GIAO_TIEP_1_B2_VOCAB = [
     { char: "下个月", pinyin: "xià ge yuè", hanViet: "Hạ cá nguyệt", meaning: "Tháng sau", pos: "Danh từ" }
 ];
 
+const GIAO_TIEP_1_B5_VOCAB = [
+    { char: "家", pinyin: "jiā", hanViet: "Gia", meaning: "Nhà, gia đình", pos: "Danh từ" },
+    { char: "口", pinyin: "kǒu", hanViet: "Khẩu", meaning: "Miệng (lượng từ chỉ số thành viên trong gia đình)", pos: "Lượng từ" },
+    { char: "个", pinyin: "gè", hanViet: "Cá", meaning: "Cái, chiếc (lượng từ phổ biến nhất)", pos: "Lượng từ" },
+    { char: "爸爸", pinyin: "bàba", hanViet: "Bả ba", meaning: "Bố, ba, cha", pos: "Danh từ" },
+    { char: "妈妈", pinyin: "māma", hanViet: "Ma ma", meaning: "Mẹ, má", pos: "Danh từ" },
+    { char: "哥哥", pinyin: "gēge", hanViet: "Ca ca", meaning: "Anh trai", pos: "Danh từ" },
+    { char: "弟弟", pinyin: "dìdi", hanViet: "Đệ đệ", meaning: "Em trai", pos: "Danh từ" },
+    { char: "姐姐", pinyin: "jiějie", hanViet: "Tỷ tỷ", meaning: "Chị gái", pos: "Danh từ" },
+    { char: "妹妹", pinyin: "mèimei", hanViet: "Muội muội", meaning: "Em gái", pos: "Danh từ" },
+    { char: "爷爷", pinyin: "yéye", hanViet: "Gia gia", meaning: "Ông nội", pos: "Danh từ" },
+    { char: "奶奶", pinyin: "nǎinai", hanViet: "Nãi nãi", meaning: "Bà nội", pos: "Danh từ" },
+    { char: "外公", pinyin: "wàigōng", hanViet: "Ngoại công", meaning: "Ông ngoại", pos: "Danh từ" },
+    { char: "外婆", pinyin: "wàipó", hanViet: "Ngoại bà", meaning: "Bà ngoại", pos: "Danh từ" },
+    { char: "兄弟姐妹", pinyin: "xiōngdì jiěmèi", hanViet: "Huynh đệ tỷ muội", meaning: "Anh chị em", pos: "Danh từ" },
+    { char: "和", pinyin: "hé", hanViet: "Hòa", meaning: "Và, với", pos: "Liên từ" },
+    { char: "有", pinyin: "yǒu", hanViet: "Hữu", meaning: "Có", pos: "Động từ" },
+    { char: "没有", pinyin: "méiyǒu", hanViet: "Một hữu", meaning: "Không có", pos: "Động từ" }
+];
+
+
 const VOCAB_GUOJIA = [
     { char: "国家", pinyin: "guójiā", hanViet: "Quốc gia", meaning: "Quốc gia, đất nước", pos: "Danh từ" },
     { char: "越南", pinyin: "Yuènán", hanViet: "Việt Nam", meaning: "Việt Nam", pos: "Danh từ" },
@@ -165,6 +186,15 @@ const LESSON_DIALOGUES = {
             { speaker: "Học sinh B", role: "b", zh: "今天是星期六，周末。下午你做什么？", pinyin: "Jīntiān  shì xīngqīliù, zhōumò. Xiàwǔ nǐ zuò shénme?", vi: "Hôm nay là thứ bảy, cuối tuần. Chiều nay bạn làm gì?" },
             { speaker: "Học sinh A", role: "a", zh: "下午我去运动，晚上跟朋友见面。明天是我的生日！", pinyin: "Xiàwǔ wǒ qù yùndòng, wǎnshang gēn péngyou jiànmiàn. Míngtiān  shì wǒ de shēngrì!", vi: "Chiều nay mình đi tập thể thao, tối gặp gỡ bạn bè. Ngày mai là sinh nhật của mình!" },
             { speaker: "Học sinh B", role: "b", zh: "真的吗？祝你生日快乐！", pinyin: "Zhēnde ma? Zhù nǐ shēngrì kuàilè!", vi: "Thật sao? Chúc bạn sinh nhật vui vẻ nhé!" }
+        ],
+        5: [
+            { speaker: "Học sinh A", role: "a", zh: "你家有几口人？", pinyin: "Nǐ jiā yǒu jǐ kǒu rén?", vi: "Nhà bạn có mấy người?" },
+            { speaker: "Học sinh B", role: "b", zh: "我家有五口人：爸爸、妈妈、哥哥、妹妹和我。你呢？", pinyin: "Wǒ jiā yǒu wǔ kǒu rén: bàba, māma, gēge, mèimei hé wǒ. Nǐ ne?", vi: "Nhà tôi có 5 người: bố, mẹ, anh trai, em gái và tôi. Còn bạn?" },
+            { speaker: "Học sinh A", role: "a", zh: "我没有哥哥和妹妹，我有一个弟弟。", pinyin: "Wǒ méiyǒu gēge hé mèimei, wǒ yǒu yí gè dìdi.", vi: "Tôi không có anh trai và em gái, tôi có một em trai." },
+            { speaker: "Học sinh B", role: "b", zh: "你哥哥在哪儿工作？", pinyin: "Nǐ gēge zài nǎr gōngzuò?", vi: "Anh trai bạn làm việc ở đâu?" },
+            { speaker: "Học sinh A", role: "a", zh: "他在学校工作，他是老师。", pinyin: "Tā zài xuéxiào gōngzuò, tā shì lǎoshī.", vi: "Anh ấy làm việc ở trường học, anh ấy là giáo viên." },
+            { speaker: "Học sinh B", role: "b", zh: "你有爷爷、奶奶吗？", pinyin: "Nǐ yǒu yéye, nǎinai ma?", vi: "Bạn có ông bà nội không?" },
+            { speaker: "Học sinh A", role: "a", zh: "有，我也有外公和外婆。", pinyin: "Yǒu, wǒ yě yǒu wàigōng hé wàipó.", vi: "Có, tôi cũng có ông ngoại và bà ngoại." }
         ]
     },
     "Từ vựng theo chủ đề": {
@@ -323,7 +353,22 @@ const CHAR_DATABASE = {
     "七": { hanViet: "Thất", radical: "Nhất (一) - số một", strokes: 2 },
     "八": { hanViet: "Bát", radical: "Bát (八) - số tám", strokes: 2 },
     "九": { hanViet: "Cửu", radical: "Ất (乙) - vị trí thứ hai trong thiên can", strokes: 2 },
-    "十": { hanViet: "Thập", radical: "Thập (十) - số mười", strokes: 2 }
+    "十": { hanViet: "Thập", radical: "Thập (十) - số mười", strokes: 2 },
+    "口": { hanViet: "Khẩu", radical: "Khẩu (口) - cái miệng", strokes: 3, strokeSteps: ["1. Sổ đứng (竖)", "2. Ngang gập (横折)", "3. Ngang đáy (横)"] },
+    "爸": { hanViet: "Bả", radical: "Phụ (父) - người cha", strokes: 8, strokeSteps: ["1. Phẩy (撇)", "2. Chấm (点)", "3. Phẩy (撇)", "4. Mác (捺)", "5. Ngang gập (横折)", "6. Sổ (竖)", "7. Ngang gập uốn móc (横折弯钩)", "8. Sổ dọc (竖)"] },
+    "妈": { hanViet: "Ma", radical: "Nữ (女) - phụ nữ", strokes: 6, strokeSteps: ["1. Phẩy gập (撇折)", "2. Phẩy (撇)", "3. Ngang (横)", "4. Ngang gập gập móc (横折折折钩)", "5. Sổ đứng (竖)", "6. Ngang (横)"] },
+    "哥": { hanViet: "Ca", radical: "Khẩu (口) - cái miệng", strokes: 10, strokeSteps: ["1. Ngang (横)", "2. Sổ (竖)", "3. Ngang gập (横折)", "4. Ngang (横)", "5. Sổ đứng dọc (竖)", "6. Ngang (横)", "7. Sổ (竖)", "8. Ngang gập (横折)", "9. Ngang (横)", "10. Sổ dọc móc (竖钩)"] },
+    "弟": { hanViet: "Đệ", radical: "Cung (弓) - cái cung", strokes: 7, strokeSteps: ["1. Chấm (点)", "2. Phẩy (撇)", "3. Ngang gập (横折)", "4. Ngang (横)", "5. Sổ dọc (竖)", "6. Ngang gập móc (横折钩)", "7. Phẩy (撇)"] },
+    "姐": { hanViet: "Tỷ", radical: "Nữ (女) - phụ nữ", strokes: 8, strokeSteps: ["1. Phẩy gập (撇折)", "2. Phẩy (撇)", "3. Ngang (横)", "4. Ngang gập (横折)", "5. Ngang (横)", "6. Ngang (横)", "7. Sổ (竖)", "8. Ngang khép đáy (横)"] },
+    "妹": { hanViet: "Muội", radical: "Nữ (女) - phụ nữ", strokes: 8, strokeSteps: ["1. Phẩy gập (撇折)", "2. Phẩy (撇)", "3. Ngang (横)", "4. Ngang (横)", "5. Ngang (横)", "6. Sổ (竖)", "7. Phẩy (撇)", "8. Mác (捺)"] },
+    "爷": { hanViet: "Gia", radical: "Phụ (父) - người cha", strokes: 6, strokeSteps: ["1. Phẩy (撇)", "2. Chấm (点)", "3. Phẩy (撇)", "4. Mác (捺)", "5. Ngang gập uốn móc (横折弯钩)", "6. Sổ dọc thẳng (竖)"] },
+    "奶": { hanViet: "Nãi", radical: "Nữ (女) - phụ nữ", strokes: 5, strokeSteps: ["1. Phẩy gập (撇折)", "2. Phẩy (撇)", "3. Ngang (横)", "4. Ngang gập uốn móc (横折折折钩)", "5. Phẩy (撇)"] },
+    "外": { hanViet: "Ngoại", radical: "Tịch (夕) - đêm tối", strokes: 5, strokeSteps: ["1. Phẩy (撇)", "2. Ngang gập (横折)", "3. Chấm (点)", "4. Sổ dọc (竖)", "5. Chấm ngắn (点)"] },
+    "公": { hanViet: "Công", radical: "Bát (八) - số tám", strokes: 4, strokeSteps: ["1. Phẩy (撇)", "2. Mác (捺)", "3. Ngang gập (横折)", "4. Chấm (点)"] },
+    "婆": { hanViet: "Bà", radical: "Nữ (女) - phụ nữ", strokes: 11, strokeSteps: ["1. Điểm (点)", "2. Phẩy (撇)", "3. Ngang (横)", "4. Phẩy (撇)", "5. Ngang gập uốn móc (横折弯钩)", "6. Ngang (横)", "7. Sổ (竖)", "8. Ngang gập (横折)", "9. Ngang (横)", "10. Sổ dọc (竖)", "11. Nét gập nữ (女)"] },
+    "兄": { hanViet: "Huynh", radical: "Nhân (儿) - người", strokes: 5, strokeSteps: ["1. Sổ đứng (竖)", "2. Ngang gập (横折)", "3. Ngang (横)", "4. Phẩy (撇)", "5. Sổ uốn móc (竖弯钩)"] },
+    "和": { hanViet: "Hòa", radical: "Khẩu (口) - cái miệng", strokes: 8, strokeSteps: ["1. Phẩy (撇)", "2. Ngang (横)", "3. Sổ (竖)", "4. Phẩy (撇)", "5. Chấm (点)", "6. Sổ đứng (竖)", "7. Ngang gập (横折)", "8. Ngang đáy (横)"] },
+    "有": { hanViet: "Hữu", radical: "Nguyệt (月) - mặt trăng", strokes: 6, strokeSteps: ["1. Ngang (横)", "2. Phẩy (撇)", "3. Sổ đứng (竖)", "4. Ngang gập (横折)", "5. Ngang (横)", "6. Ngang khép (横)"] }
 };
 
 // Application State Variables
@@ -627,12 +672,12 @@ window.enterCourse = function(courseName) {
                     <span class="lesson-status-badge badge-locked">Đang thiết lập</span>
                 </div>
 
-                <!-- Lesson 5 (Locked) -->
-                <div class="lesson-card locked border-gray">
+                <!-- Lesson 5 (Unlocked) -->
+                <div class="lesson-card unlocked border-blue cursor-pointer" onclick="enterLesson(5)">
                     <div class="lesson-num">Bài 5</div>
-                    <h3>Mua sắm & Giá cả</h3>
-                    <p class="lesson-desc-text">Hỏi giá tiền các vật dụng, mặc cả cơ bản và chọn lựa các loại hàng hóa.</p>
-                    <span class="lesson-status-badge badge-locked">Đang thiết lập</span>
+                    <h3><span class="chinese-char">你哥哥在哪儿工作？</span></h3>
+                    <p class="lesson-desc-text">Từ vựng về gia đình, nghề nghiệp, nơi làm việc và các từ hỏi liên quan.</p>
+                    <span class="lesson-status-badge">Sẵn sàng học &rarr;</span>
                 </div>
 
                 <!-- Lesson 6 (Locked) -->
@@ -701,7 +746,7 @@ window.enterCourse = function(courseName) {
 };
 
 window.enterLesson = function(lessonNum) {
-    if (lessonNum !== 1 && lessonNum !== 2) {
+    if (lessonNum !== 1 && lessonNum !== 2 && lessonNum !== 5) {
         alert("Bài học này đang được Cô Chang chuẩn bị nội dung. Bạn hãy học 'Bài 1 / Chủ đề 1' cực kỳ sinh động đang có sẵn nhé! 🥰");
         return;
     }
@@ -721,6 +766,11 @@ window.enterLesson = function(lessonNum) {
             document.getElementById('workspace-badge').style.display = 'inline-block';
             document.getElementById('workspace-lesson-title').innerHTML = `Lớp Giao tiếp 1 - Bài 2: <span class="chinese-char">现在几点？</span>`;
             document.getElementById('workspace-badge').innerText = `Giao tiếp 1 • Bài 2`;
+        } else if (lessonNum === 5) {
+            VOCAB_DATA = [...GIAO_TIEP_1_B5_VOCAB];
+            document.getElementById('workspace-badge').style.display = 'inline-block';
+            document.getElementById('workspace-lesson-title').innerHTML = `Lớp Giao tiếp 1 - Bài 5: <span class="chinese-char">你哥哥在哪儿工作？</span>`;
+            document.getElementById('workspace-badge').innerText = `Giao tiếp 1 • Bài 5`;
         }
     } else if (currentCourse === "Từ vựng theo chủ đề") {
         VOCAB_DATA = [...VOCAB_GUOJIA];
@@ -1205,6 +1255,14 @@ function generateQuizQuestions() {
                 { q: 'Điền từ vào ô trống:<br>A: <span class="chinese-char">今天是星期几？</span><br>B: <span class="chinese-char">今天是_______。</span> (Gợi ý: Cuối tuần)', ans: "周末", opts: ["周末", "号", "点", "年"] },
                 { q: 'Điền từ vào ô trống:<br>A: <span class="chinese-char">你几点上班？</span><br>B: <span class="chinese-char">我_______早上八点上班。</span> (Gợi ý: Hàng ngày/Mỗi ngày)', ans: "每天", opts: ["每天", "去年", "前天", "差"] }
             ];
+        } else if (currentLesson === 5) {
+            dialogues = [
+                { q: 'Điền từ vào ô trống:<br>A: <span class="chinese-char">你家有几_______人？</span><br>B: <span class="chinese-char">我家有五口人。</span>', ans: "口", opts: ["口", "个", "人", "家"] },
+                { q: 'Điền từ vào ô trống:<br>A: <span class="chinese-char">你家有_______人？</span><br>B: <span class="chinese-char">我家有四口人。</span>', ans: "几口", opts: ["几口", "sự", "bao nhiêu", "ai"] },
+                { q: 'Điền từ vào ô trống:<br>A: <span class="chinese-char">你_______哥哥 ma？</span><br>B: <span class="chinese-char">我没有哥哥，我有一个弟弟。</span>', ans: "有", opts: ["有", "没有", "是", "叫"] },
+                { q: 'Điền từ vào ô trống:<br>A: <span class="chinese-char">你哥哥在哪儿_______？</span><br>B: <span class="chinese-char">他在北京工作。</span>', ans: "工作", opts: ["工作", "学习", "起床", "上班"] },
+                { q: 'Điền từ vào ô trống:<br>A: <span class="chinese-char">爸爸_______妈妈都在家吗？</span><br>B: <span class="chinese-char">是的， họ đều ở nhà.</span>', ans: "和", opts: ["和", "有", "个", "的"] }
+            ];
         }
     } else if (currentCourse === "Từ vựng theo chủ đề") {
         dialogues = [
@@ -1321,6 +1379,27 @@ function generateQuizQuestions() {
                 type: "written-fill-blank",
                 question: `Điền chữ Hán thích hợp vào chỗ trống để dịch câu "Hôm nay là sinh nhật tôi": <span class="chinese-char">今天是我 ____ 日。</span> (shēng)`,
                 correctAnswer: "生"
+            });
+        } else if (currentLesson === 5) {
+            quizQuestions.push({
+                type: "written-fill-blank",
+                question: `Điền chữ Hán thích hợp vào chỗ trống để dịch câu "Nhà tôi có 4 người": <span class="chinese-char">我家有四____人。</span>`,
+                correctAnswer: "口"
+            });
+            quizQuestions.push({
+                type: "written-fill-blank",
+                question: `Điền chữ Hán thích hợp vào chỗ trống để dịch câu "Bố và mẹ": <span class="chinese-char">爸爸____妈妈。</span>`,
+                correctAnswer: "和"
+            });
+            quizQuestions.push({
+                type: "written-fill-blank",
+                question: `Điền chữ Hán thích hợp vào chỗ trống để dịch câu "Tôi không có em gái": <span class="chinese-char">我____有妹妹。</span>`,
+                correctAnswer: "没"
+            });
+            quizQuestions.push({
+                type: "written-fill-blank",
+                question: `Điền chữ Hán thích hợp để dịch câu "Anh trai": <span class="chinese-char">哥____</span>`,
+                correctAnswer: "哥"
             });
         }
     } else if (currentCourse === "Từ vựng theo chủ đề") {
