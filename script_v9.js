@@ -141,7 +141,56 @@ const GIAO_TIEP_1_B5_VOCAB = [
     { char: "兄弟姐妹", pinyin: "xiōngdì jiěmèi", hanViet: "Huynh đệ tỷ muội", meaning: "Anh chị em", pos: "Danh từ" },
     { char: "和", pinyin: "hé", hanViet: "Hòa", meaning: "Và, với", pos: "Liên từ" },
     { char: "有", pinyin: "yǒu", hanViet: "Hữu", meaning: "Có", pos: "Động từ" },
-    { char: "没有", pinyin: "méiyǒu", hanViet: "Một hữu", meaning: "Không có", pos: "Động từ" }
+    { char: "没有", pinyin: "méiyǒu", hanViet: "Một hữu", meaning: "Không có", pos: "Động từ" },
+    { char: "做", pinyin: "zuò", hanViet: "Tác", meaning: "Làm, làm việc", pos: "Động từ" },
+    { char: "工作", pinyin: "gōngzuò", hanViet: "Công tác", meaning: "Làm việc, công việc", pos: "Động từ / Danh từ" },
+    { char: "哪儿", pinyin: "nǎr", hanViet: "Nả nhi", meaning: "Ở đâu (khẩu ngữ Bắc Kinh)", pos: "Đại từ" },
+    { char: "职业", pinyin: "zhíyè", hanViet: "Chức nghiệp", meaning: "Nghề nghiệp", pos: "Danh từ" },
+    { char: "医生", pinyin: "yīshēng", hanViet: "Y sinh", meaning: "Bác sĩ", pos: "Danh từ" },
+    { char: "护士", pinyin: "hùshi", hanViet: "Hộ sĩ", meaning: "Y tá, điều dưỡng", pos: "Danh từ" },
+    { char: "会计", pinyin: "kuàijì", hanViet: "Kế toán", meaning: "Kế toán", pos: "Danh từ" },
+    { char: "公务员", pinyin: "gōngwùyuán", hanViet: "Công vụ viên", meaning: "Công chức nhà nước", pos: "Danh từ" },
+    { char: "职员", pinyin: "zhíyuán", hanViet: "Chức viên", meaning: "Nhân viên văn phòng", pos: "Danh từ" },
+    { char: "司机", pinyin: "sījī", hanViet: "Tư cơ", meaning: "Tài xế, lái xe", pos: "Danh từ" },
+    { char: "秘书", pinyin: "mìshū", hanViet: "Bí thư", meaning: "Thư ký", pos: "Danh từ" },
+    { char: "厨师", pinyin: "chúshī", hanViet: "Trù sư", meaning: "Đầu bếp", pos: "Danh từ" },
+    { char: "保安", pinyin: "bǎo'ān", hanViet: "Bảo an", meaning: "Bảo vệ", pos: "Danh từ" },
+    { char: "老师", pinyin: "lǎoshī", hanViet: "Lão sư", meaning: "Giáo viên, thầy cô", pos: "Danh từ" },
+    { char: "经理", pinyin: "jīnglǐ", hanViet: "Kinh lý", meaning: "Giám đốc, quản lý", pos: "Danh từ" },
+    { char: "大学生", pinyin: "dàxuéshēng", hanViet: "Đại học sinh", meaning: "Sinh viên đại học", pos: "Danh từ" },
+    { char: "毕业生", pinyin: "bìyèshēng", hanViet: "Tốt nghiệp sinh", meaning: "Sinh viên tốt nghiệp", pos: "Danh từ" },
+    { char: "家庭主妇", pinyin: "jiātíng zhǔfù", hanViet: "Gia đình chủ phụ", meaning: "Nội trợ", pos: "Danh từ" },
+    { char: "丈夫", pinyin: "zhàngfu", hanViet: "Trượng phu", meaning: "Chồng", pos: "Danh từ" },
+    { char: "妻子", pinyin: "qīzi", hanViet: "Thê tử", meaning: "Vợ", pos: "Danh từ" },
+    { char: "母亲", pinyin: "mǔqīn", hanViet: "Mẫu thân", meaning: "Mẹ (trang trọng)", pos: "Danh từ" },
+    { char: "父亲", pinyin: "fùqīn", hanViet: "Phụ thân", meaning: "Cha (trang trọng)", pos: "Danh từ" },
+    { char: "大使馆", pinyin: "dàshǐguǎn", hanViet: "Đại sứ quán", meaning: "Đại sứ quán", pos: "Danh từ" },
+    { char: "医院", pinyin: "yīyuàn", hanViet: "Y viện", meaning: "Bệnh viện", pos: "Danh từ" },
+    { char: "饭店", pinyin: "fàndiàn", hanViet: "Phạn điếm", meaning: "Nhà hàng, khách sạn", pos: "Danh từ" },
+    { char: "银行", pinyin: "yínháng", hanViet: "Ngân hàng", meaning: "Ngân hàng", pos: "Danh từ" },
+    { char: "学校", pinyin: "xuéxiào", hanViet: "Học hiệu", meaning: "Trường học", pos: "Danh từ" },
+    { char: "在", pinyin: "zài", hanViet: "Tại", meaning: "Ở, tại (chỉ nơi chốn)", pos: "Giới từ / Động từ" },
+    { char: "老公", pinyin: "lǎogōng", hanViet: "Lão công", meaning: "Chồng (khẩu ngữ)", pos: "Danh từ" },
+    { char: "老婆", pinyin: "lǎopo", hanViet: "Lão bà", meaning: "Vợ (khẩu ngữ)", pos: "Danh từ" },
+    { char: "孩子", pinyin: "háizi", hanViet: "Hài tử", meaning: "Con cái, trẻ em", pos: "Danh từ" },
+    { char: "儿子", pinyin: "érzi", hanViet: "Nhi tử", meaning: "Con trai", pos: "Danh từ" },
+    { char: "女儿", pinyin: "nǚ'ér", hanViet: "Nữ nhi", meaning: "Con gái", pos: "Danh từ" },
+    { char: "公司", pinyin: "gōngsī", hanViet: "Công ty", meaning: "Công ty", pos: "Danh từ" },
+    { char: "多大", pinyin: "duō dà", hanViet: "Đa đại", meaning: "Bao nhiêu tuổi (hỏi tuổi)", pos: "Đại từ" },
+    { char: "岁", pinyin: "suì", hanViet: "Tuế", meaning: "Tuổi", pos: "Danh từ" },
+    { char: "年纪", pinyin: "niánjì", hanViet: "Niên ký", meaning: "Tuổi tác", pos: "Danh từ" },
+    { char: "出生", pinyin: "chūshēng", hanViet: "Xuất sinh", meaning: "Sinh ra, ra đời", pos: "Động từ" },
+    { char: "谁", pinyin: "shéi / shuí", hanViet: "Thùy", meaning: "Ai", pos: "Đại từ" },
+    { char: "这", pinyin: "zhè", hanViet: "Giá", meaning: "Này, cái này", pos: "Đại từ" },
+    { char: "那", pinyin: "nà", hanViet: "Na", meaning: "Kia, cái kia", pos: "Đại từ" },
+    { char: "聪明", pinyin: "cōngming", hanViet: "Thông minh", meaning: "Thông minh", pos: "Tính từ" },
+    { char: "可爱", pinyin: "kě'ài", hanViet: "Khả ái", meaning: "Đáng yêu, dễ thương", pos: "Tính từ" },
+    { char: "漂亮", pinyin: "piàoliang", hanViet: "Phiêu lượng", meaning: "Đẹp, xinh đẹp (dùng cho nữ)", pos: "Tính từ" },
+    { char: "帅", pinyin: "shuài", hanViet: "Suất", meaning: "Đẹp trai, điển trai (dùng cho nam)", pos: "Tính từ" },
+    { char: "高", pinyin: "gāo", hanViet: "Cao", meaning: "Cao", pos: "Tính từ" },
+    { char: "矮", pinyin: "ǎi", hanViet: "Áo", meaning: "Lùn, thấp", pos: "Tính từ" },
+    { char: "胖", pinyin: "pàng", hanViet: "Bàng", meaning: "Béo, mập", pos: "Tính từ" },
+    { char: "瘦", pinyin: "shòu", hanViet: "Sấu", meaning: "Gầy, ốm", pos: "Tính từ" }
 ];
 
 
@@ -1258,10 +1307,10 @@ function generateQuizQuestions() {
         } else if (currentLesson === 5) {
             dialogues = [
                 { q: 'Điền từ vào ô trống:<br>A: <span class="chinese-char">你家有几_______人？</span><br>B: <span class="chinese-char">我家有五口人。</span>', ans: "口", opts: ["口", "个", "人", "家"] },
-                { q: 'Điền từ vào ô trống:<br>A: <span class="chinese-char">你家有_______人？</span><br>B: <span class="chinese-char">我家有四口人。</span>', ans: "几口", opts: ["几口", "sự", "bao nhiêu", "ai"] },
-                { q: 'Điền từ vào ô trống:<br>A: <span class="chinese-char">你_______哥哥 ma？</span><br>B: <span class="chinese-char">我没有哥哥，我有一个弟弟。</span>', ans: "有", opts: ["有", "没有", "是", "叫"] },
+                { q: 'Điền từ vào ô trống:<br>A: <span class="chinese-char">你家有_______人？</span><br>B: <span class="chinese-char">我家有四口人。</span>', ans: "几口", opts: ["几口", "谁", "哪", "哪儿"] },
+                { q: 'Điền từ vào ô trống:<br>A: <span class="chinese-char">你_______哥哥吗？</span><br>B: <span class="chinese-char">我没有哥哥，我有一个弟弟。</span>', ans: "有", opts: ["有", "没有", "是", "叫"] },
                 { q: 'Điền từ vào ô trống:<br>A: <span class="chinese-char">你哥哥在哪儿_______？</span><br>B: <span class="chinese-char">他在北京工作。</span>', ans: "工作", opts: ["工作", "学习", "起床", "上班"] },
-                { q: 'Điền từ vào ô trống:<br>A: <span class="chinese-char">爸爸_______妈妈都在家吗？</span><br>B: <span class="chinese-char">是的， họ đều ở nhà.</span>', ans: "和", opts: ["和", "有", "个", "的"] }
+                { q: 'Điền từ vào ô trống:<br>A: <span class="chinese-char">爸爸_______妈妈都在家吗？</span><br>B: <span class="chinese-char">是的，他们都在家。</span>', ans: "和", opts: ["和", "有", "个", "的"] }
             ];
         }
     } else if (currentCourse === "Từ vựng theo chủ đề") {
