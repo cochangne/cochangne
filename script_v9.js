@@ -767,7 +767,7 @@ window.enterCourse = function(courseName) {
                 <!-- Lesson 6 (Unlocked) -->
                 <div class="lesson-card unlocked border-blue cursor-pointer" onclick="enterLesson(6)">
                     <div class="lesson-num">Bài 6</div>
-                    <h3><span class="chinese-char">给我打电话</span></h3>
+                    <h3><span class="chinese-char">珍妮在吗？</span></h3>
                     <p class="lesson-desc-text">Giao tiếp qua điện thoại, nhắn tin, gửi thư điện tử và các địa điểm liên quan.</p>
                     <span class="lesson-status-badge">Sẵn sàng học &rarr;</span>
                 </div>
@@ -858,7 +858,7 @@ window.enterLesson = function(lessonNum) {
         } else if (lessonNum === 6) {
             VOCAB_DATA = [...GIAO_TIEP_1_B6_VOCAB];
             document.getElementById('workspace-badge').style.display = 'inline-block';
-            document.getElementById('workspace-lesson-title').innerHTML = `Lớp Giao tiếp 1 - Bài 6: <span class="chinese-char">给我打电话</span>`;
+            document.getElementById('workspace-lesson-title').innerHTML = `Lớp Giao tiếp 1 - Bài 6: <span class="chinese-char">珍妮在吗？</span>`;
             document.getElementById('workspace-badge').innerText = `Giao tiếp 1 • Bài 6`;
         }
     } else if (currentCourse === "Từ vựng theo chủ đề") {
