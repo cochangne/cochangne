@@ -193,6 +193,31 @@ const GIAO_TIEP_1_B5_VOCAB = [
     { char: "瘦", pinyin: "shòu", hanViet: "Sấu", meaning: "Gầy, ốm", pos: "Tính từ" }
 ];
 
+const GIAO_TIEP_1_B6_VOCAB = [
+    { char: "给", pinyin: "gěi", hanViet: "Cấp", meaning: "Cho, đưa cho, gọi điện (cho ai)", pos: "Giới từ / Động từ" },
+    { char: "打电话", pinyin: "dǎ diànhuà", hanViet: "Đả điện thoại", meaning: "Gọi điện thoại", pos: "Động từ" },
+    { char: "喂", pinyin: "wèi", hanViet: "Úy / Uy", meaning: "Alo (khi nghe điện thoại)", pos: "Thán từ" },
+    { char: "请问", pinyin: "qǐngwèn", hanViet: "Thỉnh vấn", meaning: "Xin hỏi", pos: "Động từ" },
+    { char: "找", pinyin: "zhǎo", hanViet: "Tìm", meaning: "Tìm, gặp (ai)", pos: "Động từ" },
+    { char: "稍等", pinyin: "shāoděng", hanViet: "Sảo đẳng", meaning: "Chờ một chút, đợi một lát", pos: "Động từ" },
+    { char: "打错", pinyin: "dǎcuò", hanViet: "Đả thác", meaning: "Gọi nhầm số, gọi lộn số", pos: "Động từ" },
+    { char: "想", pinyin: "xiǎng", hanViet: "Tưởng", meaning: "Muốn, nghĩ, nhớ", pos: "Động từ" },
+    { char: "接电话", pinyin: "jiē diànhuà", hanViet: "Tiếp điện thoại", meaning: "Nghe điện thoại, nhận cuộc gọi", pos: "Động từ" },
+    { char: "位", pinyin: "wèi", hanViet: "Vị", meaning: "Vị (lượng từ lịch sự chỉ người)", pos: "Lượng từ" },
+    { char: "回电话", pinyin: "huí diànhuà", hanViet: "Hồi điện thoại", meaning: "Gọi điện thoại lại, gọi lại", pos: "Động từ" },
+    { char: "商店", pinyin: "shāngdiàn", hanViet: "Thương điếm", meaning: "Cửa hàng, cửa tiệm", pos: "Danh từ" },
+    { char: "咖啡店", pinyin: "kāfēidiàn", hanViet: "Kha phi điếm", meaning: "Quán cà phê", pos: "Danh từ" },
+    { char: "奶茶店", pinyin: "nǎichádiàn", hanViet: "Nải trà điếm", meaning: "Quán trà sữa", pos: "Danh từ" },
+    { char: "飞机场", pinyin: "fēijīchǎng", hanViet: "Phi cơ trường", meaning: "Sân bay, phi trường", pos: "Danh từ" },
+    { char: "公园", pinyin: "gōngyuán", hanViet: "Công viên", meaning: "Công viên", pos: "Danh từ" },
+    { char: "发短信", pinyin: "fā duǎnxìn", hanViet: "Phát đoản tín", meaning: "Gửi tin nhắn", pos: "Động từ" },
+    { char: "电子邮件", pinyin: "diànzǐ yóujiàn", hanViet: "Điện tử bưu kiện", meaning: "Thư điện tử, email", pos: "Danh từ" },
+    { char: "发邮件", pinyin: "fā yóujiàn", hanViet: "Phát bưu kiện", meaning: "Gửi email", pos: "Động từ" },
+    { char: "发", pinyin: "fā", hanViet: "Phát", meaning: "Gửi, phát", pos: "Động từ" },
+    { char: "扫", pinyin: "sǎo", hanViet: "Tảo", meaning: "Quét (mã QR)", pos: "Động từ" },
+    { char: "加（微信）", pinyin: "jiā (wēixìn)", hanViet: "Gia (Vi tín)", meaning: "Kết bạn WeChat, thêm WeChat", pos: "Động từ" }
+];
+
 
 const VOCAB_GUOJIA = [
     { char: "国家", pinyin: "guójiā", hanViet: "Quốc gia", meaning: "Quốc gia, đất nước", pos: "Danh từ" },
@@ -244,6 +269,16 @@ const LESSON_DIALOGUES = {
             { speaker: "Học sinh A", role: "a", zh: "他在学校工作，他是老师。", pinyin: "Tā zài xuéxiào gōngzuò, tā shì lǎoshī.", vi: "Anh ấy làm việc ở trường học, anh ấy là giáo viên." },
             { speaker: "Học sinh B", role: "b", zh: "你有爷爷、奶奶吗？", pinyin: "Nǐ yǒu yéye, nǎinai ma?", vi: "Bạn có ông bà nội không?" },
             { speaker: "Học sinh A", role: "a", zh: "有，我也有外公和外婆。", pinyin: "Yǒu, wǒ yě yǒu wàigōng hé wàipó.", vi: "Có, tôi cũng có ông ngoại và bà ngoại." }
+        ],
+        6: [
+            { speaker: "Học sinh A", role: "a", zh: "喂，请问是王老师吗？", pinyin: "Wèi, qǐngwèn shì Wáng lǎoshī ma?", vi: "Alo, xin hỏi có phải là thầy Vương không ạ?" },
+            { speaker: "Học sinh B", role: "b", zh: "对不起，你打错电话了。我这里没有姓王的。", pinyin: "Duìbuqǐ, nǐ dǎcuò diànhuà le. Wǒ zhèlǐ méiyǒu xìng Wáng de.", vi: "Xin lỗi, bạn gọi nhầm số rồi. Ở đây tôi không có ai họ Vương." },
+            { speaker: "Học sinh A", role: "a", zh: "啊，对不起！我想找张老师，这是她的电话吗？", pinyin: "À, duìbuqǐ! Wǒ xiǎng zhǎo Zhāng lǎoshī, zhè shì tā de diànhuà ma?", vi: "A, xin lỗi! Tôi muốn tìm cô giáo Trương, đây có phải là điện thoại của cô ấy không?" },
+            { speaker: "Học sinh B", role: "b", zh: "是的，我是她弟弟。请稍等，我看看她能不能接……对不起，她在忙，现在不能接电话。请问您是哪位？", pinyin: "Shì de, wǒ shì tā dìdi. Qǐng shāoděng, wǒ kànkan tā néng bu néng jiē... Duìbuqǐ, tā zài máng, xiànzài bùnéng jiē diànhuà. Qǐngwèn nín shì nǎ wèi?", vi: "Đúng vậy, tôi là em trai cô ấy. Xin chờ một lát, tôi xem cô ấy có nghe được không... Xin lỗi, cô ấy đang bận, bây giờ không thể nghe điện thoại. Xin hỏi ngài là vị nào ạ?" },
+            { speaker: "Học sinh A", role: "a", zh: "我是她的学生李明。请问她什么时候能给我回电话？", pinyin: "Wǒ shì tā de xuéshēng Lǐ Míng. Qǐngwèn tā shénme shíhou néng gěi wǒ huí diànhuà?", vi: "Tôi là học sinh của cô ấy, Lý Minh. Xin hỏi khi nào cô ấy có thể gọi lại cho tôi?" },
+            { speaker: "Học sinh B", role: "b", zh: "她今天很忙，在商店、咖啡店和奶茶店买东西，下午还要去飞机场和公园。要不你给她发短信或者发邮件吧？", pinyin: "Tā jīntiān hěn máng, zài shāngdiàn, kāfēidiàn hé nǎichádiàn mǎi dōngxi, xiàwǔ hái yào qù fēijīchǎng hé gōngyuán. Yàobù nǐ gěi tā fā duǎnxìn huòzhě fā yóujiàn ba?", vi: "Hôm nay cô ấy rất bận, đang mua đồ ở cửa hàng, quán cà phê và quán trà sữa, chiều còn phải đi sân bay và công viên. Hay là bạn gửi tin nhắn hoặc gửi email cho cô ấy đi?" },
+            { speaker: "Học sinh A", role: "a", zh: "好的，谢谢。我可以加她的微信，扫码发消息吗？", pinyin: "Hǎo de, xièxie. Wǒ kěyǐ jiā tā de Wēixìn, sǎo mǎ fā xiāoxi ma?", vi: "Dạ vâng, cảm ơn anh. Tôi có thể kết bạn WeChat của cô ấy, quét mã gửi tin nhắn không?" },
+            { speaker: "Học sinh B", role: "b", zh: "当然可以，扫微信最方便。", pinyin: "Dāngrán kěyǐ, sǎo Wēixìn zuì fāngbiàn.", vi: "Đương nhiên có thể, quét WeChat là tiện nhất." }
         ]
     },
     "Từ vựng theo chủ đề": {
@@ -729,12 +764,12 @@ window.enterCourse = function(courseName) {
                     <span class="lesson-status-badge">Sẵn sàng học &rarr;</span>
                 </div>
 
-                <!-- Lesson 6 (Locked) -->
-                <div class="lesson-card locked border-gray">
+                <!-- Lesson 6 (Unlocked) -->
+                <div class="lesson-card unlocked border-blue cursor-pointer" onclick="enterLesson(6)">
                     <div class="lesson-num">Bài 6</div>
-                    <h3>Thời gian & Lịch trình</h3>
-                    <p class="lesson-desc-text">Xem giờ giấc, nói về các ngày trong tuần, lập thời gian biểu cá nhân chi tiết.</p>
-                    <span class="lesson-status-badge badge-locked">Đang thiết lập</span>
+                    <h3><span class="chinese-char">给我打电话</span></h3>
+                    <p class="lesson-desc-text">Giao tiếp qua điện thoại, nhắn tin, gửi thư điện tử và các địa điểm liên quan.</p>
+                    <span class="lesson-status-badge">Sẵn sàng học &rarr;</span>
                 </div>
             `;
         } else if (courseName === "Từ vựng theo chủ đề") {
@@ -795,7 +830,7 @@ window.enterCourse = function(courseName) {
 };
 
 window.enterLesson = function(lessonNum) {
-    if (lessonNum !== 1 && lessonNum !== 2 && lessonNum !== 5) {
+    if (lessonNum !== 1 && lessonNum !== 2 && lessonNum !== 5 && lessonNum !== 6) {
         alert("Bài học này đang được Cô Chang chuẩn bị nội dung. Bạn hãy học 'Bài 1 / Chủ đề 1' cực kỳ sinh động đang có sẵn nhé! 🥰");
         return;
     }
@@ -820,6 +855,11 @@ window.enterLesson = function(lessonNum) {
             document.getElementById('workspace-badge').style.display = 'inline-block';
             document.getElementById('workspace-lesson-title').innerHTML = `Lớp Giao tiếp 1 - Bài 5: <span class="chinese-char">你哥哥在哪儿工作？</span>`;
             document.getElementById('workspace-badge').innerText = `Giao tiếp 1 • Bài 5`;
+        } else if (lessonNum === 6) {
+            VOCAB_DATA = [...GIAO_TIEP_1_B6_VOCAB];
+            document.getElementById('workspace-badge').style.display = 'inline-block';
+            document.getElementById('workspace-lesson-title').innerHTML = `Lớp Giao tiếp 1 - Bài 6: <span class="chinese-char">给我打电话</span>`;
+            document.getElementById('workspace-badge').innerText = `Giao tiếp 1 • Bài 6`;
         }
     } else if (currentCourse === "Từ vựng theo chủ đề") {
         VOCAB_DATA = [...VOCAB_GUOJIA];
