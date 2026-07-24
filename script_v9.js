@@ -124,6 +124,53 @@ const GIAO_TIEP_1_B2_VOCAB = [
     { char: "下个月", pinyin: "xià ge yuè", hanViet: "Hạ cá nguyệt", meaning: "Tháng sau", pos: "Danh từ" }
 ];
 
+
+const GIAO_TIEP_1_B3_VOCAB = [
+    { char: "苹果", pinyin: "píngguǒ", hanViet: "Bình quả", meaning: "Quả táo", pos: "Danh từ" },
+    { char: "草莓", pinyin: "cǎoméi", hanViet: "Thảo mai", meaning: "Quả dâu tây", pos: "Danh từ" },
+    { char: "橙子", pinyin: "chéngzi", hanViet: "Trành tử", meaning: "Quả cam", pos: "Danh từ" },
+    { char: "荔枝", pinyin: "lìzhī", hanViet: "Lệ chi", meaning: "Quả vải", pos: "Danh từ" },
+    { char: "葡萄", pinyin: "pútáo", hanViet: "Bồ đào", meaning: "Quả nho", pos: "Danh từ" },
+    { char: "西瓜", pinyin: "xīguā", hanViet: "Tây qua", meaning: "Quả dưa hấu", pos: "Danh từ" },
+    { char: "芒果", pinyin: "mángguǒ", hanViet: "Mang quả", meaning: "Quả xoài", pos: "Danh từ" },
+    { char: "香蕉", pinyin: "xiāngjiāo", hanViet: "Hương tiêu", meaning: "Quả chuối", pos: "Danh từ" },
+    { char: "百", pinyin: "bǎi", hanViet: "Bách", meaning: "Trăm (100)", pos: "Số từ" },
+    { char: "块", pinyin: "kuài", hanViet: "Khối", meaning: "Đồng (đơn vị tiền tệ khẩu ngữ, = 元)", pos: "Lượng từ" },
+    { char: "毛", pinyin: "máo", hanViet: "Mao", meaning: "Hào (0,1 元, khẩu ngữ)", pos: "Lượng từ" },
+    { char: "分", pinyin: "fēn", hanViet: "Phân", meaning: "Xu (0,01 元)", pos: "Lượng từ" },
+    { char: "钱", pinyin: "qián", hanViet: "Tiền", meaning: "Tiền", pos: "Danh từ" },
+    { char: "买", pinyin: "mǎi", hanViet: "Mãi", meaning: "Mua", pos: "Động từ" },
+    { char: "卖", pinyin: "mài", hanViet: "Mại", meaning: "Bán", pos: "Động từ" },
+    { char: "元", pinyin: "yuán", hanViet: "Nguyên", meaning: "Nhân dân tệ (đơn vị tiền tệ chính thức)", pos: "Lượng từ" },
+    { char: "角", pinyin: "jiǎo", hanViet: "Giác", meaning: "Giác, hào (0,1 元, trang trọng)", pos: "Lượng từ" },
+    { char: "怎么", pinyin: "zěnme", hanViet: "Chẩm ma", meaning: "Thế nào, như thế nào", pos: "Đại từ" },
+    { char: "红色", pinyin: "hóngsè", hanViet: "Hồng sắc", meaning: "Màu đỏ", pos: "Danh từ" },
+    { char: "蓝色", pinyin: "lánsè", hanViet: "Lam sắc", meaning: "Màu xanh dương", pos: "Danh từ" },
+    { char: "黄色", pinyin: "huángsè", hanViet: "Hoàng sắc", meaning: "Màu vàng", pos: "Danh từ" },
+    { char: "白色", pinyin: "báisè", hanViet: "Bạch sắc", meaning: "Màu trắng", pos: "Danh từ" },
+    { char: "黑色", pinyin: "hēisè", hanViet: "Hắc sắc", meaning: "Màu đen", pos: "Danh từ" },
+    { char: "灰色", pinyin: "huīsè", hanViet: "Hôi sắc", meaning: "Màu xám", pos: "Danh từ" },
+    { char: "绿色", pinyin: "lǜsè", hanViet: "Lục sắc", meaning: "Màu xanh lá", pos: "Danh từ" },
+    { char: "粉红色", pinyin: "fěnhóngsè", hanViet: "Phấn hồng sắc", meaning: "Màu hồng", pos: "Danh từ" },
+    { char: "紫色", pinyin: "zǐsè", hanViet: "Tử sắc", meaning: "Màu tím", pos: "Danh từ" },
+    { char: "橙色", pinyin: "chéngsè", hanViet: "Trành sắc", meaning: "Màu cam", pos: "Danh từ" },
+    { char: "棕色", pinyin: "zōngsè", hanViet: "Tông sắc", meaning: "Màu nâu", pos: "Danh từ" },
+    { char: "颜色", pinyin: "yánsè", hanViet: "Nhan sắc", meaning: "Màu sắc", pos: "Danh từ" },
+    { char: "（件）毛衣", pinyin: "(jiàn) máoyī", hanViet: "(Kiện) Mao y", meaning: "Áo len (cái/chiếc)", pos: "Danh từ" },
+    { char: "（件）T恤", pinyin: "(jiàn) T xù", hanViet: "(Kiện) T-shirt", meaning: "Áo phông / áo thun (cái/chiếc)", pos: "Danh từ" },
+    { char: "（件）衬衫", pinyin: "(jiàn) chènshān", hanViet: "(Kiện) Sấn sam", meaning: "Áo sơ mi (cái/chiếc)", pos: "Danh từ" },
+    { char: "（件）夹克", pinyin: "(jiàn) jiākè", hanViet: "(Kiện) Giáp khắc", meaning: "Áo khoác / jacket (cái/chiếc)", pos: "Danh từ" },
+    { char: "（套）西服", pinyin: "(tào) xīfú", hanViet: "(Tào) Tây phục", meaning: "Bộ vest / comple (bộ)", pos: "Danh từ" },
+    { char: "（套）套裙", pinyin: "(tào) tàoqún", hanViet: "(Tào) Tào quần", meaning: "Bộ váy liền (bộ)", pos: "Danh từ" },
+    { char: "（条）裤子", pinyin: "(tiáo) kùzi", hanViet: "(Điều) Khố tử", meaning: "Quần dài (cái/chiếc)", pos: "Danh từ" },
+    { char: "（条）牛仔裤", pinyin: "(tiáo) niúzǎikù", hanViet: "(Điều) Ngưu tể khố", meaning: "Quần jeans (cái/chiếc)", pos: "Danh từ" },
+    { char: "（条）裙子", pinyin: "(tiáo) qúnzi", hanViet: "(Điều) Quần tử", meaning: "Váy (cái/chiếc)", pos: "Danh từ" },
+    { char: "（条）连衣裙", pinyin: "(tiáo) liányīqún", hanViet: "(Điều) Liên y quần", meaning: "Váy liền (cái/chiếc)", pos: "Danh từ" },
+    { char: "（双）皮鞋", pinyin: "(shuāng) píxié", hanViet: "(Song) Bì hài", meaning: "Giày da (đôi)", pos: "Danh từ" },
+    { char: "（双）运动鞋", pinyin: "(shuāng) yùndòngxié", hanViet: "(Song) Vận động hài", meaning: "Giày thể thao (đôi)", pos: "Danh từ" },
+    { char: "衣服", pinyin: "yīfu", hanViet: "Y phục", meaning: "Quần áo, trang phục", pos: "Danh từ" },
+    { char: "穿", pinyin: "chuān", hanViet: "Xuyên", meaning: "Mặc, đi (giày dép)", pos: "Động từ" }
+];
 const GIAO_TIEP_1_B5_VOCAB = [
     { char: "家", pinyin: "jiā", hanViet: "Gia", meaning: "Nhà, gia đình", pos: "Danh từ" },
     { char: "口", pinyin: "kǒu", hanViet: "Khẩu", meaning: "Miệng (lượng từ chỉ số thành viên trong gia đình)", pos: "Lượng từ" },
@@ -260,6 +307,16 @@ const LESSON_DIALOGUES = {
             { speaker: "Học sinh B", role: "b", zh: "今天是星期六，周末。下午你做什么？", pinyin: "Jīntiān  shì xīngqīliù, zhōumò. Xiàwǔ nǐ zuò shénme?", vi: "Hôm nay là thứ bảy, cuối tuần. Chiều nay bạn làm gì?" },
             { speaker: "Học sinh A", role: "a", zh: "下午我去运动，晚上跟朋友见面。明天是我的生日！", pinyin: "Xiàwǔ wǒ qù yùndòng, wǎnshang gēn péngyou jiànmiàn. Míngtiān  shì wǒ de shēngrì!", vi: "Chiều nay mình đi tập thể thao, tối gặp gỡ bạn bè. Ngày mai là sinh nhật của mình!" },
             { speaker: "Học sinh B", role: "b", zh: "真的吗？祝你生日快乐！", pinyin: "Zhēnde ma? Zhù nǐ shēngrì kuàilè!", vi: "Thật sao? Chúc bạn sinh nhật vui vẻ nhé!" }
+        ],
+        3: [
+            { speaker: "Học sinh A", role: "a", zh: "你好！请问这件毛衣怎么卖？", pinyin: "Nǐ hǎo! Qǐngwèn zhè jiàn máoyī zěnme mài?", vi: "Xin chào! Xin hỏi chiếc áo len này bán thế nào?" },
+            { speaker: "Học sinh B", role: "b", zh: "这件毛衣三百块钱。你喜欢什么颜色？", pinyin: "Zhè jiàn máoyī sānbǎi kuài qián. Nǐ xǐhuan shénme yánsè?", vi: "Chiếc áo len này ba trăm tệ. Bạn thích màu gì?" },
+            { speaker: "Học sinh A", role: "a", zh: "我想买红色的。有没有白色的？", pinyin: "Wǒ xiǎng mǎi hóngsè de. Yǒu méiyǒu báisè de?", vi: "Tôi muốn mua màu đỏ. Có màu trắng không?" },
+            { speaker: "Học sinh B", role: "b", zh: "有，白色的两百五十块。还有蓝色、黑色和粉红色的。", pinyin: "Yǒu, báisè de liǎngbǎi wǔshí kuài. Hái yǒu lánsè, hēisè hé fěnhóngsè de.", vi: "Có, màu trắng hai trăm năm mươi tệ. Còn có màu xanh dương, đen và hồng nữa." },
+            { speaker: "Học sinh A", role: "a", zh: "那条牛仔裤多少钱？", pinyin: "Nà tiáo niúzǎikù duōshao qián?", vi: "Chiếc quần jeans kia bao nhiêu tiền?" },
+            { speaker: "Học sinh B", role: "b", zh: "那条牛仔裤一百八十块。你穿多大号的？", pinyin: "Nà tiáo niúzǎikù yìbǎi bāshí kuài. Nǐ chuān duō dà hào de?", vi: "Chiếc quần jeans đó một trăm tám mươi tệ. Bạn mặc cỡ bao nhiêu?" },
+            { speaker: "Học sinh A", role: "a", zh: "我穿中号的。我要买这件白色毛衣和那条牛仔裤。", pinyin: "Wǒ chuān zhōnghào de. Wǒ yào mǎi zhè jiàn báisè máoyī hé nà tiáo niúzǎikù.", vi: "Tôi mặc cỡ vừa. Tôi muốn mua chiếc áo len trắng và chiếc quần jeans đó." },
+            { speaker: "Học sinh B", role: "b", zh: "好的，一共四百三十块钱。", pinyin: "Hǎo de, yīgòng sìbǎi sānshí kuài qián.", vi: "Vâng, tổng cộng bốn trăm ba mươi tệ." }
         ],
         5: [
             { speaker: "Học sinh A", role: "a", zh: "你家有几口人？", pinyin: "Nǐ jiā yǒu jǐ kǒu rén?", vi: "Nhà bạn có mấy người?" },
@@ -740,12 +797,12 @@ window.enterCourse = function(courseName) {
                     <span class="lesson-status-badge">Sẵn sàng học &rarr;</span>
                 </div>
 
-                <!-- Lesson 3 (Locked) -->
-                <div class="lesson-card locked border-gray">
+                <!-- Lesson 3 (Unlocked) -->
+                <div class="lesson-card unlocked border-blue cursor-pointer" onclick="enterLesson(3)">
                     <div class="lesson-num">Bài 3</div>
-                    <h3><span class="chinese-char">这件毛衣多少钱？</span></h3>
-                    <p class="lesson-desc-text">Học cách giới thiệu các thành viên trong gia đình và nghề nghiệp của họ.</p>
-                    <span class="lesson-status-badge badge-locked">Đang thiết lập</span>
+                    <h3><span class="chinese-char">这件毛衣怎么卖？</span></h3>
+                    <p class="lesson-desc-text">Mua sắm trang phục, hỏi giá, màu sắc và các loại quần áo thông dụng.</p>
+                    <span class="lesson-status-badge">Sẵn sàng học &rarr;</span>
                 </div>
 
                 <!-- Lesson 4 (Locked) -->
@@ -830,7 +887,7 @@ window.enterCourse = function(courseName) {
 };
 
 window.enterLesson = function(lessonNum) {
-    if (lessonNum !== 1 && lessonNum !== 2 && lessonNum !== 5 && lessonNum !== 6) {
+    if (lessonNum !== 1 && lessonNum !== 2 && lessonNum !== 3 && lessonNum !== 5 && lessonNum !== 6) {
         alert("Bài học này đang được Cô Chang chuẩn bị nội dung. Bạn hãy học 'Bài 1 / Chủ đề 1' cực kỳ sinh động đang có sẵn nhé! 🥰");
         return;
     }
@@ -850,6 +907,11 @@ window.enterLesson = function(lessonNum) {
             document.getElementById('workspace-badge').style.display = 'inline-block';
             document.getElementById('workspace-lesson-title').innerHTML = `Lớp Giao tiếp 1 - Bài 2: <span class="chinese-char">现在几点？</span>`;
             document.getElementById('workspace-badge').innerText = `Giao tiếp 1 • Bài 2`;
+        } else if (lessonNum === 3) {
+            VOCAB_DATA = [...GIAO_TIEP_1_B3_VOCAB];
+            document.getElementById('workspace-badge').style.display = 'inline-block';
+            document.getElementById('workspace-lesson-title').innerHTML = `Lớp Giao tiếp 1 - Bài 3: <span class="chinese-char">这件毛衣怎么卖？</span>`;
+            document.getElementById('workspace-badge').innerText = `Giao tiếp 1 • Bài 3`;
         } else if (lessonNum === 5) {
             VOCAB_DATA = [...GIAO_TIEP_1_B5_VOCAB];
             document.getElementById('workspace-badge').style.display = 'inline-block';
