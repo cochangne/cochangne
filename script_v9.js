@@ -324,8 +324,8 @@ const LESSON_DIALOGUES = {
             { speaker: "Học sinh A", role: "a", zh: "我想买红色的。有没有白色的？", pinyin: "Wǒ xiǎng mǎi hóngsè de. Yǒu méiyǒu báisè de?", vi: "Tôi muốn mua màu đỏ. Có màu trắng không?" },
             { speaker: "Học sinh B", role: "b", zh: "有，白色的两百五十块。还有蓝色、黑色和粉红色的。", pinyin: "Yǒu, báisè de liǎngbǎi wǔshí kuài. Hái yǒu lánsè, hēisè hé fěnhóngsè de.", vi: "Có, màu trắng hai trăm năm mươi tệ. Còn có màu xanh dương, đen và hồng nữa." },
             { speaker: "Học sinh A", role: "a", zh: "那条牛仔裤多少钱？", pinyin: "Nà tiáo niúzǎikù duōshao qián?", vi: "Chiếc quần jeans kia bao nhiêu tiền?" },
-            { speaker: "Học sinh B", role: "b", zh: "那条牛仔裤一百八十块。你穿多大号的？", pinyin: "Nà tiáo niúzǎikù yìbǎi bāshí kuài. Nǐ chuān duō dà hào de?", vi: "Chiếc quần jeans đó một trăm tám mươi tệ. Bạn mặc cỡ bao nhiêu?" },
-            { speaker: "Học sinh A", role: "a", zh: "我穿中号的。我要买这件白色毛衣和那条牛仔裤。", pinyin: "Wǒ chuān zhōnghào de. Wǒ yào mǎi zhè jiàn báisè máoyī hé nà tiáo niúzǎikù.", vi: "Tôi mặc cỡ vừa. Tôi muốn mua chiếc áo len trắng và chiếc quần jeans đó." },
+            { speaker: "Học sinh B", role: "b", zh: "那条牛仔裤一百八十块。", pinyin: "Nà tiáo niúzǎikù yìbǎi bāshí kuài.", vi: "Chiếc quần jeans đó một trăm tám mươi tệ." },
+            { speaker: "Học sinh A", role: "a", zh: "我要买这件白色毛衣和那条牛仔裤。", pinyin: "Wǒ yào mǎi zhè jiàn báisè máoyī hé nà tiáo niúzǎikù.", vi: "Tôi muốn mua chiếc áo len trắng và chiếc quần jeans đó." },
             { speaker: "Học sinh B", role: "b", zh: "好的，一共四百三十块钱。", pinyin: "Hǎo de, yīgòng sìbǎi sānshí kuài qián.", vi: "Vâng, tổng cộng bốn trăm ba mươi tệ." }
         ],
         5: [
