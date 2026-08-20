@@ -181,6 +181,86 @@ const GIAO_TIEP_1_B3_VOCAB = [
     { char: "衣服", pinyin: "yīfu", hanViet: "Y phục", meaning: "Quần áo, trang phục", pos: "Danh từ" },
     { char: "穿", pinyin: "chuān", hanViet: "Xuyên", meaning: "Mặc, đi (giày dép)", pos: "Động từ" }
 ];
+
+const GIAO_TIEP_1_B4_VOCAB = [
+    { char: "米饭", pinyin: "mǐfàn", hanViet: "Mễ phạn", meaning: "Cơm, cơm trắng", pos: "Danh từ" },
+    { char: "花茶", pinyin: "huāchá", hanViet: "Hoa trà", meaning: "Trà hoa", pos: "Danh từ" },
+    { char: "橙汁", pinyin: "chéngzhī", hanViet: "Trành trấp", meaning: "Nước cam", pos: "Danh từ" },
+    { char: "啤酒", pinyin: "píjiǔ", hanViet: "Tỳ tửu", meaning: "Bia", pos: "Danh từ" },
+    { char: "可口可乐", pinyin: "kěkǒukělè", hanViet: "Khả khẩu khả lạc", meaning: "Coca-Cola", pos: "Danh từ" },
+    { char: "百事可乐", pinyin: "bǎishìkělè", hanViet: "Bách sự khả lạc", meaning: "Pepsi", pos: "Danh từ" },
+    { char: "肯德基", pinyin: "kěndéjī", hanViet: "Khẳng đức cơ", meaning: "KFC", pos: "Danh từ" },
+    { char: "麦当劳", pinyin: "màidāngláo", hanViet: "Mạch đương lao", meaning: "McDonald's", pos: "Danh từ" },
+    { char: "汉堡包", pinyin: "hànbǎobāo", hanViet: "Hán bảo bao", meaning: "Bánh hamburger", pos: "Danh từ" },
+    { char: "比萨饼", pinyin: "bǐsàbǐng", hanViet: "Tỷ tát bính", meaning: "Bánh pizza", pos: "Danh từ" },
+    { char: "炸鸡", pinyin: "zhájī", hanViet: "Tạc kê", meaning: "Gà rán", pos: "Danh từ" },
+    { char: "薯条", pinyin: "shǔtiáo", hanViet: "Thự điều", meaning: "Khoai tây chiên", pos: "Danh từ" },
+    { char: "套餐", pinyin: "tàocān", hanViet: "Tào xan", meaning: "Suất ăn, combo, set menu", pos: "Danh từ" },
+    { char: "冰淇淋", pinyin: "bīngqílín", hanViet: "Băng kỳ lâm", meaning: "Kem", pos: "Danh từ" },
+    { char: "火锅", pinyin: "huǒguō", hanViet: "Hỏa oa", meaning: "Lẩu", pos: "Danh từ" },
+    { char: "肉", pinyin: "ròu", hanViet: "Nhục", meaning: "Thịt", pos: "Danh từ" },
+    { char: "鸡", pinyin: "jī", hanViet: "Kê", meaning: "Gà, thịt gà", pos: "Danh từ" },
+    { char: "鸭", pinyin: "yā", hanViet: "Áp", meaning: "Vịt, thịt vịt", pos: "Danh từ" },
+    { char: "鱼", pinyin: "yú", hanViet: "Ngư", meaning: "Cá", pos: "Danh từ" },
+    { char: "茄子", pinyin: "qiézi", hanViet: "Gia tử", meaning: "Cà tím", pos: "Danh từ" },
+    { char: "鸡蛋", pinyin: "jīdàn", hanViet: "Kê đản", meaning: "Trứng gà", pos: "Danh từ" },
+    { char: "豆腐", pinyin: "dòufu", hanViet: "Đậu hũ", meaning: "Đậu phụ, đậu hũ", pos: "Danh từ" },
+    { char: "猪", pinyin: "zhū", hanViet: "Trư", meaning: "Con lợn, con heo", pos: "Danh từ" },
+    { char: "牛", pinyin: "niú", hanViet: "Ngưu", meaning: "Con bò", pos: "Danh từ" },
+    { char: "羊", pinyin: "yáng", hanViet: "Dương", meaning: "Con dê, con cừu", pos: "Danh từ" },
+    { char: "海鲜", pinyin: "hǎixiān", hanViet: "Hải tiên", meaning: "Hải sản", pos: "Danh từ" },
+    { char: "虾", pinyin: "xiā", hanViet: "Hà", meaning: "Tôm", pos: "Danh từ" },
+    { char: "螃蟹", pinyin: "pángxiè", hanViet: "Bàng giải", meaning: "Cua", pos: "Danh từ" },
+    { char: "章鱼", pinyin: "zhāngyú", hanViet: "Chương ngư", meaning: "Bạch tuộc", pos: "Danh từ" },
+    { char: "鱿鱼", pinyin: "yóuyú", hanViet: "Vưu ngư", meaning: "Mực ống, con mực", pos: "Danh từ" },
+    { char: "蔬菜", pinyin: "shūcài", hanViet: "Sơ thái", meaning: "Rau, rau xanh", pos: "Danh từ" },
+    { char: "蘑菇", pinyin: "mógū", hanViet: "Ma cô", meaning: "Nấm", pos: "Danh từ" },
+    { char: "盘子", pinyin: "pánzi", hanViet: "Bàn tử", meaning: "Đĩa, cái đĩa", pos: "Danh từ" },
+    { char: "叉子", pinyin: "chāzi", hanViet: "Xoa tử", meaning: "Dĩa (ăn), cái nĩa", pos: "Danh từ" },
+    { char: "勺子", pinyin: "sháozi", hanViet: "Chước tử", meaning: "Thìa, muỗng", pos: "Danh từ" },
+    { char: "刀子", pinyin: "dāozi", hanViet: "Đao tử", meaning: "Dao, cái dao", pos: "Danh từ" },
+    { char: "碗", pinyin: "wǎn", hanViet: "Oản", meaning: "Bát, chén", pos: "Danh từ" },
+    { char: "筷子", pinyin: "kuàizi", hanViet: "Khoái tử", meaning: "Đũa, đôi đũa", pos: "Danh từ" },
+    { char: "餐巾纸", pinyin: "cānjīnzhǐ", hanViet: "Xan cân chỉ", meaning: "Khăn giấy, khăn ăn", pos: "Danh từ" },
+    { char: "牙签", pinyin: "yáqiān", hanViet: "Nha tiêm", meaning: "Tăm, tăm xỉa răng", pos: "Danh từ" },
+    { char: "买单", pinyin: "mǎidān", hanViet: "Mãi đơn", meaning: "Thanh toán, tính tiền", pos: "Động từ" },
+    { char: "打包", pinyin: "dǎbāo", hanViet: "Đả bao", meaning: "Gói mang về, đóng gói mang về", pos: "Động từ" },
+    { char: "结账", pinyin: "jiézhàng", hanViet: "Kết chướng", meaning: "Thanh toán, thanh toán hóa đơn", pos: "Động từ" },
+    { char: "付", pinyin: "fù", hanViet: "Phó", meaning: "Trả (tiền), thanh toán", pos: "Động từ" },
+    { char: "刷卡", pinyin: "shuā kǎ", hanViet: "Sát tạp", meaning: "Quẹt thẻ", pos: "Động từ" },
+    { char: "现金", pinyin: "xiànjīn", hanViet: "Hiện kim", meaning: "Tiền mặt", pos: "Danh từ" },
+    { char: "支付宝", pinyin: "zhīfùbǎo", hanViet: "Chi phó bảo", meaning: "Alipay", pos: "Danh từ" },
+    { char: "微信", pinyin: "wēixìn", hanViet: "Vi tín", meaning: "WeChat", pos: "Danh từ" },
+    { char: "扫码", pinyin: "sǎo mǎ", hanViet: "Tảo mã", meaning: "Quét mã, quét mã QR", pos: "Động từ" },
+    { char: "转账", pinyin: "zhuǎnzhàng", hanViet: "Chuyển chướng", meaning: "Chuyển khoản", pos: "Động từ" },
+    { char: "酸", pinyin: "suān", hanViet: "Toan", meaning: "Chua", pos: "Tính từ" },
+    { char: "甜", pinyin: "tián", hanViet: "Điềm", meaning: "Ngọt", pos: "Tính từ" },
+    { char: "苦", pinyin: "kǔ", hanViet: "Khổ", meaning: "Đắng", pos: "Tính từ" },
+    { char: "辣", pinyin: "là", hanViet: "Lạt", meaning: "Cay", pos: "Tính từ" },
+    { char: "咸", pinyin: "xián", hanViet: "Hàm", meaning: "Mặn", pos: "Tính từ" },
+    { char: "麻", pinyin: "má", hanViet: "Tê", meaning: "Tê, tê cay", pos: "Tính từ" },
+    { char: "味精", pinyin: "wèijīng", hanViet: "Vị tinh", meaning: "Mì chính, bột ngọt", pos: "Danh từ" },
+    { char: "糖", pinyin: "táng", hanViet: "Đường", meaning: "Đường", pos: "Danh từ" },
+    { char: "盐", pinyin: "yán", hanViet: "Diêm", meaning: "Muối", pos: "Danh từ" },
+    { char: "酱油", pinyin: "jiàngyóu", hanViet: "Tương du", meaning: "Nước tương, xì dầu", pos: "Danh từ" },
+    { char: "鱼露", pinyin: "yúlù", hanViet: "Ngư lộ", meaning: "Nước mắm", pos: "Danh từ" },
+    { char: "辣酱", pinyin: "làjiàng", hanViet: "Lạt tương", meaning: "Tương ớt", pos: "Danh từ" },
+    { char: "番茄酱", pinyin: "fānqiéjiàng", hanViet: "Phiên già tương", meaning: "Tương cà", pos: "Danh từ" },
+    { char: "辣椒", pinyin: "làjiāo", hanViet: "Lạt tiêu", meaning: "Ớt", pos: "Danh từ" },
+    { char: "胡椒", pinyin: "hújiāo", hanViet: "Hồ tiêu", meaning: "Tiêu, hạt tiêu", pos: "Danh từ" },
+    { char: "香菜", pinyin: "xiāngcài", hanViet: "Hương thái", meaning: "Rau mùi, ngò rí", pos: "Danh từ" },
+    { char: "葱", pinyin: "cōng", hanViet: "Thông", meaning: "Hành, hành lá", pos: "Danh từ" },
+    { char: "姜", pinyin: "jiāng", hanViet: "Khương", meaning: "Gừng", pos: "Danh từ" },
+    { char: "蒜", pinyin: "suàn", hanViet: "Toán", meaning: "Tỏi", pos: "Danh từ" },
+    { char: "忌口", pinyin: "jìkǒu", hanViet: "Kỵ khẩu", meaning: "Kiêng ăn, đồ ăn cần kiêng kỵ", pos: "Động từ" },
+    { char: "别放", pinyin: "bié fàng", hanViet: "Biệt phóng", meaning: "Đừng cho vào, đừng bỏ vào", pos: "Động từ" },
+    { char: "服务员", pinyin: "fúwùyuán", hanViet: "Phục vụ viên", meaning: "Phục vụ, nhân viên phục vụ", pos: "Danh từ" },
+    { char: "上菜", pinyin: "shàng cài", hanViet: "Thượng thái", meaning: "Lên món, dọn thức ăn ra", pos: "Động từ" },
+    { char: "能", pinyin: "néng", hanViet: "Năng", meaning: "Có thể", pos: "Động từ" },
+    { char: "快", pinyin: "kuài", hanViet: "Khoái", meaning: "Nhanh, mau", pos: "Tính từ" },
+    { char: "看", pinyin: "kàn", hanViet: "Khán", meaning: "Xem, nhìn, đọc", pos: "Động từ" }
+];
+
 const GIAO_TIEP_1_B5_VOCAB = [
     { char: "家", pinyin: "jiā", hanViet: "Gia", meaning: "Nhà, gia đình", pos: "Danh từ" },
     { char: "口", pinyin: "kǒu", hanViet: "Khẩu", meaning: "Miệng (lượng từ chỉ số thành viên trong gia đình)", pos: "Lượng từ" },
@@ -327,6 +407,17 @@ const LESSON_DIALOGUES = {
             { speaker: "Học sinh B", role: "b", zh: "那条牛仔裤一百八十块。", pinyin: "Nà tiáo niúzǎikù yìbǎi bāshí kuài.", vi: "Chiếc quần jeans đó một trăm tám mươi tệ." },
             { speaker: "Học sinh A", role: "a", zh: "我要买这件白色毛衣和那条牛仔裤。", pinyin: "Wǒ yào mǎi zhè jiàn báisè máoyī hé nà tiáo niúzǎikù.", vi: "Tôi muốn mua chiếc áo len trắng và chiếc quần jeans đó." },
             { speaker: "Học sinh B", role: "b", zh: "好的，一共四百三十块钱。", pinyin: "Hǎo de, yīgòng sìbǎi sānshí kuài qián.", vi: "Vâng, tổng cộng bốn trăm ba mươi tệ." }
+        ],
+        4: [
+            { speaker: "Phục vụ", role: "a", zh: "你好！这是菜单，你们想吃什么？", pinyin: "Nǐ hǎo! Zhè shì càidān, nǐmen xiǎng chī shénme?", vi: "Xin chào! Đây là thực đơn, các bạn muốn ăn gì?" },
+            { speaker: "Học sinh A", role: "b", zh: "我要一个宫保鸡丁，一个家常豆腐，还要两碗米饭。", pinyin: "Wǒ yào yí gè gōngbǎojīdīng, yí gè jiācháng dòufu, hái yào liǎng wǎn mǐfàn.", vi: "Tôi muốn một phần gà cung bảo, một phần đậu phụ gia đình, và hai bát cơm." },
+            { speaker: "Phục vụ", role: "a", zh: "好的。你们喝点儿什么？", pinyin: "Hǎo de. Nǐmen hē diǎnr shénme?", vi: "Vâng. Các bạn uống chút gì không?" },
+            { speaker: "Học sinh B", role: "b", zh: "我要一杯橙汁，他要一瓶啤酒。能快一点儿上菜吗？", pinyin: "Wǒ yào yì bēi chéngzhī, tā yào yì píng píjiǔ. Néng kuài yìdiǎnr shàng cài ma?", vi: "Tôi muốn một cốc nước cam, anh ấy muốn một chai bia. Có thể lên món nhanh một chút không?" },
+            { speaker: "Phục vụ", role: "a", zh: "好的，请稍等，很快就上菜。", pinyin: "Hǎo de, qǐng shāoděng, hěn kuài jiù shàng cài.", vi: "Vâng, xin chờ một lát, món ăn sẽ lên rất nhanh." },
+            { speaker: "Học sinh A", role: "b", zh: "服务员，买单！打包这两个菜。", pinyin: "Fúwùyuán, mǎidān! Dǎbāo zhè liǎng gè cài.", vi: "Phục vụ ơi, thanh toán! Đóng gói mang về hai món này." },
+            { speaker: "Phục vụ", role: "a", zh: "一共两百块钱。请问怎么付？", pinyin: "Yígòng liǎngbǎi kuài qián. Qǐngwèn zěnme fù?", vi: "Tổng cộng hai trăm tệ. Xin hỏi thanh toán thế nào?" },
+            { speaker: "Học sinh B", role: "b", zh: "微信扫码付，可以吗？", pinyin: "Wēixìn sǎo mǎ fù, kěyǐ ma?", vi: "Thanh toán quét mã WeChat được không?" },
+            { speaker: "Phục vụ", role: "a", zh: "当然可以，请扫这里。", pinyin: "Dāngrán kěyǐ, qǐng sǎo zhèlǐ.", vi: "Đương nhiên có thể, xin mời quét ở đây." }
         ],
         5: [
             { speaker: "Học sinh A", role: "a", zh: "你家有几口人？", pinyin: "Nǐ jiā yǒu jǐ kǒu rén?", vi: "Nhà bạn có mấy người?" },
@@ -519,7 +610,20 @@ const CHAR_DATABASE = {
     "婆": { hanViet: "Bà", radical: "Nữ (女) - phụ nữ", strokes: 11, strokeSteps: ["1. Điểm (点)", "2. Phẩy (撇)", "3. Ngang (横)", "4. Phẩy (撇)", "5. Ngang gập uốn móc (横折弯钩)", "6. Ngang (横)", "7. Sổ (竖)", "8. Ngang gập (横折)", "9. Ngang (横)", "10. Sổ dọc (竖)", "11. Nét gập nữ (女)"] },
     "兄": { hanViet: "Huynh", radical: "Nhân (儿) - người", strokes: 5, strokeSteps: ["1. Sổ đứng (竖)", "2. Ngang gập (横折)", "3. Ngang (横)", "4. Phẩy (撇)", "5. Sổ uốn móc (竖弯钩)"] },
     "和": { hanViet: "Hòa", radical: "Khẩu (口) - cái miệng", strokes: 8, strokeSteps: ["1. Phẩy (撇)", "2. Ngang (横)", "3. Sổ (竖)", "4. Phẩy (撇)", "5. Chấm (点)", "6. Sổ đứng (竖)", "7. Ngang gập (横折)", "8. Ngang đáy (横)"] },
-    "有": { hanViet: "Hữu", radical: "Nguyệt (月) - mặt trăng", strokes: 6, strokeSteps: ["1. Ngang (横)", "2. Phẩy (撇)", "3. Sổ đứng (竖)", "4. Ngang gập (横折)", "5. Ngang (横)", "6. Ngang khép (横)"] }
+    "有": { hanViet: "Hữu", radical: "Nguyệt (月) - mặt trăng", strokes: 6, strokeSteps: ["1. Ngang (横)", "2. Phẩy (撇)", "3. Sổ đứng (竖)", "4. Ngang gập (横折)", "5. Ngang (横)", "6. Ngang khép (横)"] },
+    "买": { hanViet: "Mãi", radical: "Mịch (冖) - che phủ, trùm lên", strokes: 6 },
+    "卖": { hanViet: "Mại", radical: "Thập (十) - mười", strokes: 8 },
+    "钱": { hanViet: "Tiền", radical: "Kim (钅) - kim loại, tiền bạc", strokes: 10 },
+    "肉": { hanViet: "Nhục", radical: "Nhục (肉) - thịt", strokes: 6 },
+    "鱼": { hanViet: "Ngư", radical: "Ngư (鱼) - con cá", strokes: 8 },
+    "鸡": { hanViet: "Kê", radical: "Điểu (鸟) - con chim", strokes: 7 },
+    "菜": { hanViet: "Thái", radical: "Thảo (艹) - cây cỏ", strokes: 11 },
+    "付": { hanViet: "Phó", radical: "Nhân đứng (亻) - con người", strokes: 5 },
+    "茶": { hanViet: "Trà", radical: "Thảo (艹) - cây cỏ, trà", strokes: 9 },
+    "酒": { hanViet: "Tửu", radical: "Dậu (酉) - bình rượu, chất men", strokes: 10 },
+    "甜": { hanViet: "Điềm", radical: "Cam (甘) - ngọt, ngon ngọt", strokes: 11 },
+    "辣": { hanViet: "Lạt", radical: "Tân (辛) - cay, vất vả", strokes: 14 },
+    "酸": { hanViet: "Toan", radical: "Dậu (酉) - bình rượu, chất men, lên men chua", strokes: 14 }
 };
 
 // Application State Variables
@@ -815,12 +919,12 @@ window.enterCourse = function(courseName) {
                     <span class="lesson-status-badge">Sẵn sàng học &rarr;</span>
                 </div>
 
-                <!-- Lesson 4 (Locked) -->
-                <div class="lesson-card locked border-gray">
+                <!-- Lesson 4 (Unlocked) -->
+                <div class="lesson-card unlocked border-blue cursor-pointer" onclick="enterLesson(4)">
                     <div class="lesson-num">Bài 4</div>
-                    <h3>Món ăn & Ẩm thực</h3>
+                    <h3><span class="chinese-char">我要一个宫保鸡丁。</span></h3>
                     <p class="lesson-desc-text">Gọi món ăn, diễn đạt sở thích ăn uống và thanh toán hóa đơn bằng tiếng Trung.</p>
-                    <span class="lesson-status-badge badge-locked">Đang thiết lập</span>
+                    <span class="lesson-status-badge">Sẵn sàng học &rarr;</span>
                 </div>
 
                 <!-- Lesson 5 (Unlocked) -->
@@ -897,7 +1001,7 @@ window.enterCourse = function(courseName) {
 };
 
 window.enterLesson = function(lessonNum) {
-    if (lessonNum !== 1 && lessonNum !== 2 && lessonNum !== 3 && lessonNum !== 5 && lessonNum !== 6) {
+    if (lessonNum !== 1 && lessonNum !== 2 && lessonNum !== 3 && lessonNum !== 4 && lessonNum !== 5 && lessonNum !== 6) {
         alert("Bài học này đang được Cô Chang chuẩn bị nội dung. Bạn hãy học 'Bài 1 / Chủ đề 1' cực kỳ sinh động đang có sẵn nhé! 🥰");
         return;
     }
@@ -922,6 +1026,11 @@ window.enterLesson = function(lessonNum) {
             document.getElementById('workspace-badge').style.display = 'inline-block';
             document.getElementById('workspace-lesson-title').innerHTML = `Lớp Giao tiếp 1 - Bài 3: <span class="chinese-char">这件毛衣怎么卖？</span>`;
             document.getElementById('workspace-badge').innerText = `Giao tiếp 1 • Bài 3`;
+        } else if (lessonNum === 4) {
+            VOCAB_DATA = [...GIAO_TIEP_1_B4_VOCAB];
+            document.getElementById('workspace-badge').style.display = 'inline-block';
+            document.getElementById('workspace-lesson-title').innerHTML = `Lớp Giao tiếp 1 - Bài 4: <span class="chinese-char">我要一个宫保鸡丁。</span>`;
+            document.getElementById('workspace-badge').innerText = `Giao tiếp 1 • Bài 4`;
         } else if (lessonNum === 5) {
             VOCAB_DATA = [...GIAO_TIEP_1_B5_VOCAB];
             document.getElementById('workspace-badge').style.display = 'inline-block';
@@ -1416,6 +1525,12 @@ function generateQuizQuestions() {
                 { q: 'Điền từ vào ô trống:<br>A: <span class="chinese-char">今天是星期几？</span><br>B: <span class="chinese-char">今天是_______。</span> (Gợi ý: Cuối tuần)', ans: "周末", opts: ["周末", "号", "点", "年"] },
                 { q: 'Điền từ vào ô trống:<br>A: <span class="chinese-char">你几点上班？</span><br>B: <span class="chinese-char">我_______早上八点上班。</span> (Gợi ý: Hàng ngày/Mỗi ngày)', ans: "每天", opts: ["每天", "去年", "前天", "差"] }
             ];
+        } else if (currentLesson === 4) {
+            dialogues = [
+                { q: 'Điền từ vào ô trống:<br>A: <span class="chinese-char">服务员，我要一个_______。</span> (Gợi ý: Gà Cung Bảo)', ans: "宫保鸡丁", opts: ["宫保鸡丁", "汉堡包", "比萨饼", "豆腐"] },
+                { q: 'Điền từ vào ô trống:<br>A: <span class="chinese-char">我们要两碗_______。</span> (Gợi ý: Cơm trắng)', ans: "米饭", opts: ["米饭", "啤酒", "橙汁", "花茶"] },
+                { q: 'Điền từ vào ô trống:<br>A: <span class="chinese-char">服务员，_______！</span> (Gợi ý: Thanh toán / Tính tiền)', ans: "买单", opts: ["买单", "打包", "上菜", "忌口"] }
+            ];
         } else if (currentLesson === 5) {
             dialogues = [
                 { q: 'Điền từ vào ô trống:<br>A: <span class="chinese-char">你家有几_______人？</span><br>B: <span class="chinese-char">我家有五口人。</span>', ans: "口", opts: ["口", "个", "人", "家"] },
@@ -1540,6 +1655,27 @@ function generateQuizQuestions() {
                 type: "written-fill-blank",
                 question: `Điền chữ Hán thích hợp vào chỗ trống để dịch câu "Hôm nay là sinh nhật tôi": <span class="chinese-char">今天是我 ____ 日。</span> (shēng)`,
                 correctAnswer: "生"
+            });
+        } else if (currentLesson === 4) {
+            quizQuestions.push({
+                type: "written-fill-blank",
+                question: `Điền chữ Hán thích hợp vào chỗ trống để dịch câu "Cơm trắng": <span class="chinese-char">米____。</span>`,
+                correctAnswer: "饭"
+            });
+            quizQuestions.push({
+                type: "written-fill-blank",
+                question: `Điền chữ Hán thích hợp vào chỗ trống để dịch câu "Bia": <span class="chinese-char">啤____。</span>`,
+                correctAnswer: "酒"
+            });
+            quizQuestions.push({
+                type: "written-fill-blank",
+                question: `Điền chữ Hán thích hợp vào chỗ trống để dịch câu "Mì chính": <span class="chinese-char">味____。</span>`,
+                correctAnswer: "精"
+            });
+            quizQuestions.push({
+                type: "written-fill-blank",
+                question: `Điền chữ Hán thích hợp vào chỗ trống để dịch câu "Nước mắm": <span class="chinese-char">鱼____。</span>`,
+                correctAnswer: "露"
             });
         } else if (currentLesson === 5) {
             quizQuestions.push({

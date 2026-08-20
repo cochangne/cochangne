@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cập nhật GitHub - Cô Chang Nè</title>
+    <style>
+        :root {
+            --primary: #4f46e5;
+            --primary-hover: #4338ca;
+            --bg: #0f172a;
+            --card-bg: rgba(30, 41, 59, 0.7);
+            --text: #f8fafc;
+            --text-muted: #94a3b8;
+            --success: #10b981;
+            --error: #ef4444;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-image: radial-gradient(circle at top right, rgba(79, 70, 229, 0.15), transparent 400px),
+                              radial-gradient(circle at bottom left, rgba(16, 185, 129, 0.1), transparent 400px);
+        }
+
+        .card {
+            background: var(--card-bg);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 2.5rem;
+            border-radius: 1.5rem;
+            width: 100%;
+            max-width: 480px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(to right, #818cf8, #34d399);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin-bottom: 1.5rem;
+        }
+
+        .step-box {
+            background: rgba(15, 23, 42, 0.5);
+            border: 1px dashed rgba(255, 255, 255, 0.15);
+            padding: 1.5rem;
+            border-radius: 1rem;
+            margin-bottom: 1.5rem;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .step-box:hover {
+            border-color: var(--primary);
+            background: rgba(79, 70, 229, 0.05);
+        }
+
+        input[type="file"] {
+            display: none;
+        }
+
+        .input-group {
+            margin-bottom: 1.5rem;
+            text-align: left;
+        }
+
+        .input-group label {
+            display: block;
+            font-size: 0.85rem;
+            color: #cbd5e1;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 0.8rem;
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 0.5rem;
+            color: white;
+            box-sizing: border-box;
+            font-size: 0.9rem;
+            transition: border-color 0.2s;
+        }
+
+        .input-group input:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+
+        .btn {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 0.8rem 2rem;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 0.75rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            width: 100%;
+            display: block;
+            box-sizing: border-box;
+        }
+
+        .btn:hover:not(:disabled) {
+            background: var(--primary-hover);
+            transform: translateY(-1px);
+        }
+
+        .btn:disabled {
+            background: #475569;
+            cursor: not-allowed;
+            opacity: 0.6;
+        }
+
+        .file-list {
+            margin-top: 1rem;
+            text-align: left;
+            font-size: 0.85rem;
+            color: #34d399;
+            margin-bottom: 1.5rem;
+        }
+
+        .file-item {
+            background: rgba(16, 185, 129, 0.1);
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            margin-top: 0.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .status {
+            margin-top: 1.5rem;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .status.success { color: var(--success); }
+        .status.error { color: var(--error); }
+        .status.info { color: #60a5fa; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Cập nhật GitHub Tự động</h1>
+        <p>Hệ thống AI đã tạo sẵn công cụ này giúp bạn đẩy code lên GitHub chỉ bằng 1 cú click chuột.</p>
+        
+        <div class="step-box" onclick="document.getElementById('fileInput').click()">
+            <span style="font-size: 2rem; display: block; margin-bottom: 0.5rem;">📁</span>
+            <span style="font-weight: 600; color: #cbd5e1;">Bấm vào đây để chọn file</span>
+            <span style="display: block; font-size: 0.8rem; color: var(--text-muted); margin-top: 0.25rem;">Chọn đồng thời 2 file index.html và script_v9.js</span>
+            <input type="file" id="fileInput" multiple accept=".html,.js">
+        </div>
+
+        <div id="fileList" class="file-list"></div>
+
+        <div class="input-group">
+            <label for="tokenInput">GitHub Personal Access Token (Token mới của bạn):</label>
+            <input type="password" id="tokenInput" placeholder="Dán token ghp_... vào đây">
+        </div>
+
+        <button id="uploadBtn" class="btn" disabled>Bắt đầu cập nhật lên GitHub</button>
+        
+        <div id="statusMsg" class="status"></div>
+    </div>
+
+    <script>
+        const fileInput = document.getElementById('fileInput');
+        const fileList = document.getElementById('fileList');
+        const tokenInput = document.getElementById('tokenInput');
+        const uploadBtn = document.getElementById('uploadBtn');
+        const statusMsg = document.getElementById('statusMsg');
+
+        let selectedFiles = {};
+        const DEFAULT_TOKEN = '';
+        const OWNER = 'cochangne';
+        const REPO = 'cochangne';
+
+        // Load saved token if any
+        tokenInput.value = localStorage.getItem('github_token') || DEFAULT_TOKEN;
+
+        fileInput.addEventListener('change', (e) => {
+            selectedFiles = {};
+            fileList.innerHTML = '';
+            
+            const files = Array.from(e.target.files);
+            let hasHtml = false;
+            let hasJs = false;
+
+            files.forEach(file => {
+                if (file.name === 'index.html') {
+                    selectedFiles['index.html'] = file;
+                    hasHtml = true;
+                } else if (file.name === 'script_v9.js') {
+                    selectedFiles['script_v9.js'] = file;
+                    hasJs = true;
+                }
+            });
+
+            if (hasHtml || hasJs) {
+                Object.keys(selectedFiles).forEach(name => {
+                    const div = document.createElement('div');
+                    div.className = 'file-item';
+                    div.innerHTML = `<span>📄 ${name}</span><span>Đã sẵn sàng</span>`;
+                    fileList.appendChild(div);
+                });
+                uploadBtn.disabled = false;
+                statusMsg.textContent = 'Đã chọn file thành công. Hãy bấm nút bên dưới!';
+                statusMsg.className = 'status info';
+            } else {
+                uploadBtn.disabled = true;
+                statusMsg.textContent = 'Vui lòng chọn đúng tệp index.html hoặc script_v9.js';
+                statusMsg.className = 'status error';
+            }
+        });
+
+        uploadBtn.addEventListener('click', async () => {
+            const token = tokenInput.value.trim();
+            if (!token) {
+                statusMsg.textContent = 'Vui lòng nhập GitHub Token!';
+                statusMsg.className = 'status error';
+                return;
+            }
+
+            // Save token to localStorage for future use
+            localStorage.setItem('github_token', token);
+
+            uploadBtn.disabled = true;
+            statusMsg.textContent = 'Đang kết nối tới GitHub...';
+            statusMsg.className = 'status info';
+
+            try {
+                for (const filename of Object.keys(selectedFiles)) {
+                    statusMsg.textContent = `Đang xử lý tệp ${filename}...`;
+                    const file = selectedFiles[filename];
+                    
+                    // 1. Read file as base64
+                    const base64 = await readFileAsBase64(file);
+                    
+                    // 2. Fetch current file SHA from GitHub API
+                    statusMsg.textContent = `Đang lấy mã định danh (SHA) của ${filename} trên GitHub...`;
+                    const sha = await getFileSHA(filename, token);
+                    
+                    // 3. Upload file to GitHub
+                    statusMsg.textContent = `Đang đẩy tệp ${filename} lên GitHub...`;
+                    await uploadToGithub(filename, base64, sha, token);
+                }
+
+                statusMsg.textContent = '🎉 THÀNH CÔNG! Dự án đã được cập nhật lên GitHub Pages!';
+                statusMsg.className = 'status success';
+            } catch (err) {
+                console.error(err);
+                statusMsg.textContent = '❌ Lỗi: ' + err.message;
+                statusMsg.className = 'status error';
+                uploadBtn.disabled = false;
+            }
+        });
+
+        function readFileAsBase64(file) {
+            return new Promise((resolve, reject) => {
+                const reader = new FileReader();
+                reader.onload = () => {
+                    const dataUrl = reader.result;
+                    const base64 = dataUrl.split(',')[1];
+                    resolve(base64);
+                };
+                reader.onerror = () => reject(new Error('Không thể đọc file'));
+                reader.readAsDataURL(file);
+            });
+        }
+
+        async function getFileSHA(filename, token) {
+            const url = `https://api.github.com/repos/${OWNER}/${REPO}/contents/${filename}`;
+            const res = await fetch(url, {
+                headers: {
+                    'Authorization': `token ${token}`
+                }
+            });
+            if (res.status === 404) {
+                return null; // New file
+            }
+            if (!res.ok) {
+                throw new Error(`Không thể lấy SHA của ${filename}. Status: ${res.status}`);
+            }
+            const data = await res.json();
+            return data.sha;
+        }
+
+        async function uploadToGithub(filename, base64Content, sha, token) {
+            const url = `https://api.github.com/repos/${OWNER}/${REPO}/contents/${filename}`;
+            const body = {
+                message: `feat: cập nhật từ vựng và mở khóa Bài 4 (${filename})`,
+                content: base64Content
+            };
+            if (sha) {
+                body.sha = sha;
+            }
+
+            const res = await fetch(url, {
+                method: 'PUT',
+                headers: {
+                    'Authorization': `token ${token}`,
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(body)
+            });
+
+            if (!res.ok) {
+                const errData = await res.json().catch(() => ({}));
+                throw new Error(`Lỗi tải lên ${filename}: ${errData.message || res.statusText}`);
+            }
+        }
+    </script>
+</body>
+</html>
