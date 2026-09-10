@@ -27,9 +27,9 @@
     --color-text-dark: #334155;    /* Charcoal dark slate for readability */
     --color-text-light: #64748b;   /* Muted gray */
     
-    /* Typography (Fully Vietnamese Friendly) */
-    --font-title: 'Comfortaa', cursive, sans-serif;
-    --font-body: 'Nunito', sans-serif;
+    /* Typography (Set to Arial for Vietnamese text as requested) */
+    --font-title: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    --font-body: Arial, "Helvetica Neue", Helvetica, sans-serif;
     
     /* Calligraphic Chinese Font Stack (Khải Thư - STKaiti / KaiTi) */
     --font-chinese: "STKaiti", "KaiTi", "华文楷体", "STKaiti-SC-Regular", cursive, serif;
@@ -574,38 +574,40 @@ img {
     flex-wrap: wrap;
 }
 
-/* Right Polaroid Frame Styling */
+/* Right Polaroid & Visual Cards Styling */
 .hero-visual {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 24px;
     position: relative;
+    flex-wrap: wrap;
 }
 
 .polaroid-wrapper {
     position: relative;
-    transform: rotate(2deg);
+    transform: rotate(-2deg);
     transition: var(--transition-slow);
 }
 
 .polaroid-wrapper:hover {
-    transform: rotate(-1deg) translateY(-8px) scale(1.02);
+    transform: rotate(0deg) translateY(-8px) scale(1.02);
 }
 
 .polaroid-card {
     background-color: var(--color-white);
-    padding: 20px 20px 24px 20px;
-    border-radius: 8px;
+    padding: 16px 16px 20px 16px;
+    border-radius: 16px;
     box-shadow: 0 15px 40px rgba(0,0,0,0.06), 0 5px 15px rgba(186,230,253,0.3);
-    border: 1px solid rgba(186, 230, 253, 0.2);
-    width: 320px;
+    border: 1px solid rgba(186, 230, 253, 0.3);
+    width: 260px;
 }
 
 .polaroid-img-container {
     width: 100%;
-    height: 300px;
+    height: 270px;
     background-color: var(--color-sky-light);
-    border-radius: 4px;
+    border-radius: 12px;
     overflow: hidden;
     position: relative;
     border: 1px solid #f1f5f9;
@@ -621,7 +623,7 @@ img {
 .polaroid-card:hover .polaroid-image { transform: scale(1.05); }
 
 .polaroid-caption {
-    margin-top: 18px;
+    margin-top: 12px;
     text-align: center;
 }
 
@@ -636,6 +638,73 @@ img {
     font-size: 0.9rem;
     color: var(--color-text-light);
     font-style: italic;
+}
+
+/* Zalo QR Card Styling & Animated Arrow Pointer */
+.zalo-qr-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.zalo-arrow-indicator {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: linear-gradient(135deg, #0284c7 0%, #0068ff 100%);
+    color: #ffffff;
+    font-size: 0.88rem;
+    font-weight: 700;
+    padding: 7px 16px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+    box-shadow: 0 4px 15px rgba(0, 104, 255, 0.3);
+    animation: bouncePointer 1.8s infinite ease-in-out;
+    z-index: 5;
+}
+
+.zalo-arrow-indicator .arrow-icon {
+    font-size: 1.1rem;
+}
+
+@keyframes bouncePointer {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+}
+
+.zalo-qr-card {
+    background-color: var(--color-white);
+    padding: 14px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.06), 0 5px 15px rgba(14, 165, 233, 0.15);
+    border: 2px solid #e0f2fe;
+    width: 250px;
+    transform: rotate(2deg);
+    transition: var(--transition-slow);
+}
+
+.zalo-qr-card:hover {
+    transform: rotate(0deg) translateY(-8px) scale(1.02);
+    box-shadow: 0 20px 45px rgba(14, 165, 233, 0.25);
+}
+
+.zalo-qr-img-container {
+    width: 100%;
+    height: 270px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #f8fafc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.zalo-qr-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-color: #ffffff;
 }
 
 /* Highlights Grid */
@@ -1266,10 +1335,11 @@ img {
 .quiz-intro-card, .quiz-result-card {
     background-color: var(--color-white);
     border-radius: var(--radius-lg);
-    padding: 50px 40px;
+    padding: 45px 50px;
     box-shadow: var(--shadow-soft);
     border: 3px solid var(--color-sky-light);
-    max-width: 600px;
+    max-width: 950px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -1298,7 +1368,7 @@ img {
 }
 
 .quiz-header {
-    max-width: 600px;
+    max-width: 950px;
     margin: 0 auto 12px auto;
     display: flex;
     flex-direction: column;
@@ -1330,10 +1400,11 @@ img {
 .quiz-question-card {
     background-color: var(--color-white);
     border-radius: var(--radius-md);
-    padding: 24px 30px;
+    padding: 28px 40px;
     box-shadow: var(--shadow-soft);
     border: 2px solid var(--color-sky-light);
-    max-width: 600px;
+    max-width: 950px;
+    width: 100%;
     margin: 0 auto 12px auto;
     text-align: center;
 }
@@ -1344,16 +1415,35 @@ img {
     font-family: var(--font-body);
     font-size: 1.25rem;
     color: var(--color-text-dark);
-    line-height: 1.4;
+    line-height: 1.5;
     margin-bottom: 18px;
 }
 
 .options-grid {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
-    max-width: 500px;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 12px;
+    max-width: 900px;
     margin: 0 auto;
+}
+
+/* Ruby Pinyin Annotations for Quiz Answer Keys */
+ruby {
+    display: inline-flex;
+    flex-direction: column-reverse;
+    vertical-align: bottom;
+    align-items: center;
+    margin: 0 3px;
+    line-height: 1.1;
+}
+
+rt {
+    font-family: Arial, sans-serif !important;
+    font-size: 0.75rem !important;
+    font-weight: 700 !important;
+    color: #0284c7 !important;
+    line-height: 1.1 !important;
+    margin-bottom: 4px !important;
 }
 
 .option-btn {

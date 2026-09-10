@@ -158,7 +158,59 @@ const GIAO_TIEP_1_B5_VOCAB = [
     { char: "矮", pinyin: "ǎi", hanViet: "Áo", meaning: "Lùn, thấp", pos: "Tính từ" },
     { char: "胖", pinyin: "pàng", hanViet: "Bàng", meaning: "Béo, mập", pos: "Tính từ" },
     { char: "瘦", pinyin: "shòu", hanViet: "Sấu", meaning: "Gầy, ốm", pos: "Tính từ" }
+];
 
+const GIAO_TIEP_2_B7_VOCAB = [
+    { char: "左边", pinyin: "zuǒbiān", hanViet: "Tả biên", meaning: "Bên trái", pos: "Danh từ" },
+    { char: "右边", pinyin: "yòubiān", hanViet: "Hữu biên", meaning: "Bên phải", pos: "Danh từ" },
+    { char: "东边", pinyin: "dōngbiān", hanViet: "Đông biên", meaning: "Phía đông", pos: "Danh từ" },
+    { char: "西边", pinyin: "xībiān", hanViet: "Tây biên", meaning: "Phía tây", pos: "Danh từ" },
+    { char: "南边", pinyin: "nánbiān", hanViet: "Nam biên", meaning: "Phía nam", pos: "Danh từ" },
+    { char: "北边", pinyin: "běibiān", hanViet: "Bắc biên", meaning: "Phía bắc", pos: "Danh từ" },
+    { char: "往", pinyin: "wǎng", hanViet: "Vãng", meaning: "Hướng về, đi về phía", pos: "Giới từ / Động từ" },
+    { char: "拐", pinyin: "guǎi", hanViet: "Quải", meaning: "Rẽ, ngoặt", pos: "Động từ" },
+    { char: "到", pinyin: "dào", hanViet: "Đáo", meaning: "Đến, tới", pos: "Động từ" },
+    { char: "红绿灯", pinyin: "hónglǜdēng", hanViet: "Hồng lục đăng", meaning: "Đèn giao thông (xanh đỏ)", pos: "Danh từ" },
+    { char: "十字路口", pinyin: "shízìlùkǒu", hanViet: "Thập tự lộ khẩu", meaning: "Ngã tư", pos: "Danh từ" },
+    { char: "丁字路口", pinyin: "dīngzìlùkǒu", hanViet: "Đinh tự lộ khẩu", meaning: "Ngã ba", pos: "Danh từ" },
+    { char: "从", pinyin: "cóng", hanViet: "Tùng", meaning: "Từ (địa điểm, thời gian)", pos: "Giới từ" },
+    { char: "一直走", pinyin: "yìzhí zǒu", hanViet: "Nhất trực tẩu", meaning: "Đi thẳng", pos: "Cụm động từ" },
+    { char: "怎么走", pinyin: "zěnme zǒu", hanViet: "Chẩm ma tẩu", meaning: "Đi như thế nào", pos: "Cụm từ" },
+    { char: "环岛", pinyin: "huándǎo", hanViet: "Hoàn đảo", meaning: "Vòng xuyến, bùng binh", pos: "Danh từ" },
+    { char: "自行车", pinyin: "zìxíngchē", hanViet: "Tự hành xa", meaning: "Xe đạp", pos: "Danh từ" },
+    { char: "出租车", pinyin: "chūzūchē", hanViet: "Xuất tô xa", meaning: "Xe taxi", pos: "Danh từ" },
+    { char: "地铁", pinyin: "dìtiě", hanViet: "Địa thiết", meaning: "Tàu điện ngầm", pos: "Danh từ" },
+    { char: "骑", pinyin: "qí", hanViet: "Kỵ", meaning: "Cưỡi, đi (xe đạp, xe máy)", pos: "Động từ" },
+    { char: "坐", pinyin: "zuò", hanViet: "Tọa", meaning: "Ngồi, đi (tàu, xe, máy bay...)", pos: "Động từ" },
+    { char: "开车", pinyin: "kāichē", hanViet: "Khai xa", meaning: "Lái xe ô tô", pos: "Động từ" },
+    { char: "摩托车", pinyin: "mótuōchē", hanViet: "Ma thác xa", meaning: "Xe máy", pos: "Danh từ" },
+    { char: "汽车", pinyin: "qìchē", hanViet: "Khí xa", meaning: "Xe ô tô", pos: "Danh từ" },
+    { char: "公共汽车", pinyin: "gōnggòng qìchē", hanViet: "Công cộng khí xa", meaning: "Xe buýt", pos: "Danh từ" },
+    { char: "火车", pinyin: "huǒchē", hanViet: "Hỏa xa", meaning: "Tàu hỏa", pos: "Danh từ" },
+    { char: "高铁", pinyin: "gāotiě", hanViet: "Cao thiết", meaning: "Tàu cao tốc", pos: "Danh từ" },
+    { char: "飞机", pinyin: "fēijī", hanViet: "Phi cơ", meaning: "Máy bay", pos: "Danh từ" },
+    { char: "船", pinyin: "chuán", hanViet: "Thuyền", meaning: "Thuyền, tàu thủy", pos: "Danh từ" },
+    { char: "网约车", pinyin: "wǎngyuēchē", hanViet: "Võng ước xa", meaning: "Xe công nghệ (Grab, Be, Didi...)", pos: "Danh từ" },
+    { char: "离", pinyin: "lí", hanViet: "Ly", meaning: "Cách (khoảng cách)", pos: "Giới từ / Động từ" },
+    { char: "近", pinyin: "jìn", hanViet: "Cận", meaning: "Gần", pos: "Tính từ" },
+    { char: "远", pinyin: "yuǎn", hanViet: "Viễn", meaning: "Xa", pos: "Tính từ" },
+    { char: "分钟", pinyin: "fēnzhōng", hanViet: "Phân chung", meaning: "Phút", pos: "Danh từ" },
+    { char: "多远", pinyin: "duō yuǎn", hanViet: "Đa viễn", meaning: "Bao xa", pos: "Cụm đại từ" },
+    { char: "小时", pinyin: "xiǎoshí", hanViet: "Tiểu thời", meaning: "Giờ, tiếng đồng hồ", pos: "Danh từ" },
+    { char: "多长时间", pinyin: "duō cháng shíjiān", hanViet: "Đa trường thời gian", meaning: "Bao lâu, thời gian bao lâu", pos: "Cụm đại từ" },
+    { char: "米", pinyin: "mǐ", hanViet: "Mễ", meaning: "Mét (đơn vị)", pos: "Lượng từ / Danh từ" },
+    { char: "左右", pinyin: "zuǒyòu", hanViet: "Tả hữu", meaning: "Khoảng, xấp xỉ", pos: "Phó từ / Danh từ" },
+    { char: "怕", pinyin: "pà", hanViet: "Phạ", meaning: "Sợ, e rằng", pos: "Động từ" },
+    { char: "堵车", pinyin: "dǔchē", hanViet: "Đổ xa", meaning: "Tắc đường, kẹt xe", pos: "Động từ / Danh từ" },
+    { char: "晕车", pinyin: "yùnchē", hanViet: "Vận xa", meaning: "Say xe", pos: "Động từ" },
+    { char: "晕船", pinyin: "yùnchuán", hanViet: "Vận thuyền", meaning: "Say tàu, say thuyền", pos: "Động từ" },
+    { char: "晕飞机", pinyin: "yùnfēijī", hanViet: "Vận phi cơ", meaning: "Say máy bay", pos: "Động từ" },
+    { char: "迟到", pinyin: "chídào", hanViet: "Trì đáo", meaning: "Đến muộn, trễ", pos: "Động từ" },
+    { char: "累", pinyin: "lèi", hanViet: "Lụy", meaning: "Mệt, mệt mỏi", pos: "Tính từ" },
+    { char: "的时候", pinyin: "de shíhou", hanViet: "Đích thời hậu", meaning: "Lúc..., khi...", pos: "Cụm từ" },
+    { char: "为什么", pinyin: "wèi shénme", hanViet: "Vị thập ma", meaning: "Tại sao, vì sao", pos: "Đại từ" },
+    { char: "因为", pinyin: "yīnwèi", hanViet: "Nhân vị", meaning: "Bởi vì", pos: "Liên từ" },
+    { char: "经常", pinyin: "jīngcháng", hanViet: "Kinh thường", meaning: "Thường xuyên, hay", pos: "Phó từ" }
 ];
 
 
@@ -212,6 +264,18 @@ const LESSON_DIALOGUES = {
             { speaker: "Học sinh A", role: "a", zh: "他在学校工作，他是老师。", pinyin: "Tā zài xuéxiào gōngzuò, tā  shì lǎoshī.", vi: "Anh ấy làm việc ở trường học, anh ấy là giáo viên." },
             { speaker: "Học sinh B", role: "b", zh: "你有爷爷、奶奶吗？", pinyin: "Nǐ yǒu yéye, nǎinai ma?", vi: "Bạn có ông bà nội không?" },
             { speaker: "Học sinh A", role: "a", zh: "有，我也有外公和外婆。", pinyin: "Yǒu, wǒ yě yǒu wàigōng hé wàipó.", vi: "Có, tôi cũng có ông ngoại và bà ngoại." }
+        ]
+    },
+    "Giao tiếp 2": {
+        7: [
+            { speaker: "Học sinh A", role: "a", zh: "请问，去机场怎么走？", pinyin: "Qǐngwèn, qù jīchǎng zěnme zǒu?", vi: "Xin hỏi, đi đến sân bay đi như thế nào?" },
+            { speaker: "Học sinh B", role: "b", zh: "从这里一直走，到红绿灯往左拐，再走两百米就到了。", pinyin: "Cóng zhèlǐ yìzhí zǒu, dào hónglǜdēng wǎng zuǒ guǎi, zài zǒu liǎngbǎi mǐ jiù dào le.", vi: "Từ đây đi thẳng, đến đèn giao thông rẽ trái, đi thêm 200m nữa là đến." },
+            { speaker: "Học sinh A", role: "a", zh: "离这里多远？走路要多长时间？", pinyin: "Lí zhèlǐ duō yuǎn? Zǒulù yào duō cháng shíjiān?", vi: "Cách đây bao xa? Đi bộ mất bao lâu?" },
+            { speaker: "Học sinh B", role: "b", zh: "不远，很近，走路十分钟左右。", pinyin: "Bù yuǎn, hěn jìn, zǒulù shí fēnzhōng zuǒyòu.", vi: "Không xa, rất gần, đi bộ khoảng 10 phút." },
+            { speaker: "Học sinh A", role: "a", zh: "如果坐出租车或者打网约车呢？", pinyin: "Rúguǒ zuò chūzūchē huòzhě dǎ wǎngyuēchē ne?", vi: "Nếu đi taxi hoặc đặt xe công nghệ thì sao?" },
+            { speaker: "Học sinh B", role: "b", zh: "开车只要三分钟，但是现在是下班时间，可能会堵车。", pinyin: "Kāichē zhǐ yào sān fēnzhōng, dànshì xiànzài shì xiàbān shíjiān, kěnéng huì dǔchē.", vi: "Lái xe chỉ mất 3 phút, nhưng bây giờ là giờ tan tầm, có thể sẽ tắc đường." },
+            { speaker: "Học sinh A", role: "a", zh: "我怕堵车，而且我晕车，那我还是骑自行车吧！", pinyin: "Wǒ pà dǔchē, érqiě wǒ yùnchē, nà wǒ hái shì qí zìxíngchē ba!", vi: "Tôi sợ tắc đường, hơn nữa tôi lại say xe, vậy tôi thà đi xe đạp thôi!" },
+            { speaker: "Học sinh B", role: "b", zh: "没问题！", pinyin: "Méi wèntí!", vi: "Không vấn đề gì!" }
         ]
     },
     "Từ vựng theo chủ đề": {
@@ -585,8 +649,8 @@ function initClassFilters() {
  * --------------------------------------------------------------------------
  */
 window.enterCourse = function(courseName) {
-    if (courseName !== "Giao tiếp 1" && courseName !== "Từ vựng theo chủ đề") {
-        alert(`Khóa học ${courseName} của cô Chang hiện đang được nâng cấp tài liệu tương tác. Bạn vui lòng chọn học lớp 'Giao tiếp 1' hoặc 'Từ vựng theo chủ đề' để khám phá trọn vẹn nhé! 💕`);
+    if (courseName !== "Giao tiếp 1" && courseName !== "Giao tiếp 2" && courseName !== "Từ vựng theo chủ đề") {
+        alert(`Khóa học ${courseName} của cô Chang hiện đang được nâng cấp tài liệu tương tác. Bạn vui lòng chọn học lớp 'Giao tiếp 1', 'Giao tiếp 2' hoặc 'Từ vựng theo chủ đề' để khám phá trọn vẹn nhé! 💕`);
         return;
     }
 
@@ -629,22 +693,6 @@ window.enterCourse = function(courseName) {
                     <span class="lesson-status-badge">Sẵn sàng học &rarr;</span>
                 </div>
 
-                <!-- Lesson 3 (Locked) -->
-                <div class="lesson-card locked border-gray">
-                    <div class="lesson-num">Bài 3</div>
-                    <h3>Gia đình ấm áp</h3>
-                    <p class="lesson-desc-text">Học cách giới thiệu các thành viên trong gia đình và nghề nghiệp của họ.</p>
-                    <span class="lesson-status-badge badge-locked">Đang thiết lập</span>
-                </div>
-
-                <!-- Lesson 4 (Locked) -->
-                <div class="lesson-card locked border-gray">
-                    <div class="lesson-num">Bài 4</div>
-                    <h3>Món ăn & Ẩm thực</h3>
-                    <p class="lesson-desc-text">Gọi món ăn, diễn đạt sở thích ăn uống và thanh toán hóa đơn bằng tiếng Trung.</p>
-                    <span class="lesson-status-badge badge-locked">Đang thiết lập</span>
-                </div>
-
                 <!-- Lesson 5 (Unlocked) -->
                 <div class="lesson-card unlocked border-blue cursor-pointer" onclick="enterLesson(5)">
                     <div class="lesson-num">Bài 5</div>
@@ -652,12 +700,54 @@ window.enterCourse = function(courseName) {
                     <p class="lesson-desc-text">Từ vựng về gia đình, nghề nghiệp, nơi làm việc và các từ hỏi liên quan.</p>
                     <span class="lesson-status-badge">Sẵn sàng học &rarr;</span>
                 </div>
+            `;
+        } else if (courseName === "Giao tiếp 2") {
+            gridContainer.innerHTML = `
+                <!-- Lesson 7 (Unlocked) -->
+                <div class="lesson-card unlocked border-pink cursor-pointer" onclick="enterLesson(7)">
+                    <div class="lesson-num">Bài 7</div>
+                    <h3><span class="chinese-char">一直走</span></h3>
+                    <p class="lesson-desc-text">Từ vựng phương hướng, chỉ đường, phương tiện giao thông, khoảng cách và các tình huống đi lại.</p>
+                    <span class="lesson-status-badge">Sẵn sàng học &rarr;</span>
+                </div>
 
-                <!-- Lesson 6 (Locked) -->
+                <!-- Lesson 8 (Locked) -->
                 <div class="lesson-card locked border-gray">
-                    <div class="lesson-num">Bài 6</div>
-                    <h3>Thời gian & Lịch trình</h3>
-                    <p class="lesson-desc-text">Xem giờ giấc, nói về các ngày trong tuần, lập thời gian biểu cá nhân chi tiết.</p>
+                    <div class="lesson-num">Bài 8</div>
+                    <h3><span class="chinese-char">天气怎么样？</span></h3>
+                    <p class="lesson-desc-text">Hỏi đáp thời tiết, bốn mùa trong năm và trang phục phù hợp.</p>
+                    <span class="lesson-status-badge badge-locked">Đang thiết lập</span>
+                </div>
+
+                <!-- Lesson 9 (Locked) -->
+                <div class="lesson-card locked border-gray">
+                    <div class="lesson-num">Bài 9</div>
+                    <h3><span class="chinese-char">在医院</span></h3>
+                    <p class="lesson-desc-text">Giao tiếp khi đi khám bệnh, diễn đạt các triệu chứng sức khỏe.</p>
+                    <span class="lesson-status-badge badge-locked">Đang thiết lập</span>
+                </div>
+
+                <!-- Lesson 10 (Locked) -->
+                <div class="lesson-card locked border-gray">
+                    <div class="lesson-num">Bài 10</div>
+                    <h3><span class="chinese-char">租房子</span></h3>
+                    <p class="lesson-desc-text">Hỏi thuê nhà, trao đổi tiện ích phòng và hợp đồng sinh hoạt.</p>
+                    <span class="lesson-status-badge badge-locked">Đang thiết lập</span>
+                </div>
+
+                <!-- Lesson 11 (Locked) -->
+                <div class="lesson-card locked border-gray">
+                    <div class="lesson-num">Bài 11</div>
+                    <h3><span class="chinese-char">在邮局与银行</span></h3>
+                    <p class="lesson-desc-text">Gửi bưu kiện, giao dịch ngân hàng và đổi tiền tệ.</p>
+                    <span class="lesson-status-badge badge-locked">Đang thiết lập</span>
+                </div>
+
+                <!-- Lesson 12 (Locked) -->
+                <div class="lesson-card locked border-gray">
+                    <div class="lesson-num">Bài 12</div>
+                    <h3><span class="chinese-char">旅行与计划</span></h3>
+                    <p class="lesson-desc-text">Lên kế hoạch du lịch, đặt vé, đặt phòng khách sạn và lịch trình.</p>
                     <span class="lesson-status-badge badge-locked">Đang thiết lập</span>
                 </div>
             `;
@@ -670,46 +760,6 @@ window.enterCourse = function(courseName) {
                     <p class="lesson-desc-text">Tích lũy từ vựng về các quốc gia phổ biến trên thế giới: Việt Nam, Trung Quốc, Mỹ, Anh, Pháp, Nhật Bản...</p>
                     <span class="lesson-status-badge">Sẵn sàng học &rarr;</span>
                 </div>
-
-                <!-- Lesson 2 (Locked) -->
-                <div class="lesson-card locked border-gray">
-                    <div class="lesson-num">Chủ đề 2</div>
-                    <h3>Thực phẩm (食物)</h3>
-                    <p class="lesson-desc-text">Học tên các món ăn ngon, đồ uống quen thuộc trong bữa ăn hàng ngày.</p>
-                    <span class="lesson-status-badge badge-locked">Đang thiết lập</span>
-                </div>
-
-                <!-- Lesson 3 (Locked) -->
-                <div class="lesson-card locked border-gray">
-                    <div class="lesson-num">Chủ đề 3</div>
-                    <h3>Giao thông (交通)</h3>
-                    <p class="lesson-desc-text">Các phương tiện di chuyển phổ biến và từ vựng thông dụng trên đường đi.</p>
-                    <span class="lesson-status-badge badge-locked">Đang thiết lập</span>
-                </div>
-
-                <!-- Lesson 4 (Locked) -->
-                <div class="lesson-card locked border-gray">
-                    <div class="lesson-num">Chủ đề 4</div>
-                    <h3>Màu sắc (颜色)</h3>
-                    <p class="lesson-desc-text">Khám phá thế giới màu sắc rực rỡ và cách kết hợp mô tả đồ vật sinh động.</p>
-                    <span class="lesson-status-badge badge-locked">Đang thiết lập</span>
-                </div>
-
-                <!-- Lesson 5 (Locked) -->
-                <div class="lesson-card locked border-gray">
-                    <div class="lesson-num">Chủ đề 5</div>
-                    <h3>Nghề nghiệp (职业)</h3>
-                    <p class="lesson-desc-text">Gọi tên các ngành nghề trong xã hội và chia sẻ ước mơ nghề nghiệp tương lai.</p>
-                    <span class="lesson-status-badge badge-locked">Đang thiết lập</span>
-                </div>
-
-                <!-- Lesson 6 (Locked) -->
-                <div class="lesson-card locked border-gray">
-                    <div class="lesson-num">Chủ đề 6</div>
-                    <h3>Động vật (动物)</h3>
-                    <p class="lesson-desc-text">Tên gọi các loài động vật dễ thương xung quanh chúng ta và thế giới tự nhiên.</p>
-                    <span class="lesson-status-badge badge-locked">Đang thiết lập</span>
-                </div>
             `;
         }
     }
@@ -719,8 +769,8 @@ window.enterCourse = function(courseName) {
 };
 
 window.enterLesson = function(lessonNum) {
-    if (lessonNum !== 1 && lessonNum !== 2 && lessonNum !== 5) {
-        alert("Bài học này đang được Cô Chang chuẩn bị nội dung. Bạn hãy học 'Bài 1 / Chủ đề 1' cực kỳ sinh động đang có sẵn nhé! 🥰");
+    if (lessonNum !== 1 && lessonNum !== 2 && lessonNum !== 5 && lessonNum !== 7) {
+        alert("Bài học này đang được Cô Chang chuẩn bị nội dung. Bạn hãy chọn học các bài đang sẵn sàng nhé! 🥰");
         return;
     }
 
@@ -744,6 +794,13 @@ window.enterLesson = function(lessonNum) {
             document.getElementById('workspace-badge').style.display = 'inline-block';
             document.getElementById('workspace-lesson-title').innerHTML = `Lớp Giao tiếp 1 - Bài 5: <span class="chinese-char">你哥哥在哪儿工作？</span>`;
             document.getElementById('workspace-badge').innerText = `Giao tiếp 1 • Bài 5`;
+        }
+    } else if (currentCourse === "Giao tiếp 2") {
+        if (lessonNum === 7) {
+            VOCAB_DATA = [...GIAO_TIEP_2_B7_VOCAB];
+            document.getElementById('workspace-badge').style.display = 'inline-block';
+            document.getElementById('workspace-lesson-title').innerHTML = `Lớp Giao tiếp 2 - Bài 7: <span class="chinese-char">一直走</span>`;
+            document.getElementById('workspace-badge').innerText = `Giao tiếp 2 • Bài 7`;
         }
     } else if (currentCourse === "Từ vựng theo chủ đề") {
         VOCAB_DATA = [...VOCAB_GUOJIA];
@@ -853,272 +910,136 @@ function loadDialogue() {
         container.appendChild(lineDiv);
     });
 }
-
-window.speakDialogueLine = function(index) {
-    if ('speechSynthesis' in window) {
-        window.speechSynthesis.cancel();
-
-        // Remove active speaking class from all lines
-        const lines = document.querySelectorAll('.dialogue-line');
-        lines.forEach(line => line.classList.remove('active-speaking'));
-
-        const currentLineEl = document.getElementById(`dialogue-line-${index}`);
-        if (currentLineEl) currentLineEl.classList.add('active-speaking');
-
-        const courseDialogues = LESSON_DIALOGUES[currentCourse];
-        const lineData = courseDialogues[currentLesson][index];
-
-        const utterance = new SpeechSynthesisUtterance(lineData.zh);
-        utterance.lang = 'zh-CN';
-        utterance.rate = 0.85;
-
-        utterance.onend = () => {
-            if (currentLineEl) currentLineEl.classList.remove('active-speaking');
-        };
-
-        window.speechSynthesis.speak(utterance);
-    }
-};
-
-window.playAllDialogue = async function() {
-    if ('speechSynthesis' in window) {
-        window.speechSynthesis.cancel();
-
-        const courseDialogues = LESSON_DIALOGUES[currentCourse];
-        if (!courseDialogues || !courseDialogues[currentLesson]) return;
-
-        const lines = courseDialogues[currentLesson];
-        const playBtn = document.getElementById('btn-play-all-dialogue');
-        if (playBtn) {
-            playBtn.disabled = true;
-            playBtn.style.opacity = '0.5';
-        }
-
-        for (let i = 0; i < lines.length; i++) {
-            // Remove active class from all
-            const allLines = document.querySelectorAll('.dialogue-line');
-            allLines.forEach(l => l.classList.remove('active-speaking'));
-
-            const lineEl = document.getElementById(`dialogue-line-${i}`);
-            if (lineEl) {
-                lineEl.classList.add('active-speaking');
-                lineEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-            }
-
-            await new Promise((resolve) => {
-                const utterance = new SpeechSynthesisUtterance(lines[i].zh);
-                utterance.lang = 'zh-CN';
-                utterance.rate = 0.85;
-                utterance.onend = () => {
-                    if (lineEl) lineEl.classList.remove('active-speaking');
-                    resolve();
-                };
-                utterance.onerror = () => {
-                    if (lineEl) lineEl.classList.remove('active-speaking');
-                    resolve();
-                };
-                window.speechSynthesis.speak(utterance);
-            });
-
-            // Pause for 1 second between dialogue turns
-            await new Promise(r => setTimeout(r, 1000));
-        }
-
-        if (playBtn) {
-            playBtn.disabled = false;
-            playBtn.style.opacity = '1';
-        }
-    }
-};
-
-/**
- * --------------------------------------------------------------------------
- * FLASHCARD TAB LOGIC
- * --------------------------------------------------------------------------
- */
-function loadFlashcard(index) {
-    const word = VOCAB_DATA[index];
-    const interactiveCard = document.getElementById('interactive-flashcard');
-    
-    // Reset card flip to front face first
-    if (interactiveCard) {
-        interactiveCard.classList.remove('flipped');
-    }
-
-    // Load textual contents
-    document.getElementById('fc-front-char').innerText = word.char;
-    document.getElementById('fc-back-char').innerText = word.char;
-    document.getElementById('fc-back-pinyin').innerText = word.pinyin;
-    document.getElementById('fc-back-meaning').innerText = word.meaning;
-    document.getElementById('fc-back-pos').innerText = word.pos;
-
-    // Progress counter
-    document.getElementById('fc-progress').innerText = `${index + 1} / ${VOCAB_DATA.length}`;
-}
-
-window.flipCard = function() {
-    const card = document.getElementById('interactive-flashcard');
-    if (card) {
-        card.classList.toggle('flipped');
-    }
-};
-
-window.prevCard = function() {
-    fcIndex = (fcIndex - 1 + VOCAB_DATA.length) % VOCAB_DATA.length;
-    loadFlashcard(fcIndex);
-};
-
-window.nextCard = function() {
-    fcIndex = (fcIndex + 1) % VOCAB_DATA.length;
-    loadFlashcard(fcIndex);
-};
-
-// TTS Speech synthesis for pronunciation audio
-window.speakWord = function(event) {
-    if (event) {
-        event.stopPropagation(); // Avoid triggering card flip click!
-    }
-
-    const word = VOCAB_DATA[fcIndex].char;
-    speakChineseText(word);
-};
-
-function speakChineseText(text) {
-    if ('speechSynthesis' in window) {
-        // Cancel any active speech first
-        window.speechSynthesis.cancel();
-        
-        const utterance = new SpeechSynthesisUtterance(text);
-        utterance.lang = 'zh-CN'; // Set Chinese voice
-        utterance.rate = 0.8;    // Slightly slower rate for clean learning
-        utterance.pitch = 1.0;
-        
-        window.speechSynthesis.speak(utterance);
-    } else {
-        alert('Trình duyệt của bạn hiện chưa hỗ trợ phát âm AI phát ra loa. Bạn hãy thử mở bằng Chrome/Safari để có trải nghiệm tốt nhất nha! 🌸');
-    }
-}
-
-/**
- * --------------------------------------------------------------------------
- * CHỮ HÁN TAB DYNAMIC BREAKDOWN
- * --------------------------------------------------------------------------
- */
-function loadCharacterBreakdowns() {
-    const gridContainer = document.getElementById('characters-grid-container');
-    if (!gridContainer) return;
-
-    gridContainer.innerHTML = ''; // Reset grid container
-    
-    // Parse single characters from vocabularies database
-    const uniqueChars = [];
-    VOCAB_DATA.forEach(word => {
-        for (let i = 0; i < word.char.length; i++) {
-            const char = word.char[i];
-            if (!uniqueChars.includes(char) && CHAR_DATABASE[char]) {
-                uniqueChars.push(char);
-            }
-        }
-    });
-
-    // Global store for Hanzi Writer instances
-    window.writersStore = {};
-
-    window.replayStroke = function(char) {
-        if (window.writersStore[char]) {
-            window.writersStore[char].animateCharacter();
-        }
-    };
-
-    // Populate each parsed character details
-    uniqueChars.forEach(char => {
-        const data = CHAR_DATABASE[char];
-        
-        const card = document.createElement('div');
-        card.className = 'char-analysis-card';
-        
-        card.innerHTML = `
-            <div class="char-analysis-header">
-                <div class="char-box-large">${char}</div>
-                <div class="char-analysis-summary">
-                    <span class="char-pinyin-val" style="font-size: 1.5rem; font-weight: 800; color: var(--color-sky-deep);">${data.hanViet}</span>
-                </div>
-            </div>
-            <div class="char-analysis-body">
-                <div class="char-data-row">
-                    <strong>Hán Việt:</strong>
-                    <span>${data.hanViet}</span>
-                </div>
-                <div class="char-data-row">
-                    <strong>Bộ thủ:</strong>
-                    <span>${data.radical}</span>
-                </div>
-                <div class="char-data-row">
-                    <strong>Số nét:</strong>
-                    <span>${data.strokes} nét viết</span>
-                </div>
-                <div class="char-data-row" style="flex-direction: column; gap: 12px; align-items: center; width: 100%;">
-                    <strong style="align-self: flex-start;">Bút thuận:</strong>
-                    <div class="stroke-animation-wrapper">
-                        <div class="stroke-anim-box" id="stroke-writer-${char}"></div>
-                        <button class="btn btn-secondary btn-sm stroke-play-btn" onclick="replayStroke('${char}')" style="margin-top: 8px;">
-                            🔄 Viết lại
-                        </button>
-                    </div>
-                </div>
-            </div>
-        `;
-        
-        gridContainer.appendChild(card);
-
-        // Initialize Hanzi Writer dynamic stroke drawing
-        if (typeof HanziWriter !== 'undefined') {
-            try {
-                window.writersStore[char] = HanziWriter.create(`stroke-writer-${char}`, char, {
-                    width: 110,
-                    height: 110,
-                    padding: 5,
-                    strokeColor: '#0284c7', // Premium Sky blue stroke color
-                    outlineColor: '#f1f5f9', // Soft light slate outline
-                    drawingColor: '#e11d48',
-                    strokeAnimationSpeed: 1.5,
-                    delayBetweenStrokes: 200
-                });
-                
-                // Trigger auto animation
-                window.writersStore[char].animateCharacter();
-            } catch (err) {
-                console.warn("HanziWriter initialization failed for: " + char, err);
-            }
-        }
-    });
-}
-
-/**
- * --------------------------------------------------------------------------
- * PRACTICE / LUYỆN TẬP 20-QUESTION QUIZ SYSTEM
- * --------------------------------------------------------------------------
- */
-window.startQuiz = function() {
-    // Generate fresh questions
-    generateQuizQuestions();
-    
-    quizIndex = 0;
-    quizScore = 0;
-    incorrectQuestions = []; // Reset tracked incorrect questions
-    
-    // Hide screens, show play screen
-    document.getElementById('quiz-start-screen').classList.remove('active');
-    document.getElementById('quiz-result-screen').classList.remove('active');
-    document.getElementById('quiz-play-screen').classList.add('active');
-    
-    // Load question 1
-    loadQuizQuestion(quizIndex);
-};
-
 function generateQuizQuestions() {
     quizQuestions = [];
     
+    // Special exact 30-question format for Giao tiếp 2 - Bài 7: 一直走
+    if (currentCourse === "Giao tiếp 2" && currentLesson === 7) {
+        // --- PART 1: 17 MC Questions (Questions 1 to 17) ---
+        const part1MC = [
+            { question: `1. Từ <span class="chinese-char">左边</span> có phiên âm là gì?`, ans: "zuǒbiān", opts: ["zuǒbiān", "yòubiān", "dōngbiān", "xībiān"] },
+            { question: `2. Từ <span class="chinese-char">右边</span> có nghĩa là gì?`, ans: "Bên phải", opts: ["Bên phải", "Bên trái", "Phía đông", "Phía tây"] },
+            { question: `3. Từ <span class="chinese-char">一直走</span> có nghĩa là gì?`, ans: "Đi thẳng", opts: ["Đi thẳng", "Rẽ trái", "Rẽ phải", "Đèn giao thông"] },
+            { question: `4. Từ <span class="chinese-char">红绿灯</span> có nghĩa là gì?`, ans: "Đèn giao thông (xanh đỏ)", opts: ["Đèn giao thông (xanh đỏ)", "Ngã tư", "Ngã ba", "Tàu điện ngầm"] },
+            { question: `5. Từ <span class="chinese-char">十字路口</span> có nghĩa là gì?`, ans: "Ngã tư", opts: ["Ngã tư", "Ngã ba", "Vòng xuyến", "Đèn đỏ"] },
+            { question: `6. Từ <span class="chinese-char">丁字路口</span> có nghĩa là gì?`, ans: "Ngã ba", opts: ["Ngã ba", "Ngã tư", "Vòng xuyến", "Đèn xanh"] },
+            { question: `7. Từ <span class="chinese-char">怎么走</span> có nghĩa là gì?`, ans: "Đi như thế nào", opts: ["Đi như thế nào", "Đi thẳng", "Bao xa", "Bao lâu"] },
+            { question: `8. Từ <span class="chinese-char">地铁</span> có phiên âm là gì?`, ans: "dìtiě", opts: ["dìtiě", "chūzūchē", "zìxíngchē", "huǒchē"] },
+            { question: `9. Từ <span class="chinese-char">出租车</span> có nghĩa là gì?`, ans: "Xe taxi", opts: ["Xe taxi", "Xe đạp", "Xe buýt", "Tàu hỏa"] },
+            { question: `10. Từ <span class="chinese-char">骑</span> có nghĩa là gì?`, ans: "Cưỡi, đi (xe đạp, xe máy)", opts: ["Cưỡi, đi (xe đạp, xe máy)", "Ngồi, đi (tàu xe)", "Lái xe ô tô", "Đi bộ"] },
+            { question: `11. Từ <span class="chinese-char">坐</span> có nghĩa là gì?`, ans: "Ngồi, đi (tàu, xe, máy bay...)", opts: ["Ngồi, đi (tàu, xe, máy bay...)", "Cưỡi xe", "Lái xe", "Tắc đường"] },
+            { question: `12. Từ <span class="chinese-char">堵车</span> có nghĩa là gì?`, ans: "Tắc đường, kẹt xe", opts: ["Tắc đường, kẹt xe", "Say xe", "Đến muộn", "Mệt mỏi"] },
+            { question: `13. Từ <span class="chinese-char">晕车</span> có nghĩa là gì?`, ans: "Say xe", opts: ["Say xe", "Say tàu", "Say máy bay", "Mệt mỏi"] },
+            { question: `14. Từ <span class="chinese-char">多远</span> có phiên âm là gì?`, ans: "duō yuǎn", opts: ["duō yuǎn", "duō cháng shíjiān", "xiǎoshí", "fēnzhōng"] },
+            { question: `15. Từ <span class="chinese-char">迟到</span> có nghĩa là gì?`, ans: "Đến muộn, trễ", opts: ["Đến muộn, trễ", "Tắc đường", "Say xe", "Mệt mỏi"] },
+            { question: `16. Từ <span class="chinese-char">因为</span> có nghĩa là gì?`, ans: "Bởi vì", opts: ["Bởi vì", "Tại sao", "Khi/Lúc", "Thường xuyên"] },
+            { question: `17. Từ <span class="chinese-char">经常</span> có nghĩa là gì?`, ans: "Thường xuyên, hay", opts: ["Thường xuyên, hay", "Bởi vì", "Sợ rằng", "Cho nên"] }
+        ];
+
+        part1MC.forEach(item => {
+            quizQuestions.push({
+                type: "mc-meaning",
+                question: item.question,
+                correctAnswer: item.ans,
+                options: item.opts
+            });
+        });
+
+        // --- PART 2: 10 Sentence Rearrangement Questions (Questions 18 to 27) ---
+        const part2Rearrange = [
+            {
+                q: `18. Hãy sắp xếp các từ sau thành câu hoàn chỉnh (Học sinh đánh máy đáp án):<br><span class="chinese-char">去 / 你 / 哪儿 / ？</span>`,
+                ans: ["你去哪儿？"],
+                rubyAns: `<ruby>你<rt>nǐ</rt></ruby><ruby>去<rt>qù</rt></ruby><ruby>哪<rt>nǎ</rt></ruby><ruby>儿<rt>r</rt></ruby>？`
+            },
+            {
+                q: `19. Hãy sắp xếp các từ sau thành câu hoàn chỉnh (Học sinh đánh máy đáp án):<br><span class="chinese-char">去 / 我 / 机场 / 。</span>`,
+                ans: ["我去机场。"],
+                rubyAns: `<ruby>我<rt>wǒ</rt></ruby><ruby>去<rt>qù</rt></ruby><ruby>机<rt>jī</rt></ruby><ruby>场<rt>chǎng</rt></ruby>。`
+            },
+            {
+                q: `20. Hãy sắp xếp các từ sau thành câu hoàn chỉnh (Học sinh đánh máy đáp án):<br><span class="chinese-char">去 / 你 / 怎么走 / 机场 / 吗 / 知道 / ？</span>`,
+                ans: ["你知道去机场怎么走吗？"],
+                rubyAns: `<ruby>你<rt>nǐ</rt></ruby><ruby>知<rt>zhī</rt></ruby><ruby>道<rt>dào</rt></ruby><ruby>去<rt>qù</rt></ruby><ruby>机<rt>jī</rt></ruby><ruby>场<rt>chǎng</rt></ruby><ruby>怎<rt>zěn</rt></ruby><ruby>么<rt>me</rt></ruby><ruby>走<rt>zǒu</rt></ruby><ruby>吗<rt>ma</rt></ruby>？`
+            },
+            {
+                q: `21. Hãy sắp xếp các từ sau thành câu hoàn chỉnh (Học sinh đánh máy đáp án):<br><span class="chinese-char">往 / 一直走 / 拐 / 到 / 右 / 红绿灯 / ， / 。</span>`,
+                ans: ["一直走，到红绿灯往右拐。"],
+                rubyAns: `<ruby>一<rt>yì</rt></ruby><ruby>直<rt>zhí</rt></ruby><ruby>走<rt>zǒu</rt></ruby>，<ruby>到<rt>dào</rt></ruby><ruby>红<rt>hóng</rt></ruby><ruby>绿<rt>lǜ</rt></ruby><ruby>灯<rt>dēng</rt></ruby><ruby>往<rt>wǎng</rt></ruby><ruby>右<rt>yòu</rt></ruby><ruby>拐<rt>guǎi</rt></ruby>。`
+            },
+            {
+                q: `22. Hãy sắp xếp các từ sau thành câu hoàn chỉnh (Học sinh đánh máy đáp án):<br><span class="chinese-char">这儿 / 就 / 吧 / 停 / 。</span>`,
+                ans: ["就停这儿吧。"],
+                rubyAns: `<ruby>就<rt>jiù</rt></ruby><ruby>停<rt>tíng</rt></ruby><ruby>这<rt>zhè</rt></ruby><ruby>儿<rt>r</rt></ruby><ruby>吧<rt>ba</rt></ruby>。`
+            },
+            {
+                q: `23. Hãy sắp xếp các từ sau thành câu hoàn chỉnh (Học sinh đánh máy đáp án):<br><span class="chinese-char">怎么 / 上班 / 你 / 去 / 每天 / ？</span>`,
+                ans: ["你每天怎么去上班？"],
+                rubyAns: `<ruby>你<rt>nǐ</rt></ruby><ruby>每<rt>měi</rt></ruby><ruby>天<rt>tiān</rt></ruby><ruby>怎<rt>zěn</rt></ruby><ruby>么<rt>me</rt></ruby><ruby>去<rt>qù</rt></ruby><ruby>上<rt>shàng</rt></ruby><ruby>班<rt>bān</rt></ruby>？`
+            },
+            {
+                q: `24. Hãy sắp xếp các từ sau thành câu hoàn chỉnh (Học sinh đánh máy đáp án):<br><span class="chinese-char">骑车 / 我 / 去 / 上班 / 每天 / 。</span>`,
+                ans: ["我每天骑车去上班。"],
+                rubyAns: `<ruby>我<rt>wǒ</rt></ruby><ruby>每<rt>měi</rt></ruby><ruby>天<rt>tiān</rt></ruby><ruby>骑<rt>qí</rt></ruby><ruby>车<rt>chē</rt></ruby><ruby>去<rt>qù</rt></ruby><ruby>上<rt>shàng</rt></ruby><ruby>班<rt>bān</rt></ruby>。`
+            },
+            {
+                q: `25. Hãy sắp xếp các từ sau thành câu hoàn chỉnh (Học sinh đánh máy đáp án):<br><span class="chinese-char">离 / 远 / 公司 / 你家 / 吗 / ？</span>`,
+                ans: ["你家离公司远吗？"],
+                rubyAns: `<ruby>你<rt>nǐ</rt></ruby><ruby>家<rt>jiā</rt></ruby><ruby>离<rt>lí</rt></ruby><ruby>公<rt>gōng</rt></ruby><ruby>司<rt>sī</rt></ruby><ruby>远<rt>yuǎn</rt></ruby><ruby>吗<rt>ma</rt></ruby>？`
+            },
+            {
+                q: `26. Hãy sắp xếp các từ sau thành câu hoàn chỉnh (Học sinh đánh máy đáp án):<br><span class="chinese-char">很远 / 公司 / 我家 / 里 / 。</span>`,
+                ans: ["我家里公司很远。", "我家离公司很远。"],
+                rubyAns: `<ruby>我<rt>wǒ</rt></ruby><ruby>家<rt>jiā</rt></ruby><ruby>里<rt>lǐ</rt></ruby><ruby>公<rt>gōng</rt></ruby><ruby>司<rt>sī</rt></ruby><ruby>很<rt>hěn</rt></ruby><ruby>远<rt>yuǎn</rt></ruby>。`
+            },
+            {
+                q: `27. Hãy sắp xếp các từ sau thành câu hoàn chỉnh (Học sinh đánh máy đáp án):<br><span class="chinese-char">分钟 / 要 / 40 / 走着去 / 。</span>`,
+                ans: ["走着去要 40 分钟。", "走着去要四十分钟。"],
+                rubyAns: `<ruby>走<rt>zǒu</rt></ruby><ruby>着<rt>zhe</rt></ruby><ruby>去<rt>qù</rt></ruby><ruby>要<rt>yào</rt></ruby> 40 <ruby>分<rt>fēn</rt></ruby><ruby>钟<rt>zhōng</rt></ruby>。`
+            }
+        ];
+
+        part2Rearrange.forEach(item => {
+            quizQuestions.push({
+                type: "written-rearrange",
+                question: item.q,
+                correctAnswer: item.ans,
+                rubyAnswer: item.rubyAns
+            });
+        });
+
+        // --- PART 3: 3 Translation Questions (Questions 28 to 30) ---
+        const part3Translation = [
+            {
+                q: `28. Dịch sang tiếng Trung câu sau:<br><b>"Nhà tôi cách công ty không xa, mỗi ngày tôi lái xe máy (đi) khoảng 10 phút."</b>`,
+                ans: ["我家里公司不远，我每天骑摩托车去要十分钟左右。", "我家离公司不远，我每天骑摩托车去要十分钟左右。"],
+                rubyAns: `<ruby>我<rt>wǒ</rt></ruby><ruby>家<rt>jiā</rt></ruby><ruby>里<rt>lǐ</rt></ruby><ruby>公<rt>gōng</rt></ruby><ruby>司<rt>sī</rt></ruby><ruby>不<rt>bù</rt></ruby><ruby>远<rt>yuǎn</rt></ruby>，<ruby>我<rt>wǒ</rt></ruby><ruby>每<rt>měi</rt></ruby><ruby>天<rt>tiān</rt></ruby><ruby>骑<rt>qí</rt></ruby><ruby>摩<rt>mó</rt></ruby><ruby>托<rt>tuō</rt></ruby><ruby>车<rt>chē</rt></ruby><ruby>去<rt>qù</rt></ruby><ruby>要<rt>yào</rt></ruby><ruby>十<rt>shí</rt></ruby><ruby>分<rt>fēn</rt></ruby><ruby>钟<rt>zhōng</rt></ruby><ruby>左<rt>zuǒ</rt></ruby><ruby>右<rt>yòu</rt></ruby>。`
+            },
+            {
+                q: `29. Dịch sang tiếng Trung câu sau:<br><b>"Bởi vì kẹt xe nên hôm nay tôi đi học trễ"</b>`,
+                ans: ["因为堵车，所以我今天上课迟到。"],
+                rubyAns: `<ruby>因<rt>yīn</rt></ruby><ruby>为<rt>wèi</rt></ruby><ruby>堵<rt>dǔ</rt></ruby><ruby>车<rt>chē</rt></ruby>，<ruby>所<rt>suǒ</rt></ruby><ruby>以<rt>yǐ</rt></ruby><ruby>我<rt>wǒ</rt></ruby><ruby>今<rt>jīn</rt></ruby><ruby>天<rt>tiān</rt></ruby><ruby>上<rt>shàng</rt></ruby><ruby>课<rt>kè</rt></ruby><ruby>迟<rt>chí</rt></ruby><ruby>到<rt>dào</rt></ruby>。`
+            },
+            {
+                q: `30. Dịch sang tiếng Trung câu sau:<br><b>"Mỗi ngày anh trai đều lái xe đưa tôi đi học."</b>`,
+                ans: ["我哥哥每天都开车送我上课。"],
+                rubyAns: `<ruby>我<rt>wǒ</rt></ruby><ruby>哥<rt>gē</rt></ruby><ruby>哥<rt>gē</rt></ruby><ruby>每<rt>měi</rt></ruby><ruby>天<rt>tiān</rt></ruby><ruby>都<rt>dōu</rt></ruby><ruby>开<rt>kāi</rt></ruby><ruby>车<rt>chē</rt></ruby><ruby>送<rt>sòng</rt></ruby><ruby>我<rt>wǒ</rt></ruby><ruby>上<rt>shàng</rt></ruby><ruby>课<rt>kè</rt></ruby>。`
+            }
+        ];
+
+        part3Translation.forEach(item => {
+            quizQuestions.push({
+                type: "written-translation",
+                question: item.q,
+                correctAnswer: item.ans,
+                rubyAnswer: item.rubyAns
+            });
+        });
+
+        return; // Fixed sequence 1 to 30
+    }
+
+    // Default dynamic question generator for other lessons
     // 1. Trắc nghiệm chọn Nghĩa (8 câu)
     const mcVocabList = shuffleArray([...VOCAB_DATA]);
     for (let i = 0; i < 8; i++) {
@@ -1304,11 +1225,6 @@ function generateQuizQuestions() {
     quizQuestions = shuffleArray(quizQuestions);
 }
 
-function loadQuizQuestion(index) {
-    const q = quizQuestions[index];
-    const questionTextEl = document.getElementById('quiz-question-text');
-    const optionsContainer = document.getElementById('quiz-options-container');
-    const textBoxAnswer = document.getElementById('quiz-text-answer-box');
     const listenTriggerBox = document.getElementById('listen-quiz-box');
     const textInput = document.getElementById('quiz-text-input');
     const feedbackBox = document.getElementById('quiz-feedback-box');
