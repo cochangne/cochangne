@@ -988,9 +988,9 @@ function generateQuizQuestions() {
                 rubyAns: `<ruby>你<rt>nǐ</rt></ruby><ruby>家<rt>jiā</rt></ruby><ruby>离<rt>lí</rt></ruby><ruby>公<rt>gōng</rt></ruby><ruby>司<rt>sī</rt></ruby><ruby>远<rt>yuǎn</rt></ruby><ruby>吗<rt>ma</rt></ruby>？`
             },
             {
-                q: `26. Hãy sắp xếp các từ sau thành câu hoàn chỉnh (Học sinh đánh máy đáp án):<br><span class="chinese-char">很远 / 公司 / 我家 / 里 / 。</span>`,
-                ans: ["我家里公司很远。", "我家离公司很远。"],
-                rubyAns: `<ruby>我<rt>wǒ</rt></ruby><ruby>家<rt>jiā</rt></ruby><ruby>里<rt>lǐ</rt></ruby><ruby>公<rt>gōng</rt></ruby><ruby>司<rt>sī</rt></ruby><ruby>很<rt>hěn</rt></ruby><ruby>远<rt>yuǎn</rt></ruby>。`
+                q: `26. Hãy sắp xếp các từ sau thành câu hoàn chỉnh (Học sinh đánh máy đáp án):<br><span class="chinese-char">很远 / 公司 / 我家 / 离 / 。</span>`,
+                ans: ["我家离公司很远。", "我家里公司很远。"],
+                rubyAns: `<ruby>我<rt>wǒ</rt></ruby><ruby>家<rt>jiā</rt></ruby><ruby>离<rt>lí</rt></ruby><ruby>公<rt>gōng</rt></ruby><ruby>司<rt>sī</rt></ruby><ruby>很<rt>hěn</rt></ruby><ruby>远<rt>yuǎn</rt></ruby>。`
             },
             {
                 q: `27. Hãy sắp xếp các từ sau thành câu hoàn chỉnh (Học sinh đánh máy đáp án):<br><span class="chinese-char">分钟 / 要 / 40 / 走着去 / 。</span>`,
@@ -1350,14 +1350,86 @@ window.checkQuizAnswer = function() {
 
         textInput.disabled = true;
 
-        if (userAnswer === q.correctAnswer) {
+        const normalizeChineseStr = (str) => {
+            if (!str) return '';
+            let s = str.replace(/[\s\.\?\!,\:\;\,\;\,\.\?\!，。？！、\?\'"“”‘’\(\)\（\）\-\_\—]/g, '').trim();
+            return s.replace(/100/g, '一百')
+                    .replace(/40/g, '四十')
+                    .replace(/30/g, '三十')
+                    .replace(/20/g, '二十')
+                    .replace(/50/g, '五十')
+                    .replace(/10/g, '十')
+                    .replace(/15/g, '十五')
+                    .replace(/1/g, '一')
+                    .replace(/2/g, '二')
+                    .replace(/3/g, '三')
+                    .replace(/4/g, '四')
+                    .replace(/5/g, '五')
+                    .replace(/6/g, '六')
+                    .replace(/7/g, '七')
+                    .replace(/8/g, '八')
+                    .replace(/9/g, '九')
+                    .replace(/0/g, '零');
+        };
+
+        const getLCSLength = (str1, str2) => {
+            const m = str1.length, n = str2.length;
+            if (m === 0 || n === 0) return 0;
+            const dp = Array.from({ length: m + 1 }, () => new Int32Array(n + 1));
+            for (let i = 1; i <= m; i++) {
+                for (let j = 1; j <= n; j++) {
+                    if (str1[i - 1] === str2[j - 1]) dp[i][j] = dp[i - 1][j - 1] + 1;
+                    else dp[i][j] = Math.max(dp[i - 1][j], dp[i][j - 1]);
+                }
+            }
+            return dp[m][n];
+        };
+
+        const evaluateSmartAnswer = (userAns, targetAnsList, qType) => {
+            if (!userAns) return false;
+            const targets = Array.isArray(targetAnsList) ? targetAnsList : [targetAnsList];
+            const userNorm = normalizeChineseStr(userAns);
+            if (!userNorm) return false;
+
+            for (const target of targets) {
+                const targetNorm = normalizeChineseStr(target);
+                if (userNorm === targetNorm) return true;
+
+                const userRaw = userAns.replace(/[\s\.\?\!,\:\;\,\;\,\.\?\!，。？！、\?]/g, '').trim();
+                const targetRaw = target.replace(/[\s\.\?\!,\:\;\,\;\,\.\?\!，。？！、\?]/g, '').trim();
+                if (userRaw === targetRaw) return true;
+
+                if (qType.includes('translation') || qType.includes('rearrange') || qType.includes('written')) {
+                    const simplify = (s) => s.replace(/所以|都|吧|呢|去|左右|大概|要|花|的/g, '').replace(/里/g, '离');
+                    const userSimp = simplify(userNorm);
+                    const targetSimp = simplify(targetNorm);
+
+                    if (userSimp === targetSimp && userSimp.length > 0) return true;
+
+                    if (targetNorm.length >= 4) {
+                        const lcs = getLCSLength(userNorm, targetNorm);
+                        const maxLen = Math.max(userNorm.length, targetNorm.length);
+                        const similarity = lcs / maxLen;
+                        const lenDiff = Math.abs(userNorm.length - targetNorm.length);
+
+                        if (similarity >= 0.75 && lenDiff <= 6) return true;
+                    }
+                }
+            }
+            return false;
+        };
+
+        const isAnswerRight = evaluateSmartAnswer(userAnswer, q.correctAnswer, q.type || 'written');
+        const expectedStr = Array.isArray(q.correctAnswer) ? q.correctAnswer[0] : q.correctAnswer;
+
+        if (isAnswerRight) {
             isCorrect = true;
             textInput.classList.add('correct-state');
             quizScore++;
         } else {
             textInput.classList.add('incorrect-state');
             incorrectQuestions.push(q); // Track wrong question
-            feedbackMessage.innerText = `Chưa đúng rồi! Đáp án chuẩn là: "${q.correctAnswer}"`;
+            feedbackMessage.innerText = `Chưa đúng rồi! Đáp án chuẩn là: "${expectedStr}"`;
         }
     }
 

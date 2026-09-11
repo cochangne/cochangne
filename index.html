@@ -87,15 +87,42 @@
                         </div>
                     </div>
 
-                    <!-- Zalo QR Code Card with Arrow Pointer -->
+                    <!-- QR Code Card with Sparkling Gold Curved Arrow Pointer -->
                     <div class="zalo-qr-wrapper">
-                        <div class="zalo-arrow-indicator">
-                            <span>Kết bạn Zalo cùng Cô Chang!</span>
-                            <span class="arrow-icon">👇</span>
+                        <div class="sparkle-gold-pointer">
+                            <svg class="gold-curved-arrow" viewBox="0 0 100 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#FFF3A1"/>
+                                        <stop offset="30%" stop-color="#FFD700"/>
+                                        <stop offset="70%" stop-color="#FFA500"/>
+                                        <stop offset="100%" stop-color="#DAA520"/>
+                                    </linearGradient>
+                                    <filter id="goldGlow" x="-20%" y="-20%" width="140%" height="140%">
+                                        <feGaussianBlur stdDeviation="2.5" result="blur" />
+                                        <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                                    </filter>
+                                </defs>
+                                <!-- Curved Arrow Path -->
+                                <path d="M 25,12 Q 75,12 62,52" stroke="url(#goldGradient)" stroke-width="4.5" stroke-linecap="round" fill="none" filter="url(#goldGlow)" />
+                                <!-- Arrow Head -->
+                                <path d="M 48,42 L 62,56 L 73,44" stroke="url(#goldGradient)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" fill="none" filter="url(#goldGlow)" />
+                                
+                                <!-- Sparkle Stars -->
+                                <g class="sparkle-star s1">
+                                    <path d="M15 15 L17 20 L22 22 L17 24 L15 29 L13 24 L8 22 L13 20 Z" fill="#FFF8DC"/>
+                                </g>
+                                <g class="sparkle-star s2">
+                                    <path d="M78 22 L79.5 25.5 L83 27 L79.5 28.5 L78 32 L76.5 28.5 L73 27 L76.5 25.5 Z" fill="#FFD700"/>
+                                </g>
+                                <g class="sparkle-star s3">
+                                    <path d="M45 5 L46.5 8.5 L50 10 L46.5 11.5 L45 15 L43.5 11.5 L40 10 L43.5 8.5 Z" fill="#FFF3A1"/>
+                                </g>
+                            </svg>
                         </div>
                         <div class="zalo-qr-card">
                             <div class="zalo-qr-img-container">
-                                <img src="zalo.JPG" alt="Zalo QR Cô Chang" class="zalo-qr-image">
+                                <img src="zalo_qr_only.png" alt="QR Code Cô Chang" class="zalo-qr-image">
                             </div>
                         </div>
                     </div>
