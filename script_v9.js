@@ -408,73 +408,6 @@ const GIAO_TIEP_2_B7_VOCAB = [
     { char: "经常", pinyin: "jīngcháng", hanViet: "Kinh thường", meaning: "Thường xuyên, hay", pos: "Phó từ" }
 ];
 
-const GIAO_TIEP_2_B8_VOCAB = [
-    { char: "上边", pinyin: "shàngbian", hanViet: "Thượng biên", meaning: "Bên trên / Phía trên", pos: "Danh từ / Phương vị từ" },
-    { char: "下边", pinyin: "xiàbian", hanViet: "Hạ biên", meaning: "Bên dưới / Phía dưới", pos: "Danh từ / Phương vị từ" },
-    { char: "里边", pinyin: "lǐbian", hanViet: "Lý biên", meaning: "Bên trong", pos: "Danh từ / Phương vị từ" },
-    { char: "外边", pinyin: "wàibian", hanViet: "Ngoại biên", meaning: "Bên ngoài", pos: "Danh từ / Phương vị từ" },
-    { char: "前边", pinyin: "qiánbian", hanViet: "Tiền biên", meaning: "Phía trước / Đằng trước", pos: "Danh từ / Phương vị từ" },
-    { char: "旁边", pinyin: "pángbiān", hanViet: "Bàng biên", meaning: "Bên cạnh", pos: "Danh từ / Phương vị từ" },
-    { char: "后边", pinyin: "hòubian", hanViet: "Hậu biên", meaning: "Phía sau / Đằng sau", pos: "Danh từ / Phương vị từ" },
-    { char: "中文书", pinyin: "zhōngwén shū", hanViet: "Trung văn thư", meaning: "Sách tiếng Trung", pos: "Danh từ" },
-    { char: "杂志", pinyin: "zázhì", hanViet: "Tạp chí", meaning: "Tạp chí", pos: "Danh từ" },
-    { char: "报纸", pinyin: "bàozhǐ", hanViet: "Báo chỉ", meaning: "Tờ báo, báo chí", pos: "Danh từ" },
-    { char: "桌子", pinyin: "zhuōzi", hanViet: "Trác tử", meaning: "Cái bàn", pos: "Danh từ" },
-    { char: "椅子", pinyin: "yǐzi", hanViet: "Y tử", meaning: "Cái ghế", pos: "Danh từ" },
-    { char: "钥匙", pinyin: "yàoshi", hanViet: "Chìa khóa", meaning: "Chìa khóa", pos: "Danh từ" },
-    { char: "笔", pinyin: "bǐ", hanViet: "Bút", meaning: "Bút, cây viết", pos: "Danh từ" },
-    { char: "笔袋", pinyin: "bǐdài", hanViet: "Bút đại", meaning: "Túi đựng bút, bóp viết", pos: "Danh từ" },
-    { char: "书包", pinyin: "shūbāo", hanViet: "Thư bao", meaning: "Cặp sách, ba lô", pos: "Danh từ" },
-    { char: "袋子", pinyin: "dàizi", hanViet: "Đại tử", meaning: "Túi, bao", pos: "Danh từ" },
-    { char: "找", pinyin: "zhǎo", hanViet: "Trảo", meaning: "Tìm, tìm kiếm", pos: "Động từ" },
-    { char: "柜子", pinyin: "guìzi", hanViet: "Quỹ tử", meaning: "Cái tủ", pos: "Danh từ" },
-    { char: "鞋柜", pinyin: "xiéguì", hanViet: "Hài quỹ", meaning: "Tủ giày", pos: "Danh từ" },
-    { char: "书柜", pinyin: "shūguì", hanViet: "Thư quỹ", meaning: "Tủ sách", pos: "Danh từ" },
-    { char: "衣柜", pinyin: "yīguì", hanViet: "Y quỹ", meaning: "Tủ quần áo", pos: "Danh từ" },
-    { char: "冰箱", pinyin: "bīngxiāng", hanViet: "Băng sương", meaning: "Tủ lạnh", pos: "Danh từ" },
-    { char: "电视", pinyin: "diànshì", hanViet: "Điện thị", meaning: "Ti vi", pos: "Danh từ" },
-    { char: "电话", pinyin: "diànhuà", hanViet: "Điện thoại", meaning: "Điện thoại bàn", pos: "Danh từ" },
-    { char: "床", pinyin: "chuáng", hanViet: "Sàng", meaning: "Cái giường", pos: "Danh từ" },
-    { char: "手机", pinyin: "shǒujī", hanViet: "Thủ cơ", meaning: "Điện thoại di động", pos: "Danh từ" },
-    { char: "对面", pinyin: "duìmiàn", hanViet: "Đối diện", meaning: "Đối diện", pos: "Danh từ / Phương vị từ" },
-    { char: "附近", pinyin: "fùjìn", hanViet: "Phụ cận", meaning: "Gần đây, lân cận", pos: "Danh từ" },
-    { char: "中间", pinyin: "zhōngjiān", hanViet: "Trung gian", meaning: "Ở giữa, trung gian", pos: "Danh từ / Phương vị từ" },
-    { char: "马路", pinyin: "mǎlù", hanViet: "Mã lộ", meaning: "Đường lớn, đường xe chạy", pos: "Danh từ" },
-    { char: "车站", pinyin: "chēzhàn", hanViet: "Xa trạm", meaning: "Bến xe, trạm xe", pos: "Danh từ" },
-    { char: "还有", pinyin: "hái yǒu", hanViet: "Hoàn hữu", meaning: "Còn có, ngoài ra", pos: "Liên từ / Cụm động từ" },
-    { char: "汉语中心", pinyin: "hànyǔ zhōngxīn", hanViet: "Hán ngữ trung tâm", meaning: "Trung tâm tiếng Trung", pos: "Danh từ" },
-    { char: "公寓", pinyin: "gōngyù", hanViet: "Công ngự", meaning: "Căn hộ, chung cư", pos: "Danh từ" },
-    { char: "房子", pinyin: "fángzi", hanViet: "Phòng tử", meaning: "Ngôi nhà, căn nhà", pos: "Danh từ" },
-    { char: "运动场", pinyin: "yùndòngchǎng", hanViet: "Vận động trường", meaning: "Sân vận động, sân thể thao", pos: "Danh từ" },
-    { char: "地址", pinyin: "dìzhǐ", hanViet: "Địa chỉ", meaning: "Địa chỉ", pos: "Danh từ" },
-    { char: "第", pinyin: "dì", hanViet: "Đệ", meaning: "Thứ (dùng cho số thứ tự)", pos: "Tiền tố số thứ tự" },
-    { char: "郡", pinyin: "jùn", hanViet: "Quận", meaning: "Quận (đơn vị hành chính)", pos: "Danh từ" },
-    { char: "坊", pinyin: "fāng", hanViet: "Phường", meaning: "Phường (đơn vị hành chính)", pos: "Danh từ" },
-    { char: "路", pinyin: "lù", hanViet: "Lộ", meaning: "Tuyến đường, đường", pos: "Danh từ" },
-    { char: "之", pinyin: "zhī", hanViet: "Chi", meaning: "Của, thuộc về / Trong", pos: "Trợ từ" },
-    { char: "听说", pinyin: "tīngshuō", hanViet: "Thính thuyết", meaning: "Nghe nói", pos: "Động từ" },
-    { char: "搬", pinyin: "bān", hanViet: "Bàn", meaning: "Chuyển, dọn (nhà, đồ đạc)", pos: "Động từ" },
-    { char: "原来", pinyin: "yuánlái", hanViet: "Nguyên lai", meaning: "Hóa ra, vốn dĩ, ban đầu", pos: "Phó từ / Tính từ" },
-    { char: "新", pinyin: "xīn", hanViet: "Tân", meaning: "Mới", pos: "Tính từ" },
-    { char: "怎么样", pinyin: "zěnmeyàng", hanViet: "Chẩm ma dạng", meaning: "Thế nào, ra sao", pos: "Đại từ" },
-    { char: "小", pinyin: "xiǎo", hanViet: "Tiểu", meaning: "Nhỏ, bé", pos: "Tính từ" },
-    { char: "大", pinyin: "dà", hanViet: "Đại", meaning: "Lớn, to", pos: "Tính từ" },
-    { char: "安静", pinyin: "ānjìng", hanViet: "An tĩnh", meaning: "Yên tĩnh, thanh bình", pos: "Tính từ" },
-    { char: "吵", pinyin: "chǎo", hanViet: "Sảo", meaning: "Ồn ào, làm ồn", pos: "Tính từ / Động từ" },
-    { char: "方便", pinyin: "fāngbiàn", hanViet: "Phương tiện", meaning: "Thuận tiện, tiện lợi", pos: "Tính từ" },
-    { char: "安全", pinyin: "ānquán", hanViet: "An toàn", meaning: "An toàn", pos: "Tính từ" },
-    { char: "危险", pinyin: "wēixiǎn", hanViet: "Nguy hiểm", meaning: "Nguy hiểm", pos: "Tính từ" },
-    { char: "环境", pinyin: "huánjìng", hanViet: "Hoàn cảnh", meaning: "Môi trường, cảnh quan", pos: "Danh từ" },
-    { char: "张", pinyin: "zhāng", hanViet: "Trương", meaning: "Tấm, tờ, chiếc (lượng từ bàn, giường, giấy...)", pos: "Lượng từ" },
-    { char: "家", pinyin: "jiā", hanViet: "Gia", meaning: "Căn, nhà, cửa hàng (lượng từ)", pos: "Lượng từ" },
-    { char: "台", pinyin: "tái", hanViet: "Đài", meaning: "Cái, chiếc (lượng từ cho máy móc, TV, tủ lạnh...)", pos: "Lượng từ" },
-    { char: "部", pinyin: "bù", hanViet: "Bộ", meaning: "Cái, chiếc, bộ (lượng từ cho điện thoại, phim, xe...)", pos: "Lượng từ" },
-    { char: "支", pinyin: "zhī", hanViet: "Chi", meaning: "Cây, chiếc (lượng từ cho bút, vật dài cứng...)", pos: "Lượng từ" },
-    { char: "所", pinyin: "suǒ", hanViet: "Sở", meaning: "Ngôi, tòa (lượng từ cho trường học, trung tâm...)", pos: "Lượng từ" },
-    { char: "本", pinyin: "běn", hanViet: "Bản", meaning: "Cuốn, quyển (lượng từ cho sách, tạp chí...)", pos: "Lượng từ" }
-];
-
-
 
 const VOCAB_GUOJIA = [
     { char: "国家", pinyin: "guójiā", hanViet: "Quốc gia", meaning: "Quốc gia, đất nước", pos: "Danh từ" },
@@ -569,16 +502,6 @@ const LESSON_DIALOGUES = {
             { speaker: "Học sinh B", role: "b", zh: "开车只要三分钟，但是现在是下班时间，可能会堵车。", pinyin: "Kāichē zhǐ yào sān fēnzhōng, dànshì xiànzài shì xiàbān shíjiān, kěnéng huì dǔchē.", vi: "Lái xe chỉ mất 3 phút, nhưng bây giờ là giờ tan tầm, có thể sẽ tắc đường." },
             { speaker: "Học sinh A", role: "a", zh: "我怕堵车，而且我晕车，那我还是骑自行车吧！", pinyin: "Wǒ pà dǔchē, érqiě wǒ yùnchē, nà wǒ hái shì qí zìxíngchē ba!", vi: "Tôi sợ tắc đường, hơn nữa tôi lại say xe, vậy tôi thà đi xe đạp thôi!" },
             { speaker: "Học sinh B", role: "b", zh: "没问题！", pinyin: "Méi wèntí!", vi: "Không vấn đề gì!" }
-        ],
-        8: [
-            { speaker: "Học sinh A", role: "a", zh: "听说你搬新家了，你的新公寓怎么样？", pinyin: "Tīngshuō nǐ bān xīn jiā le, nǐ de xīn gōngyù zěnmeyàng?", vi: "Nghe nói bạn dọn sang nhà mới rồi, căn hộ mới của bạn thế nào?" },
-            { speaker: "Học sinh B", role: "b", zh: "原来的房子太小了，新的公寓很大，环境很安静，也很安全。", pinyin: "Yuánlái de fángzi tài xiǎo le, xīn de gōngyù hěn dà, huánjìng hěn ānjìng, yě hěn ānquán.", vi: "Căn nhà cũ nhỏ quá, căn hộ mới rất rộng, môi trường rất yên tĩnh và cũng rất an toàn." },
-            { speaker: "Học sinh A", role: "a", zh: "你的新家地址在哪儿？", pinyin: "Nǐ de xīn jiā dìzhǐ zài nǎr?", vi: "Địa chỉ nhà mới của bạn ở đâu?" },
-            { speaker: "Học sinh B", role: "b", zh: "在第一郡第三坊阮惠路，对面有一个汉语中心，附近还有车站和运动场，非常方便！", pinyin: "Zài dì-yī jùn dì-sān fāng Ruǎnhuì lù, duìmiàn yǒu yí gè Hànyǔ zhōngxīn, fùjìn hái yǒu chēzhàn hé yùndòngchǎng, fēicháng fāngbiàn!", vi: "Ở đường Nguyễn Huệ, Phường 3, Quận 1, đối diện có một trung tâm tiếng Trung, gần đó còn có bến xe và sân vận động, cực kỳ thuận tiện!" },
-            { speaker: "Học sinh A", role: "a", zh: "太好了！你在找什么呢？", pinyin: "Tài hǎo le! Nǐ zài zhǎo shénme ne?", vi: "Tuyệt quá! Bạn đang tìm gì thế?" },
-            { speaker: "Học sinh B", role: "b", zh: "我在找我的钥匙和手机。你看见了吗？", pinyin: "Wǒ zài zhǎo wǒ de yàoshi hé shǒujī. Nǐ kànjiàn le ma?", vi: "Tớ đang tìm chìa khóa và điện thoại của tớ. Bạn có thấy không?" },
-            { speaker: "Học sinh A", role: "a", zh: "钥匙在鞋柜上边，手机在桌子上的书包里边。桌子上还有一张中文书和两本杂志呢！", pinyin: "Yàoshi zài xiéguì shàngbian, shǒujī zài zhuōzi shang de shūbāo lǐbian. Zhuōzi shang hái yǒu yì zhāng zhōngwén shū hé liǎng běn zázhì ne!", vi: "Chìa khóa ở trên tủ giày, điện thoại ở trong cặp sách trên bàn. Trên bàn còn có sách tiếng Trung và 2 cuốn tạp chí nữa đấy!" },
-            { speaker: "Học sinh B", role: "b", zh: "看到了！谢谢你！走，我带你看看我的新家！", pinyin: "Kàndào le! Xièxie nǐ! Zǒu, wǒ dài nǐ kànkan wǒ de xīn jiā!", vi: "Tớ thấy rồi! Cảm ơn bạn nhé! Đi thôi, tớ dẫn bạn tham quan nhà mới của tớ!" }
         ]
     },
     "Từ vựng theo chủ đề": {
@@ -707,48 +630,10 @@ const CHAR_DATABASE = {
     "周": { hanViet: "Chu", radical: "Khẩu (口) - miệng", strokes: 8 },
     "末": { hanViet: "Mạt", radical: "Mộc (木) - cây cối", strokes: 5 },
     "前": { hanViet: "Tiền", radical: "Đao (刂) - con dao", strokes: 9 },
+    "昨": { hanViet: "Tạc", radical: "Nhật (日) - mặt trời", strokes: 9 },
+    "今": { hanViet: "Kim", radical: "Nhân (人) - người", strokes: 4 },
+    "明": { hanViet: "Minh", radical: "Nhật (日) - mặt trời, ánh sáng", strokes: 8 },
     "后": { hanViet: "Hậu", radical: "Khẩu (口) - miệng", strokes: 6 },
-    "里": { hanViet: "Lý", radical: "Lý (里) - dặm, bên trong", strokes: 7 },
-    "外": { hanViet: "Ngoại", radical: "Tịch (夕) - đêm tối, bên ngoài", strokes: 5 },
-    "旁": { hanViet: "Bàng", radical: "Phương (方) - phương hướng, bên cạnh", strokes: 10 },
-    "桌": { hanViet: "Trác", radical: "Mộc (木) - cái bàn", strokes: 10 },
-    "椅": { hanViet: "Y", radical: "Mộc (木) - ghế gỗ", strokes: 12 },
-    "匙": { hanViet: "Chì", radical: "Nhật (日) - chìa khóa", strokes: 11 },
-    "笔": { hanViet: "Bút", radical: "Trúc (竹) - bút lông, cây viết", strokes: 12 },
-    "袋": { hanViet: "Đại", radical: "Y (衣) - túi áo, túi đựng", strokes: 11 },
-    "柜": { hanViet: "Quỹ", radical: "Mộc (木) - tủ gỗ", strokes: 9 },
-    "鞋": { hanViet: "Hài", radical: "Cách (革) - da thuộc, giày dép", strokes: 15 },
-    "箱": { hanViet: "Sương", radical: "Trúc (竹) - rương, hộp, tủ", strokes: 15 },
-    "面": { hanViet: "Diện", radical: "Diện (面) - mặt, đối diện", strokes: 9 },
-    "附": { hanViet: "Phụ", radical: "Phụ (阝) - gò đất, lân cận", strokes: 7 },
-    "近": { hanViet: "Cận", radical: "Sước (辶) - khoảng cách gần", strokes: 7 },
-    "间": { hanViet: "Gian", radical: "Môn (门) - khoảng giữa, không gian", strokes: 7 },
-    "寓": { hanViet: "Ngự", radical: "Miên (宀) - nhà cửa, căn hộ", strokes: 12 },
-    "房": { hanViet: "Phòng", radical: "Hộ (户) - căn nhà, gian phòng", strokes: 8 },
-    "场": { hanViet: "Trường", radical: "Thổ (土) - khu đất, sân", strokes: 6 },
-    "址": { hanViet: "Chỉ", radical: "Thổ (土) - nền đất, địa chỉ", strokes: 6 },
-    "第": { hanViet: "Đệ", radical: "Trúc (竹) - thứ tự", strokes: 11 },
-    "郡": { hanViet: "Quận", radical: "Phụ (阝) - vùng hành chính", strokes: 9 },
-    "坊": { hanViet: "Phường", radical: "Thổ (土) - phường xã", strokes: 7 },
-    "路": { hanViet: "Lộ", radical: "Túc (足) - con đường, bước đi", strokes: 13 },
-    "之": { hanViet: "Chi", radical: "Phiệt (丿) - của, thuộc về", strokes: 3 },
-    "听": { hanViet: "Thính", radical: "Khẩu (口) - nghe, lắng nghe", strokes: 7 },
-    "说": { hanViet: "Thuyết", radical: "Ngôn (讠) - lời nói", strokes: 9 },
-    "搬": { hanViet: "Bàn", radical: "Thủ (扌) - bàn tay, di chuyển", strokes: 13 },
-    "原": { hanViet: "Nguyên", radical: "Hán (厂) - vốn dĩ, ban đầu", strokes: 10 },
-    "安": { hanViet: "An", radical: "Miên (宀) - bình an, yên tĩnh", strokes: 6 },
-    "静": { hanViet: "Tĩnh", radical: "Thanh (青) - yên lặng, thanh tĩnh", strokes: 14 },
-    "吵": { hanViet: "Sảo", radical: "Khẩu (口) - ồn ào, tranh cãi", strokes: 7 },
-    "便": { hanViet: "Tiện", radical: "Nhân (亻) - thuận tiện", strokes: 9 },
-    "险": { hanViet: "Hiểm", radical: "Phụ (阝) - nguy hiểm", strokes: 9 },
-    "环": { hanViet: "Hoàn", radical: "Vương (王) - vòng quanh, môi trường", strokes: 8 },
-    "境": { hanViet: "Cảnh", radical: "Thổ (土) - cảnh quan, vùng đất", strokes: 14 },
-    "张": { hanViet: "Trương", radical: "Cung (弓) - tờ, tấm, chiếc", strokes: 7 },
-    "台": { hanViet: "Đài", radical: "Khẩu (口) - đài, máy móc, chiếc", strokes: 5 },
-    "部": { hanViet: "Bộ", radical: "Phụ (阝) - bộ, chiếc, tác phẩm", strokes: 11 },
-    "支": { hanViet: "Chi", radical: "Chi (支) - cành, cây, chiếc", strokes: 4 },
-    "所": { hanViet: "Sở", radical: "Hộ (户) - nơi, chốn, ngôi, tòa", strokes: 8 },
-    "本": { hanViet: "Bản", radical: "Mộc (木) - gốc cây, cuốn, quyển", strokes: 5 },
     "这": { hanViet: "Giá", radical: "Sước (辶) - bước đi", strokes: 7 },
     "个": { hanViet: "Cá", radical: "Nhân (人) - người", strokes: 3 },
     "谢": { hanViet: "Tạ", radical: "Ngôn (讠) - liên quan đến ngôn ngữ, lời nói", strokes: 12 },
@@ -1163,12 +1048,12 @@ window.enterCourse = function(courseName) {
                     <span class="lesson-status-badge">Sẵn sàng học &rarr;</span>
                 </div>
 
-                <!-- Lesson 8 (Unlocked) -->
-                <div class="lesson-card unlocked border-pink cursor-pointer" onclick="enterLesson(8)">
+                <!-- Lesson 8 (Locked) -->
+                <div class="lesson-card locked border-gray">
                     <div class="lesson-num">Bài 8</div>
-                    <h3><span class="chinese-char">我的新家</span></h3>
-                    <p class="lesson-desc-text">Từ vựng phương vị, đồ đạc trong nhà, miêu tả căn hộ, địa chỉ và tìm kiếm đồ vật.</p>
-                    <span class="lesson-status-badge">Sẵn sàng học &rarr;</span>
+                    <h3><span class="chinese-char">天气怎么样？</span></h3>
+                    <p class="lesson-desc-text">Hỏi đáp thời tiết, bốn mùa trong năm và trang phục phù hợp.</p>
+                    <span class="lesson-status-badge badge-locked">Đang thiết lập</span>
                 </div>
 
                 <!-- Lesson 9 (Locked) -->
@@ -1261,7 +1146,7 @@ window.enterCourse = function(courseName) {
 };
 
 window.enterLesson = function(lessonNum) {
-    if (lessonNum !== 1 && lessonNum !== 2 && lessonNum !== 3 && lessonNum !== 4 && lessonNum !== 5 && lessonNum !== 6 && lessonNum !== 7 && lessonNum !== 8) {
+    if (lessonNum !== 1 && lessonNum !== 2 && lessonNum !== 3 && lessonNum !== 4 && lessonNum !== 5 && lessonNum !== 6 && lessonNum !== 7) {
         alert("Bài học này đang được Cô Chang chuẩn bị nội dung. Bạn hãy chọn học các bài đang sẵn sàng nhé! 🥰");
         return;
     }
@@ -1308,11 +1193,6 @@ window.enterLesson = function(lessonNum) {
             document.getElementById('workspace-badge').style.display = 'inline-block';
             document.getElementById('workspace-lesson-title').innerHTML = `Lớp Giao tiếp 2 - Bài 7: <span class="chinese-char">一直走</span>`;
             document.getElementById('workspace-badge').innerText = `Giao tiếp 2 • Bài 7`;
-        } else if (lessonNum === 8) {
-            VOCAB_DATA = [...GIAO_TIEP_2_B8_VOCAB];
-            document.getElementById('workspace-badge').style.display = 'inline-block';
-            document.getElementById('workspace-lesson-title').innerHTML = `Lớp Giao tiếp 2 - Bài 8: <span class="chinese-char">我的新家</span>`;
-            document.getElementById('workspace-badge').innerText = `Giao tiếp 2 • Bài 8`;
         }
     } else if (currentCourse === "Từ vựng theo chủ đề") {
         VOCAB_DATA = [...VOCAB_GUOJIA];
@@ -1836,136 +1716,6 @@ function generateQuizQuestions() {
         return; // Fixed sequence 1 to 30
     }
 
-    // Special exact 30-question format for Giao tiếp 2 - Bài 8: 我的新家
-    if (currentCourse === "Giao tiếp 2" && currentLesson === 8) {
-        // --- PART 1: 16 MC Questions (Questions 1 to 16) ---
-        const part1MC = [
-            { question: `1. Từ <span class="chinese-char">上边</span> có phiên âm là gì?`, ans: "shàngbian", opts: ["shàngbian", "xiàbian", "lǐbian", "wàibian"] },
-            { question: `2. Từ <span class="chinese-char">里边</span> có nghĩa là gì?`, ans: "Bên trong", opts: ["Bên trong", "Bên ngoài", "Phía trên", "Phía dưới"] },
-            { question: `3. Từ <span class="chinese-char">旁边</span> có nghĩa là gì?`, ans: "Bên cạnh", opts: ["Bên cạnh", "Phía trước", "Phía sau", "Đối diện"] },
-            { question: `4. Từ <span class="chinese-char">桌子</span> có nghĩa là gì?`, ans: "Cái bàn", opts: ["Cái bàn", "Cái ghế", "Cái tủ", "Cái giường"] },
-            { question: `5. Từ <span class="chinese-char">钥匙</span> có phiên âm là gì?`, ans: "yàoshi", opts: ["yàoshi", "shǒujī", "shūbāo", "bǐdài"] },
-            { question: `6. Từ <span class="chinese-char">鞋柜</span> có nghĩa là gì?`, ans: "Tủ giày", opts: ["Tủ giày", "Tủ sách", "Tủ quần áo", "Tủ lạnh"] },
-            { question: `7. Từ <span class="chinese-char">冰箱</span> có nghĩa là gì?`, ans: "Tủ lạnh", opts: ["Tủ lạnh", "Ti vi", "Điện thoại", "Cái bàn"] },
-            { question: `8. Từ <span class="chinese-char">手机</span> có nghĩa là gì?`, ans: "Điện thoại di động", opts: ["Điện thoại di động", "Chìa khóa", "Ba lô", "Cây viết"] },
-            { question: `9. Từ <span class="chinese-char">对面</span> có nghĩa là gì?`, ans: "Đối diện", opts: ["Đối diện", "Gần đây", "Ở giữa", "Bên cạnh"] },
-            { question: `10. Từ <span class="chinese-char">附近</span> có phiên âm là gì?`, ans: "fùjìn", opts: ["fùjìn", "duìmiàn", "zhōngjiān", "mǎlù"] },
-            { question: `11. Từ <span class="chinese-char">公寓</span> có nghĩa là gì?`, ans: "Căn hộ, chung cư", opts: ["Căn hộ, chung cư", "Sân vận động", "Bến xe", "Trung tâm tiếng Trung"] },
-            { question: `12. Từ <span class="chinese-char">地址</span> có nghĩa là gì?`, ans: "Địa chỉ", opts: ["Địa chỉ", "Môi trường", "Căn nhà", "Quận"] },
-            { question: `13. Từ <span class="chinese-char">搬</span> có nghĩa là gì?`, ans: "Chuyển, dọn (nhà)", opts: ["Chuyển, dọn (nhà)", "Nghe nói", "Tìm kiếm", "Làm ồn"] },
-            { question: `14. Từ <span class="chinese-char">原来</span> có nghĩa là gì?`, ans: "Hóa ra, vốn dĩ, ban đầu", opts: ["Hóa ra, vốn dĩ, ban đầu", "Yên tĩnh", "Thuận tiện", "Nguy hiểm"] },
-            { question: `15. Từ <span class="chinese-char">安静</span> có nghĩa là gì?`, ans: "Yên tĩnh, thanh bình", opts: ["Yên tĩnh, thanh bình", "Ồn ào", "An toàn", "Nguy hiểm"] },
-            { question: `16. Từ <span class="chinese-char">方便</span> có nghĩa là gì?`, ans: "Thuận tiện, tiện lợi", opts: ["Thuận tiện, tiện lợi", "Ồn ào", "Mới", "Nhỏ"] }
-        ];
-
-        part1MC.forEach(item => {
-            quizQuestions.push({
-                type: "mc-meaning",
-                question: item.question,
-                correctAnswer: item.ans,
-                options: item.opts
-            });
-        });
-
-        // --- PART 2: 10 Sentence Rearrangement Questions (Questions 17 to 26) ---
-        const part2Rearrange = [
-            {
-                q: `17. Hãy sắp xếp các từ sau thành câu hoàn chỉnh (Học sinh đánh máy đáp án):<br><span class="chinese-char">书 / 我 / 呢 / 的 / ？</span>`,
-                ans: ["我的书呢？"],
-                rubyAns: `<ruby>我<rt>wǒ</rt></ruby><ruby>的<rt>de</rt></ruby><ruby>书<rt>shū</rt></ruby><ruby>呢<rt>ne</rt></ruby>？`
-            },
-            {
-                q: `18. Hãy sắp xếp các từ sau thành câu hoàn chỉnh (Học sinh đánh máy đáp án):<br><span class="chinese-char">桌子 / 报纸 / 上 / 在 / 你的 / 吗 / ？</span>`,
-                ans: ["你的报纸在桌子上吗？", "你的报纸在桌子上边吗？"],
-                rubyAns: `<ruby>你<rt>nǐ</rt></ruby><ruby>的<rt>de</rt></ruby><ruby>报<rt>bào</rt></ruby><ruby>纸<rt>zhǐ</rt></ruby><ruby>在<rt>zài</rt></ruby><ruby>桌<rt>zhuō</rt></ruby><ruby>子<rt>zi</rt></ruby><ruby>上<rt>shàng</rt></ruby><ruby>吗<rt>ma</rt></ruby>？`
-            },
-            {
-                q: `19. Hãy sắp xếp các từ sau thành câu hoàn chỉnh (Học sinh đánh máy đáp án):<br><span class="chinese-char">杂志 / 你的 / 在 / 下边 / 书 / 。</span>`,
-                ans: ["你的书在杂志下边。", "你的书在杂志下面。"],
-                rubyAns: `<ruby>你<rt>nǐ</rt></ruby><ruby>的<rt>de</rt></ruby><ruby>书<rt>shū</rt></ruby><ruby>在<rt>zài</rt></ruby><ruby>杂<rt>zá</rt></ruby><ruby>志<rt>zhì</rt></ruby><ruby>下<rt>xià</rt></ruby><ruby>边<rt>bian</rt></ruby>。`
-            },
-            {
-                q: `20. Hãy sắp xếp các từ sau thành câu hoàn chỉnh (Học sinh đánh máy đáp án):<br><span class="chinese-char">找 / 什么 / 你 / 书 / ？</span>`,
-                ans: ["你找什么书？"],
-                rubyAns: `<ruby>你<rt>nǐ</rt></ruby><ruby>找<rt>zhǎo</rt></ruby><ruby>什<rt>shén</rt></ruby><ruby>么<rt>me</rt></ruby><ruby>书<rt>shū</rt></ruby>？`
-            },
-            {
-                q: `21. Hãy sắp xếp các từ sau thành câu hoàn chỉnh (Học sinh đánh máy đáp án):<br><span class="chinese-char">汉语书 / 我 / 绿色的 / 要 / 一本 / 。</span>`,
-                ans: ["我要一本绿色的汉语书。"],
-                rubyAns: `<ruby>我<rt>wǒ</rt></ruby><ruby>要<rt>yào</rt></ruby><ruby>一<rt>yì</rt></ruby><ruby>本<rt>běn</rt></ruby><ruby>绿<rt>lǜ</rt></ruby><ruby>色<rt>sè</rt></ruby><ruby>的<rt>de</rt></ruby><ruby>汉<rt>hàn</rt></ruby><ruby>语<rt>yǔ</rt></ruby><ruby>书<rt>shū</rt></ruby>。`
-            },
-            {
-                q: `22. Hãy sắp xếp các từ sau thành câu hoàn chỉnh (Học sinh đánh máy đáp án):<br><span class="chinese-char">搬家 / 你 / 听说 / 了 / 。</span>`,
-                ans: ["听说你搬家了。", "听说你搬家了？"],
-                rubyAns: `<ruby>听<rt>tīng</rt></ruby><ruby>说<rt>shuō</rt></ruby><ruby>你<rt>nǐ</rt></ruby><ruby>搬<rt>bān</rt></ruby><ruby>家<rt>jiā</rt></ruby><ruby>了<rt>le</rt></ruby>。`
-            },
-            {
-                q: `23. Hãy sắp xếp các từ sau thành câu hoàn chỉnh (Học sinh đánh máy đáp án):<br><span class="chinese-char">在哪儿 / 你的 / 新家 / ？</span>`,
-                ans: ["你的新家在哪儿？", "你的新家在哪？"],
-                rubyAns: `<ruby>你<rt>nǐ</rt></ruby><ruby>的<rt>de</rt></ruby><ruby>新<rt>xīn</rt></ruby><ruby>家<rt>jiā</rt></ruby><ruby>在<rt>zài</rt></ruby><ruby>哪<rt>nǎ</rt></ruby><ruby>儿<rt>r</rt></ruby>？`
-            },
-            {
-                q: `24. Hãy sắp xếp các từ sau thành câu hoàn chỉnh (Học sinh đánh máy đáp án):<br><span class="chinese-char">ACB 银行 / 在 / 我的 / 旁边 / 新家 / 。</span>`,
-                ans: ["我的新家在 ACB 银行旁边。", "我的新家在ACB银行旁边。"],
-                rubyAns: `<ruby>我<rt>wǒ</rt></ruby><ruby>的<rt>de</rt></ruby><ruby>新<rt>xīn</rt></ruby><ruby>家<rt>jiā</rt></ruby><ruby>在<rt>zài</rt></ruby> ACB <ruby>银<rt>yín</rt></ruby><ruby>行<rt>háng</rt></ruby><ruby>旁<rt>páng</rt></ruby><ruby>边<rt>biān</rt></ruby>。`
-            },
-            {
-                q: `25. Hãy sắp xếp các từ sau thành câu hoàn chỉnh (Học sinh đánh máy đáp án):<br><span class="chinese-char">有一家 / 对面 / 银行 / 大超市 / 。</span>`,
-                ans: ["银行对面有一家大超市。"],
-                rubyAns: `<ruby>银<rt>yín</rt></ruby><ruby>行<rt>háng</rt></ruby><ruby>对<rt>duì</rt></ruby><ruby>面<rt>miàn</rt></ruby><ruby>有<rt>yǒu</rt></ruby><ruby>一<rt>yì</rt></ruby><ruby>家<rt>jiā</rt></ruby><ruby>大<rt>dà</rt></ruby><ruby>超<rt>chāo</rt></ruby><ruby>市<rt>shì</rt></ruby>。`
-            },
-            {
-                q: `26. Hãy sắp xếp các từ sau thành câu hoàn chỉnh (Học sinh đánh máy đáp án):<br><span class="chinese-char">怎么样 / 那儿 / 环境 / ？</span>`,
-                ans: ["那儿环境怎么样？"],
-                rubyAns: `<ruby>那<rt>nà</rt></ruby><ruby>儿<rt>r</rt></ruby><ruby>环<rt>huán</rt></ruby><ruby>境<rt>jìng</rt></ruby><ruby>怎<rt>zěn</rt></ruby><ruby>么<rt>me</rt></ruby><ruby>样<rt>yàng</rt></ruby>？`
-            }
-        ];
-
-        part2Rearrange.forEach(item => {
-            quizQuestions.push({
-                type: "written-rearrange",
-                question: item.q,
-                correctAnswer: item.ans,
-                rubyAnswer: item.rubyAns
-            });
-        });
-
-        // --- PART 3: 4 Translation Questions (Questions 27 to 30) ---
-        const part3Translation = [
-            {
-                q: `27. Dịch sang tiếng Trung câu sau:<br><b>"Xung quanh nhà tôi có rất nhiều cửa hàng, còn có một siêu thị to, cuộc sống rất thuận tiện."</b>`,
-                ans: ["我家周围有很多商店，还有一家大超市，生活非常方便。", "我家附近有很多商店，还有一家大超市，生活非常方便。", "我家周围有很多商店，还有一家大超市，生活很方便。", "我家附近有很多商店，还有一家大超市，生活很方便。"],
-                rubyAns: `<ruby>我<rt>wǒ</rt></ruby><ruby>家<rt>jiā</rt></ruby><ruby>周<rt>zhōu</rt></ruby><ruby>围<rt>wéi</rt></ruby><ruby>有<rt>yǒu</rt></ruby><ruby>很<rt>hěn</rt></ruby><ruby>多<rt>duō</rt></ruby><ruby>商<rt>shāng</rt></ruby><ruby>店<rt>diàn</rt></ruby>，<ruby>还<rt>hái</rt></ruby><ruby>有<rt>yǒu</rt></ruby><ruby>一<rt>yì</rt></ruby><ruby>家<rt>jiā</rt></ruby><ruby>大<rt>dà</rt></ruby><ruby>超<rt>chāo</rt></ruby><ruby>市<rt>shì</rt></ruby>，<ruby>生<rt>shēng</rt></ruby><ruby>活<rt>huó</rt></ruby><ruby>非<rt>fēi</rt></ruby><ruby>常<rt>cháng</rt></ruby><ruby>方<rt>fāng</rt></ruby><ruby>便<rt>biàn</rt></ruby>。`
-            },
-            {
-                q: `28. Dịch sang tiếng Trung câu sau:<br><b>"Bởi vì xung quanh nhà cũ không có trạm xe, đi lại không thuận tiện, nên tháng trước tôi đã chuyển nhà rồi."</b>`,
-                ans: ["因为旧家附近没有车站，出行不方便，所以上个月我搬家了。", "因为旧家周围没有车站，出行不方便，所以上个月我搬家了。", "因为原来的家附近没有车站，出行不方便，所以上个月我搬家了。", "因为旧家附近没有车站，不方便，所以上个月我搬家了。"],
-                rubyAns: `<ruby>因<rt>yīn</rt></ruby><ruby>为<rt>wèi</rt></ruby><ruby>旧<rt>jiù</rt></ruby><ruby>家<rt>jiā</rt></ruby><ruby>附<rt>fù</rt></ruby><ruby>近<rt>jìn</rt></ruby><ruby>没<rt>méi</rt></ruby><ruby>有<rt>yǒu</rt></ruby><ruby>车<rt>chē</rt></ruby><ruby>站<rt>zhàn</rt></ruby>，<ruby>出<rt>chū</rt></ruby><ruby>行<rt>xíng</rt></ruby><ruby>不<rt>bù</rt></ruby><ruby>方<rt>fāng</rt></ruby><ruby>便<rt>biàn</rt></ruby>，<ruby>所<rt>suǒ</rt></ruby><ruby>以<rt>yǐ</rt></ruby><ruby>上<rt>shàng</rt></ruby><ruby>个<rt>gè</rt></ruby><ruby>月<rt>yuè</rt></ruby><ruby>我<rt>wǒ</rt></ruby><ruby>搬<rt>bān</rt></ruby><ruby>家<rt>jiā</rt></ruby><ruby>了<rt>le</rt></ruby>。`
-            },
-            {
-                q: `29. Dịch sang tiếng Trung câu sau:<br><b>"Trong ba lô của tôi có 1 cây bút, 2 quyển sách tiếng Trung và 1 quyển vở chép bài."</b>`,
-                ans: ["我的书包里有一支笔、两本汉语书和一本笔记本。", "我的书包里边有一支笔、两本汉语书和一本笔记本。", "我的书包里有一支笔、两本中文书和一本笔记本。", "我的书包里边有一支笔、两本中文书和一本笔记本。"],
-                rubyAns: `<ruby>我<rt>wǒ</rt></ruby><ruby>的<rt>de</rt></ruby><ruby>书<rt>shū</rt></ruby><ruby>包<rt>bāo</rt></ruby><ruby>里<rt>lǐ</rt></ruby><ruby>有<rt>yǒu</rt></ruby><ruby>一<rt>yì</rt></ruby><ruby>支<rt>zhī</rt></ruby><ruby>笔<rt>bǐ</rt></ruby>、<ruby>两<rt>liǎng</rt></ruby><ruby>本<rt>běn</rt></ruby><ruby>汉<rt>hàn</rt></ruby><ruby>语<rt>yǔ</rt></ruby><ruby>书<rt>shū</rt></ruby><ruby>和<rt>hé</rt></ruby><ruby>一<rt>yì</rt></ruby><ruby>本<rt>běn</rt></ruby><ruby>笔<rt>bǐ</rt></ruby><ruby>记<rt>jì</rt></ruby><ruby>本<rt>běn</rt></ruby>。`
-            },
-            {
-                q: `30. Dịch sang tiếng Trung câu sau:<br><b>"Nhà mới của chúng tôi hiện tại chưa có tủ lạnh, giường và tủ quần áo."</b>`,
-                ans: ["我们的新家现在还没有冰箱、床和衣柜。", "我们的新家现在没有冰箱、床和衣柜。"],
-                rubyAns: `<ruby>我<rt>wǒ</rt></ruby><ruby>们<rt>men</rt></ruby><ruby>的<rt>de</rt></ruby><ruby>新<rt>xīn</rt></ruby><ruby>家<rt>jiā</rt></ruby><ruby>现<rt>xiàn</rt></ruby><ruby>在<rt>zài</rt></ruby><ruby>还<rt>hái</rt></ruby><ruby>没<rt>méi</rt></ruby><ruby>有<rt>yǒu</rt></ruby><ruby>冰<rt>bīng</rt></ruby><ruby>箱<rt>xiāng</rt></ruby>、<ruby>床<rt>chuáng</rt></ruby><ruby>和<rt>hé</rt></ruby><ruby>衣<rt>yī</rt></ruby><ruby>柜<rt>guì</rt></ruby>。`
-            }
-        ];
-
-        part3Translation.forEach(item => {
-            quizQuestions.push({
-                type: "written-translation",
-                question: item.q,
-                correctAnswer: item.ans,
-                rubyAnswer: item.rubyAns
-            });
-        });
-
-        return; // Fixed sequence 1 to 30
-    }
-
     // Default dynamic question generator for other lessons
     // 1. Trắc nghiệm chọn Nghĩa (8 câu)
     const mcVocabList = shuffleArray([...VOCAB_DATA]);
@@ -2376,11 +2126,9 @@ window.checkQuizAnswer = function() {
 
         if (selectedAnswer === q.correctAnswer) {
             isCorrect = true;
-            q.isCorrect = true;
             selectedOptionBtn.classList.add('correct-state');
             quizScore++;
         } else {
-            q.isCorrect = false;
             selectedOptionBtn.classList.add('incorrect-state');
             incorrectQuestions.push({
                 rawQuestion: q,
@@ -2487,11 +2235,9 @@ window.checkQuizAnswer = function() {
 
         if (isAnswerRight) {
             isCorrect = true;
-            q.isCorrect = true;
             textInput.classList.add('correct-state');
             quizScore++;
         } else {
-            q.isCorrect = false;
             textInput.classList.add('incorrect-state');
             incorrectQuestions.push({
                 rawQuestion: q,
@@ -2535,145 +2281,16 @@ window.nextQuizQuestion = function() {
     }
 };
 
-function calculate100PointScore() {
-    let mcCount = 0, rearrangeCount = 0, translationCount = 0;
-    
-    quizQuestions.forEach(q => {
-        if (q.type && q.type.includes('translation')) {
-            translationCount++;
-        } else if (q.type && q.type.includes('rearrange')) {
-            rearrangeCount++;
-        } else {
-            mcCount++;
-        }
-    });
-
-    let translationWeight = 0, rearrangeWeight = 0, mcWeight = 0;
-
-    // Weight allocation out of 100 points total:
-    // Dịch (highest weight = 50 pts) > Sắp xếp (second weight = 30 pts) > Trắc nghiệm (third weight = 20 pts)
-    if (translationCount > 0 && rearrangeCount > 0 && mcCount > 0) {
-        translationWeight = 50 / translationCount;
-        rearrangeWeight = 30 / rearrangeCount;
-        mcWeight = 20 / mcCount;
-    } else if (translationCount > 0 && rearrangeCount > 0) {
-        translationWeight = 60 / translationCount;
-        rearrangeWeight = 40 / rearrangeCount;
-    } else if (translationCount > 0 && mcCount > 0) {
-        translationWeight = 70 / translationCount;
-        mcWeight = 30 / mcCount;
-    } else if (rearrangeCount > 0 && mcCount > 0) {
-        rearrangeWeight = 60 / rearrangeCount;
-        mcWeight = 40 / mcCount;
-    } else {
-        const total = quizQuestions.length || 1;
-        if (translationCount > 0) translationWeight = 100 / total;
-        if (rearrangeCount > 0) rearrangeWeight = 100 / total;
-        if (mcCount > 0) mcWeight = 100 / total;
-    }
-
-    let rawScore = 0;
-    let correctCount = 0;
-    quizQuestions.forEach(q => {
-        if (q.isCorrect) {
-            correctCount++;
-            if (q.type && q.type.includes('translation')) {
-                rawScore += translationWeight;
-            } else if (q.type && q.type.includes('rearrange')) {
-                rawScore += rearrangeWeight;
-            } else {
-                rawScore += mcWeight;
-            }
-        }
-    });
-
-    const score100 = Math.round(rawScore);
-    return {
-        score100: score100,
-        correctCount: correctCount,
-        totalQuestions: quizQuestions.length,
-        mcCount: mcCount,
-        rearrangeCount: rearrangeCount,
-        translationCount: translationCount,
-        mcWeight: mcWeight,
-        rearrangeWeight: rearrangeWeight,
-        translationWeight: translationWeight
-    };
-}
-
 function showQuizResults() {
     // Hide play screen, show result screen
     document.getElementById('quiz-play-screen').classList.remove('active');
     document.getElementById('quiz-result-screen').classList.add('active');
 
-    const resultData = calculate100PointScore();
-    const finalScore = resultData.score100;
-
-    // Render scores dynamically on 100-point scale
-    const scoreBadge = document.getElementById('result-badge-score');
-    if (scoreBadge) {
-        scoreBadge.innerText = `${finalScore} / 100 Điểm`;
-    }
-
-    const accuracyEl = document.getElementById('result-accuracy-pct');
-    if (accuracyEl) {
-        accuracyEl.innerText = `${finalScore}% (${resultData.correctCount}/${resultData.totalQuestions} câu đúng)`;
-    }
-
-    // Update Result Title & Desc based on 100-point score
-    const titleEl = document.getElementById('result-score-title');
-    const descEl = document.getElementById('result-score-desc');
-    if (finalScore >= 90) {
-        if (titleEl) titleEl.innerText = "Xuất Sắc! 🎉 (Thang 100 Điểm)";
-        if (descEl) descEl.innerText = `Bạn đạt ${finalScore}/100 điểm! Trình độ dịch thuật và sắp xếp câu tiếng Trung của bạn cực kỳ thành thạo!`;
-    } else if (finalScore >= 75) {
-        if (titleEl) titleEl.innerText = "Giỏi Thần Sầu! 🌟 (Thang 100 Điểm)";
-        if (descEl) descEl.innerText = `Bạn đạt ${finalScore}/100 điểm! Kết quả rất ấn tượng, hãy tiếp tục duy trì và phát huy nhé!`;
-    } else if (finalScore >= 50) {
-        if (titleEl) titleEl.innerText = "Khá Tốt! 👍 (Thang 100 Điểm)";
-        if (descEl) descEl.innerText = `Bạn đạt ${finalScore}/100 điểm! Hãy luyện tập thêm các câu dịch thuật và sắp xếp để bứt phá nhé!`;
-    } else {
-        if (titleEl) titleEl.innerText = "Cố Lên Nhé! 💪 (Thang 100 Điểm)";
-        if (descEl) descEl.innerText = `Bạn đạt ${finalScore}/100 điểm! Hãy xem kỹ các câu chưa đúng ở bên dưới và thử lại nhé.`;
-    }
-
-    // Render Weighting Distribution Card
-    let weightInfoBox = document.getElementById('quiz-weight-info-box');
-    if (!weightInfoBox) {
-        const resultCard = document.querySelector('#quiz-result-screen .quiz-result-card');
-        const buttonsBox = document.querySelector('#quiz-result-screen .result-buttons');
-        if (resultCard && buttonsBox) {
-            weightInfoBox = document.createElement('div');
-            weightInfoBox.id = 'quiz-weight-info-box';
-            resultCard.insertBefore(weightInfoBox, buttonsBox);
-        }
-    }
-    if (weightInfoBox) {
-        weightInfoBox.innerHTML = `
-            <div style="background: #f8fafc; border: 1.5px solid #cbd5e1; border-radius: 18px; padding: 16px 20px; margin: 20px 0; text-align: left; font-size: 0.95rem; box-shadow: 0 4px 12px rgba(0,0,0,0.03);">
-                <div style="font-weight: 800; color: #1e293b; margin-bottom: 8px; font-size: 1rem; display: flex; align-items: center; gap: 8px;">
-                    🎯 Cấu trúc Thang điểm 100 (Ưu tiên Trọng số):
-                </div>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 10px; margin-top: 10px;">
-                    <div style="background: #eff6ff; border: 1px solid #bfdbfe; padding: 10px 14px; border-radius: 12px;">
-                        <span style="font-weight: 800; color: #1e40af; display: block;">1. Dịch Việt - Trung (Cao nhất)</span>
-                        <span style="color: #3b82f6; font-weight: 700;">${resultData.translationWeight.toFixed(1)} điểm / câu</span>
-                        <span style="font-size: 0.8rem; color: #64748b; display: block;">(${resultData.translationCount} câu = ${Math.round(resultData.translationCount * resultData.translationWeight)} đ)</span>
-                    </div>
-                    <div style="background: #fef2f2; border: 1px solid #fecdd3; padding: 10px 14px; border-radius: 12px;">
-                        <span style="font-weight: 800; color: #9f1239; display: block;">2. Sắp xếp câu (Nhì)</span>
-                        <span style="color: #e11d48; font-weight: 700;">${resultData.rearrangeWeight.toFixed(1)} điểm / câu</span>
-                        <span style="font-size: 0.8rem; color: #64748b; display: block;">(${resultData.rearrangeCount} câu = ${Math.round(resultData.rearrangeCount * resultData.rearrangeWeight)} đ)</span>
-                    </div>
-                    <div style="background: #f0fdf4; border: 1px solid #bbf7d0; padding: 10px 14px; border-radius: 12px;">
-                        <span style="font-weight: 800; color: #166534; display: block;">3. Trắc nghiệm Pinyin & Nghĩa</span>
-                        <span style="color: #16a34a; font-weight: 700;">${resultData.mcWeight.toFixed(2)} điểm / câu</span>
-                        <span style="font-size: 0.8rem; color: #64748b; display: block;">(${resultData.mcCount} câu = ${Math.round(resultData.mcCount * resultData.mcWeight)} đ)</span>
-                    </div>
-                </div>
-            </div>
-        `;
-    }
+    // Render scores dynamically
+    document.getElementById('result-badge-score').innerText = `${quizScore} / ${quizQuestions.length}`;
+    
+    const accuracy = Math.round((quizScore / quizQuestions.length) * 100);
+    document.getElementById('result-accuracy-pct').innerText = `${accuracy}%`;
 
     // Manage Retry Failed Questions button visibility
     const retryFailedBtn = document.getElementById('btn-retry-failed');
