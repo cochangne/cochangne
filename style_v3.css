@@ -475,7 +475,18 @@ img {
 .main-app {
     min-height: calc(100vh - 85px);
     position: relative;
-    padding: 40px 0 80px 0;
+    padding: 0;
+}
+
+#home-section {
+    padding: 20px 0 0 0;
+}
+
+#classes-section,
+#lessons-dashboard,
+#lesson-workspace,
+#materials-section {
+    padding: 35px 0 80px 0;
 }
 
 .app-section {
@@ -632,6 +643,12 @@ img {
     font-size: 1.35rem;
     color: var(--color-text-dark);
     margin-bottom: 4px;
+}
+
+.polaroid-caption h3.chinese-char {
+    font-size: 1.55rem;
+    margin-top: 8px;
+    display: block;
 }
 
 .polaroid-caption p {
@@ -1569,6 +1586,249 @@ rt {
    MEDIA QUERIES (RESPONSIVENESS)
    ========================================================================== 
 */
+
+/* 
+   ==========================================================================
+   STANDARDIZED 1200px - 1440px VIEWPORT & ABOVE THE FOLD ARCHITECTURE
+   ========================================================================== 
+*/
+
+/* General Desktop (>= 1200px) Above-the-fold Master Layout */
+@media screen and (min-width: 1200px) {
+    .main-header,
+    .header-container {
+        height: 72px;
+    }
+
+    .container {
+        max-width: min(100% - 64px, 1320px);
+        padding: 0 32px;
+    }
+
+    .main-app {
+        min-height: calc(100vh - 72px);
+        padding: 0;
+    }
+
+    /* HOME SECTION: 100% Above the Fold (0 vertical scroll on desktop) */
+    #home-section.active {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: calc(100vh - 72px);
+        height: calc(100dvh - 72px);
+        min-height: 570px;
+        max-height: calc(100vh - 72px);
+        box-sizing: border-box;
+        overflow: hidden;
+        padding: 0;
+    }
+
+    #home-section .hero-container {
+        flex: 1;
+        display: grid;
+        grid-template-columns: 1fr 1.15fr;
+        align-items: center;
+        justify-content: center;
+        gap: 36px;
+        padding: 12px 0;
+        max-height: calc(100% - 60px);
+        box-sizing: border-box;
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .hero-visual {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 26px;
+        flex-wrap: nowrap;
+    }
+
+    /* Wave divider anchored flush at bottom fold */
+    #home-section .wave-divider-container {
+        margin-top: 0;
+        height: 60px;
+        min-height: 60px;
+        max-height: 60px;
+        flex-shrink: 0;
+        width: 100%;
+        line-height: 0;
+        overflow: hidden;
+    }
+}
+
+/* Specific Proportion Optimization for 1200px - 1440px Viewports */
+@media screen and (min-width: 1200px) and (max-width: 1440px) {
+    .logo {
+        font-size: 1.65rem;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+        padding: 8px 18px;
+    }
+
+    /* Left Hero Title */
+    .hero-title {
+        font-size: clamp(3rem, 3.8vw, 3.8rem);
+        line-height: 1.18;
+        margin-bottom: 0;
+    }
+
+    /* Right Visual Polaroid & Zalo QR */
+    .polaroid-wrapper {
+        transform: rotate(-2deg);
+        flex-shrink: 0;
+    }
+
+    .polaroid-card {
+        width: clamp(220px, 17vw, 245px);
+        padding: 12px 12px 14px 12px;
+        border-radius: 14px;
+    }
+
+    .polaroid-img-container {
+        height: clamp(210px, 26vh, 245px);
+        border-radius: 10px;
+    }
+
+    .polaroid-caption h3.chinese-char {
+        font-size: 1.35rem;
+        margin-top: 8px;
+        margin-bottom: 0;
+        display: block;
+    }
+
+    .zalo-qr-wrapper {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sparkle-gold-pointer {
+        margin-bottom: 2px;
+    }
+
+    .gold-curved-arrow {
+        width: 52px;
+        height: 42px;
+    }
+
+    .zalo-qr-card {
+        width: clamp(175px, 14vw, 195px);
+        padding: 10px;
+        border-radius: 18px;
+    }
+
+    /* Sections Padding & Above the Fold Structure */
+    #classes-section,
+    #lessons-dashboard,
+    #lesson-workspace,
+    #materials-section {
+        padding: 24px 0 55px 0;
+    }
+
+    /* Classes Grid: Clean responsive layout */
+    .classes-grid {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 24px;
+    }
+
+    .class-card {
+        padding: 24px 20px;
+    }
+
+    .class-title {
+        font-size: 1.38rem;
+        margin-top: 10px;
+        margin-bottom: 4px;
+    }
+
+    .class-subtitle {
+        font-size: 0.88rem;
+        margin-bottom: 12px;
+    }
+
+    .class-description {
+        font-size: 0.86rem;
+        margin-bottom: 16px;
+        line-height: 1.5;
+    }
+
+    .class-details {
+        padding-top: 14px;
+        gap: 8px;
+    }
+
+    /* Lessons Grid: 4 columns for fast scanning above the fold */
+    .lessons-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        margin-top: 25px;
+    }
+
+    .lesson-card {
+        padding: 20px 18px;
+    }
+
+    .lesson-card h3 {
+        font-size: 1.2rem;
+        margin-bottom: 8px;
+    }
+
+    /* Lesson Workspace: interactive tabs & flashcard fit without scrolling */
+    .workspace-header {
+        margin-bottom: 14px;
+    }
+
+    .workspace-lesson-title {
+        font-size: 1.9rem;
+    }
+
+    .learning-tabs {
+        margin: 0 auto 16px auto;
+        padding: 5px;
+        max-width: 620px;
+    }
+
+    .tab-btn {
+        padding: 10px 14px;
+        font-size: 0.95rem;
+    }
+
+    .flashcard-container {
+        height: 270px;
+        max-width: 420px;
+        margin: 0 auto 20px auto;
+    }
+
+    .tab-guideline {
+        margin-bottom: 20px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Fallback for very short screen height on desktop (e.g. devtools open) */
+@media screen and (min-width: 1200px) and (max-height: 580px) {
+    #home-section.active {
+        height: auto;
+        min-height: calc(100vh - 72px);
+        overflow-y: auto;
+    }
+    #home-section .hero-container {
+        padding: 25px 0;
+        max-height: none;
+    }
+}
 
 /* Laptop / Small Desktop */
 @media (max-width: 1024px) {
