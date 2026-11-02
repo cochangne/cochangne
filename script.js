@@ -1225,6 +1225,11 @@ function generateQuizQuestions() {
     quizQuestions = shuffleArray(quizQuestions);
 }
 
+function loadQuizQuestion(index) {
+    const q = quizQuestions[index];
+    const questionTextEl = document.getElementById('quiz-question-text');
+    const optionsContainer = document.getElementById('quiz-options-container');
+    const textBoxAnswer = document.getElementById('quiz-text-answer-box');
     const listenTriggerBox = document.getElementById('listen-quiz-box');
     const textInput = document.getElementById('quiz-text-input');
     const feedbackBox = document.getElementById('quiz-feedback-box');
