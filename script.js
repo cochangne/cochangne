@@ -480,6 +480,58 @@ const GIAO_TIEP_2_B11_VOCAB = [
     { char: "长城", pinyin: "Chángchéng", hanViet: "Trường Thành", meaning: "Vạn Lý Trường Thành", pos: "Danh từ riêng" }
 ];
 
+
+const GIAO_TIEP_2_B12_VOCAB = [
+    { char: "房间", pinyin: "fángjiān", hanViet: "Phòng gian", meaning: "Căn phòng, phòng", pos: "Danh từ" },
+    { char: "客厅", pinyin: "kètīng", hanViet: "Khách thính", meaning: "Phòng khách", pos: "Danh từ" },
+    { char: "卧室", pinyin: "wòshì", hanViet: "Ngọa thất", meaning: "Phòng ngủ", pos: "Danh từ" },
+    { char: "厨房", pinyin: "chúfáng", hanViet: "Trù phòng", meaning: "Phòng bếp, nhà bếp", pos: "Danh từ" },
+    { char: "卫生间", pinyin: "wèishēngjiān", hanViet: "Vệ sinh gian", meaning: "Phòng vệ sinh, nhà tắm", pos: "Danh từ" },
+    { char: "书房", pinyin: "shūfáng", hanViet: "Thư phòng", meaning: "Phòng đọc sách, phòng làm việc", pos: "Danh từ" },
+    { char: "沙发", pinyin: "shāfā", hanViet: "Sa phát", meaning: "Ghế sofa", pos: "Danh từ" },
+    { char: "茶几", pinyin: "chájī", hanViet: "Trà kỷ", meaning: "Bàn trà", pos: "Danh từ" },
+    { char: "窗户", pinyin: "chuānghu", hanViet: "Song hộ", meaning: "Cửa sổ", pos: "Danh từ" },
+    { char: "窗帘", pinyin: "chuānglián", hanViet: "Song liêm", meaning: "Rèm cửa sổ", pos: "Danh từ" },
+    { char: "窗台", pinyin: "chuāngtái", hanViet: "Song đài", meaning: "Bậu cửa sổ", pos: "Danh từ" },
+    { char: "门", pinyin: "mén", hanViet: "Môn", meaning: "Cửa, cánh cửa", pos: "Danh từ" },
+    { char: "楼梯", pinyin: "lóutī", hanViet: "Lâu thê", meaning: "Cầu thang", pos: "Danh từ" },
+    { char: "化妆台", pinyin: "huàzhuāngtái", hanViet: "Hóa trang đài", meaning: "Bàn trang điểm", pos: "Danh từ" },
+    { char: "橱柜", pinyin: "chúguì", hanViet: "Trù quỹ", meaning: "Tủ bếp, tủ chạn", pos: "Danh từ" },
+    { char: "电炉", pinyin: "diànlú", hanViet: "Điện lô", meaning: "Bếp điện", pos: "Danh từ" },
+    { char: "锅台", pinyin: "guōtái", hanViet: "Oa đài", meaning: "Bàn bếp, bệ bếp", pos: "Danh từ" },
+    { char: "洗衣机", pinyin: "xǐyījī", hanViet: "Tẩy y cơ", meaning: "Máy giặt", pos: "Danh từ" },
+    { char: "擦", pinyin: "cā", hanViet: "Sát", meaning: "Lau, chùi", pos: "Động từ" },
+    { char: "洗", pinyin: "xǐ", hanViet: "Tẩy", meaning: "Rửa, giặt", pos: "Động từ" },
+    { char: "熨", pinyin: "yùn", hanViet: "Uất", meaning: "Là, ủi (quần áo)", pos: "Động từ" },
+    { char: "打扫", pinyin: "dǎsǎo", hanViet: "Đả tảo", meaning: "Quét dọn, dọn dẹp", pos: "Động từ" },
+    { char: "收拾", pinyin: "shōushi", hanViet: "Thu thập", meaning: "Thu dọn, dọn dẹp, sắp xếp", pos: "Động từ" },
+    { char: "一下儿", pinyin: "yíxiàr", hanViet: "Nhất hạ nhi", meaning: "Một chút, một lát", pos: "Cụm từ" },
+    { char: "这些衣服", pinyin: "zhèxiē yīfu", hanViet: "Giá ta y phục", meaning: "Những bộ quần áo này", pos: "Cụm danh từ" },
+    { char: "没问题", pinyin: "méi wèntí", hanViet: "Một vấn đề", meaning: "Không vấn đề gì", pos: "Cụm từ" },
+    { char: "深", pinyin: "shēn", hanViet: "Thâm", meaning: "Đậm, thẫm (màu sắc)", pos: "Tính từ" },
+    { char: "浅", pinyin: "qiǎn", hanViet: "Thiển", meaning: "Nhạt, sáng (màu sắc)", pos: "Tính từ" },
+    { char: "分开", pinyin: "fēnkāi", hanViet: "Phân khai", meaning: "Tách ra, riêng ra", pos: "Động từ" },
+    { char: "阿姨", pinyin: "āyí", hanViet: "A di", meaning: "Dì, cô giúp việc", pos: "Danh từ" },
+    { char: "另外", pinyin: "lìngwài", hanViet: "Lánh ngoại", meaning: "Ngoài ra, thêm vào đó", pos: "Liên từ / Phó từ" },
+    { char: "来", pinyin: "lái", hanViet: "Lai", meaning: "Đến, lại, để (làm gì)", pos: "Động từ" },
+    { char: "晚点儿", pinyin: "wǎndiǎnr", hanViet: "Vãn điểm nhi", meaning: "Muộn một chút, lát nữa", pos: "Phó từ / Cụm từ" },
+    { char: "把", pinyin: "bǎ", hanViet: "Bả", meaning: "Giới từ câu chữ 把", pos: "Giới từ" },
+    { char: "花儿", pinyin: "huār", hanViet: "Hoa nhi", meaning: "Bông hoa, hoa", pos: "Danh từ" },
+    { char: "插", pinyin: "chā", hanViet: "Sáp", meaning: "Cắm, cắm vào (hoa)", pos: "Động từ" },
+    { char: "花瓶", pinyin: "huāpíng", hanViet: "Hoa bình", meaning: "Bình hoa, lọ hoa", pos: "Danh từ" },
+    { char: "杯子", pinyin: "bēizi", hanViet: "Bôi tử", meaning: "Cái cốc, ly", pos: "Danh từ" },
+    { char: "挂", pinyin: "guà", hanViet: "Quải", meaning: "Treo, mắc lên", pos: "Động từ" },
+    { char: "放", pinyin: "fàng", hanViet: "Phóng", meaning: "Đặt, để", pos: "Động từ" },
+    { char: "到", pinyin: "dào", hanViet: "Đáo", meaning: "Đến, tới, vào (vị trí)", pos: "Giới từ / Động từ" },
+    { char: "空调", pinyin: "kōngtiáo", hanViet: "Không điều", meaning: "Điều hòa, máy lạnh", pos: "Danh từ" },
+    { char: "风扇", pinyin: "fēngshàn", hanViet: "Phong phiến", meaning: "Quạt máy, quạt điện", pos: "Danh từ" },
+    { char: "墙", pinyin: "qiáng", hanViet: "Tường", meaning: "Bức tường", pos: "Danh từ" },
+    { char: "接", pinyin: "jiē", hanViet: "Tiếp", meaning: "Đón, tiếp đón", pos: "Động từ" },
+    { char: "准备", pinyin: "zhǔnbèi", hanViet: "Chuẩn bị", meaning: "Chuẩn bị", pos: "Động từ" },
+    { char: "办", pinyin: "bàn", hanViet: "Biện", meaning: "Tổ chức, làm", pos: "Động từ" },
+    { char: "生日晚会", pinyin: "shēngrì wǎnhuì", hanViet: "Sinh nhật vãn hội", meaning: "Tiệc sinh nhật, dạ tiệc sinh nhật", pos: "Danh từ" }
+];
+
 const VOCAB_GUOJIA = [
     { char: "国家", pinyin: "guójiā", hanViet: "Quốc gia", meaning: "Quốc gia, đất nước", pos: "Danh từ" },
     { char: "越南", pinyin: "Yuènán", hanViet: "Việt Nam", meaning: "Việt Nam", pos: "Danh từ" },
@@ -590,6 +642,18 @@ const LESSON_DIALOGUES = {
             { speaker: "Học sinh B", role: "b", zh: "春天和秋天去南方旅行很舒服，比如苏州、杭州或者云南丽江。", pinyin: "Chūntiān hé qiūtiān qù nánfāng lǚxíng hěn shūfu, bǐrú Sūzhōu, Hángzhōu huòzhě Yúnnán Lìjiāng.", vi: "Mùa xuân và mùa thu đi du lịch phía Nam thì rất dễ chịu, ví dụ như Tô Châu, Hàng Châu hay Lệ Giang - Vân Nam." },
             { speaker: "Học sinh A", role: "a", zh: "对呀，那儿的天气暖和又凉快，没有北方这么干燥。", pinyin: "Duì ya, nàr de tiānqì nuǎnhuo yòu liángkuai, méiyǒu běifāng zhème gānzào.", vi: "Đúng thế, thời tiết ở đó vừa ấm áp vừa mát mẻ, không bị hanh khô như miền Bắc." },
             { speaker: "Học sinh B", role: "b", zh: "等天气晴了，我们一起做旅行攻略吧！", pinyin: "Děng tiānqì qíng le, wǒmen yìqǐ zuò lǚxíng gōnglüè ba!", vi: "Đợi khi nào trời nắng ráo, chúng mình cùng nhau lên lịch trình du lịch nhé!" }
+        ],
+        12: [
+            { speaker: "Học sinh A", role: "a", zh: "今天晚上我们要办生日晚会，大家一起来打扫房间吧！", pinyin: "Jīntiān wǎnshang wǒmen yào bàn shēngrì wǎnhuì, dàjiā yìqǐ lái dǎsǎo fángjiān ba!", vi: "Tối nay chúng mình sẽ tổ chức tiệc sinh nhật, mọi người cùng nhau dọn dẹp phòng ốc nhé!" },
+            { speaker: "Học sinh B", role: "b", zh: "好的！我先把客厅和书房收拾一下，请把桌子和茶几擦一下。", pinyin: "Hǎo de! Wǒ xiān bǎ kètīng hé shūfáng shōushi yíxià, qǐng bǎ zhuōzi hé chájī cā yíxià.", vi: "Được thôi! Tớ thu dọn phòng khách và phòng làm việc trước, cậu lau bàn và bàn trà giúp tớ một chút nhé." },
+            { speaker: "Học sinh A", role: "a", zh: "没问题！窗台和窗户也很脏，我也把窗帘挂好、窗台擦干净。", pinyin: "Méi wèntí! Chuāngtái hé chuānghu yě hěn zāng, wǒ yě bǎ chuānglián guà hǎo, chuāngtái cā gānjìng.", vi: "Không vấn đề gì! Bậu cửa sổ và cửa sổ cũng khá bẩn, tớ cũng sẽ treo rèm đàng hoàng và lau sạch bậu cửa sổ." },
+            { speaker: "Học sinh B", role: "b", zh: "阿姨，请把这些衣服放进洗衣机里洗一下，深色和浅色的衣服要分开洗。", pinyin: "Āyí, qǐng bǎ zhèxiē yīfu fàng jìn xǐyījī lǐ xǐ yíxià, shēnsè hé qiǎnsè de yīfu yào fēnkāi xǐ.", vi: "Dì ơi, nhờ dì bỏ đống quần áo này vào máy giặt giặt giúp cháu nhé, quần áo màu sẫm và màu sáng nhớ giặt riêng ạ." },
+            { speaker: "Học sinh A", role: "a", zh: "另外，厨房的电炉和橱柜也需要收拾一下。我来洗水果和杯子。", pinyin: "Lìngwài, chúfáng de diànlú hé chúguì yě xūyào shōushi yíxià. Wǒ lái xǐ shuǐguǒ hé bēizi.", vi: "Ngoài ra, bếp điện và tủ kệ trong bếp cũng cần thu dọn một chút. Tớ sẽ rửa hoa quả và cốc chén." },
+            { speaker: "Học sinh B", role: "b", zh: "你看，这束鲜花真漂亮！请把花儿插到花瓶里，放在客厅的茶几上吧。", pinyin: "Nǐ kàn, zhè shù xiānhuā zhēn piàoliang! Qǐng bǎ huār chā dào huāpíng lǐ, fàng zài kètīng de chájī shang ba.", vi: "Cậu xem kìa, bó hoa tươi này đẹp quá! Cậu cắm hoa vào bình hoa rồi đặt lên bàn trà trong phòng khách nhé." },
+            { speaker: "Học sinh A", role: "a", zh: "太美了！天气有点儿热，把客厅的空调和风扇打开吧。", pinyin: "Tài měi le! Tiānqì yǒudiǎnr rè, bǎ kètīng de kōngtiáo hé fēngshàn dǎkāi ba.", vi: "Đẹp mê ly luôn! Trời hơi nóng, cậu bật điều hòa và quạt máy ở phòng khách lên nhé." },
+            { speaker: "Học sinh B", role: "b", zh: "好，我已经把温度调到二十五度了。墙上还要挂气球吗？", pinyin: "Hǎo, wǒ yǐjīng bǎ wēndù tiáo dào èrshíwǔ dù le. Qiáng shang hái yào guà qìqiú ma?", vi: "Được, tớ đã chỉnh nhiệt độ về 25 độ rồi. Trên tường còn treo bóng bay nữa không?" },
+            { speaker: "Học sinh A", role: "a", zh: "要的，我们把彩色气球挂到墙上。晚点儿朋友们就会来了。", pinyin: "Yào de, wǒmen bǎ cǎisè qìqiú guà dào qiáng shang. Wǎndiǎnr péngyoumen jiù huì lái le.", vi: "Có chứ, chúng mình treo bóng bay sắc màu lên tường nhé. Lát nữa muộn một chút là các bạn sẽ tới rồi đấy." },
+            { speaker: "Học sinh B", role: "b", zh: "太棒了！一切都准备好了，六点半我去楼下接大家！", pinyin: "Tài bàng le! Yíqiè dōu zhǔnbèi hǎo le, liù diǎn bàn wǒ qù lóuxià jiē dàjiā!", vi: "Tuyệt vời ông mặt trời! Mọi thứ đã chuẩn bị xong xuôi hết rồi, 6 rưỡi tớ xuống tầng đón mọi người nhé!" }
         ]
     },
     "Từ vựng theo chủ đề": {
@@ -1083,7 +1147,7 @@ window.enterCourse = function(courseName) {
 };
 
 window.enterLesson = function(lessonNum) {
-    if (lessonNum !== 1 && lessonNum !== 2 && lessonNum !== 5 && lessonNum !== 7 && lessonNum !== 8 && lessonNum !== 9 && lessonNum !== 10 && lessonNum !== 11) {
+    if (lessonNum !== 1 && lessonNum !== 2 && lessonNum !== 5 && lessonNum !== 7 && lessonNum !== 8 && lessonNum !== 9 && lessonNum !== 10 && lessonNum !== 11 && lessonNum !== 12) {
         alert("Bài học này đang được Cô Chang chuẩn bị nội dung. Bạn hãy chọn học các bài đang sẵn sàng nhé! 🥰");
         return;
     }
@@ -1135,6 +1199,11 @@ window.enterLesson = function(lessonNum) {
             document.getElementById('workspace-badge').style.display = 'inline-block';
             document.getElementById('workspace-lesson-title').innerHTML = `Lớp Giao tiếp 2 - Bài 11: <span class="chinese-char">太冷了！</span>`;
             document.getElementById('workspace-badge').innerText = `Giao tiếp 2 • Bài 11`;
+        } else if (lessonNum === 12) {
+            VOCAB_DATA = [...GIAO_TIEP_2_B12_VOCAB];
+            document.getElementById('workspace-badge').style.display = 'inline-block';
+            document.getElementById('workspace-lesson-title').innerHTML = `Lớp Giao tiếp 2 - Bài 12: <span class="chinese-char">请把桌子擦一下</span>`;
+            document.getElementById('workspace-badge').innerText = `Giao tiếp 2 • Bài 12`;
         }
     } else if (currentCourse === "Từ vựng theo chủ đề") {
         VOCAB_DATA = [...VOCAB_GUOJIA];
@@ -1888,6 +1957,136 @@ function generateQuizQuestions() {
 
         return; // Fixed sequence 1 to 30
     }
+    // Special exact 30-question format for Giao tiếp 2 - Bài 12: 请把桌子擦一下
+    if (currentCourse === "Giao tiếp 2" && currentLesson === 12) {
+        // --- PART 1: 16 MC Questions (Questions 1 to 16) ---
+        const part1MC = [
+            { question: `1. Từ <span class="chinese-char">客厅</span> có nghĩa là gì?`, ans: "Phòng khách", opts: ["Phòng khách", "Phòng ngủ", "Nhà bếp", "Phòng tắm"] },
+            { question: `2. Từ <span class="chinese-char">卧室</span> có phiên âm là gì?`, ans: "wòshì", opts: ["wòshì", "kètīng", "chúfáng", "shūfáng"] },
+            { question: `3. Từ <span class="chinese-char">茶几</span> có nghĩa là gì?`, ans: "Bàn trà", opts: ["Bàn trà", "Ghế sofa", "Rèm cửa", "Bàn trang điểm"] },
+            { question: `4. Từ <span class="chinese-char">窗帘</span> có phiên âm là gì?`, ans: "chuānglián", opts: ["chuānglián", "chuānghu", "chuāngtái", "chúguì"] },
+            { question: `5. Từ <span class="chinese-char">洗衣机</span> có nghĩa là gì?`, ans: "Máy giặt", opts: ["Máy giặt", "Điều hòa", "Quạt máy", "Tủ lạnh"] },
+            { question: `6. Từ <span class="chinese-char">打扫</span> có nghĩa là gì?`, ans: "Quét dọn, dọn dẹp", opts: ["Quét dọn, dọn dẹp", "Rửa bát", "Nấu ăn", "Mua sắm"] },
+            { question: `7. Từ <span class="chinese-char">收拾</span> có phiên âm là gì?`, ans: "shōushi", opts: ["shōushi", "dǎsǎo", "cā", "yùn"] },
+            { question: `8. Từ <span class="chinese-char">深</span> có nghĩa là gì?`, ans: "Đậm, thẫm (màu sắc)", opts: ["Đậm, thẫm (màu sắc)", "Nhạt, sáng", "Tươi sáng", "Trong suốt"] },
+            { question: `9. Từ <span class="chinese-char">浅</span> có nghĩa là gì?`, ans: "Nhạt, sáng (màu sắc)", opts: ["Nhạt, sáng (màu sắc)", "Đậm, thẫm", "Tối tăm", "Đen xì"] },
+            { question: `10. Từ <span class="chinese-char">分开</span> có phiên âm là gì?`, ans: "fēnkāi", opts: ["fēnkāi", "lìngwài", "shōushi", "zhǔnbèi"] },
+            { question: `11. Từ <span class="chinese-char">花瓶</span> có nghĩa là gì?`, ans: "Bình hoa, lọ hoa", opts: ["Bình hoa, lọ hoa", "Cái cốc", "Cửa sổ", "Tủ bếp"] },
+            { question: `12. Từ <span class="chinese-char">空调</span> có nghĩa là gì?`, ans: "Điều hòa, máy lạnh", opts: ["Điều hòa, máy lạnh", "Quạt điện", "Tủ lạnh", "Máy giặt"] },
+            { question: `13. Từ <span class="chinese-char">风扇</span> có phiên âm là gì?`, ans: "fēngshàn", opts: ["fēngshàn", "kōngtiáo", "diànlú", "xǐyījī"] },
+            { question: `14. Từ <span class="chinese-char">插</span> có nghĩa là gì?`, ans: "Cắm, cắm vào (hoa)", opts: ["Cắm, cắm vào (hoa)", "Treo lên", "Lau chùi", "Giặt giũ"] },
+            { question: `15. Cụm từ <span class="chinese-char">生日晚会</span> có nghĩa là gì?`, ans: "Tiệc sinh nhật, dạ tiệc sinh nhật", opts: ["Tiệc sinh nhật, dạ tiệc sinh nhật", "Tiệc cuối năm", "Buổi hòa nhạc", "Hội thảo"] },
+            { question: `16. Từ <span class="chinese-char">挂</span> có nghĩa là gì?`, ans: "Treo, mắc lên", opts: ["Treo, mắc lên", "Đặt xuống", "Cắm vào", "Rửa sạch"] }
+        ];
+
+        part1MC.forEach(item => {
+            quizQuestions.push({
+                type: "mc-meaning",
+                question: item.question,
+                correctAnswer: item.ans,
+                options: item.opts
+            });
+        });
+
+        // --- PART 2: 10 Sentence Rearrangement Questions (Questions 17 to 26) ---
+        const part2Rearrange = [
+            {
+                q: `17. Hãy sắp xếp các từ sau thành câu hoàn chỉnh (Học sinh đánh máy đáp án):<br><span class="chinese-char">桌子 / 请 / 擦 / 把 / 一下 / 。</span>`,
+                ans: ["请把桌子擦一下。"],
+                rubyAns: `<ruby>请<rt>qǐng</rt></ruby><ruby>把<rt>bǎ</rt></ruby><ruby>桌<rt>zhuō</rt></ruby><ruby>子<rt>zi</rt></ruby><ruby>擦<rt>cā</rt></ruby><ruby>一<rt>yí</rt></ruby><ruby>下<rt>xià</rt></ruby>。`
+            },
+            {
+                q: `18. Hãy sắp xếp các từ sau thành câu hoàn chỉnh (Học sinh đánh máy đáp án):<br><span class="chinese-char">我 / 把 / 客厅 / 先 / 收拾 / 一下 / 。</span>`,
+                ans: ["我先把客厅收拾一下。"],
+                rubyAns: `<ruby>我<rt>wǒ</rt></ruby><ruby>先<rt>xiān</rt></ruby><ruby>把<rt>bǎ</rt></ruby><ruby>客<rt>kè</rt></ruby><ruby>厅<rt>tīng</rt></ruby><ruby>收<rt>shōu</rt></ruby><ruby>拾<rt>shi</rt></ruby><ruby>一<rt>yí</rt></ruby><ruby>下<rt>xià</rt></ruby>。`
+            },
+            {
+                q: `19. Hãy sắp xếp các từ sau thành câu hoàn chỉnh (Học sinh đánh máy đáp án):<br><span class="chinese-char">衣服 / 洗衣机 / 放进 / 这些 / 把 / 里 / 。</span>`,
+                ans: ["把这些衣服放进洗衣机里。"],
+                rubyAns: `<ruby>把<rt>bǎ</rt></ruby><ruby>这<rt>zhè</rt></ruby><ruby>些<rt>xiē</rt></ruby><ruby>衣<rt>yī</rt></ruby><ruby>服<rt>fu</rt></ruby><ruby>放<rt>fàng</rt></ruby><ruby>进<rt>jìn</rt></ruby><ruby>洗<rt>xǐ</rt></ruby><ruby>衣<rt>yī</rt></ruby><ruby>机<rt>jī</rt></ruby><ruby>里<rt>lǐ</rt></ruby>。`
+            },
+            {
+                q: `20. Hãy sắp xếp các từ sau thành câu hoàn chỉnh (Học sinh đánh máy đáp án):<br><span class="chinese-char">深色 / 衣服 / 浅色 / 和 / 要 / 分开 / 。</span>`,
+                ans: ["深色和浅色的衣服要分开。", "深色和浅色衣服要分开。"],
+                rubyAns: `<ruby>深<rt>shēn</rt></ruby><ruby>色<rt>sè</rt></ruby><ruby>和<rt>hé</rt></ruby><ruby>浅<rt>qiǎn</rt></ruby><ruby>色<rt>sè</rt></ruby><ruby>的<rt>de</rt></ruby><ruby>衣<rt>yī</rt></ruby><ruby>服<rt>fu</rt></ruby><ruby>要<rt>yào</rt></ruby><ruby>分<rt>fēn</rt></ruby><ruby>开<rt>kāi</rt></ruby>。`
+            },
+            {
+                q: `21. Hãy sắp xếp các từ sau thành câu hoàn chỉnh (Học sinh đánh máy đáp án):<br><span class="chinese-char">花儿 / 请 / 插到 / 花瓶 / 里 / 把 / 。</span>`,
+                ans: ["请把花儿插到花瓶里。"],
+                rubyAns: `<ruby>请<rt>qǐng</rt></ruby><ruby>把<rt>bǎ</rt></ruby><ruby>花<rt>huā</rt></ruby><ruby>儿<rt>r</rt></ruby><ruby>插<rt>chā</rt></ruby><ruby>到<rt>dào</rt></ruby><ruby>花<rt>huā</rt></ruby><ruby>瓶<rt>píng</rt></ruby><ruby>里<rt>lǐ</rt></ruby>。`
+            },
+            {
+                q: `22. Hãy sắp xếp các từ sau thành câu hoàn chỉnh (Học sinh đánh máy đáp án):<br><span class="chinese-char">茶几 / 放 / 把 / 花瓶 / 在 / 上 / 。</span>`,
+                ans: ["把花瓶放在茶几上。"],
+                rubyAns: `<ruby>把<rt>bǎ</rt></ruby><ruby>花<rt>huā</rt></ruby><ruby>瓶<rt>píng</rt></ruby><ruby>放<rt>fàng</rt></ruby><ruby>在<rt>zài</rt></ruby><ruby>茶<rt>chá</rt></ruby><ruby>几<rt>jī</rt></ruby><ruby>上<rt>shàng</rt></ruby>。`
+            },
+            {
+                q: `23. Hãy sắp xếp các từ sau thành câu hoàn chỉnh (Học sinh đánh máy đáp án):<br><span class="chinese-char">空调 / 打开 / 把 / 客厅 / 的 / 吧 / ！</span>`,
+                ans: ["把客厅的空调打开吧！", "把客厅的空调打开吧。"],
+                rubyAns: `<ruby>把<rt>bǎ</rt></ruby><ruby>客<rt>kè</rt></ruby><ruby>厅<rt>tīng</rt></ruby><ruby>的<rt>de</rt></ruby><ruby>空<rt>kōng</rt></ruby><ruby>调<rt>tiáo</rt></ruby><ruby>打<rt>dǎ</rt></ruby><ruby>开<rt>kāi</rt></ruby><ruby>吧<rt>ba</rt></ruby>！`
+            },
+            {
+                q: `24. Hãy sắp xếp các từ sau thành câu hoàn chỉnh (Học sinh đánh máy đáp án):<br><span class="chinese-char">墙 / 挂 / 把 / 我们 / 到 / 气球 / 上 / 。</span>`,
+                ans: ["我们把气球挂到墙上。"],
+                rubyAns: `<ruby>我<rt>wǒ</rt></ruby><ruby>们<rt>men</rt></ruby><ruby>把<rt>bǎ</rt></ruby><ruby>气<rt>qì</rt></ruby><ruby>球<rt>qiú</rt></ruby><ruby>挂<rt>guà</rt></ruby><ruby>到<rt>dào</rt></ruby><ruby>墙<rt>qiáng</rt></ruby><ruby>上<rt>shàng</rt></ruby>。`
+            },
+            {
+                q: `25. Hãy sắp xếp các từ sau thành câu hoàn chỉnh (Học sinh đánh máy đáp án):<br><span class="chinese-char">大家 / 去 / 接 / 楼下 / 我 / 。</span>`,
+                ans: ["我去楼下接大家。"],
+                rubyAns: `<ruby>我<rt>wǒ</rt></ruby><ruby>去<rt>qù</rt></ruby><ruby>楼<rt>lóu</rt></ruby><ruby>下<rt>xià</rt></ruby><ruby>接<rt>jiē</rt></ruby><ruby>大<rt>dà</rt></ruby><ruby>家<rt>jiā</rt></ruby>。`
+            },
+            {
+                q: `26. Hãy sắp xếp các từ sau thành câu hoàn chỉnh (Học sinh đánh máy đáp án):<br><span class="chinese-char">办 / 我们 / 今天 / 晚上 / 生日晚会 / 要 / 。</span>`,
+                ans: ["今天晚上我们要办生日晚会。", "我们今天晚上要办生日晚会。"],
+                rubyAns: `<ruby>今<rt>jīn</rt></ruby><ruby>天<rt>tiān</rt></ruby><ruby>晚<rt>wǎn</rt></ruby><ruby>上<rt>shang</rt></ruby><ruby>我<rt>wǒ</rt></ruby><ruby>们<rt>men</rt></ruby><ruby>要<rt>yào</rt></ruby><ruby>办<rt>bàn</rt></ruby><ruby>生<rt>shēng</rt></ruby><ruby>日<rt>rì</rt></ruby><ruby>晚<rt>wǎn</rt></ruby><ruby>会<rt>huì</rt></ruby>。`
+            }
+        ];
+
+        part2Rearrange.forEach(item => {
+            quizQuestions.push({
+                type: "written-rearrange",
+                question: item.q,
+                correctAnswer: item.ans,
+                rubyAnswer: item.rubyAns
+            });
+        });
+
+        // --- PART 3: 4 Translation Questions (Questions 27 to 30) ---
+        const part3Translation = [
+            {
+                q: `27. Dịch sang tiếng Trung câu sau:<br><b>"Tối nay chúng tôi sẽ tổ chức tiệc sinh nhật, phiền bạn lau bàn trà và quét dọn phòng khách một chút nhé."</b>`,
+                ans: ["今天晚上我们要办生日晚会，请把茶几擦一下，把客厅打扫一下。", "今天晚上我们要办生日晚会，请把茶几擦一下，把客厅打扫一下吧。"],
+                rubyAns: `<ruby>今<rt>jīn</rt></ruby><ruby>天<rt>tiān</rt></ruby><ruby>晚<rt>wǎn</rt></ruby><ruby>上<rt>shang</rt></ruby><ruby>我<rt>wǒ</rt></ruby><ruby>们<rt>men</rt></ruby><ruby>要<rt>yào</rt></ruby><ruby>办<rt>bàn</rt></ruby><ruby>生<rt>shēng</rt></ruby><ruby>日<rt>rì</rt></ruby><ruby>晚<rt>wǎn</rt></ruby><ruby>会<rt>huì</rt></ruby>，<ruby>请<rt>qǐng</rt></ruby><ruby>把<rt>bǎ</rt></ruby><ruby>茶<rt>chá</rt></ruby><ruby>几<rt>jī</rt></ruby><ruby>擦<rt>cā</rt></ruby><ruby>一<rt>yí</rt></ruby><ruby>下<rt>xià</rt></ruby>，<ruby>把<rt>bǎ</rt></ruby><ruby>客<rt>kè</rt></ruby><ruby>厅<rt>tīng</rt></ruby><ruby>打<rt>dǎ</rt></ruby><ruby>扫<rt>sǎo</rt></ruby><ruby>一<rt>yí</rt></ruby><ruby>下<rt>xià</rt></ruby>。`
+            },
+            {
+                q: `28. Dịch sang tiếng Trung câu sau:<br><b>"Hãy bỏ những bộ quần áo này vào máy giặt, quần áo màu đậm và màu nhạt cần giặt riêng."</b>`,
+                ans: ["把这些衣服放进洗衣机里，深色和浅色的衣服要分开洗。", "把这些衣服放进洗衣机里洗一下，深色和浅色的衣服要分开洗。"],
+                rubyAns: `<ruby>把<rt>bǎ</rt></ruby><ruby>这<rt>zhè</rt></ruby><ruby>些<rt>xiē</rt></ruby><ruby>衣<rt>yī</rt></ruby><ruby>服<rt>fu</rt></ruby><ruby>放<rt>fàng</rt></ruby><ruby>进<rt>jìn</rt></ruby><ruby>洗<rt>xǐ</rt></ruby><ruby>衣<rt>yī</rt></ruby><ruby>机<rt>jī</rt></ruby><ruby>里<rt>lǐ</rt></ruby>，<ruby>深<rt>shēn</rt></ruby><ruby>色<rt>sè</rt></ruby><ruby>和<rt>hé</rt></ruby><ruby>浅<rt>qiǎn</rt></ruby><ruby>色<rt>sè</rt></ruby><ruby>的<rt>de</rt></ruby><ruby>衣<rt>yī</rt></ruby><ruby>服<rt>fu</rt></ruby><ruby>要<rt>yào</rt></ruby><ruby>分<rt>fēn</rt></ruby><ruby>开<rt>kāi</rt></ruby><ruby>洗<rt>xǐ</rt></ruby>。`
+            },
+            {
+                q: `29. Dịch sang tiếng Trung câu sau:<br><b>"Bạn cắm hoa vào bình hoa rồi đặt lên bàn trà trong phòng khách nhé."</b>`,
+                ans: ["请把花儿插到花瓶里，放在客厅的茶几上。", "请把花插到花瓶里，放在客厅的茶几上。"],
+                rubyAns: `<ruby>请<rt>qǐng</rt></ruby><ruby>把<rt>bǎ</rt></ruby><ruby>花<rt>huā</rt></ruby><ruby>儿<rt>r</rt></ruby><ruby>插<rt>chā</rt></ruby><ruby>到<rt>dào</rt></ruby><ruby>花<rt>huā</rt></ruby><ruby>瓶<rt>píng</rt></ruby><ruby>里<rt>lǐ</rt></ruby>，<ruby>放<rt>fàng</rt></ruby><ruby>在<rt>zài</rt></ruby><ruby>客<rt>kè</rt></ruby><ruby>厅<rt>tīng</rt></ruby><ruby>的<rt>de</rt></ruby><ruby>茶<rt>chá</rt></ruby><ruby>几<rt>jī</rt></ruby><ruby>上<rt>shàng</rt></ruby>。`
+            },
+            {
+                q: `30. Dịch sang tiếng Trung câu sau:<br><b>"Thời tiết hôm nay hơi nóng, hãy bật điều hòa trong phòng khách lên đi."</b>`,
+                ans: ["今天天气有点儿热，把客厅的空调打开吧。", "今天天气有一点儿热，把客厅的空调打开吧。"],
+                rubyAns: `<ruby>今<rt>jīn</rt></ruby><ruby>天<rt>tiān</rt></ruby><ruby>天<rt>tiān</rt></ruby><ruby>气<rt>qì</rt></ruby><ruby>有<rt>yǒu</rt></ruby><ruby>点<rt>diǎn</rt></ruby><ruby>儿<rt>r</rt></ruby><ruby>热<rt>rè</rt></ruby>，<ruby>把<rt>bǎ</rt></ruby><ruby>客<rt>kè</rt></ruby><ruby>厅<rt>tīng</rt></ruby><ruby>的<rt>de</rt></ruby><ruby>空<rt>kōng</rt></ruby><ruby>调<rt>tiáo</rt></ruby><ruby>打<rt>dǎ</rt></ruby><ruby>开<rt>kāi</rt></ruby><ruby>吧<rt>ba</rt></ruby>。`
+            }
+        ];
+
+        part3Translation.forEach(item => {
+            quizQuestions.push({
+                type: "written-translation",
+                question: item.q,
+                correctAnswer: item.ans,
+                rubyAnswer: item.rubyAns
+            });
+        });
+
+        return; // Fixed sequence 1 to 30
+    }
+
 
 
 
