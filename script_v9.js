@@ -531,6 +531,80 @@ const GIAO_TIEP_2_B9_VOCAB = [
     { char: "食物中毒", pinyin: "shíwù zhòngdú", hanViet: "Thực vật trúng độc", meaning: "Ngộ độc thực phẩm", pos: "Cụm danh từ" }
 ];
 
+
+const GIAO_TIEP_2_B11_VOCAB = [
+    { char: "加拿大", pinyin: "Jiānádà", hanViet: "Gia Nã Đại", meaning: "Canada", pos: "Danh từ" },
+    { char: "新加坡", pinyin: "Xīnjiāpō", hanViet: "Tân Gia Ba", meaning: "Singapore", pos: "Danh từ" },
+    { char: "俄语", pinyin: "Éyǔ", hanViet: "Nga ngữ", meaning: "Tiếng Nga", pos: "Danh từ" },
+    { char: "意大利语", pinyin: "Yìdàlìyǔ", hanViet: "Ý Đại Lợi ngữ", meaning: "Tiếng Ý", pos: "Danh từ" },
+    { char: "印地语", pinyin: "Yìndìyǔ", hanViet: "Ấn Địa ngữ", meaning: "Tiếng Hindi (Ấn Độ)", pos: "Danh từ" },
+    { char: "泰语", pinyin: "Tàiyǔ", hanViet: "Thái ngữ", meaning: "Tiếng Thái", pos: "Danh từ" },
+    { char: "混血", pinyin: "hùnxuè", hanViet: "Hỗn huyết", meaning: "Con lai, mang hai dòng máu", pos: "Danh từ / Tính từ" },
+    { char: "语言", pinyin: "yǔyán", hanViet: "Ngữ ngôn", meaning: "Ngôn ngữ, tiếng", pos: "Danh từ" },
+    { char: "英语", pinyin: "Yīngyǔ", hanViet: "Anh ngữ", meaning: "Tiếng Anh", pos: "Danh từ" },
+    { char: "韩语", pinyin: "Hányǔ", hanViet: "Hàn ngữ", meaning: "Tiếng Hàn", pos: "Danh từ" },
+    { char: "越南语", pinyin: "Yuènányǔ", hanViet: "Việt Nam ngữ", meaning: "Tiếng Việt", pos: "Danh từ" },
+    { char: "汉语", pinyin: "Hànyǔ", hanViet: "Hán ngữ", meaning: "Tiếng Trung, tiếng Hán", pos: "Danh từ" },
+    { char: "中文", pinyin: "Zhōngwén", hanViet: "Trung văn", meaning: "Tiếng Trung, chữ Hán", pos: "Danh từ" },
+    { char: "日语", pinyin: "Rìyǔ", hanViet: "Nhật ngữ", meaning: "Tiếng Nhật", pos: "Danh từ" },
+    { char: "法语", pinyin: "Fǎyǔ", hanViet: "Pháp ngữ", meaning: "Tiếng Pháp", pos: "Danh từ" },
+    { char: "德语", pinyin: "Déyǔ", hanViet: "Đức ngữ", meaning: "Tiếng Đức", pos: "Danh từ" },
+    { char: "西班牙语", pinyin: "Xībānyáyǔ", hanViet: "Tây Ban Nha ngữ", meaning: "Tiếng Tây Ban Nha", pos: "Danh từ" },
+    { char: "说", pinyin: "shuō", hanViet: "Thuyết", meaning: "Nói", pos: "Động từ" },
+    { char: "会", pinyin: "huì", hanViet: "Hội", meaning: "Biết, có thể (kỹ năng học được)", pos: "Trợ động từ" },
+    { char: "会一点儿", pinyin: "huì yìdiǎnr", hanViet: "Hội nhất điểm nhi", meaning: "Biết một chút", pos: "Cụm từ" },
+    { char: "不太会", pinyin: "bú tài huì", hanViet: "Bất thái hội", meaning: "Không biết lắm, không thạo", pos: "Cụm từ" },
+    { char: "得", pinyin: "de", hanViet: "Đắc", meaning: "Trợ từ kết cấu (nói được thế nào)", pos: "Trợ từ" },
+    { char: "电脑", pinyin: "diànnǎo", hanViet: "Điện não", meaning: "Máy vi tính, máy tính", pos: "Danh từ" },
+    { char: "坏", pinyin: "huài", hanViet: "Hoại", meaning: "Hỏng, hư hỏng, xấu", pos: "Tính từ / Động từ" },
+    { char: "修", pinyin: "xiū", hanViet: "Tu", meaning: "Sửa, sửa chữa", pos: "Động từ" },
+    { char: "不能", pinyin: "bù néng", hanViet: "Bất năng", meaning: "Không thể", pos: "Trợ động từ" },
+    { char: "可能", pinyin: "kěnéng", hanViet: "Khả năng", meaning: "Có thể, có lẽ, khả năng", pos: "Phó từ / Danh từ" },
+    { char: "病毒", pinyin: "bìngdú", hanViet: "Bệnh độc", meaning: "Virus (máy tính hoặc dịch bệnh)", pos: "Danh từ" },
+    { char: "差", pinyin: "chà", hanViet: "Sai", meaning: "Kém, dở, yếu", pos: "Tính từ" },
+    { char: "还可以", pinyin: "hái kěyǐ", hanViet: "Hoàn khả dĩ", meaning: "Cũng được, tàm tạm, tạm ổn", pos: "Cụm từ" },
+    { char: "不错", pinyin: "búcuò", hanViet: "Bất thác", meaning: "Tốt, khá tốt, không tệ", pos: "Tính từ" },
+    { char: "极了", pinyin: "jíle", hanViet: "Cực liễu", meaning: "Cực kỳ, vô cùng", pos: "Phó từ" },
+    { char: "非常", pinyin: "fēicháng", hanViet: "Phi thường", meaning: "Rất, vô cùng", pos: "Phó từ" },
+    { char: "平板电脑", pinyin: "píngbǎn diànnǎo", hanViet: "Bình bản điện não", meaning: "Máy tính bảng (iPad, tablet)", pos: "Danh từ" },
+    { char: "手提电脑", pinyin: "shǒutí diànnǎo", hanViet: "Thủ đề điện não", meaning: "Máy tính xách tay, laptop", pos: "Danh từ" },
+    { char: "台灯", pinyin: "táidēng", hanViet: "Đài đăng", meaning: "Đèn bàn, đèn học", pos: "Danh từ" },
+    { char: "游泳", pinyin: "yóuyǒng", hanViet: "Du vịnh", meaning: "Bơi, bơi lội", pos: "Động từ" },
+    { char: "滑冰", pinyin: "huábīng", hanViet: "Hoạt băng", meaning: "Trượt băng", pos: "Động từ" },
+    { char: "打网球", pinyin: "dǎ wǎngqiú", hanViet: "Đả võng cầu", meaning: "Chơi tennis, đánh quần vợt", pos: "Cụm động từ" },
+    { char: "爬山", pinyin: "páshān", hanViet: "Ba sơn", meaning: "Leo núi", pos: "Động từ" },
+    { char: "健身", pinyin: "jiànshēn", hanViet: "Kiện thân", meaning: "Tập gym, tập thể hình", pos: "Động từ" },
+    { char: "散步", pinyin: "sànbù", hanViet: "Tản bộ", meaning: "Đi dạo, tản bộ", pos: "Động từ" },
+    { char: "健身房", pinyin: "jiànshēnfáng", hanViet: "Kiện thân phòng", meaning: "Phòng tập gym, phòng thể hình", pos: "Danh từ" },
+    { char: "运动", pinyin: "yùndòng", hanViet: "Vận động", meaning: "Vận động, thể thao", pos: "Danh từ / Động từ" },
+    { char: "跑步", pinyin: "pǎobù", hanViet: "Bào bộ", meaning: "Chạy bộ", pos: "Động từ" },
+    { char: "打羽毛球", pinyin: "dǎ yǔmáoqiú", hanViet: "Đả vũ mao cầu", meaning: "Đánh cầu lông", pos: "Cụm động từ" },
+    { char: "打篮球", pinyin: "dǎ lánqiú", hanViet: "Đả lam cầu", meaning: "Chơi bóng rổ", pos: "Cụm động từ" },
+    { char: "踢足球", pinyin: "tī zúqiú", hanViet: "Thích túc cầu", meaning: "Đá bóng, đá banh", pos: "Cụm động từ" },
+    { char: "踢毽子", pinyin: "tī jiànzi", hanViet: "Thích kiện tử", meaning: "Đá cầu", pos: "Cụm động từ" },
+    { char: "练瑜伽", pinyin: "liàn yújiā", hanViet: "Luyện du già", meaning: "Tập yoga", pos: "Cụm động từ" },
+    { char: "开车", pinyin: "kāichē", hanViet: "Khai xa", meaning: "Lái xe ô tô", pos: "Động từ" },
+    { char: "做饭", pinyin: "zuòfàn", hanViet: "Tác phạn", meaning: "Nấu cơm, nấu ăn", pos: "Động từ" },
+    { char: "画画儿", pinyin: "huà huàr", hanViet: "Họa họa nhi", meaning: "Vẽ tranh", pos: "Động từ" },
+    { char: "买东西", pinyin: "mǎi dōngxi", hanViet: "Mãi đông tây", meaning: "Mua sắm, mua đồ đạc", pos: "Cụm động từ" },
+    { char: "看书", pinyin: "kànshū", hanViet: "Khán thư", meaning: "Đọc sách", pos: "Cụm động từ" },
+    { char: "旅游", pinyin: "lǚyóu", hanViet: "Lữ du", meaning: "Đi du lịch, du lịch", pos: "Động từ" },
+    { char: "玩电子游戏", pinyin: "wán diànzǐ yóuxì", hanViet: "Ngoạn điện tử du hí", meaning: "Chơi trò chơi điện tử, chơi game", pos: "Cụm động từ" },
+    { char: "逛街", pinyin: "guàngjiē", hanViet: "Cuống nhai", meaning: "Dạo phố, lượn phố, shopping", pos: "Động từ" },
+    { char: "看电影", pinyin: "kàn diànyǐng", hanViet: "Khán điện ảnh", meaning: "Xem phim", pos: "Cụm động từ" },
+    { char: "看电视", pinyin: "kàn diànshì", hanViet: "Khán điện thị", meaning: "Xem ti vi", pos: "Cụm động từ" },
+    { char: "听音乐", pinyin: "tīng yīnyuè", hanViet: "Thính âm nhạc", meaning: "Nghe nhạc", pos: "Cụm động từ" },
+    { char: "聊天", pinyin: "liáotiān", hanViet: "Liêu thiên", meaning: "Tán gẫu, trò chuyện", pos: "Động từ" },
+    { char: "学习汉语", pinyin: "xuéxí hànyǔ", hanViet: "Học tập Hán ngữ", meaning: "Học tiếng Trung", pos: "Cụm động từ" },
+    { char: "空儿", pinyin: "kòngr", hanViet: "Không nhi", meaning: "Thời gian rảnh rỗi, rảnh", pos: "Danh từ" },
+    { char: "常常", pinyin: "chángcháng", hanViet: "Thường thường", meaning: "Thường xuyên, hay", pos: "Phó từ" },
+    { char: "有时候", pinyin: "yǒu shíhou", hanViet: "Hữu thời hậu", meaning: "Thỉnh thoảng, đôi khi", pos: "Cụm từ" },
+    { char: "总是", pinyin: "zǒngshì", hanViet: "Tổng thị", meaning: "Luôn luôn, toàn là", pos: "Phó từ" },
+    { char: "以后", pinyin: "yǐhòu", hanViet: "Dĩ hậu", meaning: "Sau này, sau khi", pos: "Danh từ / Liên từ" },
+    { char: "游泳馆", pinyin: "yóuyǒngguǎn", hanViet: "Du vịnh quán", meaning: "Cung thể thao dưới nước, bể bơi", pos: "Danh từ" },
+    { char: "语言学校", pinyin: "yǔyán xuéxiào", hanViet: "Ngữ ngôn học hiệu", meaning: "Trường dạy ngoại ngữ, trường ngôn ngữ", pos: "Danh từ" }
+];
+
 const VOCAB_GUOJIA = [
     { char: "国家", pinyin: "guójiā", hanViet: "Quốc gia", meaning: "Quốc gia, đất nước", pos: "Danh từ" },
     { char: "越南", pinyin: "Yuènán", hanViet: "Việt Nam", meaning: "Việt Nam", pos: "Danh từ" },
@@ -648,6 +722,18 @@ const LESSON_DIALOGUES = {
             { speaker: "Bác sĩ", role: "teacher", zh: "不用打针。我给你开一些西药，每天吃三次，每次两片，饭后吃。", pinyin: "Bú yòng dǎzhēn. Wǒ gěi nǐ kāi yìxiē xīyào, měitiān chī sān cì, měi cì liǎng piàn, fàn hòu chī.", vi: "Không cần tiêm đâu. Tôi kê cho cháu một ít thuốc tây, mỗi ngày uống 3 lần, mỗi lần 2 viên, uống sau bữa ăn nhé." },
             { speaker: "Bác sĩ", role: "teacher", zh: "回去要多喝水，多休息，千万别熬夜。三天后记得来复诊。", pinyin: "Huíqù yào duō hē shuǐ, duō xiūxi, qiānwàn bié áoyè. Sān tiān hòu jìde lái fùzhěn.", vi: "Về nhà nhớ uống nhiều nước, nghỉ ngơi nhiều, tuyệt đối đừng thức khuya nhé. 3 ngày sau nhớ quay lại tái khám." },
             { speaker: "Học sinh B", role: "b", zh: "好的，谢谢医生！我马上告诉老板，今天请病假休息。", pinyin: "Hǎo de, xièxie yīshēng! Wǒ mǎshàng gàosu lǎobǎn, jīntiān qǐng bìngjià xiūxi.", vi: "Dạ vâng, cảm ơn bác sĩ! Cháu sẽ báo ngay cho sếp để xin nghỉ ốm hôm nay ạ." }
+        ],
+        11: [
+            { speaker: "Học sinh A", role: "a", zh: "大卫，我的手提电脑坏了，不能开机，你会修电脑吗？", pinyin: "Dàwèi, wǒ de shǒutí diànnǎo huài le, bù néng kāijī, nǐ huì xiū diànnǎo ma?", vi: "David ơi, máy tính xách tay của tớ bị hỏng rồi, không bật lên được, bạn biết sửa máy tính không?" },
+            { speaker: "Học sinh B", role: "b", zh: "我来看看。可能是中了电脑病毒，我帮你杀毒修一下吧！", pinyin: "Wǒ lái kànkan. Kěnéng shì zhòng le diànnǎo bìngdú, wǒ bāng nǐ shādú xiū yíxià ba!", vi: "Để tớ xem nào. Có thể là dính virus máy tính rồi, tớ giúp bạn diệt virus và sửa một chút nhé!" },
+            { speaker: "Học sinh A", role: "a", zh: "太感谢你了！你真厉害，电脑技术这么好！", pinyin: "Tài gǎnxiè nǐ le! Nǐ zhēn lìhai, diànnǎo jìshù zhème hǎo!", vi: "Cảm ơn bạn nhiều lắm! Bạn siêu thật đấy, kỹ thuật máy tính giỏi quá!" },
+            { speaker: "Học sinh B", role: "b", zh: "还可以吧。以前我在加拿大的一所语言学校学过一点儿。", pinyin: "Hái kěyǐ ba. Yǐqián wǒ zài Jiānádà de yì suǒ yǔyán xuéxiào xué guo yìdiǎnr.", vi: "Cũng tàm tạm thôi. Trước đây tớ từng học một chút ở một trường ngôn ngữ bên Canada." },
+            { speaker: "Học sinh A", role: "a", zh: "听说你是混血，你还会说哪些语言？", pinyin: "Tīngshuō nǐ shì hùnxuè, nǐ hái huì shuō nǎxiē yǔyán?", vi: "Nghe nói bạn là con lai, bạn còn biết nói những thứ tiếng nào nữa?" },
+            { speaker: "Học sinh B", role: "b", zh: "我会说英语、法语和汉语，韩语和泰语只会一点儿，说得不太好。", pinyin: "Wǒ huì shuō Yīngyǔ, Fǎyǔ hé Hànyǔ, Hányǔ hé Tàiyǔ zhǐ huì yìdiǎnr, shuō de bú tài hǎo.", vi: "Tớ biết nói tiếng Anh, tiếng Pháp và tiếng Trung; tiếng Hàn và tiếng Thái chỉ biết một chút, nói không tốt lắm." },
+            { speaker: "Học sinh A", role: "a", zh: "哇，你说汉语说得棒极了！平时有空儿的时候你喜欢做什么运动？", pinyin: "Wā, nǐ shuō Hànyǔ shuō de bàng jíle! Píngshí yǒu kòngr de shíhou nǐ xǐhuan zuò shénme yùndòng?", vi: "Woa, bạn nói tiếng Trung đỉnh cực kỳ luôn! Bình thường lúc rảnh rỗi bạn thích chơi môn thể thao nào?" },
+            { speaker: "Học sinh B", role: "b", zh: "我常常去健身房健身，有时候跟朋友打羽毛球或者去游泳馆游泳。", pinyin: "Wǒ chángcháng qù jiànshēnfáng jiànshēn, yǒu shíhou gēn péngyou dǎ yǔmáoqiú huòzhě qù yóuyǒngguǎn yóuyǒng.", vi: "Tớ thường đến phòng gym tập thể hình, thỉnh thoảng cùng bạn bè đánh cầu lông hoặc đến bể bơi để bơi lội." },
+            { speaker: "Học sinh A", role: "a", zh: "我也很喜欢打羽毛球！这个周末你有空儿吗？我们一起去打羽毛球吧！", pinyin: "Wǒ yě hěn xǐhuan dǎ yǔmáoqiú! Zhè gè zhōumò nǐ yǒu kòngr ma? Wǒmen yìqǐ qù dǎ yǔmáoqiú ba!", vi: "Tớ cũng rất thích đánh cầu lông! Cuối tuần này bạn có rảnh không? Chúng mình cùng đi đánh cầu lông nhé!" },
+            { speaker: "Học sinh B", role: "b", zh: "好啊！电脑修好了，打完球以后我请你喝奶茶！", pinyin: "Hǎo a! Diànnǎo xiū hǎo le, dǎ wán qiú yǐhòu wǒ qǐng nǐ hē nǎichá!", vi: "Được thôi! Máy tính sửa xong rồi này, chơi cầu lông xong tớ mời bạn uống trà sữa nhé!" }
         ]
     },
     "Từ vựng theo chủ đề": {
@@ -910,6 +996,43 @@ const CHAR_DATABASE = {
     "之": { hanViet: "Chi", radical: "Phiệt (丿) - của, trợ từ", strokes: 3 },
     "危": { hanViet: "Nguy", radical: "Nguy (⺁) - cheo leo, nguy hiểm", strokes: 6 },
     "环": { hanViet: "Hoàn", radical: "Vương (王) - ngọc ngà, vòng quanh", strokes: 8 },
+    "加": { hanViet: "Gia", radical: "Lực (力) - sức lực, thêm vào", strokes: 5 },
+    "拿": { hanViet: "Nã", radical: "Thủ (手) - bàn tay, cầm nắm", strokes: 10 },
+    "俄": { hanViet: "Nga", radical: "Nhân (亻) - con người, nước Nga", strokes: 9 },
+    "泰": { hanViet: "Thái", radical: "Thủy (水) - nước, bình an, Thái Lan", strokes: 10 },
+    "混": { hanViet: "Hỗn", radical: "Thủy (氵) - nước, hỗn hợp, hòa trộn", strokes: 11 },
+    "血": { hanViet: "Huyết", radical: "Huyết (血) - máu", strokes: 6 },
+    "修": { hanViet: "Tu", radical: "Nhân (亻) - người, sửa chữa, tu sửa", strokes: 9 },
+    "脑": { hanViet: "Não", radical: "Nhục (⺼) - não bộ, đầu óc", strokes: 10 },
+    "坏": { hanViet: "Hoại", radical: "Thổ (土) - đất, hư hỏng", strokes: 7 },
+    "差": { hanViet: "Sai", radical: "Dương (羊) - con dê, sai lệch, kém", strokes: 9 },
+    "极": { hanViet: "Cực", radical: "Mộc (木) - cây gỗ, cùng cực, cực độ", strokes: 7 },
+    "提": { hanViet: "Đề", radical: "Thủ (扌) - tay xách, nâng lên", strokes: 12 },
+    "灯": { hanViet: "Đăng", radical: "Hỏa (火) - lửa, ngọn đèn", strokes: 6 },
+    "游": { hanViet: "Du", radical: "Thủy (氵) - dòng nước, bơi lội, du ngoạn", strokes: 12 },
+    "泳": { hanViet: "Vịnh", radical: "Thủy (氵) - bơi trong nước", strokes: 8 },
+    "滑": { hanViet: "Hoạt", radical: "Thủy (氵) - trơn trượt, lướt đi", strokes: 12 },
+    "网": { hanViet: "Võng", radical: "Mịch (冂) - lưới, mạng lưới", strokes: 6 },
+    "球": { hanViet: "Cầu", radical: "Ngọc (王) - hòn ngọc, quả bóng tròn", strokes: 11 },
+    "爬": { hanViet: "Ba", radical: "Trảo (爪) - móng vuốt, bò, leo trèo", strokes: 8 },
+    "健": { hanViet: "Kiện", radical: "Nhân (亻) - người tráng kiện, khỏe mạnh", strokes: 10 },
+    "散": { hanViet: "Tản", radical: "Phộc (攵) - đánh khẽ, tản bộ, phân tán", strokes: 12 },
+    "步": { hanViet: "Bộ", radical: "Chỉ (止) - bước chân, đi bộ", strokes: 7 },
+    "跑": { hanViet: "Bào", radical: "Túc (足) - bàn chân, chạy bộ", strokes: 12 },
+    "羽": { hanViet: "Vũ", radical: "Vũ (羽) - lông vũ, lông chim", strokes: 6 },
+    "毛": { hanViet: "Mao", radical: "Mao (毛) - lông, tóc", strokes: 4 },
+    "篮": { hanViet: "Lam", radical: "Trúc (竹) - cái giỏ, cái rổ", strokes: 16 },
+    "踢": { hanViet: "Thích", radical: "Túc (足) - dùng chân đá", strokes: 15 },
+    "足": { hanViet: "Túc", radical: "Túc (足) - bàn chân, đầy đủ", strokes: 7 },
+    "毽": { hanViet: "Kiện", radical: "Mao (毛) - quả cầu lông", strokes: 13 },
+    "练": { hanViet: "Luyện", radical: "Mịch (纟) - tơ lụa, rèn luyện", strokes: 8 },
+    "画": { hanViet: "Họa", radical: "Điền (田) - vẽ tranh, bức tranh", strokes: 8 },
+    "戏": { hanViet: "Hí", radical: "Qua (戈) - diễn trò, trò chơi", strokes: 6 },
+    "逛": { hanViet: "Cuống", radical: "Sước (辶) - đi lại, dạo phố", strokes: 10 },
+    "街": { hanViet: "Nhai", radical: "Hành (行) - đường phố, ngã tư", strokes: 12 },
+    "聊": { hanViet: "Liêu", radical: "Nhĩ (耳) - tai, trò chuyện", strokes: 11 },
+    "空": { hanViet: "Không", radical: "Huyệt (穴) - khoảng trống, thời gian rảnh", strokes: 8 },
+    "总": { hanViet: "Tổng", radical: "Tâm (心) - tấm lòng, luôn luôn, tổng cộng", strokes: 9 },
     "为": { hanViet: "Vị", radical: "Vi (为) - vì, làm", strokes: 4 }
 };
 
@@ -1264,12 +1387,12 @@ window.enterCourse = function(courseName) {
                     <span class="lesson-status-badge badge-locked">Đang thiết lập</span>
                 </div>
 
-                <!-- Lesson 11 (Locked) -->
-                <div class="lesson-card locked border-gray">
+                <!-- Lesson 11 (Unlocked) -->
+                <div class="lesson-card unlocked border-pink cursor-pointer" onclick="enterLesson(11)">
                     <div class="lesson-num">Bài 11</div>
-                    <h3><span class="chinese-char">在邮局与银行</span></h3>
-                    <p class="lesson-desc-text">Gửi bưu kiện, giao dịch ngân hàng và đổi tiền tệ.</p>
-                    <span class="lesson-status-badge badge-locked">Đang thiết lập</span>
+                    <h3><span class="chinese-char">你会修电脑吗？</span></h3>
+                    <p class="lesson-desc-text">Hỏi về kỹ năng máy tính, khả năng ngoại ngữ, các môn thể thao và sở thích lúc rảnh rỗi.</p>
+                    <span class="lesson-status-badge">Sẵn sàng học &rarr;</span>
                 </div>
 
                 <!-- Lesson 12 (Locked) -->
@@ -1338,7 +1461,7 @@ window.enterCourse = function(courseName) {
 };
 
 window.enterLesson = function(lessonNum) {
-    if (lessonNum !== 1 && lessonNum !== 2 && lessonNum !== 3 && lessonNum !== 4 && lessonNum !== 5 && lessonNum !== 6 && lessonNum !== 7 && lessonNum !== 8 && lessonNum !== 9) {
+    if (lessonNum !== 1 && lessonNum !== 2 && lessonNum !== 3 && lessonNum !== 4 && lessonNum !== 5 && lessonNum !== 6 && lessonNum !== 7 && lessonNum !== 8 && lessonNum !== 9 && lessonNum !== 11) {
         alert("Bài học này đang được Cô Chang chuẩn bị nội dung. Bạn hãy chọn học các bài đang sẵn sàng nhé! 🥰");
         return;
     }
@@ -1395,6 +1518,11 @@ window.enterLesson = function(lessonNum) {
             document.getElementById('workspace-badge').style.display = 'inline-block';
             document.getElementById('workspace-lesson-title').innerHTML = `Lớp Giao tiếp 2 - Bài 9: <span class="chinese-char">你怎么了？</span>`;
             document.getElementById('workspace-badge').innerText = `Giao tiếp 2 • Bài 9`;
+        } else if (lessonNum === 11) {
+            VOCAB_DATA = [...GIAO_TIEP_2_B11_VOCAB];
+            document.getElementById('workspace-badge').style.display = 'inline-block';
+            document.getElementById('workspace-lesson-title').innerHTML = `Lớp Giao tiếp 2 - Bài 11: <span class="chinese-char">你会修电脑吗？</span>`;
+            document.getElementById('workspace-badge').innerText = `Giao tiếp 2 • Bài 11`;
         }
     } else if (currentCourse === "Từ vựng theo chủ đề") {
         VOCAB_DATA = [...VOCAB_GUOJIA];
@@ -2175,6 +2303,136 @@ function generateQuizQuestions() {
 
         return; // Fixed sequence 1 to 30
     }
+    // Special exact 30-question format for Giao tiếp 2 - Bài 11: 你会修电脑吗？
+    if (currentCourse === "Giao tiếp 2" && currentLesson === 11) {
+        // --- PART 1: 16 MC Questions (Questions 1 to 16) ---
+        const part1MC = [
+            { question: `1. Từ <span class="chinese-char">加拿大</span> có phiên âm là gì?`, ans: "Jiānádà", opts: ["Jiānádà", "Xīnjiāpō", "Éyǔ", "Tàiyǔ"] },
+            { question: `2. Từ <span class="chinese-char">新加坡</span> có nghĩa là gì?`, ans: "Singapore", opts: ["Singapore", "Canada", "Thái Lan", "Ấn Độ"] },
+            { question: `3. Từ <span class="chinese-char">混血</span> có nghĩa là gì?`, ans: "Con lai, mang hai dòng máu", opts: ["Con lai, mang hai dòng máu", "Người nước ngoài", "Du học sinh", "Bạn cùng phòng"] },
+            { question: `4. Từ <span class="chinese-char">修</span> có nghĩa là gì?`, ans: "Sửa, sửa chữa", opts: ["Sửa, sửa chữa", "Hỏng hóc", "Mua sắm", "Bán hàng"] },
+            { question: `5. Từ <span class="chinese-char">手提电脑</span> có nghĩa là gì?`, ans: "Máy tính xách tay, laptop", opts: ["Máy tính xách tay, laptop", "Máy tính để bàn", "Máy tính bảng", "Điện thoại"] },
+            { question: `6. Từ <span class="chinese-char">病毒</span> có phiên âm là gì?`, ans: "bìngdú", opts: ["bìngdú", "diànnǎo", "táidēng", "kěnéng"] },
+            { question: `7. Từ <span class="chinese-char">游泳</span> có nghĩa là gì?`, ans: "Bơi, bơi lội", opts: ["Bơi, bơi lội", "Trượt băng", "Chạy bộ", "Leo núi"] },
+            { question: `8. Từ <span class="chinese-char">打羽毛球</span> có nghĩa là gì?`, ans: "Đánh cầu lông", opts: ["Đánh cầu lông", "Chơi bóng rổ", "Đá bóng", "Đánh tennis"] },
+            { question: `9. Từ <span class="chinese-char">踢毽子</span> có nghĩa là gì?`, ans: "Đá cầu", opts: ["Đá cầu", "Đá bóng", "Tập yoga", "Đi dạo"] },
+            { question: `10. Từ <span class="chinese-char">练瑜伽</span> có phiên âm là gì?`, ans: "liàn yújiā", opts: ["liàn yújiā", "dǎ lánqiú", "tī zúqiú", "pǎobù"] },
+            { question: `11. Cụm từ <span class="chinese-char">玩电子游戏</span> có nghĩa là gì?`, ans: "Chơi game, chơi trò chơi điện tử", opts: ["Chơi game, chơi trò chơi điện tử", "Xem phim", "Đọc sách", "Mua sắm"] },
+            { question: `12. Từ <span class="chinese-char">空儿</span> có nghĩa là gì?`, ans: "Thời gian rảnh rỗi, rảnh", opts: ["Thời gian rảnh rỗi, rảnh", "Bận rộn", "Không gian", "Công việc"] },
+            { question: `13. Từ <span class="chinese-char">语言学校</span> có nghĩa là gì?`, ans: "Trường dạy ngoại ngữ", opts: ["Trường dạy ngoại ngữ", "Bể bơi", "Phòng tập thể hình", "Bệnh viện"] },
+            { question: `14. Từ <span class="chinese-char">健身房</span> có nghĩa là gì?`, ans: "Phòng tập gym, phòng thể hình", opts: ["Phòng tập gym, phòng thể hình", "Bể bơi", "Sân bóng đá", "Nhà hát"] },
+            { question: `15. Từ <span class="chinese-char">逛街</span> có phiên âm là gì?`, ans: "guàngjiē", opts: ["guàngjiē", "kāichē", "zuòfàn", "liáotiān"] },
+            { question: `16. Từ <span class="chinese-char">极了</span> có nghĩa là gì?`, ans: "Cực kỳ, vô cùng", opts: ["Cực kỳ, vô cùng", "Một chút", "Không tệ", "Bình thường"] }
+        ];
+
+        part1MC.forEach(item => {
+            quizQuestions.push({
+                type: "mc-meaning",
+                question: item.question,
+                correctAnswer: item.ans,
+                options: item.opts
+            });
+        });
+
+        // --- PART 2: 10 Sentence Rearrangement Questions (Questions 17 to 26) ---
+        const part2Rearrange = [
+            {
+                q: `17. Hãy sắp xếp các từ sau thành câu hoàn chỉnh (Học sinh đánh máy đáp án):<br><span class="chinese-char">修 / 电脑 / 会 / 你 / 吗 / ？</span>`,
+                ans: ["你会修电脑吗？"],
+                rubyAns: `<ruby>你<rt>nǐ</rt></ruby><ruby>会<rt>huì</rt></ruby><ruby>修<rt>xiū</rt></ruby><ruby>电<rt>diàn</rt></ruby><ruby>脑<rt>nǎo</rt></ruby><ruby>吗<rt>ma</rt></ruby>？`
+            },
+            {
+                q: `18. Hãy sắp xếp các từ sau thành câu hoàn chỉnh (Học sinh đánh máy đáp án):<br><span class="chinese-char">我的 / 坏 / 电脑 / 手提 / 了 / 。</span>`,
+                ans: ["我的手提电脑坏了。"],
+                rubyAns: `<ruby>我<rt>wǒ</rt></ruby><ruby>的<rt>de</rt></ruby><ruby>手<rt>shǒu</rt></ruby><ruby>提<rt>tí</rt></ruby><ruby>电<rt>diàn</rt></ruby><ruby>脑<rt>nǎo</rt></ruby><ruby>坏<rt>huài</rt></ruby><ruby>了<rt>le</rt></ruby>。`
+            },
+            {
+                q: `19. Hãy sắp xếp các từ sau thành câu hoàn chỉnh (Học sinh đánh máy đáp án):<br><span class="chinese-char">说 / 汉语 / 得 / 好 / 你 / 很 / 。</span>`,
+                ans: ["你说汉语说得很好。", "你汉语说得很好。"],
+                rubyAns: `<ruby>你<rt>nǐ</rt></ruby><ruby>说<rt>shuō</rt></ruby><ruby>汉<rt>hàn</rt></ruby><ruby>语<rt>yǔ</rt></ruby><ruby>说<rt>shuō</rt></ruby><ruby>得<rt>de</rt></ruby><ruby>很<rt>hěn</rt></ruby><ruby>好<rt>hǎo</rt></ruby>。`
+            },
+            {
+                q: `20. Hãy sắp xếp các từ sau thành câu hoàn chỉnh (Học sinh đánh máy đáp án):<br><span class="chinese-char">法语 / 会 / 我 / 一点儿 / 说 / 。</span>`,
+                ans: ["我会说一点儿法语。", "我说法语会一点儿。"],
+                rubyAns: `<ruby>我<rt>wǒ</rt></ruby><ruby>会<rt>huì</rt></ruby><ruby>说<rt>shuō</rt></ruby><ruby>一<rt>yì</rt></ruby><ruby>点<rt>diǎn</rt></ruby><ruby>儿<rt>r</rt></ruby><ruby>法<rt>fǎ</rt></ruby><ruby>语<rt>yǔ</rt></ruby>。`
+            },
+            {
+                q: `21. Hãy sắp xếp các từ sau thành câu hoàn chỉnh (Học sinh đánh máy đáp án):<br><span class="chinese-char">有空儿 / 你 / 的 / 时候 / 喜欢 / 做什么 / ？</span>`,
+                ans: ["你有空儿的时候喜欢做什么？"],
+                rubyAns: `<ruby>你<rt>nǐ</rt></ruby><ruby>有<rt>yǒu</rt></ruby><ruby>空<rt>kòng</rt></ruby><ruby>儿<rt>r</rt></ruby><ruby>的<rt>de</rt></ruby><ruby>时<rt>shí</rt></ruby><ruby>候<rt>hou</rt></ruby><ruby>喜<rt>xǐ</rt></ruby><ruby>欢<rt>huan</rt></ruby><ruby>做<rt>zuò</rt></ruby><ruby>什<rt>shén</rt></ruby><ruby>么<rt>me</rt></ruby>？`
+            },
+            {
+                q: `22. Hãy sắp xếp các từ sau thành câu hoàn chỉnh (Học sinh đánh máy đáp án):<br><span class="chinese-char">常常 / 我 / 去 / 健身 / 健身房 / 。</span>`,
+                ans: ["我常常去健身房健身。"],
+                rubyAns: `<ruby>我<rt>wǒ</rt></ruby><ruby>常<rt>cháng</rt></ruby><ruby>常<rt>cháng</rt></ruby><ruby>去<rt>qù</rt></ruby><ruby>健<rt>jiàn</rt></ruby><ruby>身<rt>shēn</rt></ruby><ruby>房<rt>fáng</rt></ruby><ruby>健<rt>jiàn</rt></ruby><ruby>身<rt>shēn</rt></ruby>。`
+            },
+            {
+                q: `23. Hãy sắp xếp các từ sau thành câu hoàn chỉnh (Học sinh đánh máy đáp án):<br><span class="chinese-char">周末 / 这个 / 羽毛球 / 打 / 去 / 我们 / 吧 / 一起 / ！</span>`,
+                ans: ["这个周末我们一起去打羽毛球吧！", "我们这个周末一起去打羽毛球吧！"],
+                rubyAns: `<ruby>这<rt>zhè</rt></ruby><ruby>个<rt>ge</rt></ruby><ruby>周<rt>zhōu</rt></ruby><ruby>末<rt>mò</rt></ruby><ruby>我<rt>wǒ</rt></ruby><ruby>们<rt>men</rt></ruby><ruby>一<rt>yì</rt></ruby><ruby>起<rt>qǐ</rt></ruby><ruby>去<rt>qù</rt></ruby><ruby>打<rt>dǎ</rt></ruby><ruby>羽<rt>yǔ</rt></ruby><ruby>毛<rt>máo</rt></ruby><ruby>球<rt>qiú</rt></ruby><ruby>吧<rt>ba</rt></ruby>！`
+            },
+            {
+                q: `24. Hãy sắp xếp các từ sau thành câu hoàn chỉnh (Học sinh đánh máy đáp án):<br><span class="chinese-char">泰语 / 说 / 不太会 / 他 / 。</span>`,
+                ans: ["他不太会说泰语。"],
+                rubyAns: `<ruby>他<rt>tā</rt></ruby><ruby>不<rt>bú</rt></ruby><ruby>太<rt>tài</rt></ruby><ruby>会<rt>huì</rt></ruby><ruby>说<rt>shuō</rt></ruby><ruby>泰<rt>tài</rt></ruby><ruby>语<rt>yǔ</rt></ruby>。`
+            },
+            {
+                q: `25. Hãy sắp xếp các từ sau thành câu hoàn chỉnh (Học sinh đánh máy đáp án):<br><span class="chinese-char">喜欢 / 玩 / 电子游戏 / 弟弟 / 总是 / 。</span>`,
+                ans: ["弟弟总是喜欢玩电子游戏。"],
+                rubyAns: `<ruby>弟<rt>dì</rt></ruby><ruby>弟<rt>di</rt></ruby><ruby>总<rt>zǒng</rt></ruby><ruby>是<rt>shì</rt></ruby><ruby>喜<rt>xǐ</rt></ruby><ruby>欢<rt>huan</rt></ruby><ruby>玩<rt>wán</rt></ruby><ruby>电<rt>diàn</rt></ruby><ruby>子<rt>zǐ</rt></ruby><ruby>游<rt>yóu</rt></ruby><ruby>戏<rt>xì</rt></ruby>。`
+            },
+            {
+                q: `26. Hãy sắp xếp các từ sau thành câu hoàn chỉnh (Học sinh đánh máy đáp án):<br><span class="chinese-char">以后 / 下课 / 去 / 散步 / 我们 / 吧 / 。</span>`,
+                ans: ["下课以后我们去散步吧。"],
+                rubyAns: `<ruby>下<rt>xià</rt></ruby><ruby>课<rt>kè</rt></ruby><ruby>以<rt>yǐ</rt></ruby><ruby>后<rt>hòu</rt></ruby><ruby>我<rt>wǒ</rt></ruby><ruby>们<rt>men</rt></ruby><ruby>去<rt>qù</rt></ruby><ruby>散<rt>sàn</rt></ruby><ruby>步<rt>bù</rt></ruby><ruby>吧<rt>ba</rt></ruby>。`
+            }
+        ];
+
+        part2Rearrange.forEach(item => {
+            quizQuestions.push({
+                type: "written-rearrange",
+                question: item.q,
+                correctAnswer: item.ans,
+                rubyAnswer: item.rubyAns
+            });
+        });
+
+        // --- PART 3: 4 Translation Questions (Questions 27 to 30) ---
+        const part3Translation = [
+            {
+                q: `27. Dịch sang tiếng Trung câu sau:<br><b>"Máy tính xách tay của tôi bị hỏng rồi, bạn biết sửa máy tính không?"</b>`,
+                ans: ["我的手提电脑坏了，你会修电脑吗？", "我的电脑坏了，你会修电脑吗？"],
+                rubyAns: `<ruby>我<rt>wǒ</rt></ruby><ruby>的<rt>de</rt></ruby><ruby>手<rt>shǒu</rt></ruby><ruby>提<rt>tí</rt></ruby><ruby>电<rt>diàn</rt></ruby><ruby>脑<rt>nǎo</rt></ruby><ruby>坏<rt>huài</rt></ruby><ruby>了<rt>le</rt></ruby>，<ruby>你<rt>nǐ</rt></ruby><ruby>会<rt>huì</rt></ruby><ruby>修<rt>xiū</rt></ruby><ruby>电<rt>diàn</rt></ruby><ruby>脑<rt>nǎo</rt></ruby><ruby>吗<rt>ma</rt></ruby>？`
+            },
+            {
+                q: `28. Dịch sang tiếng Trung câu sau:<br><b>"Anh ấy là con lai Canada, biết nói tiếng Anh, tiếng Pháp và một chút tiếng Trung."</b>`,
+                ans: ["他是加拿大混血，会说英语、法语和一点儿汉语。", "他是加拿大混血，会说英语、法语和一点儿中文。"],
+                rubyAns: `<ruby>他<rt>tā</rt></ruby><ruby>是<rt>shì</rt></ruby><ruby>加<rt>jiā</rt></ruby><ruby>拿<rt>ná</rt></ruby><ruby>大<rt>dà</rt></ruby><ruby>混<rt>hùn</rt></ruby><ruby>血<rt>xuè</rt></ruby>，<ruby>会<rt>huì</rt></ruby><ruby>说<rt>shuō</rt></ruby><ruby>英<rt>yīng</rt></ruby><ruby>语<rt>yǔ</rt></ruby>、<ruby>法<rt>fǎ</rt></ruby><ruby>语<rt>yǔ</rt></ruby><ruby>和<rt>hé</rt></ruby><ruby>一<rt>yì</rt></ruby><ruby>点<rt>diǎn</rt></ruby><ruby>儿<rt>r</rt></ruby><ruby>汉<rt>hàn</rt></ruby><ruby>语<rt>yǔ</rt></ruby>。`
+            },
+            {
+                q: `29. Dịch sang tiếng Trung câu sau:<br><b>"Những lúc rảnh rỗi tôi thường đến phòng gym tập thể hình hoặc đi bơi."</b>`,
+                ans: ["有空儿的时候，我常常去健身房健身或者去游泳。", "有空的时候，我常常去健身房健身或者去游泳。", "有空儿的时候我常常去健身房健身或者去游泳。"],
+                rubyAns: `<ruby>有<rt>yǒu</rt></ruby><ruby>空<rt>kòng</rt></ruby><ruby>儿<rt>r</rt></ruby><ruby>的<rt>de</rt></ruby><ruby>时<rt>shí</rt></ruby><ruby>候<rt>hou</rt></ruby>，<ruby>我<rt>wǒ</rt></ruby><ruby>常<rt>cháng</rt></ruby><ruby>常<rt>cháng</rt></ruby><ruby>去<rt>qù</rt></ruby><ruby>健<rt>jiàn</rt></ruby><ruby>身<rt>shēn</rt></ruby><ruby>房<rt>fáng</rt></ruby><ruby>健<rt>jiàn</rt></ruby><ruby>身<rt>shēn</rt></ruby><ruby>或<rt>huò</rt></ruby><ruby>者<rt>zhě</rt></ruby><ruby>去<rt>qù</rt></ruby><ruby>游<rt>yóu</rt></ruby><ruby>泳<rt>yǒng</rt></ruby>。`
+            },
+            {
+                q: `30. Dịch sang tiếng Trung câu sau:<br><b>"Cuối tuần này bạn có rảnh không? Chúng mình cùng đi đánh cầu lông nhé!"</b>`,
+                ans: ["这个周末你有空儿吗？我们一起去打羽毛球吧！", "这个周末你有空吗？我们一起去打羽毛球吧！"],
+                rubyAns: `<ruby>这<rt>zhè</rt></ruby><ruby>个<rt>ge</rt></ruby><ruby>周<rt>zhōu</rt></ruby><ruby>末<rt>mò</rt></ruby><ruby>你<rt>nǐ</rt></ruby><ruby>有<rt>yǒu</rt></ruby><ruby>空<rt>kòng</rt></ruby><ruby>儿<rt>r</rt></ruby><ruby>吗<rt>ma</rt></ruby>？<ruby>我<rt>wǒ</rt></ruby><ruby>们<rt>men</rt></ruby><ruby>一<rt>yì</rt></ruby><ruby>起<rt>qǐ</rt></ruby><ruby>去<rt>qù</rt></ruby><ruby>打<rt>dǎ</rt></ruby><ruby>羽<rt>yǔ</rt></ruby><ruby>毛<rt>máo</rt></ruby><ruby>球<rt>qiú</rt></ruby><ruby>吧<rt>ba</rt></ruby>！`
+            }
+        ];
+
+        part3Translation.forEach(item => {
+            quizQuestions.push({
+                type: "written-translation",
+                question: item.q,
+                correctAnswer: item.ans,
+                rubyAnswer: item.rubyAns
+            });
+        });
+
+        return; // Fixed sequence 1 to 30
+    }
+
 
 
 
