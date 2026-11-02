@@ -410,6 +410,76 @@ const GIAO_TIEP_2_B10_VOCAB = [
     { char: "语言学校", pinyin: "yǔyán xuéxiào", hanViet: "Ngữ ngôn học hiệu", meaning: "Trường dạy ngoại ngữ, trường ngôn ngữ", pos: "Danh từ" }
 ];
 
+
+const GIAO_TIEP_2_B11_VOCAB = [
+    { char: "晴", pinyin: "qíng", hanViet: "Tình", meaning: "Trời nắng, quang đãng", pos: "Tính từ" },
+    { char: "阴", pinyin: "yīn", hanViet: "Âm", meaning: "Trời âm u, râm mát", pos: "Tính từ" },
+    { char: "多云", pinyin: "duōyún", hanViet: "Đa vân", meaning: "Trời nhiều mây", pos: "Tính từ" },
+    { char: "下雨", pinyin: "xiàyǔ", hanViet: "Hạ vũ", meaning: "Mưa, trời mưa", pos: "Động từ" },
+    { char: "小雨", pinyin: "xiǎoyǔ", hanViet: "Tiểu vũ", meaning: "Mưa nhỏ", pos: "Danh từ" },
+    { char: "毛毛雨", pinyin: "máomaoyǔ", hanViet: "Mao mao vũ", meaning: "Mưa phùn, mưa bay", pos: "Danh từ" },
+    { char: "大雨", pinyin: "dàyǔ", hanViet: "Đại vũ", meaning: "Mưa to, mưa lớn", pos: "Danh từ" },
+    { char: "下雪", pinyin: "xiàxuě", hanViet: "Hạ tuyết", meaning: "Tuyết rơi, có tuyết", pos: "Động từ" },
+    { char: "刮风", pinyin: "guāfēng", hanViet: "Quát phong", meaning: "Nổi gió, có gió", pos: "Động từ" },
+    { char: "大风", pinyin: "dàfēng", hanViet: "Đại phong", meaning: "Gió to, gió lớn", pos: "Danh từ" },
+    { char: "有雾", pinyin: "yǒu wù", hanViet: "Hữu vụ", meaning: "Có sương mù", pos: "Cụm từ" },
+    { char: "大雾", pinyin: "dàwù", hanViet: "Đại vụ", meaning: "Sương mù dày đặc", pos: "Danh từ" },
+    { char: "暴雨", pinyin: "bàoyǔ", hanViet: "Bạo vũ", meaning: "Mưa to như trút nước, bão mưa", pos: "Danh từ" },
+    { char: "打雷", pinyin: "dǎléi", hanViet: "Đả lôi", meaning: "Sấm sét, đánh sấm", pos: "Động từ" },
+    { char: "雷雨", pinyin: "léiyǔ", hanViet: "Lôi vũ", meaning: "Mưa giông, mưa sấm sét", pos: "Danh từ" },
+    { char: "转", pinyin: "zhuǎn", hanViet: "Chuyển", meaning: "Chuyển (chuyển biến thời tiết: 多云转晴)", pos: "Động từ" },
+    { char: "气温", pinyin: "qìwēn", hanViet: "Khí ôn", meaning: "Nhiệt độ không khí, nhiệt độ", pos: "Danh từ" },
+    { char: "度", pinyin: "dù", hanViet: "Độ", meaning: "Độ (độ C nhiệt độ)", pos: "Lượng từ / Danh từ" },
+    { char: "最高", pinyin: "zuìgāo", hanViet: "Tối cao", meaning: "Cao nhất", pos: "Tính từ" },
+    { char: "最低", pinyin: "zuìdī", hanViet: "Tối đê", meaning: "Thấp nhất", pos: "Tính từ" },
+    { char: "左右", pinyin: "zuǒyòu", hanViet: "Tả hữu", meaning: "Khoảng, xấp xỉ", pos: "Phó từ / Danh từ" },
+    { char: "比", pinyin: "bǐ", hanViet: "Tỉ", meaning: "So với, hơn (cấu trúc so sánh)", pos: "Giới từ" },
+    { char: "哈尔滨", pinyin: "Hā'ěrbīn", hanViet: "Cáp Nhĩ Tân", meaning: "Cáp Nhĩ Tân (thành phố băng tuyết)", pos: "Danh từ riêng" },
+    { char: "旅行", pinyin: "lǚxíng", hanViet: "Lữ hành", meaning: "Đi du lịch, du hành", pos: "Động từ" },
+    { char: "冰灯", pinyin: "bīngdēng", hanViet: "Băng đăng", meaning: "Đèn lồng băng (Lễ hội băng đăng)", pos: "Danh từ" },
+    { char: "可是", pinyin: "kěshì", hanViet: "Khả thị", meaning: "Nhưng, thế nhưng", pos: "Liên từ" },
+    { char: "非常", pinyin: "fēicháng", hanViet: "Phi thường", meaning: "Rất, vô cùng", pos: "Phó từ" },
+    { char: "风景", pinyin: "fēngjǐng", hanViet: "Phong cảnh", meaning: "Phong cảnh, cảnh sắc", pos: "Danh từ" },
+    { char: "好看", pinyin: "hǎokàn", hanViet: "Hảo khán", meaning: "Đẹp, bắt mắt, ưa nhìn", pos: "Tính từ" },
+    { char: "但是", pinyin: "dànshì", hanViet: "Đãn thị", meaning: "Nhưng, nhưng mà", pos: "Liên từ" },
+    { char: "冷", pinyin: "lěng", hanViet: "Lãnh", meaning: "Lạnh", pos: "Tính từ" },
+    { char: "热", pinyin: "rè", hanViet: "Nhiệt", meaning: "Nóng", pos: "Tính từ" },
+    { char: "高", pinyin: "gāo", hanViet: "Cao", meaning: "Cao", pos: "Tính từ" },
+    { char: "低", pinyin: "dī", hanViet: "Đê", meaning: "Thấp", pos: "Tính từ" },
+    { char: "季节", pinyin: "jìjié", hanViet: "Quý tiết", meaning: "Mùa, mùa màng", pos: "Danh từ" },
+    { char: "春天", pinyin: "chūntiān", hanViet: "Xuân thiên", meaning: "Mùa xuân", pos: "Danh từ" },
+    { char: "夏天", pinyin: "xiàtiān", hanViet: "Hạ thiên", meaning: "Mùa hè", pos: "Danh từ" },
+    { char: "秋天", pinyin: "qiūtiān", hanViet: "Thu thiên", meaning: "Mùa thu", pos: "Danh từ" },
+    { char: "冬天", pinyin: "dōngtiān", hanViet: "Đông thiên", meaning: "Mùa đông", pos: "Danh từ" },
+    { char: "暖和", pinyin: "nuǎnhuo", hanViet: "Noãn hòa", meaning: "Ấm áp", pos: "Tính từ" },
+    { char: "凉快", pinyin: "liángkuai", hanViet: "Lương khoái", meaning: "Mát mẻ, dễ chịu", pos: "Tính từ" },
+    { char: "干燥", pinyin: "gānzào", hanViet: "Can táo", meaning: "Hanh khô, khô ráo", pos: "Tính từ" },
+    { char: "潮湿", pinyin: "cháoshī", hanViet: "Triều thấp", meaning: "Ẩm ướt, nồm ẩm", pos: "Tính từ" },
+    { char: "舒服", pinyin: "shūfu", hanViet: "Thư phục", meaning: "Thoải mái, dễ chịu", pos: "Tính từ" },
+    { char: "旱季", pinyin: "hànjì", hanViet: "Hãn quý", meaning: "Mùa khô", pos: "Danh từ" },
+    { char: "雨季", pinyin: "yǔjì", hanViet: "Vũ quý", meaning: "Mùa mưa", pos: "Danh từ" },
+    { char: "介绍", pinyin: "jièshào", hanViet: "Giới thiệu", meaning: "Giới thiệu", pos: "Động từ" },
+    { char: "可以", pinyin: "kěyǐ", hanViet: "Khả dĩ", meaning: "Có thể, được", pos: "Trợ động từ" },
+    { char: "北部", pinyin: "běibù", hanViet: "Bắc bộ", meaning: "Miền bắc, phía bắc", pos: "Danh từ" },
+    { char: "南部", pinyin: "nánbù", hanViet: "Nam bộ", meaning: "Miền nam, phía nam", pos: "Danh từ" },
+    { char: "带", pinyin: "dài", hanViet: "Đới", meaning: "Mang theo, đem theo", pos: "Động từ" },
+    { char: "雨伞", pinyin: "yǔsǎn", hanViet: "Vũ tản", meaning: "Chiếc ô, cây dù che mưa", pos: "Danh từ" },
+    { char: "雨衣", pinyin: "yǔyī", hanViet: "Vũ y", meaning: "Áo mưa", pos: "Danh từ" },
+    { char: "天气预报", pinyin: "tiānqì yùbào", hanViet: "Thiên khí dự báo", meaning: "Dự báo thời tiết", pos: "Danh từ" },
+    { char: "会", pinyin: "huì", hanViet: "Hội", meaning: "Sẽ (khả năng xảy ra thời tiết)", pos: "Trợ động từ" },
+    { char: "白天", pinyin: "báitiān", hanViet: "Bạch thiên", meaning: "Ban ngày", pos: "Danh từ" },
+    { char: "夜间", pinyin: "yèjiān", hanViet: "Dạ gian", meaning: "Ban đêm", pos: "Danh từ" },
+    { char: "打算", pinyin: "dǎsuàn", hanViet: "Đả toán", meaning: "Dự định, có ý định", pos: "Động từ / Danh từ" },
+    { char: "苏州", pinyin: "Sūzhōu", hanViet: "Tô Châu", meaning: "Tô Châu", pos: "Danh từ riêng" },
+    { char: "杭州", pinyin: "Hángzhōu", hanViet: "Hàng Châu", meaning: "Hàng Châu", pos: "Danh từ riêng" },
+    { char: "桂林", pinyin: "Guìlín", hanViet: "Quế Lâm", meaning: "Quế Lâm", pos: "Danh từ riêng" },
+    { char: "云南", pinyin: "Yúnnán", hanViet: "Vân Nam", meaning: "Vân Nam", pos: "Danh từ riêng" },
+    { char: "丽江", pinyin: "Lìjiāng", hanViet: "Lệ Giang", meaning: "Lệ Giang", pos: "Danh từ riêng" },
+    { char: "凤凰古镇", pinyin: "Fènghuáng Gǔzhèn", hanViet: "Phượng Hoàng cổ trấn", meaning: "Phượng Hoàng Cổ Trấn", pos: "Danh từ riêng" },
+    { char: "张家界", pinyin: "Zhāngjiājiè", hanViet: "Trương Gia Giới", meaning: "Trương Gia Giới", pos: "Danh từ riêng" },
+    { char: "长城", pinyin: "Chángchéng", hanViet: "Trường Thành", meaning: "Vạn Lý Trường Thành", pos: "Danh từ riêng" }
+];
+
 const VOCAB_GUOJIA = [
     { char: "国家", pinyin: "guójiā", hanViet: "Quốc gia", meaning: "Quốc gia, đất nước", pos: "Danh từ" },
     { char: "越南", pinyin: "Yuènán", hanViet: "Việt Nam", meaning: "Việt Nam", pos: "Danh từ" },
@@ -508,6 +578,18 @@ const LESSON_DIALOGUES = {
             { speaker: "Học sinh B", role: "b", zh: "我常常去健身房健身，有时候跟朋友打羽毛球或者去游泳馆游泳。", pinyin: "Wǒ chángcháng qù jiànshēnfáng jiànshēn, yǒu shíhou gēn péngyou dǎ yǔmáoqiú huòzhě qù yóuyǒngguǎn yóuyǒng.", vi: "Tớ thường đến phòng gym tập thể hình, thỉnh thoảng cùng bạn bè đánh cầu lông hoặc đến bể bơi để bơi lội." },
             { speaker: "Học sinh A", role: "a", zh: "我也很喜欢打羽毛球！这个周末你有空儿吗？我们一起去打羽毛球吧！", pinyin: "Wǒ yě hěn xǐhuan dǎ yǔmáoqiú! Zhè gè zhōumò nǐ yǒu kòngr ma? Wǒmen yìqǐ qù dǎ yǔmáoqiú ba!", vi: "Tớ cũng rất thích đánh cầu lông! Cuối tuần này bạn có rảnh không? Chúng mình cùng đi đánh cầu lông nhé!" },
             { speaker: "Học sinh B", role: "b", zh: "好啊！电脑修好了，打完球以后我请你喝奶茶！", pinyin: "Hǎo a! Diànnǎo xiū hǎo le, dǎ wán qiú yǐhòu wǒ qǐng nǐ hē nǎichá!", vi: "Được thôi! Máy tính sửa xong rồi này, chơi cầu lông xong tớ mời bạn uống trà sữa nhé!" }
+        ],
+        11: [
+            { speaker: "Học sinh A", role: "a", zh: "今天外面天气怎么样？我看天气预报说会下雪。", pinyin: "Jīntiān wàimiàn tiānqì zěnmeyàng? Wǒ kàn tiānqì yùbào shuō huì xiàxuě.", vi: "Hôm nay thời tiết bên ngoài thế nào? Tớ xem dự báo thời tiết nói là trời sẽ có tuyết rơi." },
+            { speaker: "Học sinh B", role: "b", zh: "外面在刮大风，下大雪，太冷了！现在的气温是零下五度左右。", pinyin: "Wàimiàn zài guā dàfēng, xià dàxuě, tài lěng le! Xiànzài de qìwēn shì língxià wǔ dù zuǒyòu.", vi: "Bên ngoài đang có gió to, tuyết rơi dày đặc, lạnh quá! Nhiệt độ bây giờ khoảng âm 5 độ." },
+            { speaker: "Học sinh A", role: "a", zh: "今天最高气温和最低气温是多少度？", pinyin: "Jīntiān zuìgāo qìwēn hé zuìdī qìwēn shì duōshao dù?", vi: "Nhiệt độ cao nhất và thấp nhất hôm nay là bao nhiêu độ?" },
+            { speaker: "Học sinh B", role: "b", zh: "白天最高气温零度，夜间最低气温零下十度。比昨天冷多了！", pinyin: "Báitiān zuìgāo qìwēn líng dù, yèjiān zuìdī qìwēn língxià shí dù. Bǐ zuótiān lěng duō le!", vi: "Ban ngày cao nhất 0 độ, ban đêm thấp nhất âm 10 độ. Lạnh hơn hôm qua nhiều lắm!" },
+            { speaker: "Học sinh A", role: "a", zh: "那我们出门一定要穿羽绒服，记得带雨伞或者穿雨衣。", pinyin: "Nà wǒmen chūmén yídìng yào chuān yǔróngfú, jìde dài yǔsǎn huòzhě chuān yǔyī.", vi: "Thế thì chúng mình ra ngoài nhất định phải mặc áo phao, nhớ đem theo dù hoặc mặc áo mưa nhé." },
+            { speaker: "Học sinh B", role: "b", zh: "你打算冬天去哪儿旅行？我打算去哈尔滨看冰灯。", pinyin: "Nǐ dǎsuàn dōngtiān qù nǎr lǚxíng? Wǒ dǎsuàn qù Hā'ěrbīn kàn bīngdēng.", vi: "Mùa đông này bạn dự định đi du lịch ở đâu? Tớ định đi Cáp Nhĩ Tân ngắm đèn lồng băng tuyết." },
+            { speaker: "Học sinh A", role: "a", zh: "哈尔滨比这里更冷吧！可是听说那里的冰灯好看极了，风景非常美！", pinyin: "Hā'ěrbīn bǐ zhèlǐ gèng lěng ba! Kěshì tīngshuō nàlǐ de bīngdēng hǎokàn jíle, fēngjǐng fēicháng měi!", vi: "Cáp Nhĩ Tân còn lạnh hơn ở đây nữa đấy! Nhưng mà nghe nói đèn băng ở đó đẹp tuyệt trần, phong cảnh cực kỳ mê hồn!" },
+            { speaker: "Học sinh B", role: "b", zh: "春天和秋天去南方旅行很舒服，比如苏州、杭州或者云南丽江。", pinyin: "Chūntiān hé qiūtiān qù nánfāng lǚxíng hěn shūfu, bǐrú Sūzhōu, Hángzhōu huòzhě Yúnnán Lìjiāng.", vi: "Mùa xuân và mùa thu đi du lịch phía Nam thì rất dễ chịu, ví dụ như Tô Châu, Hàng Châu hay Lệ Giang - Vân Nam." },
+            { speaker: "Học sinh A", role: "a", zh: "对呀，那儿的天气暖和又凉快，没有北方这么干燥。", pinyin: "Duì ya, nàr de tiānqì nuǎnhuo yòu liángkuai, méiyǒu běifāng zhème gānzào.", vi: "Đúng thế, thời tiết ở đó vừa ấm áp vừa mát mẻ, không bị hanh khô như miền Bắc." },
+            { speaker: "Học sinh B", role: "b", zh: "等天气晴了，我们一起做旅行攻略吧！", pinyin: "Děng tiānqì qíng le, wǒmen yìqǐ zuò lǚxíng gōnglüè ba!", vi: "Đợi khi nào trời nắng ráo, chúng mình cùng nhau lên lịch trình du lịch nhé!" }
         ]
     },
     "Từ vựng theo chủ đề": {
@@ -967,12 +1049,12 @@ window.enterCourse = function(courseName) {
                     <span class="lesson-status-badge">Sẵn sàng học &rarr;</span>
                 </div>
 
-                <!-- Lesson 11 (Locked) -->
-                <div class="lesson-card locked border-gray">
+                <!-- Lesson 11 (Unlocked) -->
+                <div class="lesson-card unlocked border-pink cursor-pointer" onclick="enterLesson(11)">
                     <div class="lesson-num">Bài 11</div>
-                    <h3><span class="chinese-char">在邮局与银行</span></h3>
-                    <p class="lesson-desc-text">Gửi bưu kiện, giao dịch ngân hàng và đổi tiền tệ.</p>
-                    <span class="lesson-status-badge badge-locked">Đang thiết lập</span>
+                    <h3><span class="chinese-char">太冷了！</span></h3>
+                    <p class="lesson-desc-text">Hỏi đáp thời tiết, bốn mùa trong năm, so sánh nhiệt độ, khí hậu vùng miền và du lịch ngắm cảnh.</p>
+                    <span class="lesson-status-badge">Sẵn sàng học &rarr;</span>
                 </div>
 
                 <!-- Lesson 12 (Locked) -->
@@ -1001,7 +1083,7 @@ window.enterCourse = function(courseName) {
 };
 
 window.enterLesson = function(lessonNum) {
-    if (lessonNum !== 1 && lessonNum !== 2 && lessonNum !== 5 && lessonNum !== 7 && lessonNum !== 8 && lessonNum !== 9 && lessonNum !== 10) {
+    if (lessonNum !== 1 && lessonNum !== 2 && lessonNum !== 5 && lessonNum !== 7 && lessonNum !== 8 && lessonNum !== 9 && lessonNum !== 10 && lessonNum !== 11) {
         alert("Bài học này đang được Cô Chang chuẩn bị nội dung. Bạn hãy chọn học các bài đang sẵn sàng nhé! 🥰");
         return;
     }
@@ -1048,6 +1130,11 @@ window.enterLesson = function(lessonNum) {
             document.getElementById('workspace-badge').style.display = 'inline-block';
             document.getElementById('workspace-lesson-title').innerHTML = `Lớp Giao tiếp 2 - Bài 10: <span class="chinese-char">你会修电脑吗？</span>`;
             document.getElementById('workspace-badge').innerText = `Giao tiếp 2 • Bài 10`;
+        } else if (lessonNum === 11) {
+            VOCAB_DATA = [...GIAO_TIEP_2_B11_VOCAB];
+            document.getElementById('workspace-badge').style.display = 'inline-block';
+            document.getElementById('workspace-lesson-title').innerHTML = `Lớp Giao tiếp 2 - Bài 11: <span class="chinese-char">太冷了！</span>`;
+            document.getElementById('workspace-badge').innerText = `Giao tiếp 2 • Bài 11`;
         }
     } else if (currentCourse === "Từ vựng theo chủ đề") {
         VOCAB_DATA = [...VOCAB_GUOJIA];
@@ -1672,6 +1759,136 @@ function generateQuizQuestions() {
 
         return; // Fixed sequence 1 to 30
     }
+    // Special exact 30-question format for Giao tiếp 2 - Bài 11: 太冷了！
+    if (currentCourse === "Giao tiếp 2" && currentLesson === 11) {
+        // --- PART 1: 16 MC Questions (Questions 1 to 16) ---
+        const part1MC = [
+            { question: `1. Từ <span class="chinese-char">晴</span> có nghĩa là gì?`, ans: "Trời nắng, quang đãng", opts: ["Trời nắng, quang đãng", "Trời mưa to", "Trời âm u", "Trời nhiều sương mù"] },
+            { question: `2. Từ <span class="chinese-char">多云</span> có phiên âm là gì?`, ans: "duōyún", opts: ["duōyún", "xiàyǔ", "guāfēng", "xiàxuě"] },
+            { question: `3. Từ <span class="chinese-char">下雪</span> có nghĩa là gì?`, ans: "Tuyết rơi", opts: ["Tuyết rơi", "Mưa bão", "Sương mù", "Gió giật"] },
+            { question: `4. Từ <span class="chinese-char">气温</span> có nghĩa là gì?`, ans: "Nhiệt độ không khí, nhiệt độ", opts: ["Nhiệt độ không khí, nhiệt độ", "Khí hậu", "Mùa màng", "Thời tiết"] },
+            { question: `5. Từ <span class="chinese-char">暖和</span> có phiên âm là gì?`, ans: "nuǎnhuo", opts: ["nuǎnhuo", "liángkuai", "gānzào", "cháoshī"] },
+            { question: `6. Từ <span class="chinese-char">凉快</span> có nghĩa là gì?`, ans: "Mát mẻ, dễ chịu", opts: ["Mát mẻ, dễ chịu", "Lạnh giá", "Nóng nực", "Hanh khô"] },
+            { question: `7. Từ <span class="chinese-char">潮湿</span> có nghĩa là gì?`, ans: "Ẩm ướt, nồm ẩm", opts: ["Ẩm ướt, nồm ẩm", "Hanh khô", "Ấm áp", "Lạnh buốt"] },
+            { question: `8. Từ <span class="chinese-char">雨季</span> có nghĩa là gì?`, ans: "Mùa mưa", opts: ["Mùa mưa", "Mùa khô", "Mùa đông", "Mùa xuân"] },
+            { question: `9. Địa danh <span class="chinese-char">哈尔滨</span> là thành phố nào?`, ans: "Cáp Nhĩ Tân", opts: ["Cáp Nhĩ Tân", "Tô Châu", "Hàng Châu", "Lệ Giang"] },
+            { question: `10. Từ <span class="chinese-char">冰灯</span> có phiên âm là gì?`, ans: "bīngdēng", opts: ["bīngdēng", "táidēng", "fēngjǐng", "yǔsǎn"] },
+            { question: `11. Cụm từ <span class="chinese-char">天气预报</span> có nghĩa là gì?`, ans: "Dự báo thời tiết", opts: ["Dự báo thời tiết", "Bản đồ du lịch", "Lịch trình chuyến đi", "Báo giấy"] },
+            { question: `12. Từ <span class="chinese-char">雨伞</span> có nghĩa là gì?`, ans: "Cây dù, ô che mưa", opts: ["Cây dù, ô che mưa", "Áo mưa", "Mũ nón", "Kính râm"] },
+            { question: `13. Từ <span class="chinese-char">最高</span> có nghĩa là gì?`, ans: "Cao nhất", opts: ["Cao nhất", "Thấp nhất", "Bình thường", "Trung bình"] },
+            { question: `14. Từ <span class="chinese-char">风景</span> có phiên âm là gì?`, ans: "fēngjǐng", opts: ["fēngjǐng", "lǚxíng", "hǎokàn", "dǎsuàn"] },
+            { question: `15. Địa danh <span class="chinese-char">长城</span> có nghĩa là gì?`, ans: "Vạn Lý Trường Thành", opts: ["Vạn Lý Trường Thành", "Cố Cung", "Thiên An Môn", "Phượng Hoàng Cổ Trấn"] },
+            { question: `16. Từ <span class="chinese-char">暴雨</span> có nghĩa là gì?`, ans: "Mưa to như trút nước, mưa bão", opts: ["Mưa to như trút nước, mưa bão", "Mưa phùn", "Mưa bay", "Mưa rào nhẹ"] }
+        ];
+
+        part1MC.forEach(item => {
+            quizQuestions.push({
+                type: "mc-meaning",
+                question: item.question,
+                correctAnswer: item.ans,
+                options: item.opts
+            });
+        });
+
+        // --- PART 2: 10 Sentence Rearrangement Questions (Questions 17 to 26) ---
+        const part2Rearrange = [
+            {
+                q: `17. Hãy sắp xếp các từ sau thành câu hoàn chỉnh (Học sinh đánh máy đáp án):<br><span class="chinese-char">天气 / 今天 / 太冷了 / ！</span>`,
+                ans: ["今天天气太冷了！"],
+                rubyAns: `<ruby>今<rt>jīn</rt></ruby><ruby>天<rt>tiān</rt></ruby><ruby>天<rt>tiān</rt></ruby><ruby>气<rt>qì</rt></ruby><ruby>太<rt>tài</rt></ruby><ruby>冷<rt>lěng</rt></ruby><ruby>了<rt>le</rt></ruby>！`
+            },
+            {
+                q: `18. Hãy sắp xếp các từ sau thành câu hoàn chỉnh (Học sinh đánh máy đáp án):<br><span class="chinese-char">气温 / 多少度 / 今天 / 是 / ？</span>`,
+                ans: ["今天气温是多少度？"],
+                rubyAns: `<ruby>今<rt>jīn</rt></ruby><ruby>天<rt>tiān</rt></ruby><ruby>气<rt>qì</rt></ruby><ruby>温<rt>wēn</rt></ruby><ruby>是<rt>shì</rt></ruby><ruby>多<rt>duō</rt></ruby><ruby>少<rt>shao</rt></ruby><ruby>度<rt>dù</rt></ruby>？`
+            },
+            {
+                q: `19. Hãy sắp xếp các từ sau thành câu hoàn chỉnh (Học sinh đánh máy đáp án):<br><span class="chinese-char">比 / 今天 / 冷 / 昨天 / 多了 / 。</span>`,
+                ans: ["今天比昨天冷多了。"],
+                rubyAns: `<ruby>今<rt>jīn</rt></ruby><ruby>天<rt>tiān</rt></ruby><ruby>比<rt>bǐ</rt></ruby><ruby>昨<rt>zuó</rt></ruby><ruby>天<rt>tiān</rt></ruby><ruby>冷<rt>lěng</rt></ruby><ruby>多<rt>duō</rt></ruby><ruby>了<rt>le</rt></ruby>。`
+            },
+            {
+                q: `20. Hãy sắp xếp các từ sau thành câu hoàn chỉnh (Học sinh đánh máy đáp án):<br><span class="chinese-char">会 / 天气预报 / 说 / 下大雨 / 。</span>`,
+                ans: ["天气预报说会下大雨。"],
+                rubyAns: `<ruby>天<rt>tiān</rt></ruby><ruby>气<rt>qì</rt></ruby><ruby>预<rt>yù</rt></ruby><ruby>报<rt>bào</rt></ruby><ruby>说<rt>shuō</rt></ruby><ruby>会<rt>huì</rt></ruby><ruby>下<rt>xià</rt></ruby><ruby>大<rt>dà</rt></ruby><ruby>雨<rt>yǔ</rt></ruby>。`
+            },
+            {
+                q: `21. Hãy sắp xếp các từ sau thành câu hoàn chỉnh (Học sinh đánh máy đáp án):<br><span class="chinese-char">带 / 雨伞 / 记得 / 出门 / 一把 / 。</span>`,
+                ans: ["出门记得带一把雨伞。"],
+                rubyAns: `<ruby>出<rt>chū</rt></ruby><ruby>门<rt>mén</rt></ruby><ruby>记<rt>jì</rt></ruby><ruby>得<rt>de</rt></ruby><ruby>带<rt>dài</rt></ruby><ruby>一<rt>yì</rt></ruby><ruby>把<rt>bǎ</rt></ruby><ruby>雨<rt>yǔ</rt></ruby><ruby>伞<rt>sǎn</rt></ruby>。`
+            },
+            {
+                q: `22. Hãy sắp xếp các từ sau thành câu hoàn chỉnh (Học sinh đánh máy đáp án):<br><span class="chinese-char">去 / 我 / 哈尔滨 / 打算 / 看冰灯 / 。</span>`,
+                ans: ["我打算去哈尔滨看冰灯。"],
+                rubyAns: `<ruby>我<rt>wǒ</rt></ruby><ruby>打<rt>dǎ</rt></ruby><ruby>算<rt>suàn</rt></ruby><ruby>去<rt>qù</rt></ruby><ruby>哈<rt>hā</rt></ruby><ruby>尔<rt>ěr</rt></ruby><ruby>滨<rt>bīn</rt></ruby><ruby>看<rt>kàn</rt></ruby><ruby>冰<rt>bīng</rt></ruby><ruby>灯<rt>dēng</rt></ruby>。`
+            },
+            {
+                q: `23. Hãy sắp xếp các từ sau thành câu hoàn chỉnh (Học sinh đánh máy đáp án):<br><span class="chinese-char">风景 / 的 / 那儿 / 好看 / 极了 / ！</span>`,
+                ans: ["那儿的风景好看极了！"],
+                rubyAns: `<ruby>那<rt>nà</rt></ruby><ruby>儿<rt>r</rt></ruby><ruby>的<rt>de</rt></ruby><ruby>风<rt>fēng</rt></ruby><ruby>景<rt>jǐng</rt></ruby><ruby>好<rt>hǎo</rt></ruby><ruby>看<rt>kàn</rt></ruby><ruby>极<rt>jí</rt></ruby><ruby>了<rt>le</rt></ruby>！`
+            },
+            {
+                q: `24. Hãy sắp xếp các từ sau thành câu hoàn chỉnh (Học sinh đánh máy đáp án):<br><span class="chinese-char">很 / 舒服 / 天气 / 秋天 / 的 / 。</span>`,
+                ans: ["秋天的天气很舒服。"],
+                rubyAns: `<ruby>秋<rt>qiū</rt></ruby><ruby>天<rt>tiān</rt></ruby><ruby>的<rt>de</rt></ruby><ruby>天<rt>tiān</rt></ruby><ruby>气<rt>qì</rt></ruby><ruby>很<rt>hěn</rt></ruby><ruby>舒<rt>shū</rt></ruby><ruby>服<rt>fu</rt></ruby>。`
+            },
+            {
+                q: `25. Hãy sắp xếp các từ sau thành câu hoàn chỉnh (Học sinh đánh máy đáp án):<br><span class="chinese-char">北部 / 干燥 / 比较 / 天气 / 。</span>`,
+                ans: ["北部天气比较干燥。"],
+                rubyAns: `<ruby>北<rt>běi</rt></ruby><ruby>部<rt>bù</rt></ruby><ruby>天<rt>tiān</rt></ruby><ruby>气<rt>qì</rt></ruby><ruby>比<rt>bǐ</rt></ruby><ruby>较<rt>jiào</rt></ruby><ruby>干<rt>gān</rt></ruby><ruby>燥<rt>zào</rt></ruby>。`
+            },
+            {
+                q: `26. Hãy sắp xếp các từ sau thành câu hoàn chỉnh (Học sinh đánh máy đáp án):<br><span class="chinese-char">我们 / 一起 / 旅行 / 打算 / 去 / 丽江 / 。</span>`,
+                ans: ["我们打算一起去丽江旅行。"],
+                rubyAns: `<ruby>我<rt>wǒ</rt></ruby><ruby>们<rt>men</rt></ruby><ruby>打<rt>dǎ</rt></ruby><ruby>算<rt>suàn</rt></ruby><ruby>一<rt>yì</rt></ruby><ruby>起<rt>qǐ</rt></ruby><ruby>去<rt>qù</rt></ruby><ruby>丽<rt>lì</rt></ruby><ruby>江<rt>jiāng</rt></ruby><ruby>旅<rt>lǚ</rt></ruby><ruby>行<rt>xíng</rt></ruby>。`
+            }
+        ];
+
+        part2Rearrange.forEach(item => {
+            quizQuestions.push({
+                type: "written-rearrange",
+                question: item.q,
+                correctAnswer: item.ans,
+                rubyAnswer: item.rubyAns
+            });
+        });
+
+        // --- PART 3: 4 Translation Questions (Questions 27 to 30) ---
+        const part3Translation = [
+            {
+                q: `27. Dịch sang tiếng Trung câu sau:<br><b>"Thời tiết hôm nay bên ngoài thế nào? Dự báo thời tiết nói chiều nay sẽ có mưa to."</b>`,
+                ans: ["今天外面天气怎么样？天气预报说下午会下大雨。", "今天外面的天气怎么样？天气预报说下午会下大雨。"],
+                rubyAns: `<ruby>今<rt>jīn</rt></ruby><ruby>天<rt>tiān</rt></ruby><ruby>外<rt>wài</rt></ruby><ruby>面<rt>miàn</rt></ruby><ruby>天<rt>tiān</rt></ruby><ruby>气<rt>qì</rt></ruby><ruby>怎<rt>zěn</rt></ruby><ruby>么<rt>me</rt></ruby><ruby>样<rt>yàng</rt></ruby>？<ruby>天<rt>tiān</rt></ruby><ruby>气<rt>qì</rt></ruby><ruby>预<rt>yù</rt></ruby><ruby>报<rt>bào</rt></ruby><ruby>说<rt>shuō</rt></ruby><ruby>下<rt>xià</rt></ruby><ruby>午<rt>wǔ</rt></ruby><ruby>会<rt>huì</rt></ruby><ruby>下<rt>xià</rt></ruby><ruby>大<rt>dà</rt></ruby><ruby>雨<rt>yǔ</rt></ruby>。`
+            },
+            {
+                q: `28. Dịch sang tiếng Trung câu sau:<br><b>"Hôm nay trời lạnh hơn hôm qua nhiều, ban đêm nhiệt độ thấp nhất khoảng âm năm độ."</b>`,
+                ans: ["今天比昨天冷多了，夜间最低气温零下五度左右。", "今天比昨天冷得多，夜间最低气温零下五度左右。"],
+                rubyAns: `<ruby>今<rt>jīn</rt></ruby><ruby>天<rt>tiān</rt></ruby><ruby>比<rt>bǐ</rt></ruby><ruby>昨<rt>zuó</rt></ruby><ruby>天<rt>tiān</rt></ruby><ruby>冷<rt>lěng</rt></ruby><ruby>多<rt>duō</rt></ruby><ruby>了<rt>le</rt></ruby>，<ruby>夜<rt>yè</rt></ruby><ruby>间<rt>jiān</rt></ruby><ruby>最<rt>zuì</rt></ruby><ruby>低<rt>dī</rt></ruby><ruby>气<rt>qì</rt></ruby><ruby>温<rt>wēn</rt></ruby><ruby>零<rt>líng</rt></ruby><ruby>下<rt>xià</rt></ruby><ruby>五<rt>wǔ</rt></ruby><ruby>度<rt>dù</rt></ruby><ruby>左<rt>zuǒ</rt></ruby><ruby>右<rt>yòu</rt></ruby>。`
+            },
+            {
+                q: `29. Dịch sang tiếng Trung câu sau:<br><b>"Mùa đông bạn có dự định đi du lịch ở đâu không? Tôi dự định đi Cáp Nhĩ Tân ngắm đèn băng."</b>`,
+                ans: ["冬天你打算去哪儿旅行？我打算去哈尔滨看冰灯。", "冬天你打算去哪里旅行？我打算去哈尔滨看冰灯。"],
+                rubyAns: `<ruby>冬<rt>dōng</rt></ruby><ruby>天<rt>tiān</rt></ruby><ruby>你<rt>nǐ</rt></ruby><ruby>打<rt>dǎ</rt></ruby><ruby>算<rt>suàn</rt></ruby><ruby>去<rt>qù</rt></ruby><ruby>哪<rt>nǎ</rt></ruby><ruby>儿<rt>r</rt></ruby><ruby>旅<rt>lǚ</rt></ruby><ruby>行<rt>xíng</rt></ruby>？<ruby>我<rt>wǒ</rt></ruby><ruby>打<rt>dǎ</rt></ruby><ruby>算<rt>suàn</rt></ruby><ruby>去<rt>qù</rt></ruby><ruby>哈<rt>hā</rt></ruby><ruby>尔<rt>ěr</rt></ruby><ruby>滨<rt>bīn</rt></ruby><ruby>看<rt>kàn</rt></ruby><ruby>冰<rt>bīng</rt></ruby><ruby>灯<rt>dēng</rt></ruby>。`
+            },
+            {
+                q: `30. Dịch sang tiếng Trung câu sau:<br><b>"Phong cảnh mùa thu ở Hàng Châu và Tô Châu đẹp cực kỳ, thời tiết vừa mát mẻ vừa dễ chịu."</b>`,
+                ans: ["杭州和苏州的秋天风景好看极了，天气又凉快又舒服。", "苏州和杭州的秋天风景好看极了，天气又凉快又舒服。"],
+                rubyAns: `<ruby>杭<rt>háng</rt></ruby><ruby>州<rt>zhōu</rt></ruby><ruby>和<rt>hé</rt></ruby><ruby>苏<rt>sū</rt></ruby><ruby>州<rt>zhōu</rt></ruby><ruby>的<rt>de</rt></ruby><ruby>秋<rt>qiū</rt></ruby><ruby>天<rt>tiān</rt></ruby><ruby>风<rt>fēng</rt></ruby><ruby>景<rt>jǐng</rt></ruby><ruby>好<rt>hǎo</rt></ruby><ruby>看<rt>kàn</rt></ruby><ruby>极<rt>jí</rt></ruby><ruby>了<rt>le</rt></ruby>，<ruby>天<rt>tiān</rt></ruby><ruby>气<rt>qì</rt></ruby><ruby>又<rt>yòu</rt></ruby><ruby>凉<rt>liáng</rt></ruby><ruby>快<rt>kuai</rt></ruby><ruby>又<rt>yòu</rt></ruby><ruby>舒<rt>shū</rt></ruby><ruby>服<rt>fu</rt></ruby>。`
+            }
+        ];
+
+        part3Translation.forEach(item => {
+            quizQuestions.push({
+                type: "written-translation",
+                question: item.q,
+                correctAnswer: item.ans,
+                rubyAnswer: item.rubyAns
+            });
+        });
+
+        return; // Fixed sequence 1 to 30
+    }
+
 
 
 
