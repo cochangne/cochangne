@@ -532,7 +532,7 @@ const GIAO_TIEP_2_B9_VOCAB = [
 ];
 
 
-const GIAO_TIEP_2_B11_VOCAB = [
+const GIAO_TIEP_2_B10_VOCAB = [
     { char: "加拿大", pinyin: "Jiānádà", hanViet: "Gia Nã Đại", meaning: "Canada", pos: "Danh từ" },
     { char: "新加坡", pinyin: "Xīnjiāpō", hanViet: "Tân Gia Ba", meaning: "Singapore", pos: "Danh từ" },
     { char: "俄语", pinyin: "Éyǔ", hanViet: "Nga ngữ", meaning: "Tiếng Nga", pos: "Danh từ" },
@@ -723,7 +723,7 @@ const LESSON_DIALOGUES = {
             { speaker: "Bác sĩ", role: "teacher", zh: "回去要多喝水，多休息，千万别熬夜。三天后记得来复诊。", pinyin: "Huíqù yào duō hē shuǐ, duō xiūxi, qiānwàn bié áoyè. Sān tiān hòu jìde lái fùzhěn.", vi: "Về nhà nhớ uống nhiều nước, nghỉ ngơi nhiều, tuyệt đối đừng thức khuya nhé. 3 ngày sau nhớ quay lại tái khám." },
             { speaker: "Học sinh B", role: "b", zh: "好的，谢谢医生！我马上告诉老板，今天请病假休息。", pinyin: "Hǎo de, xièxie yīshēng! Wǒ mǎshàng gàosu lǎobǎn, jīntiān qǐng bìngjià xiūxi.", vi: "Dạ vâng, cảm ơn bác sĩ! Cháu sẽ báo ngay cho sếp để xin nghỉ ốm hôm nay ạ." }
         ],
-        11: [
+        10: [
             { speaker: "Học sinh A", role: "a", zh: "大卫，我的手提电脑坏了，不能开机，你会修电脑吗？", pinyin: "Dàwèi, wǒ de shǒutí diànnǎo huài le, bù néng kāijī, nǐ huì xiū diànnǎo ma?", vi: "David ơi, máy tính xách tay của tớ bị hỏng rồi, không bật lên được, bạn biết sửa máy tính không?" },
             { speaker: "Học sinh B", role: "b", zh: "我来看看。可能是中了电脑病毒，我帮你杀毒修一下吧！", pinyin: "Wǒ lái kànkan. Kěnéng shì zhòng le diànnǎo bìngdú, wǒ bāng nǐ shādú xiū yíxià ba!", vi: "Để tớ xem nào. Có thể là dính virus máy tính rồi, tớ giúp bạn diệt virus và sửa một chút nhé!" },
             { speaker: "Học sinh A", role: "a", zh: "太感谢你了！你真厉害，电脑技术这么好！", pinyin: "Tài gǎnxiè nǐ le! Nǐ zhēn lìhai, diànnǎo jìshù zhème hǎo!", vi: "Cảm ơn bạn nhiều lắm! Bạn siêu thật đấy, kỹ thuật máy tính giỏi quá!" },
@@ -1379,20 +1379,20 @@ window.enterCourse = function(courseName) {
                     <span class="lesson-status-badge">Sẵn sàng học &rarr;</span>
                 </div>
 
-                <!-- Lesson 10 (Locked) -->
-                <div class="lesson-card locked border-gray">
+                <!-- Lesson 10 (Unlocked) -->
+                <div class="lesson-card unlocked border-pink cursor-pointer" onclick="enterLesson(10)">
                     <div class="lesson-num">Bài 10</div>
-                    <h3><span class="chinese-char">租房子</span></h3>
-                    <p class="lesson-desc-text">Hỏi thuê nhà, trao đổi tiện ích phòng và hợp đồng sinh hoạt.</p>
-                    <span class="lesson-status-badge badge-locked">Đang thiết lập</span>
-                </div>
-
-                <!-- Lesson 11 (Unlocked) -->
-                <div class="lesson-card unlocked border-pink cursor-pointer" onclick="enterLesson(11)">
-                    <div class="lesson-num">Bài 11</div>
                     <h3><span class="chinese-char">你会修电脑吗？</span></h3>
                     <p class="lesson-desc-text">Hỏi về kỹ năng máy tính, khả năng ngoại ngữ, các môn thể thao và sở thích lúc rảnh rỗi.</p>
                     <span class="lesson-status-badge">Sẵn sàng học &rarr;</span>
+                </div>
+
+                <!-- Lesson 11 (Locked) -->
+                <div class="lesson-card locked border-gray">
+                    <div class="lesson-num">Bài 11</div>
+                    <h3><span class="chinese-char">在邮局与银行</span></h3>
+                    <p class="lesson-desc-text">Gửi bưu kiện, giao dịch ngân hàng và đổi tiền tệ.</p>
+                    <span class="lesson-status-badge badge-locked">Đang thiết lập</span>
                 </div>
 
                 <!-- Lesson 12 (Locked) -->
@@ -1461,7 +1461,7 @@ window.enterCourse = function(courseName) {
 };
 
 window.enterLesson = function(lessonNum) {
-    if (lessonNum !== 1 && lessonNum !== 2 && lessonNum !== 3 && lessonNum !== 4 && lessonNum !== 5 && lessonNum !== 6 && lessonNum !== 7 && lessonNum !== 8 && lessonNum !== 9 && lessonNum !== 11) {
+    if (lessonNum !== 1 && lessonNum !== 2 && lessonNum !== 3 && lessonNum !== 4 && lessonNum !== 5 && lessonNum !== 6 && lessonNum !== 7 && lessonNum !== 8 && lessonNum !== 9 && lessonNum !== 10) {
         alert("Bài học này đang được Cô Chang chuẩn bị nội dung. Bạn hãy chọn học các bài đang sẵn sàng nhé! 🥰");
         return;
     }
@@ -1518,11 +1518,11 @@ window.enterLesson = function(lessonNum) {
             document.getElementById('workspace-badge').style.display = 'inline-block';
             document.getElementById('workspace-lesson-title').innerHTML = `Lớp Giao tiếp 2 - Bài 9: <span class="chinese-char">你怎么了？</span>`;
             document.getElementById('workspace-badge').innerText = `Giao tiếp 2 • Bài 9`;
-        } else if (lessonNum === 11) {
-            VOCAB_DATA = [...GIAO_TIEP_2_B11_VOCAB];
+        } else if (lessonNum === 10) {
+            VOCAB_DATA = [...GIAO_TIEP_2_B10_VOCAB];
             document.getElementById('workspace-badge').style.display = 'inline-block';
-            document.getElementById('workspace-lesson-title').innerHTML = `Lớp Giao tiếp 2 - Bài 11: <span class="chinese-char">你会修电脑吗？</span>`;
-            document.getElementById('workspace-badge').innerText = `Giao tiếp 2 • Bài 11`;
+            document.getElementById('workspace-lesson-title').innerHTML = `Lớp Giao tiếp 2 - Bài 10: <span class="chinese-char">你会修电脑吗？</span>`;
+            document.getElementById('workspace-badge').innerText = `Giao tiếp 2 • Bài 10`;
         }
     } else if (currentCourse === "Từ vựng theo chủ đề") {
         VOCAB_DATA = [...VOCAB_GUOJIA];
@@ -2303,8 +2303,8 @@ function generateQuizQuestions() {
 
         return; // Fixed sequence 1 to 30
     }
-    // Special exact 30-question format for Giao tiếp 2 - Bài 11: 你会修电脑吗？
-    if (currentCourse === "Giao tiếp 2" && currentLesson === 11) {
+    // Special exact 30-question format for Giao tiếp 2 - Bài 10: 你会修电脑吗？
+    if (currentCourse === "Giao tiếp 2" && currentLesson === 10) {
         // --- PART 1: 16 MC Questions (Questions 1 to 16) ---
         const part1MC = [
             { question: `1. Từ <span class="chinese-char">加拿大</span> có phiên âm là gì?`, ans: "Jiānádà", opts: ["Jiānádà", "Xīnjiāpō", "Éyǔ", "Tàiyǔ"] },
