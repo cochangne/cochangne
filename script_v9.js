@@ -1584,12 +1584,12 @@ window.enterCourse = function(courseName) {
                     <span class="lesson-status-badge">Sẵn sàng học &rarr;</span>
                 </div>
 
-                <!-- Lesson 12 (Locked) -->
-                <div class="lesson-card locked border-gray">
+                <!-- Lesson 12 (Unlocked) -->
+                <div class="lesson-card unlocked border-pink cursor-pointer" onclick="enterLesson(12)">
                     <div class="lesson-num">Bài 12</div>
-                    <h3><span class="chinese-char">旅行与计划</span></h3>
-                    <p class="lesson-desc-text">Lên kế hoạch du lịch, đặt vé, đặt phòng khách sạn và lịch trình.</p>
-                    <span class="lesson-status-badge badge-locked">Đang thiết lập</span>
+                    <h3><span class="chinese-char">请把桌子擦一下</span></h3>
+                    <p class="lesson-desc-text">Từ vựng đồ đạc trong nhà, dọn dẹp phòng ốc, câu chữ 把, cắm hoa, treo tranh và chuẩn bị tiệc sinh nhật.</p>
+                    <span class="lesson-status-badge">Sẵn sàng học &rarr;</span>
                 </div>
             `;
         } else if (courseName === "Từ vựng theo chủ đề") {
