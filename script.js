@@ -278,6 +278,64 @@ const GIAO_TIEP_2_B8_VOCAB = [
     { char: "环境", pinyin: "huánjìng", hanViet: "Hoàn cảnh", meaning: "Môi trường, cảnh quan", pos: "Danh từ" }
 ];
 
+
+const GIAO_TIEP_2_B9_VOCAB = [
+    { char: "头", pinyin: "tóu", hanViet: "Đầu", meaning: "Đầu", pos: "Danh từ" },
+    { char: "眼睛", pinyin: "yǎnjing", hanViet: "Nhãn tình", meaning: "Mắt, đôi mắt", pos: "Danh từ" },
+    { char: "脸", pinyin: "liǎn", hanViet: "Kiểm", meaning: "Mặt, khuôn mặt", pos: "Danh từ" },
+    { char: "鼻子", pinyin: "bízi", hanViet: "Tị tử", meaning: "Mũi", pos: "Danh từ" },
+    { char: "耳朵", pinyin: "ěrduo", hanViet: "Nhĩ đóa", meaning: "Tai, lỗ tai", pos: "Danh từ" },
+    { char: "牙", pinyin: "yá", hanViet: "Nha", meaning: "Răng", pos: "Danh từ" },
+    { char: "嘴", pinyin: "zuǐ", hanViet: "Chủy", meaning: "Miệng, mồm", pos: "Danh từ" },
+    { char: "胳膊", pinyin: "gēbo", hanViet: "Cánh bác", meaning: "Cánh tay", pos: "Danh từ" },
+    { char: "手", pinyin: "shǒu", hanViet: "Thủ", meaning: "Bàn tay, tay", pos: "Danh từ" },
+    { char: "肚子", pinyin: "dùzi", hanViet: "Đỗ tử", meaning: "Bụng", pos: "Danh từ" },
+    { char: "腿", pinyin: "tuǐ", hanViet: "Thoái", meaning: "Chân, cẳng chân", pos: "Danh từ" },
+    { char: "脚", pinyin: "jiǎo", hanViet: "Cước", meaning: "Bàn chân", pos: "Danh từ" },
+    { char: "有一点儿", pinyin: "yǒu yìdiǎnr", hanViet: "Hữu nhất điểm nhi", meaning: "Hơi hơi, có một chút (cảm giác khó chịu)", pos: "Phó từ" },
+    { char: "疼", pinyin: "téng", hanViet: "Đống", meaning: "Đau, nhức", pos: "Tính từ / Động từ" },
+    { char: "吃药", pinyin: "chī yào", hanViet: "Ngật dược", meaning: "Uống thuốc", pos: "Động từ" },
+    { char: "药店", pinyin: "yàodiàn", hanViet: "Dược điếm", meaning: "Tiệm thuốc, nhà thuốc", pos: "Danh từ" },
+    { char: "西药", pinyin: "xīyào", hanViet: "Tây dược", meaning: "Thuốc tây", pos: "Danh từ" },
+    { char: "发烧", pinyin: "fāshāo", hanViet: "Phát thiêu", meaning: "Phát sốt, bị sốt", pos: "Động từ" },
+    { char: "咳嗽", pinyin: "késou", hanViet: "Khái thấu", meaning: "Ho, bị ho", pos: "Động từ / Danh từ" },
+    { char: "累", pinyin: "lèi", hanViet: "Lụy", meaning: "Mệt mỏi, mệt", pos: "Tính từ" },
+    { char: "感冒", pinyin: "gǎnmào", hanViet: "Cảm mạo", meaning: "Cảm cúm, bị cảm", pos: "Động từ / Danh từ" },
+    { char: "不舒服", pinyin: "bù shūfu", hanViet: "Bất thư phục", meaning: "Khó chịu, không khỏe, người ê ẩm", pos: "Tính từ" },
+    { char: "生病", pinyin: "shēngbìng", hanViet: "Sinh bệnh", meaning: "Bị bệnh, ốm đau", pos: "Động từ" },
+    { char: "呕吐", pinyin: "ǒutù", hanViet: "Ẩu thổ", meaning: "Nôn mửa, ói mửa", pos: "Động từ" },
+    { char: "体温", pinyin: "tǐwēn", hanViet: "Thể ôn", meaning: "Thân nhiệt, nhiệt độ cơ thể", pos: "Danh từ" },
+    { char: "量", pinyin: "liáng", hanViet: "Lượng", meaning: "Đo, đo đạc (量体温: đo nhiệt độ)", pos: "Động từ" },
+    { char: "度", pinyin: "dù", hanViet: "Độ", meaning: "Độ (độ C nhiệt độ)", pos: "Lượng từ / Danh từ" },
+    { char: "打针", pinyin: "dǎzhēn", hanViet: "Đả châm", meaning: "Tiêm thuốc, chích thuốc", pos: "Động từ" },
+    { char: "次", pinyin: "cì", hanViet: "Thứ", meaning: "Lần (lượng từ số lần)", pos: "Lượng từ" },
+    { char: "每次", pinyin: "měi cì", hanViet: "Mỗi thứ", meaning: "Mỗi lần", pos: "Cụm từ" },
+    { char: "饭前吃", pinyin: "fàn qián chī", hanViet: "Phạn tiền ngật", meaning: "Uống trước bữa ăn", pos: "Cụm từ" },
+    { char: "饭后吃", pinyin: "fàn hòu chī", hanViet: "Phạn hậu ngật", meaning: "Uống sau bữa ăn", pos: "Cụm từ" },
+    { char: "片", pinyin: "piàn", hanViet: "Phiến", meaning: "Viên, vỉ, lát (lượng từ thuốc: 一片药)", pos: "Lượng từ" },
+    { char: "看病", pinyin: "kàn bìng", hanViet: "Khán bệnh", meaning: "Khám bệnh, đi khám", pos: "Động từ" },
+    { char: "复诊", pinyin: "fùzhěn", hanViet: "Phục chẩn", meaning: "Tái khám", pos: "Động từ" },
+    { char: "得", pinyin: "děi", hanViet: "Đắc", meaning: "Phải, cần phải", pos: "Trợ động từ" },
+    { char: "多", pinyin: "duō", hanViet: "Đa", meaning: "Nhiều, làm nhiều hơn (多休息, 多喝水)", pos: "Phó từ / Tính từ" },
+    { char: "休息", pinyin: "xiūxi", hanViet: "Hưu tức", meaning: "Nghỉ ngơi", pos: "Động từ" },
+    { char: "喝水", pinyin: "hē shuǐ", hanViet: "Hát thủy", meaning: "Uống nước", pos: "Cụm động từ" },
+    { char: "会", pinyin: "huì", hanViet: "Hội", meaning: "Sẽ / biết", pos: "Trợ động từ" },
+    { char: "告诉", pinyin: "gàosu", hanViet: "Cáo tố", meaning: "Nói với, bảo cho, thông báo", pos: "Động từ" },
+    { char: "老板", pinyin: "lǎobǎn", hanViet: "Lão bản", meaning: "Ông chủ, sếp", pos: "Danh từ" },
+    { char: "说", pinyin: "shuō", hanViet: "Thuyết", meaning: "Nói", pos: "Động từ" },
+    { char: "一起", pinyin: "yìqǐ", hanViet: "Nhất khởi", meaning: "Cùng nhau", pos: "Phó từ" },
+    { char: "舌头", pinyin: "shétou", hanViet: "Thiệt đầu", meaning: "Lưỡi", pos: "Danh từ" },
+    { char: "中药", pinyin: "zhōngyào", hanViet: "Trung dược", meaning: "Thuốc bắc, thuốc đông y", pos: "Danh từ" },
+    { char: "痛经", pinyin: "tòngjīng", hanViet: "Thống kinh", meaning: "Đau bụng kinh", pos: "Danh từ / Động từ" },
+    { char: "熬夜", pinyin: "áoyè", hanViet: "Ngao dạ", meaning: "Thức khuya, thức đêm", pos: "Động từ" },
+    { char: "请病假", pinyin: "qǐng bìngjià", hanViet: "Thỉnh bệnh giả", meaning: "Xin nghỉ ốm", pos: "Cụm động từ" },
+    { char: "请假", pinyin: "qǐngjià", hanViet: "Thỉnh giả", meaning: "Xin nghỉ phép", pos: "Động từ" },
+    { char: "嗓子疼", pinyin: "sǎngzi téng", hanViet: "Tảng tử đống", meaning: "Đau họng, rát cổ họng", pos: "Cụm từ" },
+    { char: "拉肚子", pinyin: "lā dùzi", hanViet: "Lạp đỗ tử", meaning: "Đau bụng đi ngoài, tiêu chảy", pos: "Cụm động từ" },
+    { char: "胃疼", pinyin: "wèi téng", hanViet: "Vị đống", meaning: "Đau dạ dày, đau bao tử", pos: "Cụm từ" },
+    { char: "食物中毒", pinyin: "shíwù zhòngdú", hanViet: "Thực vật trúng độc", meaning: "Ngộ độc thực phẩm", pos: "Cụm danh từ" }
+];
+
 const VOCAB_GUOJIA = [
     { char: "国家", pinyin: "guójiā", hanViet: "Quốc gia", meaning: "Quốc gia, đất nước", pos: "Danh từ" },
     { char: "越南", pinyin: "Yuènán", hanViet: "Việt Nam", meaning: "Việt Nam", pos: "Danh từ" },
@@ -352,6 +410,18 @@ const LESSON_DIALOGUES = {
             { speaker: "Học sinh B", role: "b", zh: "我在找我的钥匙。你看见了吗？", pinyin: "Wǒ zài zhǎo wǒ de yàoshi. Nǐ kànjiàn le ma?", vi: "Tớ đang tìm chìa khóa của tớ. Bạn có nhìn thấy không?" },
             { speaker: "Học sinh A", role: "a", zh: "你看，钥匙在一把椅子上边，桌子上还有一份报纸和两本杂志呢！", pinyin: "Nǐ kàn, yàoshi zài yì bǎ yǐzi shàngbian, zhuōzi shang hái yǒu yí fèn bàozhǐ hé liǎng běn zázhì ne!", vi: "Bạn xem kìa, chìa khóa ở trên một chiếc ghế, trên bàn còn có 1 tờ báo và 2 cuốn tạp chí nữa đấy!" },
             { speaker: "Học sinh B", role: "b", zh: "看到了！谢谢你！欢迎你来我的新家玩！", pinyin: "Kàndào le! Xièxie nǐ! Huānyíng nǐ lái wǒ de xīn jiā wán!", vi: "Tớ thấy rồi! Cảm ơn bạn nhé! Hoan nghênh bạn ghé thăm nhà mới của tớ chơi!" }
+        ],
+        9: [
+            { speaker: "Học sinh A", role: "a", zh: "你怎么了？脸色看起来不太好。", pinyin: "Nǐ zěnme le? Liǎnsè kàn qǐlái bú tài hǎo.", vi: "Bạn làm sao thế? Sắc mặt trông không được tốt lắm." },
+            { speaker: "Học sinh B", role: "b", zh: "我今天身体很不舒服，头疼、嗓子疼，还有一点儿发烧。", pinyin: "Wǒ jīntiān shēntǐ hěn bù shūfu, tóu téng, sǎngzi téng, hái yǒu yìdiǎnr fāshāo.", vi: "Hôm nay trong người tớ rất khó chịu, đau đầu, đau họng, lại còn hơi sốt nữa." },
+            { speaker: "Học sinh A", role: "a", zh: "你量体温了吗？发烧多少度？", pinyin: "Nǐ liáng tǐwēn le ma? Fāshāo duōshao dù?", vi: "Bạn đã đo nhiệt độ chưa? Sốt bao nhiêu độ?" },
+            { speaker: "Học sinh B", role: "b", zh: "我量过了，三十八度五。昨晚还咳嗽、胃疼，吐了一次。", pinyin: "Wǒ liáng guo le, sānshíbā dù wǔ. Zuówǎn hái késou, wèi téng, tù le yí cì.", vi: "Tớ đo rồi, 38 độ 5. Tối qua còn ho, đau dạ dày và bị nôn một lần." },
+            { speaker: "Học sinh A", role: "a", zh: "哎呀，可能感冒或者食物中毒了！我们一起去医院看病吧！", pinyin: "Āiyā, kěnéng gǎnmào huòzhě shíwù zhòngdú le! Wǒmen yìqǐ qù yīyuàn kàn bìng ba!", vi: "Ái chà, có thể bạn bị cảm cúm hoặc ngộ độc thực phẩm rồi! Chúng mình cùng đi bệnh viện khám đi!" },
+            { speaker: "Bác sĩ", role: "teacher", zh: "张开嘴，伸出舌头让我看一下。不要担心，只是普通的重感冒。", pinyin: "Zhāng kāi zuǐ, shēn chū shétou ràng wǒ kàn yíxià. Bú yào dānxīn, zhǐ shì pǔtōng de zhòng gǎnmào.", vi: "Há miệng ra, thè lưỡi ra cho tôi xem nào. Đừng lo lắng, chỉ là bị cảm cúm nặng thông thường thôi." },
+            { speaker: "Học sinh B", role: "b", zh: "医生，我需要打针还是吃药？", pinyin: "Yīshēng, wǒ xūyào dǎzhēn háishì chī yào?", vi: "Bác sĩ ơi, cháu cần tiêm thuốc hay uống thuốc ạ?" },
+            { speaker: "Bác sĩ", role: "teacher", zh: "不用打针。我给你开一些西药，每天吃三次，每次两片，饭后吃。", pinyin: "Bú yòng dǎzhēn. Wǒ gěi nǐ kāi yìxiē xīyào, měitiān chī sān cì, měi cì liǎng piàn, fàn hòu chī.", vi: "Không cần tiêm đâu. Tôi kê cho cháu một ít thuốc tây, mỗi ngày uống 3 lần, mỗi lần 2 viên, uống sau bữa ăn nhé." },
+            { speaker: "Bác sĩ", role: "teacher", zh: "回去要多喝水，多休息，千万别熬夜。三天后记得来复诊。", pinyin: "Huíqù yào duō hē shuǐ, duō xiūxi, qiānwàn bié áoyè. Sān tiān hòu jìde lái fùzhěn.", vi: "Về nhà nhớ uống nhiều nước, nghỉ ngơi nhiều, tuyệt đối đừng thức khuya nhé. 3 ngày sau nhớ quay lại tái khám." },
+            { speaker: "Học sinh B", role: "b", zh: "好的，谢谢医生！我马上告诉老板，今天请病假休息。", pinyin: "Hǎo de, xièxie yīshēng! Wǒ mǎshàng gàosu lǎobǎn, jīntiān qǐng bìngjià xiūxi.", vi: "Dạ vâng, cảm ơn bác sĩ! Cháu sẽ báo ngay cho sếp để xin nghỉ ốm hôm nay ạ." }
         ]
     },
     "Từ vựng theo chủ đề": {
@@ -795,12 +865,12 @@ window.enterCourse = function(courseName) {
                     <span class="lesson-status-badge">Sẵn sàng học &rarr;</span>
                 </div>
 
-                <!-- Lesson 9 (Locked) -->
-                <div class="lesson-card locked border-gray">
+                <!-- Lesson 9 (Unlocked) -->
+                <div class="lesson-card unlocked border-pink cursor-pointer" onclick="enterLesson(9)">
                     <div class="lesson-num">Bài 9</div>
-                    <h3><span class="chinese-char">在医院</span></h3>
-                    <p class="lesson-desc-text">Giao tiếp khi đi khám bệnh, diễn đạt các triệu chứng sức khỏe.</p>
-                    <span class="lesson-status-badge badge-locked">Đang thiết lập</span>
+                    <h3><span class="chinese-char">你怎么了？</span></h3>
+                    <p class="lesson-desc-text">Giao tiếp sức khỏe, bộ phận cơ thể, các triệu chứng đau ốm, đi khám và dặn dò uống thuốc.</p>
+                    <span class="lesson-status-badge">Sẵn sàng học &rarr;</span>
                 </div>
 
                 <!-- Lesson 10 (Locked) -->
@@ -845,7 +915,7 @@ window.enterCourse = function(courseName) {
 };
 
 window.enterLesson = function(lessonNum) {
-    if (lessonNum !== 1 && lessonNum !== 2 && lessonNum !== 5 && lessonNum !== 7 && lessonNum !== 8) {
+    if (lessonNum !== 1 && lessonNum !== 2 && lessonNum !== 5 && lessonNum !== 7 && lessonNum !== 8 && lessonNum !== 9) {
         alert("Bài học này đang được Cô Chang chuẩn bị nội dung. Bạn hãy chọn học các bài đang sẵn sàng nhé! 🥰");
         return;
     }
@@ -882,6 +952,11 @@ window.enterLesson = function(lessonNum) {
             document.getElementById('workspace-badge').style.display = 'inline-block';
             document.getElementById('workspace-lesson-title').innerHTML = `Lớp Giao tiếp 2 - Bài 8: <span class="chinese-char">你的新家在哪儿？</span>`;
             document.getElementById('workspace-badge').innerText = `Giao tiếp 2 • Bài 8`;
+        } else if (lessonNum === 9) {
+            VOCAB_DATA = [...GIAO_TIEP_2_B9_VOCAB];
+            document.getElementById('workspace-badge').style.display = 'inline-block';
+            document.getElementById('workspace-lesson-title').innerHTML = `Lớp Giao tiếp 2 - Bài 9: <span class="chinese-char">你怎么了？</span>`;
+            document.getElementById('workspace-badge').innerText = `Giao tiếp 2 • Bài 9`;
         }
     } else if (currentCourse === "Từ vựng theo chủ đề") {
         VOCAB_DATA = [...VOCAB_GUOJIA];
@@ -1248,6 +1323,136 @@ function generateQuizQuestions() {
 
         return; // Fixed sequence 1 to 30
     }
+    // Special exact 30-question format for Giao tiếp 2 - Bài 9: 你怎么了？
+    if (currentCourse === "Giao tiếp 2" && currentLesson === 9) {
+        // --- PART 1: 16 MC Questions (Questions 1 to 16) ---
+        const part1MC = [
+            { question: `1. Từ <span class="chinese-char">眼睛</span> có phiên âm là gì?`, ans: "yǎnjing", opts: ["yǎnjing", "bízi", "ěrduo", "dùzi"] },
+            { question: `2. Từ <span class="chinese-char">肚子</span> có nghĩa là gì?`, ans: "Bụng", opts: ["Bụng", "Cẳng chân", "Cánh tay", "Đôi mắt"] },
+            { question: `3. Từ <span class="chinese-char">发烧</span> có nghĩa là gì?`, ans: "Phát sốt, bị sốt", opts: ["Phát sốt, bị sốt", "Bị ho", "Đau đầu", "Mệt mỏi"] },
+            { question: `4. Từ <span class="chinese-char">咳嗽</span> có phiên âm là gì?`, ans: "késou", opts: ["késou", "fāshāo", "gǎnmào", "shēngbìng"] },
+            { question: `5. Từ <span class="chinese-char">生病</span> có nghĩa là gì?`, ans: "Bị bệnh, ốm đau", opts: ["Bị bệnh, ốm đau", "Khỏe mạnh", "Nghỉ ngơi", "Uống thuốc"] },
+            { question: `6. Từ <span class="chinese-char">药店</span> có nghĩa là gì?`, ans: "Tiệm thuốc, nhà thuốc", opts: ["Tiệm thuốc, nhà thuốc", "Bệnh viện", "Công ty", "Siêu thị"] },
+            { question: `7. Từ <span class="chinese-char">体温</span> có nghĩa là gì?`, ans: "Thân nhiệt, nhiệt độ cơ thể", opts: ["Thân nhiệt, nhiệt độ cơ thể", "Huyết áp", "Chiều cao", "Cân nặng"] },
+            { question: `8. Từ <span class="chinese-char">打针</span> có nghĩa là gì?`, ans: "Tiêm thuốc, chích thuốc", opts: ["Tiêm thuốc, chích thuốc", "Uống thuốc", "Tái khám", "Đo nhiệt độ"] },
+            { question: `9. Lượng từ phù hợp cho <span class="chinese-char">药</span> (viên, lát) là gì?`, ans: "片", opts: ["片", "本", "张", "把"] },
+            { question: `10. Từ <span class="chinese-char">熬夜</span> có phiên âm là gì?`, ans: "áoyè", opts: ["áoyè", "xiūxi", "qǐngjià", "kànbìng"] },
+            { question: `11. Từ <span class="chinese-char">请病假</span> có nghĩa là gì?`, ans: "Xin nghỉ ốm", opts: ["Xin nghỉ ốm", "Xin nghỉ phép", "Xin đi làm", "Xin tăng lương"] },
+            { question: `12. Từ <span class="chinese-char">嗓子疼</span> có nghĩa là gì?`, ans: "Đau họng, rát cổ họng", opts: ["Đau họng, rát cổ họng", "Đau răng", "Đau đầu", "Đau chân"] },
+            { question: `13. Từ <span class="chinese-char">拉肚子</span> có nghĩa là gì?`, ans: "Tiêu chảy, đau bụng đi ngoài", opts: ["Tiêu chảy, đau bụng đi ngoài", "Đau dạ dày", "Say xe", "Cảm cúm"] },
+            { question: `14. Từ <span class="chinese-char">胃疼</span> có nghĩa là gì?`, ans: "Đau dạ dày, đau bao tử", opts: ["Đau dạ dày, đau bao tử", "Đau bụng kinh", "Đau lưng", "Đau tai"] },
+            { question: `15. Từ <span class="chinese-char">食物中毒</span> có nghĩa là gì?`, ans: "Ngộ độc thực phẩm", opts: ["Ngộ độc thực phẩm", "Say nắng", "Dị ứng", "Say sóng"] },
+            { question: `16. Từ <span class="chinese-char">西药</span> có nghĩa là gì?`, ans: "Thuốc tây", opts: ["Thuốc tây", "Thuốc bắc, đông y", "Trà thảo mộc", "Nước khoáng"] }
+        ];
+
+        part1MC.forEach(item => {
+            quizQuestions.push({
+                type: "mc-meaning",
+                question: item.question,
+                correctAnswer: item.ans,
+                options: item.opts
+            });
+        });
+
+        // --- PART 2: 10 Sentence Rearrangement Questions (Questions 17 to 26) ---
+        const part2Rearrange = [
+            {
+                q: `17. Hãy sắp xếp các từ sau thành câu hoàn chỉnh (Học sinh đánh máy đáp án):<br><span class="chinese-char">你 / 怎么 / 了 / ？</span>`,
+                ans: ["你怎么了？"],
+                rubyAns: `<ruby>你<rt>nǐ</rt></ruby><ruby>怎<rt>zěn</rt></ruby><ruby>么<rt>me</rt></ruby><ruby>了<rt>le</rt></ruby>？`
+            },
+            {
+                q: `18. Hãy sắp xếp các từ sau thành câu hoàn chỉnh (Học sinh đánh máy đáp án):<br><span class="chinese-char">身体 / 不舒服 / 很 / 我 / 。</span>`,
+                ans: ["我身体很不舒服。", "我很不舒服。"],
+                rubyAns: `<ruby>我<rt>wǒ</rt></ruby><ruby>身<rt>shēn</rt></ruby><ruby>体<rt>tǐ</rt></ruby><ruby>很<rt>hěn</rt></ruby><ruby>不<rt>bù</rt></ruby><ruby>舒<rt>shū</rt></ruby><ruby>服<rt>fu</rt></ruby>。`
+            },
+            {
+                q: `19. Hãy sắp xếp các từ sau thành câu hoàn chỉnh (Học sinh đánh máy đáp án):<br><span class="chinese-char">有一点儿 / 头疼 / 发烧 / 和 / 我 / 。</span>`,
+                ans: ["我有一点儿头疼和发烧。", "我头疼和有一点儿发烧。"],
+                rubyAns: `<ruby>我<rt>wǒ</rt></ruby><ruby>有<rt>yǒu</rt></ruby><ruby>一<rt>yì</rt></ruby><ruby>点<rt>diǎn</rt></ruby><ruby>儿<rt>r</rt></ruby><ruby>头<rt>tóu</rt></ruby><ruby>疼<rt>téng</rt></ruby><ruby>和<rt>hé</rt></ruby><ruby>发<rt>fā</rt></ruby><ruby>烧<rt>shāo</rt></ruby>。`
+            },
+            {
+                q: `20. Hãy sắp xếp các từ sau thành câu hoàn chỉnh (Học sinh đánh máy đáp án):<br><span class="chinese-char">医生 / 肚子 / 疼 / 我的 / 很 / 。</span>`,
+                ans: ["医生，我的肚子很疼。", "医生我的肚子很疼。"],
+                rubyAns: `<ruby>医<rt>yī</rt></ruby><ruby>生<rt>shēng</rt></ruby>，<ruby>我<rt>wǒ</rt></ruby><ruby>的<rt>de</rt></ruby><ruby>肚<rt>dù</rt></ruby><ruby>子<rt>zi</rt></ruby><ruby>很<rt>hěn</rt></ruby><ruby>疼<rt>téng</rt></ruby>。`
+            },
+            {
+                q: `21. Hãy sắp xếp các từ sau thành câu hoàn chỉnh (Học sinh đánh máy đáp án):<br><span class="chinese-char">每天 / 三次 / 吃 / 要 / 药 / 你 / 。</span>`,
+                ans: ["你每天要吃三次药。", "每天你要吃三次药。"],
+                rubyAns: `<ruby>你<rt>nǐ</rt></ruby><ruby>每<rt>měi</rt></ruby><ruby>天<rt>tiān</rt></ruby><ruby>要<rt>yào</rt></ruby><ruby>吃<rt>chī</rt></ruby><ruby>三<rt>sān</rt></ruby><ruby>次<rt>cì</rt></ruby><ruby>药<rt>yào</rt></ruby>。`
+            },
+            {
+                q: `22. Hãy sắp xếp các từ sau thành câu hoàn chỉnh (Học sinh đánh máy đáp án):<br><span class="chinese-char">这个药 / 饭后 / 要 / 吃 / 。</span>`,
+                ans: ["这个药要饭后吃。"],
+                rubyAns: `<ruby>这<rt>zhè</rt></ruby><ruby>个<rt>ge</rt></ruby><ruby>药<rt>yào</rt></ruby><ruby>要<rt>yào</rt></ruby><ruby>饭<rt>fàn</rt></ruby><ruby>后<rt>hòu</rt></ruby><ruby>吃<rt>chī</rt></ruby>。`
+            },
+            {
+                q: `23. Hãy sắp xếp các từ sau thành câu hoàn chỉnh (Học sinh đánh máy đáp án):<br><span class="chinese-char">请病假 / 今天 / 我想 / 一天 / 。</span>`,
+                ans: ["今天我想请病假一天。", "我想今天请病假一天。"],
+                rubyAns: `<ruby>今<rt>jīn</rt></ruby><ruby>天<rt>tiān</rt></ruby><ruby>我<rt>wǒ</rt></ruby><ruby>想<rt>xiǎng</rt></ruby><ruby>请<rt>qǐng</rt></ruby><ruby>病<rt>bìng</rt></ruby><ruby>假<rt>jià</rt></ruby><ruby>一<rt>yì</rt></ruby><ruby>天<rt>tiān</rt></ruby>。`
+            },
+            {
+                q: `24. Hãy sắp xếp các từ sau thành câu hoàn chỉnh (Học sinh đánh máy đáp án):<br><span class="chinese-char">多 / 要 / 你 / 喝水 / 休息 / 多 / 。</span>`,
+                ans: ["你要多喝水，多休息。", "你要多喝水多休息。"],
+                rubyAns: `<ruby>你<rt>nǐ</rt></ruby><ruby>要<rt>yào</rt></ruby><ruby>多<rt>duō</rt></ruby><ruby>喝<rt>hē</rt></ruby><ruby>水<rt>shuǐ</rt></ruby>，<ruby>多<rt>duō</rt></ruby><ruby>休<rt>xiū</rt></ruby><ruby>息<rt>xi</rt></ruby>。`
+            },
+            {
+                q: `25. Hãy sắp xếp các từ sau thành câu hoàn chỉnh (Học sinh đánh máy đáp án):<br><span class="chinese-char">别 / 熬夜 / 了 / 早点儿 / 休息 / 吧 / 。</span>`,
+                ans: ["别熬夜了，早点儿休息吧。", "别熬夜了早点儿休息吧。"],
+                rubyAns: `<ruby>别<rt>bié</rt></ruby><ruby>熬<rt>áo</rt></ruby><ruby>夜<rt>yè</rt></ruby><ruby>了<rt>le</rt></ruby>，<ruby>早<rt>zǎo</rt></ruby><ruby>点<rt>diǎn</rt></ruby><ruby>儿<rt>r</rt></ruby><ruby>休<rt>xiū</rt></ruby><ruby>息<rt>xi</rt></ruby><ruby>吧<rt>ba</rt></ruby>。`
+            },
+            {
+                q: `26. Hãy sắp xếp các từ sau thành câu hoàn chỉnh (Học sinh đánh máy đáp án):<br><span class="chinese-char">去 / 我 / 一起 / 看病 / 跟你 / 医院 / 。</span>`,
+                ans: ["我跟你一起去医院看病。"],
+                rubyAns: `<ruby>我<rt>wǒ</rt></ruby><ruby>跟<rt>gēn</rt></ruby><ruby>你<rt>nǐ</rt></ruby><ruby>一<rt>yì</rt></ruby><ruby>起<rt>qǐ</rt></ruby><ruby>去<rt>qù</rt></ruby><ruby>医<rt>yī</rt></ruby><ruby>院<rt>yuàn</rt></ruby><ruby>看<rt>kàn</rt></ruby><ruby>病<rt>bìng</rt></ruby>。`
+            }
+        ];
+
+        part2Rearrange.forEach(item => {
+            quizQuestions.push({
+                type: "written-rearrange",
+                question: item.q,
+                correctAnswer: item.ans,
+                rubyAnswer: item.rubyAns
+            });
+        });
+
+        // --- PART 3: 4 Translation Questions (Questions 27 to 30) ---
+        const part3Translation = [
+            {
+                q: `27. Dịch sang tiếng Trung câu sau:<br><b>"Hôm nay tôi thấy trong người hơi khó chịu, đầu vừa đau vừa phát sốt."</b>`,
+                ans: ["今天我身体有点儿不舒服，头疼而且发烧。", "今天我身体有一点儿不舒服，头疼而且发烧。", "今天我身体有一点儿不舒服，又头疼又发烧。", "今天我身体有点儿不舒服，又头疼又发烧。"],
+                rubyAns: `<ruby>今<rt>jīn</rt></ruby><ruby>天<rt>tiān</rt></ruby><ruby>我<rt>wǒ</rt></ruby><ruby>身<rt>shēn</rt></ruby><ruby>体<rt>tǐ</rt></ruby><ruby>有<rt>yǒu</rt></ruby><ruby>点<rt>diǎn</rt></ruby><ruby>儿<rt>r</rt></ruby><ruby>不<rt>bù</rt></ruby><ruby>舒<rt>shū</rt></ruby><ruby>服<rt>fu</rt></ruby>，<ruby>头<rt>tóu</rt></ruby><ruby>疼<rt>téng</rt></ruby><ruby>而<rt>ér</rt></ruby><ruby>且<rt>qiě</rt></ruby><ruby>发<rt>fā</rt></ruby><ruby>烧<rt>shāo</rt></ruby>。`
+            },
+            {
+                q: `28. Dịch sang tiếng Trung câu sau:<br><b>"Bác sĩ nói tôi bị cảm cúm rồi, cần phải uống thuốc đúng giờ và nghỉ ngơi nhiều."</b>`,
+                ans: ["医生说我感冒了，要按时吃药，多休息。", "医生说我感冒了，得按时吃药，多休息。", "医生说我感冒了，要吃药，多休息。"],
+                rubyAns: `<ruby>医<rt>yī</rt></ruby><ruby>生<rt>shēng</rt></ruby><ruby>说<rt>shuō</rt></ruby><ruby>我<rt>wǒ</rt></ruby><ruby>感<rt>gǎn</rt></ruby><ruby>冒<rt>mào</rt></ruby><ruby>了<rt>le</rt></ruby>，<ruby>要<rt>yào</rt></ruby><ruby>按<rt>àn</rt></ruby><ruby>时<rt>shí</rt></ruby><ruby>吃<rt>chī</rt></ruby><ruby>药<rt>yào</rt></ruby>，<ruby>多<rt>duō</rt></ruby><ruby>休<rt>xiū</rt></ruby><ruby>息<rt>xi</rt></ruby>。`
+            },
+            {
+                q: `29. Dịch sang tiếng Trung câu sau:<br><b>"Thuốc này mỗi ngày uống ba lần, mỗi lần hai viên, uống sau bữa ăn nhé."</b>`,
+                ans: ["这个药每天吃三次，每次两片，饭后吃。", "这个药每天吃三次，每次两片，饭后吃吧。", "这药每天吃三次，每次两片，饭后吃。"],
+                rubyAns: `<ruby>这<rt>zhè</rt></ruby><ruby>个<rt>ge</rt></ruby><ruby>药<rt>yào</rt></ruby><ruby>每<rt>měi</rt></ruby><ruby>天<rt>tiān</rt></ruby><ruby>吃<rt>chī</rt></ruby><ruby>三<rt>sān</rt></ruby><ruby>次<rt>cì</rt></ruby>，<ruby>每<rt>měi</rt></ruby><ruby>次<rt>cì</rt></ruby><ruby>两<rt>liǎng</rt></ruby><ruby>片<rt>piàn</rt></ruby>，<ruby>饭<rt>fàn</rt></ruby><ruby>后<rt>hòu</rt></ruby><ruby>吃<rt>chī</rt></ruby>。`
+            },
+            {
+                q: `30. Dịch sang tiếng Trung câu sau:<br><b>"Bởi vì hôm qua tôi bị ngộ độc thực phẩm và đau bụng, nên hôm nay tôi muốn xin sếp nghỉ ốm một ngày."</b>`,
+                ans: ["因为昨天我食物中毒而且肚子疼，所以今天我想跟老板请一天病假。", "因为昨天我食物中毒肚子疼，所以今天我想跟老板请病假一天。", "因为昨天我食物中毒拉肚子，所以今天我想跟老板请一天病假。"],
+                rubyAns: `<ruby>因<rt>yīn</rt></ruby><ruby>为<rt>wèi</rt></ruby><ruby>昨<rt>zuó</rt></ruby><ruby>天<rt>tiān</rt></ruby><ruby>我<rt>wǒ</rt></ruby><ruby>食<rt>shí</rt></ruby><ruby>物<rt>wù</rt></ruby><ruby>中<rt>zhòng</rt></ruby><ruby>毒<rt>dú</rt></ruby><ruby>而<rt>ér</rt></ruby><ruby>且<rt>qiě</rt></ruby><ruby>肚<rt>dù</rt></ruby><ruby>子<rt>zi</rt></ruby><ruby>疼<rt>téng</rt></ruby>，<ruby>所<rt>suǒ</rt></ruby><ruby>以<rt>yǐ</rt></ruby><ruby>今<rt>jīn</rt></ruby><ruby>天<rt>tiān</rt></ruby><ruby>我<rt>wǒ</rt></ruby><ruby>想<rt>xiǎng</rt></ruby><ruby>跟<rt>gēn</rt></ruby><ruby>老<rt>lǎo</rt></ruby><ruby>板<rt>bǎn</rt></ruby><ruby>请<rt>qǐng</rt></ruby><ruby>一<rt>yì</rt></ruby><ruby>天<rt>tiān</rt></ruby><ruby>病<rt>bìng</rt></ruby><ruby>假<rt>jià</rt></ruby>。`
+            }
+        ];
+
+        part3Translation.forEach(item => {
+            quizQuestions.push({
+                type: "written-translation",
+                question: item.q,
+                correctAnswer: item.ans,
+                rubyAnswer: item.rubyAns
+            });
+        });
+
+        return; // Fixed sequence 1 to 30
+    }
+
 
 
     // Default dynamic question generator for other lessons
