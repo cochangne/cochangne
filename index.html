@@ -503,9 +503,9 @@
                                 <h3>Sẵn Sàng Thử Thách Bản Thân? 🌟</h3>
                                 <p id="quiz-intro-desc">Hệ thống tự động thiết kế bộ đề **30 câu hỏi** trắc nghiệm & tự luận đa dạng từ 52 từ vựng của Bài 1 để kiểm tra năng lực của bạn.</p>
                                 <div class="quiz-features-list">
-                                    <div class="q-feat"><span class="bullet-small"></span> Trắc nghiệm chọn Nghĩa & Phiên âm</div>
-                                    <div class="q-feat"><span class="bullet-small"></span> Tự luận dịch từ Việt sang Trung & Điền từ vào câu</div>
-                                    <div class="q-feat"><span class="bullet-small"></span> Đàm thoại thực tế & Nghe phát âm chọn chữ Hán</div>
+                                    <div class="q-feat"><span class="bullet-small"></span> <strong>Cách tính điểm theo độ khó:</strong> Dịch câu (3đ) &gt; Sắp xếp câu (2đ) &gt; Trắc nghiệm (1đ)</div>
+                                    <div class="q-feat"><span class="bullet-small"></span> Trắc nghiệm chọn Nghĩa & Phiên âm, nghe phát âm</div>
+                                    <div class="q-feat"><span class="bullet-small"></span> Tự luận sắp xếp câu & Dịch câu hoàn chỉnh sang chữ Hán</div>
                                 </div>
                                 <button class="btn btn-secondary btn-lg" onclick="startQuiz()">Bắt đầu Luyện tập &rarr;</button>
                             </div>
@@ -514,7 +514,10 @@
                         <!-- Quiz Play Screen -->
                         <div class="quiz-panel" id="quiz-play-screen">
                             <div class="quiz-header">
-                                <span class="quiz-progress" id="quiz-progress-text">Câu 1 / 30</span>
+                                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap; gap: 8px;">
+                                    <span class="quiz-progress" id="quiz-progress-text">Câu 1 / 30</span>
+                                    <span class="quiz-type-badge" id="quiz-question-type-badge" style="display: none;"></span>
+                                </div>
                                 <div class="quiz-progress-bar-container">
                                     <div class="quiz-progress-bar-fill" id="quiz-progress-fill" style="width: 5%"></div>
                                 </div>
@@ -629,6 +632,6 @@
     <!-- Hanzi Writer for Stroke Order Animations -->
     <script src="https://cdn.jsdelivr.net/npm/hanzi-writer@3.5/dist/hanzi-writer.min.js"></script>
     <!-- Custom JavaScript -->
-    <script src="script_v9.js?v=20261102_b12_unlocked"></script>
+    <script src="script_v9.js?v=20261103_weighted_scoring"></script>
 </body>
 </html>

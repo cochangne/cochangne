@@ -1232,7 +1232,79 @@ let fcIndex = 0;
 let quizQuestions = [];
 let quizIndex = 0;
 let quizScore = 0;
+let quizTotalPoints = 0;
+let quizCorrectCount = 0;
 let incorrectQuestions = [];
+
+/**
+ * Helper to calculate points for each question type
+ * Quy tắc tính điểm theo độ khó: Dịch (3đ) > Sắp xếp (2đ) > Điền từ (1.5đ) > Trắc nghiệm (1đ)
+ */
+function getQuestionPoints(q) {
+    if (!q) return 1;
+    if (typeof q.points === 'number' && q.points > 0) return q.points;
+    const type = q.type || '';
+    if (type.includes('translation')) return 3;   // Dịch câu: 3 điểm (Khó nhất)
+    if (type.includes('rearrange')) return 2;     // Sắp xếp câu: 2 điểm (Khó vừa)
+    if (type.includes('fill-blank')) return 1.5;  // Điền chữ Hán vào câu: 1.5 điểm
+    return 1;                                     // Trắc nghiệm (nghĩa, pinyin, hội thoại, nghe): 1 điểm (Cơ bản)
+}
+
+/**
+ * Helper to get question type info, display badges and styles
+ */
+function getQuestionTypeInfo(q) {
+    const type = (q && q.type) ? q.type : '';
+    const points = getQuestionPoints(q);
+    if (type.includes('translation')) {
+        return {
+            name: 'Dịch câu',
+            icon: '📝',
+            points: points,
+            badgeBg: '#f3e8ff',
+            badgeBorder: '#d8b4fe',
+            badgeText: '#6b21a8'
+        };
+    }
+    if (type.includes('rearrange')) {
+        return {
+            name: 'Sắp xếp câu',
+            icon: '🧩',
+            points: points,
+            badgeBg: '#fef3c7',
+            badgeBorder: '#fde68a',
+            badgeText: '#92400e'
+        };
+    }
+    if (type.includes('fill-blank')) {
+        return {
+            name: 'Điền từ',
+            icon: '✏️',
+            points: points,
+            badgeBg: '#ecfeff',
+            badgeBorder: '#a5f3fc',
+            badgeText: '#0e7490'
+        };
+    }
+    if (type.includes('listening')) {
+        return {
+            name: 'Trắc nghiệm nghe',
+            icon: '🎧',
+            points: points,
+            badgeBg: '#fdf2f8',
+            badgeBorder: '#fbcfe8',
+            badgeText: '#9d174d'
+        };
+    }
+    return {
+        name: 'Trắc nghiệm',
+        icon: '🎯',
+        points: points,
+        badgeBg: '#e0f2fe',
+        badgeBorder: '#bae6fd',
+        badgeText: '#0369a1'
+    };
+}
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -2105,6 +2177,8 @@ window.startQuiz = function() {
     
     quizIndex = 0;
     quizScore = 0;
+    quizCorrectCount = 0;
+    quizTotalPoints = quizQuestions.reduce((sum, q) => sum + getQuestionPoints(q), 0);
     incorrectQuestions = []; // Reset tracked incorrect questions
     
     // Hide screens, show play screen
@@ -3225,6 +3299,31 @@ function loadQuizQuestion(index) {
     document.getElementById('quiz-progress-text').innerText = `Câu ${index + 1} / ${quizQuestions.length}`;
     document.getElementById('quiz-progress-fill').style.width = `${((index + 1) / quizQuestions.length) * 100}%`;
 
+    // Render Question Type & Points Badge
+    const typeInfo = getQuestionTypeInfo(q);
+    let typeBadge = document.getElementById('quiz-question-type-badge');
+    if (!typeBadge) {
+        const progEl = document.getElementById('quiz-progress-text');
+        if (progEl && progEl.parentElement) {
+            typeBadge = document.createElement('span');
+            typeBadge.id = 'quiz-question-type-badge';
+            progEl.parentElement.appendChild(typeBadge);
+        }
+    }
+    if (typeBadge) {
+        typeBadge.style.display = 'inline-flex';
+        typeBadge.style.alignItems = 'center';
+        typeBadge.style.gap = '6px';
+        typeBadge.style.padding = '4px 12px';
+        typeBadge.style.borderRadius = '20px';
+        typeBadge.style.fontSize = '0.85rem';
+        typeBadge.style.fontWeight = '800';
+        typeBadge.style.backgroundColor = typeInfo.badgeBg;
+        typeBadge.style.border = `1.5px solid ${typeInfo.badgeBorder}`;
+        typeBadge.style.color = typeInfo.badgeText;
+        typeBadge.innerHTML = `${typeInfo.icon} ${typeInfo.name} <span style="background: rgba(255,255,255,0.9); padding: 1px 8px; border-radius: 12px; margin-left: 2px; font-weight: 800;">+${typeInfo.points}đ</span>`;
+    }
+
     // Render question prompt
     questionTextEl.innerHTML = q.question;
 
@@ -3285,6 +3384,8 @@ window.checkQuizAnswer = function() {
     const nextBtn = document.getElementById('quiz-next-btn');
     const textInput = document.getElementById('quiz-text-input');
     
+    const pts = getQuestionPoints(q);
+    const typeInfo = getQuestionTypeInfo(q);
     let isCorrect = false;
 
     if (q.type.startsWith('mc')) {
@@ -3306,7 +3407,8 @@ window.checkQuizAnswer = function() {
         if (selectedAnswer === q.correctAnswer) {
             isCorrect = true;
             selectedOptionBtn.classList.add('correct-state');
-            quizScore++;
+            quizScore += pts;
+            quizCorrectCount++;
         } else {
             selectedOptionBtn.classList.add('incorrect-state');
             incorrectQuestions.push({
@@ -3315,7 +3417,9 @@ window.checkQuizAnswer = function() {
                 question: q.question,
                 userAnswer: selectedAnswer,
                 correctAnswer: q.correctAnswer,
-                rubyAnswer: q.rubyAnswer || q.correctAnswer
+                rubyAnswer: q.rubyAnswer || q.correctAnswer,
+                points: pts,
+                typeInfo: typeInfo
             }); // Track wrong question with details
             // Highlight correct one in green
             allOptionBtns.forEach(btn => {
@@ -3415,7 +3519,8 @@ window.checkQuizAnswer = function() {
         if (isAnswerRight) {
             isCorrect = true;
             textInput.classList.add('correct-state');
-            quizScore++;
+            quizScore += pts;
+            quizCorrectCount++;
         } else {
             textInput.classList.add('incorrect-state');
             incorrectQuestions.push({
@@ -3424,9 +3529,11 @@ window.checkQuizAnswer = function() {
                 question: q.question,
                 userAnswer: userAnswer,
                 correctAnswer: expectedStr,
-                rubyAnswer: q.rubyAnswer || expectedStr
+                rubyAnswer: q.rubyAnswer || expectedStr,
+                points: pts,
+                typeInfo: typeInfo
             }); // Track wrong question with details
-            feedbackMessage.innerText = `Chưa đúng rồi! Đáp án chuẩn là: "${expectedStr}"`;
+            feedbackMessage.innerText = `Chưa đúng rồi! (+0/${pts}đ) Đáp án chuẩn là: "${expectedStr}"`;
         }
     }
 
@@ -3434,13 +3541,13 @@ window.checkQuizAnswer = function() {
     feedbackBox.style.display = 'block';
     if (isCorrect) {
         feedbackBox.classList.add('correct');
-        feedbackMessage.innerText = "Chính xác! Bạn siêu quá nha! 🎉🌸";
+        feedbackMessage.innerHTML = `Chính xác! <span style="background: rgba(16, 185, 129, 0.15); color: #065f46; padding: 2px 8px; border-radius: 10px; font-weight: 800; margin: 0 4px;">+${pts} điểm</span> Bạn siêu quá nha! 🎉🌸`;
     } else {
         feedbackBox.classList.add('incorrect');
         if (q.type.startsWith('mc')) {
-            feedbackMessage.innerText = `Chưa chính xác rồi! Đáp án đúng phải là: "${q.correctAnswer}" 💡`;
+            feedbackMessage.innerText = `Chưa chính xác rồi! (+0/${pts}đ) Đáp án đúng phải là: "${q.correctAnswer}" 💡`;
         } else {
-            feedbackMessage.innerText = `Chưa đúng rồi! Đáp án chuẩn là: "${Array.isArray(q.correctAnswer) ? q.correctAnswer[0] : q.correctAnswer}"`;
+            feedbackMessage.innerText = `Chưa đúng rồi! (+0/${pts}đ) Đáp án chuẩn là: "${Array.isArray(q.correctAnswer) ? q.correctAnswer[0] : q.correctAnswer}"`;
         }
     }
 
@@ -3465,11 +3572,22 @@ function showQuizResults() {
     document.getElementById('quiz-play-screen').classList.remove('active');
     document.getElementById('quiz-result-screen').classList.add('active');
 
+    const totalPossible = quizQuestions.reduce((sum, item) => sum + getQuestionPoints(item), 0);
+    const formatScore = (val) => Number.isInteger(val) ? val : Number(val.toFixed(1));
+    const displayScore = formatScore(quizScore);
+    const displayTotal = formatScore(totalPossible);
+    const accuracy = totalPossible > 0 ? Math.round((quizScore / totalPossible) * 100) : 0;
+
     // Render scores dynamically
-    document.getElementById('result-badge-score').innerText = `${quizScore} / ${quizQuestions.length}`;
+    const badgeEl = document.getElementById('result-badge-score');
+    if (badgeEl) {
+        badgeEl.innerHTML = `<span style="font-size: 1.5rem; line-height: 1.1;">${displayScore} / ${displayTotal}</span><span style="font-size: 0.8rem; font-weight: 800; opacity: 0.85; margin-top: 2px; letter-spacing: 0.5px;">ĐIỂM</span>`;
+    }
     
-    const accuracy = Math.round((quizScore / quizQuestions.length) * 100);
-    document.getElementById('result-accuracy-pct').innerText = `${accuracy}%`;
+    const accEl = document.getElementById('result-accuracy-pct');
+    if (accEl) {
+        accEl.innerHTML = `${accuracy}% <span style="font-size: 0.95rem; font-weight: 600; color: var(--color-text-light); margin-left: 6px;">(Đúng ${quizCorrectCount}/${quizQuestions.length} câu)</span>`;
+    }
 
     // Manage Retry Failed Questions button visibility
     const retryFailedBtn = document.getElementById('btn-retry-failed');
@@ -3499,8 +3617,8 @@ function showQuizResults() {
         if (incorrectQuestions.length === 0) {
             errorContainer.innerHTML = `
                 <div style="background: #f0fdf4; border: 2px solid #86efac; border-radius: 20px; padding: 24px; text-align: center; margin-top: 30px;">
-                    <h4 style="color: #166534; margin: 0 0 8px 0; font-weight: 800; font-size: 1.2rem;">🎉 Hoàn Hảo! Không Có Lỗi Sai Nào!</h4>
-                    <p style="color: #15803d; margin: 0; font-size: 1rem;">Bạn đã trả lời chính xác 100% tất cả các câu hỏi trong bài luyện tập này.</p>
+                    <h4 style="color: #166534; margin: 0 0 8px 0; font-weight: 800; font-size: 1.2rem;">🎉 Hoàn Hảo! Đạt Trọn Vẹn ${displayTotal}/${displayTotal} Điểm!</h4>
+                    <p style="color: #15803d; margin: 0; font-size: 1rem;">Bạn đã chinh phục hoàn toàn tất cả các câu hỏi trắc nghiệm, sắp xếp và dịch câu trong bài luyện tập này.</p>
                 </div>
             `;
         } else {
@@ -3515,10 +3633,15 @@ function showQuizResults() {
             incorrectQuestions.forEach((item, idx) => {
                 const itemNum = item.num || (idx + 1);
                 const rubyContent = item.rubyAnswer || item.correctAnswer;
+                const qTypeInfo = item.typeInfo || getQuestionTypeInfo(item.rawQuestion || item);
+                const qPts = item.points || getQuestionPoints(item.rawQuestion || item);
                 html += `
                     <div style="background: #ffffff; border: 1.5px solid #ffe4e6; border-left: 6px solid #f43f5e; border-radius: 16px; padding: 20px 24px; box-shadow: 0 4px 15px rgba(244, 63, 94, 0.05);">
-                        <div style="font-weight: 800; color: #9f1239; margin-bottom: 12px; font-size: 1.05rem; line-height: 1.5;">
-                            Câu ${itemNum}: ${item.question}
+                        <div style="font-weight: 800; color: #9f1239; margin-bottom: 12px; font-size: 1.05rem; line-height: 1.5; display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; flex-wrap: wrap;">
+                            <span>Câu ${itemNum}: ${item.question}</span>
+                            <span style="background: ${qTypeInfo.badgeBg}; color: ${qTypeInfo.badgeText}; border: 1.5px solid ${qTypeInfo.badgeBorder}; padding: 3px 10px; border-radius: 12px; font-size: 0.8rem; font-weight: 700; white-space: nowrap;">
+                                ${qTypeInfo.icon} ${qTypeInfo.name} (-${qPts}đ)
+                            </span>
                         </div>
                         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-top: 10px;">
                             <div style="background: #fff1f2; border: 1.5px solid #fecdd3; padding: 14px 18px; border-radius: 14px;">
@@ -3550,18 +3673,18 @@ function showQuizResults() {
     const titleEl = document.getElementById('result-score-title');
     const descEl = document.getElementById('result-score-desc');
 
-    if (quizScore === quizQuestions.length) {
+    if (quizScore >= totalPossible && totalPossible > 0) {
         titleEl.innerText = "Tuyệt Đối! 🎉🐳";
-        descEl.innerText = "Bạn có khả năng cảm thụ ngoại ngữ thiên tài! Chữ Hán của bạn quá xuất sắc, cô Chang tự hào về bạn lắm đấy nhé! 💕";
+        descEl.innerText = `Đạt điểm tối đa ${displayScore}/${displayTotal} điểm! Bạn có khả năng cảm thụ ngoại ngữ thiên tài! Chữ Hán của bạn quá xuất sắc, cô Chang tự hào về bạn lắm đấy nhé! 💕`;
     } else if (accuracy >= 80) {
         titleEl.innerText = "Xuất Sắc! 🎉🌊";
-        descEl.innerText = "Bạn có khả năng tiếp thu ngôn ngữ cực kỳ tuyệt vời! Phản xạ rất nhanh, hãy tiếp tục duy trì làn sóng học tập này nha.";
+        descEl.innerText = `Đạt ${displayScore}/${displayTotal} điểm (${accuracy}%)! Bạn làm rất tốt các câu hỏi khó, phản xạ ngôn ngữ cực kỳ nhanh nhẹn. Hãy tiếp tục duy trì nhé!`;
     } else if (accuracy >= 50) {
         titleEl.innerText = "Khá Tốt! 👍🐳";
-        descEl.innerText = "Rất tốt! Bạn đã nắm chắc phần lớn các chữ Hán và Pinyin cơ bản rồi. Cố gắng ôn luyện thêm một chút để đạt điểm tuyệt đối nhé!";
+        descEl.innerText = `Đạt ${displayScore}/${displayTotal} điểm (${accuracy}%)! Bạn đã nắm chắc các câu trắc nghiệm và một số câu nâng cao. Ôn luyện thêm phần sắp xếp và dịch để đạt điểm tuyệt đối nha!`;
     } else {
         titleEl.innerText = "Hãy Cố Lên Nha! 💪🌸";
-        descEl.innerText = "Đừng nản lòng nhé! Chữ Hán mới bắt đầu học sẽ hơi thử thách một chút. Bạn hãy xem lại Flashcard và thử luyện tập lại nha, Cô Chang tin bạn làm được!";
+        descEl.innerText = `Đạt ${displayScore}/${displayTotal} điểm (${accuracy}%). Đừng nản lòng nhé! Các câu dịch và sắp xếp cần rèn luyện thêm một chút. Bạn hãy xem lại Flashcard và làm lại các câu sai để lấy trọn điểm nha!`;
     }
 }
 
@@ -3575,6 +3698,8 @@ window.retryIncorrectQuestions = function() {
     quizQuestions = incorrectQuestions.map(item => item.rawQuestion || item);
     quizIndex = 0;
     quizScore = 0;
+    quizCorrectCount = 0;
+    quizTotalPoints = quizQuestions.reduce((sum, q) => sum + getQuestionPoints(q), 0);
     incorrectQuestions = []; // Reset for the retry round
     
     // Transition views

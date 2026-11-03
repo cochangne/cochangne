@@ -1561,16 +1561,31 @@ rt {
 .quiz-feedback-alert.incorrect { background-color: #fff5f5; color: #f03e3e; border: 1px dashed #f87171; }
 .quiz-controls { display: flex; justify-content: center; gap: 15px; }
 
+.quiz-type-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 800;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
 .result-badge {
-    width: 120px;
-    height: 120px;
+    min-width: 130px;
+    min-height: 130px;
+    width: auto;
+    height: auto;
+    padding: 12px 18px;
     border-radius: var(--radius-round);
     background-color: var(--color-sky-light);
     color: var(--color-sky-deep);
     font-family: var(--font-title);
     font-weight: 800;
-    font-size: 1.6rem;
+    font-size: 1.35rem;
     display: inline-flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-bottom: 25px;
