@@ -939,7 +939,7 @@ img {
     font-size: 1.6rem;
     color: var(--color-text-dark);
     margin-top: 15px;
-    margin-bottom: 6px;
+    margin-bottom: 16px;
 }
 
 .class-subtitle {
@@ -963,7 +963,8 @@ img {
     flex-direction: column;
     gap: 10px;
     border-top: 1px dashed #e2e8f0;
-    padding-top: 20px;
+    padding-top: 18px;
+    margin-top: auto;
 }
 
 .detail-item {
